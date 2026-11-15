@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 196 40" role="img" aria-labelledby="t">
+  <title id="t">Minemo</title>
+  <g transform="translate(0 4)">
+    <path d="M2 30V21a6 6 0 0 1 12 0v9z" fill="#F2B33D"/>
+    <path d="M16.5 30V8a7 7 0 0 1 14 0v22z" fill="#2348D6"/>
+    <path d="M33 30V15a6 6 0 0 1 12 0v15z" fill="#1F8A6D"/>
+  </g>
+  <text x="56" y="31" font-family="Archivo, 'Archivo Expanded', system-ui, sans-serif" font-weight="800" font-size="30" letter-spacing="-0.6" fill="#16213B">minemo</text>
+</svg>
