@@ -1,0 +1,2760 @@
+{
+ "version": "2026-11-15",
+ "municipios": [
+  {
+   "slug": "a-coruna",
+   "municipio": "A Coruña",
+   "provincia": "A Coruña",
+   "sede": "sede.coruna.gal",
+   "url_sede": "https://sede.coruna.gal/sta/CarpetaPublic/doEvent?APP_CODE=STA&PAGE_CODE=PTS2_HOME",
+   "n_tramites": 1,
+   "n_tramitables_online": 0,
+   "n_procedimientos_tipo": 1,
+   "n_funciones_funcal": 1,
+   "documentos_por_tramite_mediana": 0,
+   "plazo_resolucion_dias_mediana": null,
+   "silencio": {
+    "no procede": 1
+   },
+   "tasa": {},
+   "cobertura_epigrafes": {
+    "descripcion": 1.0,
+    "documentos_presentar": 0.0,
+    "plazo_resolucion": 0.0,
+    "silencio_administrativo": 1.0,
+    "pago_tasas": 0.0,
+    "normativa": 0.0,
+    "organo_gestor": 0.0
+   },
+   "estado": "con_datos",
+   "ine": "15030",
+   "nombre_oficial": "A Coruña",
+   "lat": 43.3455,
+   "lon": -8.4231,
+   "x": 270.7,
+   "y": 36.8
+  },
+  {
+   "slug": "aguimes",
+   "municipio": "Agüimes",
+   "provincia": "Las Palmas",
+   "sede": "oat.aguimes.es",
+   "url_sede": "https://oat.aguimes.es/sta/CarpetaPublic/doEvent?APP_CODE=STA&PAGE_CODE=PTS2_HOME",
+   "n_tramites": 447,
+   "n_tramitables_online": 0,
+   "n_procedimientos_tipo": 88,
+   "n_funciones_funcal": 36,
+   "documentos_por_tramite_mediana": 2,
+   "plazo_resolucion_dias_mediana": 90,
+   "silencio": {
+    "no procede": 365,
+    "negativo": 44,
+    "positivo": 27
+   },
+   "tasa": {
+    "no": 59,
+    "si": 17,
+    "ver_ordenanza": 13
+   },
+   "cobertura_epigrafes": {
+    "descripcion": 1.0,
+    "documentos_presentar": 0.98,
+    "plazo_resolucion": 0.25,
+    "silencio_administrativo": 0.98,
+    "pago_tasas": 0.2,
+    "normativa": 0.28,
+    "organo_gestor": 0.3
+   },
+   "estado": "con_datos",
+   "ine": "35002",
+   "nombre_oficial": "Agüimes",
+   "lat": 27.8954,
+   "lon": -15.4571,
+   "x": 148.6,
+   "y": 577.2
+  },
+  {
+   "slug": "alaquas",
+   "municipio": "Alaquàs",
+   "provincia": "Valencia",
+   "sede": "firma.alaquas.org",
+   "url_sede": "https://firma.alaquas.org/sta/CarpetaPublic/doEvent?APP_CODE=STA&PAGE_CODE=PTS2_HOME",
+   "n_tramites": 0,
+   "estado": "sin_datos",
+   "ine": "46005",
+   "nombre_oficial": "Alaquàs",
+   "lat": 39.4523,
+   "lon": -0.4699,
+   "x": 599.9,
+   "y": 246.5
+  },
+  {
+   "slug": "alcala-de-guadaira",
+   "municipio": "Alcalá de Guadaíra",
+   "provincia": "Sevilla",
+   "sede": "ovc.alcaladeguadaira.es",
+   "url_sede": "https://ovc.alcaladeguadaira.es/sta/CarpetaPublic/doEvent?APP_CODE=STA&PAGE_CODE=PTS2_HOME",
+   "n_tramites": 3,
+   "n_tramitables_online": 0,
+   "n_procedimientos_tipo": 3,
+   "n_funciones_funcal": 2,
+   "documentos_por_tramite_mediana": 0,
+   "plazo_resolucion_dias_mediana": null,
+   "silencio": {
+    "no procede": 3
+   },
+   "tasa": {},
+   "cobertura_epigrafes": {
+    "descripcion": 1.0,
+    "documentos_presentar": 0.0,
+    "plazo_resolucion": 0.0,
+    "silencio_administrativo": 1.0,
+    "pago_tasas": 0.0,
+    "normativa": 0.0,
+    "organo_gestor": 0.0
+   },
+   "estado": "con_datos",
+   "ine": "41004",
+   "nombre_oficial": "Alcalá de Guadaíra",
+   "lat": 37.2907,
+   "lon": -5.806,
+   "x": 368.5,
+   "y": 376
+  },
+  {
+   "slug": "alcala-de-henares",
+   "municipio": "Alcalá de Henares",
+   "provincia": "Madrid",
+   "sede": "sede.ayto-alcaladehenares.es",
+   "url_sede": "https://sede.ayto-alcaladehenares.es/sta/CarpetaPublic/doEvent?APP_CODE=STA&PAGE_CODE=PTS2_HOME",
+   "n_tramites": 318,
+   "n_tramitables_online": 0,
+   "n_procedimientos_tipo": 84,
+   "n_funciones_funcal": 35,
+   "documentos_por_tramite_mediana": 3.0,
+   "plazo_resolucion_dias_mediana": 180.0,
+   "silencio": {
+    "positivo": 9,
+    "no procede": 195,
+    "negativo": 114
+   },
+   "tasa": {
+    "si": 2,
+    "ver_ordenanza": 14
+   },
+   "cobertura_epigrafes": {
+    "descripcion": 0.28,
+    "documentos_presentar": 0.89,
+    "plazo_resolucion": 0.42,
+    "silencio_administrativo": 1.0,
+    "pago_tasas": 0.05,
+    "normativa": 0.63,
+    "organo_gestor": 0.06
+   },
+   "estado": "con_datos",
+   "ine": "28005",
+   "nombre_oficial": "Alcalá de Henares",
+   "lat": 40.4944,
+   "lon": -3.3692,
+   "x": 473.6,
+   "y": 195.6
+  },
+  {
+   "slug": "alcazar-de-san-juan",
+   "municipio": "Alcázar de San Juan",
+   "provincia": "Ciudad Real",
+   "sede": "sede.alcazardesanjuan.es",
+   "url_sede": "https://sede.alcazardesanjuan.es/sta/CarpetaPublic/doEvent?APP_CODE=STA&PAGE_CODE=PTS2_HOME",
+   "n_tramites": 267,
+   "n_tramitables_online": 0,
+   "n_procedimientos_tipo": 80,
+   "n_funciones_funcal": 34,
+   "documentos_por_tramite_mediana": 2,
+   "plazo_resolucion_dias_mediana": 60.0,
+   "silencio": {
+    "no procede": 55,
+    "negativo": 124,
+    "positivo": 88
+   },
+   "tasa": {
+    "no": 55,
+    "ver_ordenanza": 58,
+    "si": 43
+   },
+   "cobertura_epigrafes": {
+    "descripcion": 0.76,
+    "documentos_presentar": 0.96,
+    "plazo_resolucion": 0.9,
+    "silencio_administrativo": 1.0,
+    "pago_tasas": 0.58,
+    "normativa": 0.96,
+    "organo_gestor": 0.97
+   },
+   "estado": "con_datos",
+   "ine": "13005",
+   "nombre_oficial": "Alcázar de San Juan",
+   "lat": 39.284,
+   "lon": -3.2392,
+   "x": 481.1,
+   "y": 262.7
+  },
+  {
+   "slug": "alhama-de-murcia",
+   "municipio": "Alhama de Murcia",
+   "provincia": "Murcia",
+   "sede": "sedeelectronica.alhamademurcia.es",
+   "url_sede": "https://sedeelectronica.alhamademurcia.es/sta/CarpetaPublic/doEvent?APP_CODE=STA&PAGE_CODE=PTS2_HOME",
+   "n_tramites": 235,
+   "n_tramitables_online": 0,
+   "n_procedimientos_tipo": 67,
+   "n_funciones_funcal": 29,
+   "documentos_por_tramite_mediana": 1,
+   "plazo_resolucion_dias_mediana": 90,
+   "silencio": {
+    "no procede": 108,
+    "negativo": 21
+   },
+   "tasa": {
+    "ver_ordenanza": 13
+   },
+   "cobertura_epigrafes": {
+    "descripcion": 0.89,
+    "documentos_presentar": 0.58,
+    "plazo_resolucion": 0.22,
+    "silencio_administrativo": 0.55,
+    "pago_tasas": 0.06,
+    "normativa": 0.68,
+    "organo_gestor": 0.16
+   },
+   "estado": "con_datos",
+   "ine": "30008",
+   "nombre_oficial": "Alhama de Murcia",
+   "lat": 37.8225,
+   "lon": -1.3884,
+   "x": 566.4,
+   "y": 340.8
+  },
+  {
+   "slug": "almeria",
+   "municipio": "Almería",
+   "provincia": "Almería",
+   "sede": "sede.aytoalmeria.es",
+   "url_sede": "https://sede.aytoalmeria.es/sta/CarpetaPublic/doEvent?APP_CODE=STA&PAGE_CODE=PTS2_HOME",
+   "n_tramites": 381,
+   "n_tramitables_online": 0,
+   "n_procedimientos_tipo": 85,
+   "n_funciones_funcal": 37,
+   "documentos_por_tramite_mediana": 1,
+   "plazo_resolucion_dias_mediana": 90,
+   "silencio": {
+    "no procede": 177,
+    "negativo": 81,
+    "positivo": 84
+   },
+   "tasa": {
+    "no": 118,
+    "ver_ordenanza": 36,
+    "si": 42
+   },
+   "cobertura_epigrafes": {
+    "descripcion": 0.93,
+    "documentos_presentar": 0.65,
+    "plazo_resolucion": 0.61,
+    "silencio_administrativo": 0.9,
+    "pago_tasas": 0.51,
+    "normativa": 0.66,
+    "organo_gestor": 0.72
+   },
+   "estado": "con_datos",
+   "ine": "04013",
+   "nombre_oficial": "Almería",
+   "lat": 36.8748,
+   "lon": -2.3421,
+   "x": 526.4,
+   "y": 397
+  },
+  {
+   "slug": "aranda-de-duero",
+   "municipio": "Aranda de Duero",
+   "provincia": "Burgos",
+   "sede": "sede.arandadeduero.es",
+   "url_sede": "https://sede.arandadeduero.es/sta/CarpetaPublic/doEvent?APP_CODE=STA&PAGE_CODE=PTS2_HOME",
+   "n_tramites": 413,
+   "n_tramitables_online": 0,
+   "n_procedimientos_tipo": 88,
+   "n_funciones_funcal": 40,
+   "documentos_por_tramite_mediana": 1,
+   "plazo_resolucion_dias_mediana": 90.0,
+   "silencio": {
+    "no procede": 182,
+    "positivo": 87,
+    "negativo": 141
+   },
+   "tasa": {
+    "ver_ordenanza": 2,
+    "si": 50,
+    "no": 22
+   },
+   "cobertura_epigrafes": {
+    "descripcion": 1.0,
+    "documentos_presentar": 0.86,
+    "plazo_resolucion": 0.61,
+    "silencio_administrativo": 0.99,
+    "pago_tasas": 0.18,
+    "normativa": 0.69,
+    "organo_gestor": 0.93
+   },
+   "estado": "con_datos",
+   "ine": "09018",
+   "nombre_oficial": "Aranda de Duero",
+   "lat": 41.6902,
+   "lon": -3.6861,
+   "x": 458.7,
+   "y": 130.2
+  },
+  {
+   "slug": "arganda-del-rey",
+   "municipio": "Arganda del Rey",
+   "provincia": "Madrid",
+   "sede": "sedeelectronica.argandadelrey.es",
+   "url_sede": "https://sedeelectronica.argandadelrey.es/sta/CarpetaPublic/doEvent?APP_CODE=STA&PAGE_CODE=PTS2_HOME",
+   "n_tramites": 113,
+   "n_tramitables_online": 0,
+   "n_procedimientos_tipo": 52,
+   "n_funciones_funcal": 18,
+   "documentos_por_tramite_mediana": 5,
+   "plazo_resolucion_dias_mediana": 60,
+   "silencio": {
+    "no procede": 54,
+    "negativo": 30,
+    "positivo": 26
+   },
+   "tasa": {
+    "si": 45,
+    "no": 2
+   },
+   "cobertura_epigrafes": {
+    "descripcion": 1.0,
+    "documentos_presentar": 0.98,
+    "plazo_resolucion": 0.81,
+    "silencio_administrativo": 0.97,
+    "pago_tasas": 0.42,
+    "normativa": 0.94,
+    "organo_gestor": 0.98
+   },
+   "estado": "con_datos",
+   "ine": "28014",
+   "nombre_oficial": "Arganda del Rey",
+   "lat": 40.2913,
+   "lon": -3.4448,
+   "x": 470.7,
+   "y": 206.9
+  },
+  {
+   "slug": "arona",
+   "municipio": "Arona",
+   "provincia": "Santa Cruz de Tenerife",
+   "sede": "sta.arona.org",
+   "url_sede": "https://sta.arona.org/sta/CarpetaPublic/doEvent?APP_CODE=STA&PAGE_CODE=PTS2_HOME",
+   "n_tramites": 218,
+   "n_tramitables_online": 0,
+   "n_procedimientos_tipo": 52,
+   "n_funciones_funcal": 30,
+   "documentos_por_tramite_mediana": 11.5,
+   "plazo_resolucion_dias_mediana": 90,
+   "silencio": {
+    "no procede": 205,
+    "positivo": 2,
+    "negativo": 1
+   },
+   "tasa": {
+    "si": 2
+   },
+   "cobertura_epigrafes": {
+    "descripcion": 1.0,
+    "documentos_presentar": 0.98,
+    "plazo_resolucion": 0.01,
+    "silencio_administrativo": 0.95,
+    "pago_tasas": 0.01,
+    "normativa": 0.01,
+    "organo_gestor": 0.01
+   },
+   "estado": "con_datos",
+   "ine": "38006",
+   "nombre_oficial": "Arona",
+   "lat": 28.056,
+   "lon": -16.6759,
+   "x": 84.8,
+   "y": 553.1
+  },
+  {
+   "slug": "aspe",
+   "municipio": "Aspe",
+   "provincia": "Alicante",
+   "sede": "sede.aspe.es",
+   "url_sede": "https://sede.aspe.es/sta/CarpetaPublic/doEvent?APP_CODE=STA&PAGE_CODE=PTS2_HOME",
+   "n_tramites": 88,
+   "n_tramitables_online": 0,
+   "n_procedimientos_tipo": 34,
+   "n_funciones_funcal": 22,
+   "documentos_por_tramite_mediana": 5.0,
+   "plazo_resolucion_dias_mediana": null,
+   "silencio": {
+    "no procede": 83
+   },
+   "tasa": {},
+   "cobertura_epigrafes": {
+    "descripcion": 1.0,
+    "documentos_presentar": 0.94,
+    "plazo_resolucion": 0.0,
+    "silencio_administrativo": 0.94,
+    "pago_tasas": 0.0,
+    "normativa": 0.0,
+    "organo_gestor": 0.0
+   },
+   "estado": "con_datos",
+   "ine": "03019",
+   "nombre_oficial": "Aspe",
+   "lat": 38.3296,
+   "lon": -0.7849,
+   "x": 591.1,
+   "y": 310.3
+  },
+  {
+   "slug": "azuqueca-de-henares",
+   "municipio": "Azuqueca de Henares",
+   "provincia": "Guadalajara",
+   "sede": "ovc.azuqueca.es",
+   "url_sede": "https://ovc.azuqueca.es/sta/CarpetaPublic/doEvent?APP_CODE=STA&PAGE_CODE=PTS2_HOME",
+   "n_tramites": 3,
+   "n_tramitables_online": 0,
+   "n_procedimientos_tipo": 2,
+   "n_funciones_funcal": 2,
+   "documentos_por_tramite_mediana": 0,
+   "plazo_resolucion_dias_mediana": null,
+   "silencio": {
+    "no procede": 3
+   },
+   "tasa": {},
+   "cobertura_epigrafes": {
+    "descripcion": 1.0,
+    "documentos_presentar": 0.0,
+    "plazo_resolucion": 0.0,
+    "silencio_administrativo": 1.0,
+    "pago_tasas": 0.0,
+    "normativa": 0.0,
+    "organo_gestor": 0.0
+   },
+   "estado": "con_datos",
+   "ine": "19046",
+   "nombre_oficial": "Azuqueca de Henares",
+   "lat": 40.5567,
+   "lon": -3.2645,
+   "x": 477.8,
+   "y": 192
+  },
+  {
+   "slug": "badalona",
+   "municipio": "Badalona",
+   "provincia": "Barcelona",
+   "sede": "seu.badalona.cat",
+   "url_sede": "https://seu.badalona.cat/sta/CarpetaPublic/doEvent?APP_CODE=STA&PAGE_CODE=PTS2_HOME",
+   "n_tramites": 358,
+   "n_tramitables_online": 0,
+   "n_procedimientos_tipo": 89,
+   "n_funciones_funcal": 41,
+   "documentos_por_tramite_mediana": 3.0,
+   "plazo_resolucion_dias_mediana": 30.0,
+   "silencio": {
+    "no procede": 279,
+    "positivo": 29,
+    "negativo": 48,
+    "mixto": 1,
+    "otro": 1
+   },
+   "tasa": {
+    "no": 157,
+    "ver_ordenanza": 74,
+    "si": 65
+   },
+   "cobertura_epigrafes": {
+    "descripcion": 0.06,
+    "documentos_presentar": 0.89,
+    "plazo_resolucion": 0.41,
+    "silencio_administrativo": 1.0,
+    "pago_tasas": 0.83,
+    "normativa": 0.87,
+    "organo_gestor": 0.97
+   },
+   "estado": "con_datos",
+   "ine": "08015",
+   "nombre_oficial": "Badalona",
+   "lat": 41.4605,
+   "lon": 2.238,
+   "x": 701.4,
+   "y": 124.3
+  },
+  {
+   "slug": "benalmadena",
+   "municipio": "Benalmádena",
+   "provincia": "Málaga",
+   "sede": "sede.benalmadena.es",
+   "url_sede": "https://sede.benalmadena.es/sta/CarpetaPublic/doEvent?APP_CODE=STA&PAGE_CODE=PTS2_HOME",
+   "n_tramites": 396,
+   "n_tramitables_online": 0,
+   "n_procedimientos_tipo": 87,
+   "n_funciones_funcal": 37,
+   "documentos_por_tramite_mediana": 3.0,
+   "plazo_resolucion_dias_mediana": 90.0,
+   "silencio": {
+    "positivo": 32,
+    "no procede": 136,
+    "negativo": 220,
+    "caducidad": 5
+   },
+   "tasa": {
+    "no": 119,
+    "si": 55,
+    "ver_ordenanza": 49
+   },
+   "cobertura_epigrafes": {
+    "descripcion": 1.0,
+    "documentos_presentar": 0.98,
+    "plazo_resolucion": 0.75,
+    "silencio_administrativo": 0.99,
+    "pago_tasas": 0.56,
+    "normativa": 0.95,
+    "organo_gestor": 0.0
+   },
+   "estado": "con_datos",
+   "ine": "29025",
+   "nombre_oficial": "Benalmádena",
+   "lat": 36.5961,
+   "lon": -4.5618,
+   "x": 425.2,
+   "y": 415.9
+  },
+  {
+   "slug": "blanes",
+   "municipio": "Blanes",
+   "provincia": "Girona",
+   "sede": "seu.blanes.cat",
+   "url_sede": "https://seu.blanes.cat/sta/CarpetaPublic/doEvent?APP_CODE=STA&PAGE_CODE=PTS2_HOME",
+   "n_tramites": 151,
+   "n_tramitables_online": 0,
+   "n_procedimientos_tipo": 57,
+   "n_funciones_funcal": 29,
+   "documentos_por_tramite_mediana": 4,
+   "plazo_resolucion_dias_mediana": 60,
+   "silencio": {
+    "no procede": 83,
+    "negativo": 55,
+    "positivo": 10,
+    "otro": 2,
+    "mixto": 1
+   },
+   "tasa": {
+    "si": 47,
+    "ver_ordenanza": 34,
+    "no": 34
+   },
+   "cobertura_epigrafes": {
+    "descripcion": 0.99,
+    "documentos_presentar": 0.84,
+    "plazo_resolucion": 0.62,
+    "silencio_administrativo": 1.0,
+    "pago_tasas": 0.76,
+    "normativa": 0.83,
+    "organo_gestor": 0.97
+   },
+   "estado": "con_datos",
+   "ine": "17023",
+   "nombre_oficial": "Blanes",
+   "lat": 41.6878,
+   "lon": 2.7821,
+   "x": 721.8,
+   "y": 109
+  },
+  {
+   "slug": "burgos",
+   "municipio": "Burgos",
+   "provincia": "Burgos",
+   "sede": "sede.aytoburgos.es",
+   "url_sede": "https://sede.aytoburgos.es/sta/CarpetaPublic/doEvent?APP_CODE=STA&PAGE_CODE=PTS2_HOME",
+   "n_tramites": 271,
+   "n_tramitables_online": 0,
+   "n_procedimientos_tipo": 83,
+   "n_funciones_funcal": 33,
+   "documentos_por_tramite_mediana": 4,
+   "plazo_resolucion_dias_mediana": 90,
+   "silencio": {
+    "negativo": 165,
+    "no procede": 84,
+    "positivo": 22
+   },
+   "tasa": {
+    "no": 95,
+    "si": 56,
+    "ver_ordenanza": 1
+   },
+   "cobertura_epigrafes": {
+    "descripcion": 0.95,
+    "documentos_presentar": 0.94,
+    "plazo_resolucion": 0.52,
+    "silencio_administrativo": 1.0,
+    "pago_tasas": 0.56,
+    "normativa": 0.69,
+    "organo_gestor": 0.94
+   },
+   "estado": "con_datos",
+   "ine": "09059",
+   "nombre_oficial": "Burgos",
+   "lat": 42.3503,
+   "lon": -3.6832,
+   "x": 458,
+   "y": 94.2
+  },
+  {
+   "slug": "burjassot",
+   "municipio": "Burjassot",
+   "provincia": "Valencia",
+   "sede": "sede.burjassot.org",
+   "url_sede": "https://sede.burjassot.org/sta/CarpetaPublic/doEvent?APP_CODE=STA&PAGE_CODE=PTS2_HOME",
+   "n_tramites": 111,
+   "n_tramitables_online": 0,
+   "n_procedimientos_tipo": 47,
+   "n_funciones_funcal": 23,
+   "documentos_por_tramite_mediana": 3,
+   "plazo_resolucion_dias_mediana": 90,
+   "silencio": {
+    "no procede": 64,
+    "negativo": 44,
+    "positivo": 3
+   },
+   "tasa": {
+    "no": 5,
+    "si": 12,
+    "ver_ordenanza": 4
+   },
+   "cobertura_epigrafes": {
+    "descripcion": 0.99,
+    "documentos_presentar": 0.86,
+    "plazo_resolucion": 0.42,
+    "silencio_administrativo": 1.0,
+    "pago_tasas": 0.19,
+    "normativa": 0.72,
+    "organo_gestor": 0.84
+   },
+   "estado": "con_datos",
+   "ine": "46078",
+   "nombre_oficial": "Burjassot",
+   "lat": 39.5086,
+   "lon": -0.411,
+   "x": 602.2,
+   "y": 243.2
+  },
+  {
+   "slug": "calahorra",
+   "municipio": "Calahorra",
+   "provincia": "La Rioja",
+   "sede": "sede.calahorra.es",
+   "url_sede": "https://sede.calahorra.es/sta/CarpetaPublic/doEvent?APP_CODE=STA&PAGE_CODE=PTS2_HOME",
+   "n_tramites": 108,
+   "n_tramitables_online": 0,
+   "n_procedimientos_tipo": 53,
+   "n_funciones_funcal": 26,
+   "documentos_por_tramite_mediana": 5.0,
+   "plazo_resolucion_dias_mediana": null,
+   "silencio": {},
+   "tasa": {
+    "si": 1
+   },
+   "cobertura_epigrafes": {
+    "descripcion": 0.99,
+    "documentos_presentar": 0.92,
+    "plazo_resolucion": 0.0,
+    "silencio_administrativo": 0.0,
+    "pago_tasas": 0.01,
+    "normativa": 0.06,
+    "organo_gestor": 0.0
+   },
+   "estado": "con_datos",
+   "ine": "26036",
+   "nombre_oficial": "Calahorra",
+   "lat": 42.2961,
+   "lon": -1.9557,
+   "x": 527.6,
+   "y": 94.5
+  },
+  {
+   "slug": "castelldefels",
+   "municipio": "Castelldefels",
+   "provincia": "Barcelona",
+   "sede": "seu.castelldefels.org",
+   "url_sede": "https://seu.castelldefels.org/sta/CarpetaPublic/doEvent?APP_CODE=STA&PAGE_CODE=PTS2_HOME",
+   "n_tramites": 223,
+   "n_tramitables_online": 0,
+   "n_procedimientos_tipo": 74,
+   "n_funciones_funcal": 34,
+   "documentos_por_tramite_mediana": 1,
+   "plazo_resolucion_dias_mediana": 60,
+   "silencio": {},
+   "tasa": {
+    "ver_ordenanza": 62,
+    "no": 17,
+    "si": 6
+   },
+   "cobertura_epigrafes": {
+    "descripcion": 0.61,
+    "documentos_presentar": 0.6,
+    "plazo_resolucion": 0.78,
+    "silencio_administrativo": 0.0,
+    "pago_tasas": 0.38,
+    "normativa": 0.61,
+    "organo_gestor": 0.37
+   },
+   "estado": "con_datos",
+   "ine": "08056",
+   "nombre_oficial": "Castelldefels",
+   "lat": 41.2759,
+   "lon": 1.9701,
+   "x": 691.8,
+   "y": 135.7
+  },
+  {
+   "slug": "caceres",
+   "municipio": "Cáceres",
+   "provincia": "Cáceres",
+   "sede": "sede.caceres.es",
+   "url_sede": "https://sede.caceres.es/sta/CarpetaPublic/doEvent?APP_CODE=STA&PAGE_CODE=PTS2_HOME",
+   "n_tramites": 332,
+   "n_tramitables_online": 0,
+   "n_procedimientos_tipo": 86,
+   "n_funciones_funcal": 35,
+   "documentos_por_tramite_mediana": 3.0,
+   "plazo_resolucion_dias_mediana": 90,
+   "silencio": {
+    "negativo": 78,
+    "no procede": 185,
+    "positivo": 43
+   },
+   "tasa": {
+    "no": 144,
+    "ver_ordenanza": 20,
+    "si": 32
+   },
+   "cobertura_epigrafes": {
+    "descripcion": 0.78,
+    "documentos_presentar": 0.94,
+    "plazo_resolucion": 0.78,
+    "silencio_administrativo": 0.92,
+    "pago_tasas": 0.6,
+    "normativa": 0.88,
+    "organo_gestor": 0.98
+   },
+   "estado": "con_datos",
+   "ine": "10037",
+   "nombre_oficial": "Cáceres",
+   "lat": 39.3709,
+   "lon": -6.4501,
+   "x": 342.4,
+   "y": 258.2
+  },
+  {
+   "slug": "dos-hermanas",
+   "municipio": "Dos Hermanas",
+   "provincia": "Sevilla",
+   "sede": "sede.doshermanas.es",
+   "url_sede": "https://sede.doshermanas.es/sta/CarpetaPublic/doEvent?APP_CODE=STA&PAGE_CODE=PTS2_HOME",
+   "n_tramites": 242,
+   "n_tramitables_online": 0,
+   "n_procedimientos_tipo": 64,
+   "n_funciones_funcal": 34,
+   "documentos_por_tramite_mediana": 2.0,
+   "plazo_resolucion_dias_mediana": 90,
+   "silencio": {
+    "no procede": 149,
+    "positivo": 26,
+    "negativo": 67
+   },
+   "tasa": {
+    "si": 34,
+    "no": 101,
+    "ver_ordenanza": 1
+   },
+   "cobertura_epigrafes": {
+    "descripcion": 0.98,
+    "documentos_presentar": 0.98,
+    "plazo_resolucion": 0.38,
+    "silencio_administrativo": 1.0,
+    "pago_tasas": 0.56,
+    "normativa": 0.94,
+    "organo_gestor": 0.89
+   },
+   "estado": "con_datos",
+   "ine": "41038",
+   "nombre_oficial": "Dos Hermanas",
+   "lat": 37.2573,
+   "lon": -5.9618,
+   "x": 361.4,
+   "y": 377.8
+  },
+  {
+   "slug": "denia",
+   "municipio": "Dénia",
+   "provincia": "Alicante",
+   "sede": "sede.denia.es",
+   "url_sede": "https://sede.denia.es/sta/CarpetaPublic/doEvent?APP_CODE=STA&PAGE_CODE=PTS2_HOME",
+   "n_tramites": 252,
+   "n_tramitables_online": 0,
+   "n_procedimientos_tipo": 77,
+   "n_funciones_funcal": 33,
+   "documentos_por_tramite_mediana": 2.0,
+   "plazo_resolucion_dias_mediana": 90,
+   "silencio": {
+    "positivo": 48,
+    "no procede": 124,
+    "negativo": 49,
+    "otro": 1
+   },
+   "tasa": {
+    "no": 34,
+    "si": 51,
+    "ver_ordenanza": 28
+   },
+   "cobertura_epigrafes": {
+    "descripcion": 0.93,
+    "documentos_presentar": 0.94,
+    "plazo_resolucion": 0.71,
+    "silencio_administrativo": 0.88,
+    "pago_tasas": 0.45,
+    "normativa": 0.85,
+    "organo_gestor": 0.95
+   },
+   "estado": "con_datos",
+   "ine": "03063",
+   "nombre_oficial": "Dénia",
+   "lat": 38.8242,
+   "lon": 0.0774,
+   "x": 626.6,
+   "y": 279.5
+  },
+  {
+   "slug": "elche-elx",
+   "municipio": "Elche / Elx",
+   "provincia": "Alicante",
+   "sede": "sede.elche.es",
+   "url_sede": "https://sede.elche.es/sta/CarpetaPublic/doEvent?APP_CODE=STA&PAGE_CODE=PTS2_HOME",
+   "n_tramites": 520,
+   "n_tramitables_online": 0,
+   "n_procedimientos_tipo": 104,
+   "n_funciones_funcal": 42,
+   "documentos_por_tramite_mediana": 3.0,
+   "plazo_resolucion_dias_mediana": 90.0,
+   "silencio": {
+    "positivo": 22,
+    "negativo": 143,
+    "no procede": 354,
+    "mixto": 1
+   },
+   "tasa": {
+    "si": 76,
+    "no": 132,
+    "ver_ordenanza": 58
+   },
+   "cobertura_epigrafes": {
+    "descripcion": 0.0,
+    "documentos_presentar": 0.93,
+    "plazo_resolucion": 0.56,
+    "silencio_administrativo": 1.0,
+    "pago_tasas": 0.51,
+    "normativa": 0.73,
+    "organo_gestor": 0.95
+   },
+   "estado": "con_datos",
+   "ine": "03065",
+   "nombre_oficial": "Elx/Elche",
+   "lat": 38.2469,
+   "lon": -0.6633,
+   "x": 596.9,
+   "y": 314.6
+  },
+  {
+   "slug": "fuengirola",
+   "municipio": "Fuengirola",
+   "provincia": "Málaga",
+   "sede": "sede.fuengirola.es",
+   "url_sede": "https://sede.fuengirola.es/sta/CarpetaPublic/doEvent?APP_CODE=STA&PAGE_CODE=PTS2_HOME",
+   "n_tramites": 221,
+   "n_tramitables_online": 0,
+   "n_procedimientos_tipo": 79,
+   "n_funciones_funcal": 37,
+   "documentos_por_tramite_mediana": 1,
+   "plazo_resolucion_dias_mediana": 90,
+   "silencio": {
+    "no procede": 159,
+    "negativo": 55,
+    "positivo": 5
+   },
+   "tasa": {
+    "si": 55,
+    "no": 5,
+    "ver_ordenanza": 1
+   },
+   "cobertura_epigrafes": {
+    "descripcion": 0.99,
+    "documentos_presentar": 0.61,
+    "plazo_resolucion": 0.02,
+    "silencio_administrativo": 0.99,
+    "pago_tasas": 0.28,
+    "normativa": 0.57,
+    "organo_gestor": 0.89
+   },
+   "estado": "con_datos",
+   "ine": "29054",
+   "nombre_oficial": "Fuengirola",
+   "lat": 36.5579,
+   "lon": -4.6154,
+   "x": 422.7,
+   "y": 418.1
+  },
+  {
+   "slug": "fuenlabrada",
+   "municipio": "Fuenlabrada",
+   "provincia": "Madrid",
+   "sede": "sede.fuenlabrada.es",
+   "url_sede": "https://sede.fuenlabrada.es/sta/CarpetaPublic/doEvent?APP_CODE=STA&PAGE_CODE=PTS2_HOME",
+   "n_tramites": 187,
+   "n_tramitables_online": 0,
+   "n_procedimientos_tipo": 57,
+   "n_funciones_funcal": 31,
+   "documentos_por_tramite_mediana": 1,
+   "plazo_resolucion_dias_mediana": 90,
+   "silencio": {
+    "negativo": 49,
+    "no procede": 137,
+    "positivo": 1
+   },
+   "tasa": {
+    "no": 141,
+    "si": 42
+   },
+   "cobertura_epigrafes": {
+    "descripcion": 1.0,
+    "documentos_presentar": 0.97,
+    "plazo_resolucion": 0.34,
+    "silencio_administrativo": 1.0,
+    "pago_tasas": 0.98,
+    "normativa": 0.96,
+    "organo_gestor": 0.98
+   },
+   "estado": "con_datos",
+   "ine": "28058",
+   "nombre_oficial": "Fuenlabrada",
+   "lat": 40.2838,
+   "lon": -3.7964,
+   "x": 455.9,
+   "y": 207.7
+  },
+  {
+   "slug": "gava",
+   "municipio": "Gavà",
+   "provincia": "Barcelona",
+   "sede": "eseu.gava.cat",
+   "url_sede": "https://eseu.gava.cat/sta/CarpetaPublic/doEvent?APP_CODE=STA&PAGE_CODE=PTS2_HOME",
+   "n_tramites": 314,
+   "n_tramitables_online": 2,
+   "n_procedimientos_tipo": 86,
+   "n_funciones_funcal": 39,
+   "documentos_por_tramite_mediana": 1.0,
+   "plazo_resolucion_dias_mediana": 30,
+   "silencio": {
+    "no procede": 260,
+    "negativo": 43,
+    "positivo": 11
+   },
+   "tasa": {
+    "ver_ordenanza": 47,
+    "si": 41,
+    "no": 180
+   },
+   "cobertura_epigrafes": {
+    "descripcion": 0.96,
+    "documentos_presentar": 0.72,
+    "plazo_resolucion": 0.38,
+    "silencio_administrativo": 1.0,
+    "pago_tasas": 0.85,
+    "normativa": 0.45,
+    "organo_gestor": 0.0
+   },
+   "estado": "con_datos",
+   "ine": "08089",
+   "nombre_oficial": "Gavà",
+   "lat": 41.2936,
+   "lon": 1.9812,
+   "x": 692.1,
+   "y": 134.7
+  },
+  {
+   "slug": "getafe",
+   "municipio": "Getafe",
+   "provincia": "Madrid",
+   "sede": "sede.getafe.es",
+   "url_sede": "https://sede.getafe.es/sta/CarpetaPublic/doEvent?APP_CODE=STA&PAGE_CODE=PTS2_HOME",
+   "n_tramites": 263,
+   "n_tramitables_online": 0,
+   "n_procedimientos_tipo": 77,
+   "n_funciones_funcal": 30,
+   "documentos_por_tramite_mediana": 3,
+   "plazo_resolucion_dias_mediana": 90.0,
+   "silencio": {
+    "negativo": 97,
+    "no procede": 145,
+    "positivo": 17
+   },
+   "tasa": {
+    "si": 3,
+    "ver_ordenanza": 19,
+    "no": 1
+   },
+   "cobertura_epigrafes": {
+    "descripcion": 0.98,
+    "documentos_presentar": 0.95,
+    "plazo_resolucion": 0.45,
+    "silencio_administrativo": 0.98,
+    "pago_tasas": 0.09,
+    "normativa": 0.84,
+    "organo_gestor": 0.0
+   },
+   "estado": "con_datos",
+   "ine": "28065",
+   "nombre_oficial": "Getafe",
+   "lat": 40.2995,
+   "lon": -3.6736,
+   "x": 461,
+   "y": 206.7
+  },
+  {
+   "slug": "gijon-xixon",
+   "municipio": "Gijón / Xixón",
+   "provincia": "Asturias",
+   "sede": "sedeelectronica.gijon.es",
+   "url_sede": "https://sedeelectronica.gijon.es/sta/CarpetaPublic/doEvent?APP_CODE=STA&PAGE_CODE=PTS2_HOME",
+   "n_tramites": 78,
+   "n_tramitables_online": 0,
+   "n_procedimientos_tipo": 22,
+   "n_funciones_funcal": 20,
+   "documentos_por_tramite_mediana": 3.0,
+   "plazo_resolucion_dias_mediana": 60,
+   "silencio": {
+    "no procede": 73,
+    "negativo": 1,
+    "positivo": 2,
+    "mixto": 2
+   },
+   "tasa": {
+    "si": 7,
+    "no": 2
+   },
+   "cobertura_epigrafes": {
+    "descripcion": 0.97,
+    "documentos_presentar": 0.87,
+    "plazo_resolucion": 0.42,
+    "silencio_administrativo": 1.0,
+    "pago_tasas": 0.12,
+    "normativa": 0.79,
+    "organo_gestor": 0.71
+   },
+   "estado": "con_datos",
+   "ine": "33024",
+   "nombre_oficial": "Gijón",
+   "lat": 43.5,
+   "lon": -5.6825,
+   "x": 378.3,
+   "y": 32.4
+  },
+  {
+   "slug": "granada",
+   "municipio": "Granada",
+   "provincia": "Granada",
+   "sede": "sede.granada.org",
+   "url_sede": "https://sede.granada.org/sta/CarpetaPublic/doEvent?APP_CODE=STA&PAGE_CODE=PTS2_HOME",
+   "n_tramites": 538,
+   "n_tramitables_online": 0,
+   "n_procedimientos_tipo": 96,
+   "n_funciones_funcal": 40,
+   "documentos_por_tramite_mediana": 1.0,
+   "plazo_resolucion_dias_mediana": 90,
+   "silencio": {
+    "no procede": 262,
+    "negativo": 211,
+    "positivo": 22,
+    "otro": 1
+   },
+   "tasa": {
+    "si": 109,
+    "ver_ordenanza": 1,
+    "no": 3
+   },
+   "cobertura_epigrafes": {
+    "descripcion": 0.93,
+    "documentos_presentar": 0.82,
+    "plazo_resolucion": 0.63,
+    "silencio_administrativo": 0.92,
+    "pago_tasas": 0.21,
+    "normativa": 0.92,
+    "organo_gestor": 0.93
+   },
+   "estado": "con_datos",
+   "ine": "18087",
+   "nombre_oficial": "Granada",
+   "lat": 37.1867,
+   "lon": -3.5905,
+   "x": 469,
+   "y": 381.4
+  },
+  {
+   "slug": "granadilla-de-abona",
+   "municipio": "Granadilla de Abona",
+   "provincia": "Santa Cruz de Tenerife",
+   "sede": "sede.granadilladeabona.es",
+   "url_sede": "https://sede.granadilladeabona.es/sta/CarpetaPublic/doEvent?APP_CODE=STA&PAGE_CODE=PTS2_HOME",
+   "n_tramites": 130,
+   "n_tramitables_online": 0,
+   "n_procedimientos_tipo": 53,
+   "n_funciones_funcal": 25,
+   "documentos_por_tramite_mediana": 11.0,
+   "plazo_resolucion_dias_mediana": 90,
+   "silencio": {
+    "positivo": 9,
+    "negativo": 45,
+    "no procede": 74,
+    "mixto": 2
+   },
+   "tasa": {
+    "no": 6,
+    "si": 8,
+    "ver_ordenanza": 27
+   },
+   "cobertura_epigrafes": {
+    "descripcion": 0.0,
+    "documentos_presentar": 0.95,
+    "plazo_resolucion": 0.53,
+    "silencio_administrativo": 1.0,
+    "pago_tasas": 0.32,
+    "normativa": 0.92,
+    "organo_gestor": 0.93
+   },
+   "estado": "con_datos",
+   "ine": "38017",
+   "nombre_oficial": "Granadilla de Abona",
+   "lat": 28.113,
+   "lon": -16.5644,
+   "x": 91.6,
+   "y": 551
+  },
+  {
+   "slug": "icod-de-los-vinos",
+   "municipio": "Icod de los Vinos",
+   "provincia": "Santa Cruz de Tenerife",
+   "sede": "sede.icoddelosvinos.es",
+   "url_sede": "https://sede.icoddelosvinos.es/sta/CarpetaPublic/doEvent?APP_CODE=STA&PAGE_CODE=PTS2_HOME",
+   "n_tramites": 5,
+   "n_tramitables_online": 0,
+   "n_procedimientos_tipo": 4,
+   "n_funciones_funcal": 5,
+   "documentos_por_tramite_mediana": 0,
+   "plazo_resolucion_dias_mediana": null,
+   "silencio": {
+    "no procede": 5
+   },
+   "tasa": {},
+   "cobertura_epigrafes": {
+    "descripcion": 1.0,
+    "documentos_presentar": 0.4,
+    "plazo_resolucion": 0.2,
+    "silencio_administrativo": 1.0,
+    "pago_tasas": 0.0,
+    "normativa": 0.2,
+    "organo_gestor": 0.6
+   },
+   "estado": "con_datos",
+   "ine": "38022",
+   "nombre_oficial": "Icod de los Vinos",
+   "lat": 28.3317,
+   "lon": -16.694,
+   "x": 87.7,
+   "y": 536.1
+  },
+  {
+   "slug": "jaen",
+   "municipio": "Jaén",
+   "provincia": "Jaén",
+   "sede": "sede.aytojaen.es",
+   "url_sede": "https://sede.aytojaen.es/sta/CarpetaPublic/doEvent?APP_CODE=STA&PAGE_CODE=PTS2_HOME",
+   "n_tramites": 108,
+   "n_tramitables_online": 0,
+   "n_procedimientos_tipo": 57,
+   "n_funciones_funcal": 28,
+   "documentos_por_tramite_mediana": 1.0,
+   "plazo_resolucion_dias_mediana": 90.0,
+   "silencio": {
+    "no procede": 99,
+    "negativo": 8,
+    "mixto": 1
+   },
+   "tasa": {
+    "si": 26,
+    "no": 8,
+    "ver_ordenanza": 2
+   },
+   "cobertura_epigrafes": {
+    "descripcion": 0.89,
+    "documentos_presentar": 0.66,
+    "plazo_resolucion": 0.52,
+    "silencio_administrativo": 1.0,
+    "pago_tasas": 0.33,
+    "normativa": 0.86,
+    "organo_gestor": 0.98
+   },
+   "estado": "con_datos",
+   "ine": "23050",
+   "nombre_oficial": "Jaén",
+   "lat": 37.8087,
+   "lon": -3.751,
+   "x": 460.9,
+   "y": 346.2
+  },
+  {
+   "slug": "la-oliva",
+   "municipio": "La Oliva",
+   "provincia": "Las Palmas",
+   "sede": "carpeta.laoliva.es",
+   "url_sede": "https://carpeta.laoliva.es/sta/CarpetaPublic/doEvent?APP_CODE=STA&PAGE_CODE=PTS2_HOME",
+   "n_tramites": 0,
+   "estado": "sin_datos",
+   "ine": "35014",
+   "nombre_oficial": "La Oliva",
+   "lat": 28.6521,
+   "lon": -13.9257,
+   "x": 240.2,
+   "y": 546.3
+  },
+  {
+   "slug": "la-pobla-de-vallbona",
+   "municipio": "La Pobla de Vallbona",
+   "provincia": "Valencia",
+   "sede": "seu.lapobladevallbona.es",
+   "url_sede": "https://seu.lapobladevallbona.es/sta/CarpetaPublic/doEvent?APP_CODE=STA&PAGE_CODE=PTS2_HOME",
+   "n_tramites": 190,
+   "n_tramitables_online": 0,
+   "n_procedimientos_tipo": 75,
+   "n_funciones_funcal": 35,
+   "documentos_por_tramite_mediana": 3.0,
+   "plazo_resolucion_dias_mediana": 90,
+   "silencio": {
+    "positivo": 31,
+    "negativo": 33,
+    "no procede": 123
+   },
+   "tasa": {
+    "si": 28,
+    "ver_ordenanza": 18,
+    "no": 8
+   },
+   "cobertura_epigrafes": {
+    "descripcion": 0.97,
+    "documentos_presentar": 0.84,
+    "plazo_resolucion": 0.45,
+    "silencio_administrativo": 0.98,
+    "pago_tasas": 0.28,
+    "normativa": 0.67,
+    "organo_gestor": 0.8
+   },
+   "estado": "con_datos",
+   "ine": "46202",
+   "nombre_oficial": "la Pobla de Vallbona",
+   "lat": 39.6022,
+   "lon": -0.5424,
+   "x": 596.1,
+   "y": 238.5
+  },
+  {
+   "slug": "la-vall-d-uixo",
+   "municipio": "La Vall d'Uixó",
+   "provincia": "Castellón",
+   "sede": "sede.lavallduixo.es",
+   "url_sede": "https://sede.lavallduixo.es/sta/CarpetaPublic/doEvent?APP_CODE=STA&PAGE_CODE=PTS2_HOME",
+   "n_tramites": 281,
+   "n_tramitables_online": 0,
+   "n_procedimientos_tipo": 83,
+   "n_funciones_funcal": 36,
+   "documentos_por_tramite_mediana": 3,
+   "plazo_resolucion_dias_mediana": 90,
+   "silencio": {
+    "no procede": 163,
+    "negativo": 87,
+    "positivo": 24,
+    "otro": 4,
+    "mixto": 2
+   },
+   "tasa": {
+    "no": 9,
+    "si": 52,
+    "ver_ordenanza": 2
+   },
+   "cobertura_epigrafes": {
+    "descripcion": 0.85,
+    "documentos_presentar": 0.9,
+    "plazo_resolucion": 0.77,
+    "silencio_administrativo": 1.0,
+    "pago_tasas": 0.22,
+    "normativa": 0.79,
+    "organo_gestor": 0.85
+   },
+   "estado": "con_datos",
+   "ine": "12126",
+   "nombre_oficial": "la Vall d'Uixó",
+   "lat": 39.8148,
+   "lon": -0.2345,
+   "x": 608.3,
+   "y": 225.6
+  },
+  {
+   "slug": "leganes",
+   "municipio": "Leganés",
+   "provincia": "Madrid",
+   "sede": "sede.leganes.org",
+   "url_sede": "https://sede.leganes.org/sta/CarpetaPublic/doEvent?APP_CODE=STA&PAGE_CODE=PTS2_HOME",
+   "n_tramites": 122,
+   "n_tramitables_online": 0,
+   "n_procedimientos_tipo": 48,
+   "n_funciones_funcal": 24,
+   "documentos_por_tramite_mediana": 4.0,
+   "plazo_resolucion_dias_mediana": 90,
+   "silencio": {
+    "no procede": 70,
+    "negativo": 39,
+    "positivo": 13
+   },
+   "tasa": {
+    "no": 36,
+    "si": 21,
+    "ver_ordenanza": 5
+   },
+   "cobertura_epigrafes": {
+    "descripcion": 0.93,
+    "documentos_presentar": 0.93,
+    "plazo_resolucion": 0.23,
+    "silencio_administrativo": 1.0,
+    "pago_tasas": 0.51,
+    "normativa": 0.75,
+    "organo_gestor": 0.91
+   },
+   "estado": "con_datos",
+   "ine": "28074",
+   "nombre_oficial": "Leganés",
+   "lat": 40.331,
+   "lon": -3.7707,
+   "x": 456.9,
+   "y": 205.1
+  },
+  {
+   "slug": "leioa",
+   "municipio": "Leioa",
+   "provincia": "Bizkaia",
+   "sede": "udaletxean.leioa.eus",
+   "url_sede": "https://udaletxean.leioa.eus/sta/CarpetaPublic/doEvent?APP_CODE=STA&PAGE_CODE=PTS2_HOME",
+   "n_tramites": 152,
+   "n_tramitables_online": 0,
+   "n_procedimientos_tipo": 63,
+   "n_funciones_funcal": 30,
+   "documentos_por_tramite_mediana": 3.0,
+   "plazo_resolucion_dias_mediana": 25.0,
+   "silencio": {
+    "no procede": 103,
+    "negativo": 44,
+    "positivo": 5
+   },
+   "tasa": {
+    "no": 87,
+    "si": 19,
+    "ver_ordenanza": 16
+   },
+   "cobertura_epigrafes": {
+    "descripcion": 0.97,
+    "documentos_presentar": 0.91,
+    "plazo_resolucion": 0.8,
+    "silencio_administrativo": 1.0,
+    "pago_tasas": 0.8,
+    "normativa": 0.67,
+    "organo_gestor": 0.97
+   },
+   "estado": "con_datos",
+   "ine": "48054",
+   "nombre_oficial": "Leioa",
+   "lat": 43.328,
+   "lon": -2.9872,
+   "x": 484.1,
+   "y": 40.4
+  },
+  {
+   "slug": "llucmajor",
+   "municipio": "Llucmajor",
+   "provincia": "Illes Balears",
+   "sede": "seu.llucmajor.org",
+   "url_sede": "https://seu.llucmajor.org/sta/CarpetaPublic/doEvent?APP_CODE=STA&PAGE_CODE=PTS2_HOME",
+   "n_tramites": 0,
+   "estado": "sin_datos",
+   "ine": "07031",
+   "nombre_oficial": "Llucmajor",
+   "lat": 39.4501,
+   "lon": 2.8512,
+   "x": 741.9,
+   "y": 230.8
+  },
+  {
+   "slug": "lliria",
+   "municipio": "Llíria",
+   "provincia": "Valencia",
+   "sede": "sede.lliria.es",
+   "url_sede": "https://sede.lliria.es/sta/CarpetaPublic/doEvent?APP_CODE=STA&PAGE_CODE=PTS2_HOME",
+   "n_tramites": 220,
+   "n_tramitables_online": 0,
+   "n_procedimientos_tipo": 73,
+   "n_funciones_funcal": 34,
+   "documentos_por_tramite_mediana": 5.0,
+   "plazo_resolucion_dias_mediana": 180.0,
+   "silencio": {
+    "positivo": 93,
+    "no procede": 86,
+    "negativo": 38,
+    "otro": 1
+   },
+   "tasa": {
+    "no": 41,
+    "si": 21,
+    "ver_ordenanza": 41
+   },
+   "cobertura_epigrafes": {
+    "descripcion": 0.99,
+    "documentos_presentar": 0.95,
+    "plazo_resolucion": 0.85,
+    "silencio_administrativo": 0.99,
+    "pago_tasas": 0.47,
+    "normativa": 0.9,
+    "organo_gestor": 0.93
+   },
+   "estado": "con_datos",
+   "ine": "46147",
+   "nombre_oficial": "Llíria",
+   "lat": 39.6903,
+   "lon": -0.6593,
+   "x": 590.7,
+   "y": 234
+  },
+  {
+   "slug": "marratxi",
+   "municipio": "Marratxí",
+   "provincia": "Illes Balears",
+   "sede": "seuelectronica.marratxi.es",
+   "url_sede": "https://seuelectronica.marratxi.es/sta/CarpetaPublic/doEvent?APP_CODE=STA&PAGE_CODE=PTS2_HOME",
+   "n_tramites": 45,
+   "n_tramitables_online": 0,
+   "n_procedimientos_tipo": 25,
+   "n_funciones_funcal": 12,
+   "documentos_por_tramite_mediana": 5,
+   "plazo_resolucion_dias_mediana": 90,
+   "silencio": {
+    "no procede": 20,
+    "negativo": 19,
+    "positivo": 5,
+    "otro": 1
+   },
+   "tasa": {
+    "no": 2,
+    "si": 1,
+    "ver_ordenanza": 13
+   },
+   "cobertura_epigrafes": {
+    "descripcion": 1.0,
+    "documentos_presentar": 0.98,
+    "plazo_resolucion": 0.89,
+    "silencio_administrativo": 1.0,
+    "pago_tasas": 0.36,
+    "normativa": 0.91,
+    "organo_gestor": 0.98
+   },
+   "estado": "con_datos",
+   "ine": "07036",
+   "nombre_oficial": "Marratxí",
+   "lat": 39.6237,
+   "lon": 2.7296,
+   "x": 735.3,
+   "y": 222
+  },
+  {
+   "slug": "mazarron",
+   "municipio": "Mazarrón",
+   "provincia": "Murcia",
+   "sede": "sede.mazarron.es",
+   "url_sede": "https://sede.mazarron.es/sta/CarpetaPublic/doEvent?APP_CODE=STA&PAGE_CODE=PTS2_HOME",
+   "n_tramites": 70,
+   "n_tramitables_online": 0,
+   "n_procedimientos_tipo": 24,
+   "n_funciones_funcal": 21,
+   "documentos_por_tramite_mediana": 1.0,
+   "plazo_resolucion_dias_mediana": 90,
+   "silencio": {
+    "no procede": 68,
+    "negativo": 1
+   },
+   "tasa": {
+    "si": 1
+   },
+   "cobertura_epigrafes": {
+    "descripcion": 0.99,
+    "documentos_presentar": 0.54,
+    "plazo_resolucion": 0.53,
+    "silencio_administrativo": 0.99,
+    "pago_tasas": 0.01,
+    "normativa": 0.51,
+    "organo_gestor": 0.51
+   },
+   "estado": "con_datos",
+   "ine": "30026",
+   "nombre_oficial": "Mazarrón",
+   "lat": 37.6205,
+   "lon": -1.3513,
+   "x": 568.8,
+   "y": 352.1
+  },
+  {
+   "slug": "medina-del-campo",
+   "municipio": "Medina del Campo",
+   "provincia": "Valladolid",
+   "sede": "sede.medinadelcampo.es",
+   "url_sede": "https://sede.medinadelcampo.es/sta/CarpetaPublic/doEvent?APP_CODE=STA&PAGE_CODE=PTS2_HOME",
+   "n_tramites": 156,
+   "n_tramitables_online": 0,
+   "n_procedimientos_tipo": 71,
+   "n_funciones_funcal": 29,
+   "documentos_por_tramite_mediana": 2.0,
+   "plazo_resolucion_dias_mediana": 90,
+   "silencio": {
+    "no procede": 113,
+    "positivo": 15,
+    "negativo": 28
+   },
+   "tasa": {
+    "si": 3,
+    "ver_ordenanza": 17,
+    "no": 1
+   },
+   "cobertura_epigrafes": {
+    "descripcion": 0.84,
+    "documentos_presentar": 0.94,
+    "plazo_resolucion": 0.41,
+    "silencio_administrativo": 1.0,
+    "pago_tasas": 0.13,
+    "normativa": 0.58,
+    "organo_gestor": 0.57
+   },
+   "estado": "con_datos",
+   "ine": "47085",
+   "nombre_oficial": "Medina del Campo",
+   "lat": 41.3196,
+   "lon": -4.9045,
+   "x": 408.9,
+   "y": 151.1
+  },
+  {
+   "slug": "mejorada-del-campo",
+   "municipio": "Mejorada del Campo",
+   "provincia": "Madrid",
+   "sede": "carpetaciudadana.mejoradadelcampo.es",
+   "url_sede": "https://carpetaciudadana.mejoradadelcampo.es/sta/CarpetaPublic/doEvent?APP_CODE=STA&PAGE_CODE=PTS2_HOME",
+   "n_tramites": 8,
+   "n_tramitables_online": 0,
+   "n_procedimientos_tipo": 4,
+   "n_funciones_funcal": 2,
+   "documentos_por_tramite_mediana": 0.0,
+   "plazo_resolucion_dias_mediana": null,
+   "silencio": {
+    "no procede": 8
+   },
+   "tasa": {},
+   "cobertura_epigrafes": {
+    "descripcion": 1.0,
+    "documentos_presentar": 0.0,
+    "plazo_resolucion": 0.0,
+    "silencio_administrativo": 1.0,
+    "pago_tasas": 0.0,
+    "normativa": 0.0,
+    "organo_gestor": 0.0
+   },
+   "estado": "con_datos",
+   "ine": "28084",
+   "nombre_oficial": "Mejorada del Campo",
+   "lat": 40.4013,
+   "lon": -3.4757,
+   "x": 469.2,
+   "y": 200.9
+  },
+  {
+   "slug": "melilla",
+   "municipio": "Melilla",
+   "provincia": "Melilla",
+   "sede": "sede.melilla.es",
+   "url_sede": "https://sede.melilla.es/sta/CarpetaPublic/doEvent?APP_CODE=STA&PAGE_CODE=PTS2_HOME",
+   "n_tramites": 385,
+   "n_tramitables_online": 0,
+   "n_procedimientos_tipo": 81,
+   "n_funciones_funcal": 36,
+   "documentos_por_tramite_mediana": 5,
+   "plazo_resolucion_dias_mediana": 90,
+   "silencio": {
+    "no procede": 241,
+    "negativo": 97,
+    "positivo": 45
+   },
+   "tasa": {
+    "no": 89,
+    "si": 112,
+    "ver_ordenanza": 6
+   },
+   "cobertura_epigrafes": {
+    "descripcion": 0.99,
+    "documentos_presentar": 0.98,
+    "plazo_resolucion": 0.52,
+    "silencio_administrativo": 0.99,
+    "pago_tasas": 0.54,
+    "normativa": 0.95,
+    "organo_gestor": 0.96
+   },
+   "estado": "con_datos",
+   "ine": "52001",
+   "nombre_oficial": "Melilla",
+   "lat": 35.2897,
+   "lon": -2.9488,
+   "x": 502.2,
+   "y": 489.4
+  },
+  {
+   "slug": "mieres",
+   "municipio": "Mieres",
+   "provincia": "Asturias",
+   "sede": "sedeelectronica.ayto-mieres.es",
+   "url_sede": "https://sedeelectronica.ayto-mieres.es/sta/CarpetaPublic/doEvent?APP_CODE=STA&PAGE_CODE=PTS2_HOME",
+   "n_tramites": 76,
+   "n_tramitables_online": 0,
+   "n_procedimientos_tipo": 43,
+   "n_funciones_funcal": 25,
+   "documentos_por_tramite_mediana": 2.0,
+   "plazo_resolucion_dias_mediana": 90,
+   "silencio": {
+    "no procede": 62,
+    "negativo": 11,
+    "positivo": 3
+   },
+   "tasa": {
+    "ver_ordenanza": 8,
+    "no": 4
+   },
+   "cobertura_epigrafes": {
+    "descripcion": 0.99,
+    "documentos_presentar": 0.83,
+    "plazo_resolucion": 0.47,
+    "silencio_administrativo": 1.0,
+    "pago_tasas": 0.16,
+    "normativa": 0.61,
+    "organo_gestor": 0.58
+   },
+   "estado": "con_datos",
+   "ine": "33037",
+   "nombre_oficial": "Mieres",
+   "lat": 43.2334,
+   "lon": -5.755,
+   "x": 375.3,
+   "y": 46.7
+  },
+  {
+   "slug": "miranda-de-ebro",
+   "municipio": "Miranda de Ebro",
+   "provincia": "Burgos",
+   "sede": "sede.mirandadeebro.es",
+   "url_sede": "https://sede.mirandadeebro.es/sta/CarpetaPublic/doEvent?APP_CODE=STA&PAGE_CODE=PTS2_HOME",
+   "n_tramites": 186,
+   "n_tramitables_online": 0,
+   "n_procedimientos_tipo": 66,
+   "n_funciones_funcal": 25,
+   "documentos_por_tramite_mediana": 3.0,
+   "plazo_resolucion_dias_mediana": 7.0,
+   "silencio": {
+    "no procede": 172,
+    "positivo": 3,
+    "negativo": 11
+   },
+   "tasa": {
+    "si": 15,
+    "ver_ordenanza": 1,
+    "no": 1
+   },
+   "cobertura_epigrafes": {
+    "descripcion": 0.94,
+    "documentos_presentar": 0.91,
+    "plazo_resolucion": 0.04,
+    "silencio_administrativo": 1.0,
+    "pago_tasas": 0.09,
+    "normativa": 0.44,
+    "organo_gestor": 0.66
+   },
+   "estado": "con_datos",
+   "ine": "09219",
+   "nombre_oficial": "Miranda de Ebro",
+   "lat": 42.672,
+   "lon": -2.9611,
+   "x": 486.4,
+   "y": 75.9
+  },
+  {
+   "slug": "molins-de-rei",
+   "municipio": "Molins de Rei",
+   "provincia": "Barcelona",
+   "sede": "molinsderei.net",
+   "url_sede": "https://molinsderei.net/sta/CarpetaPublic/doEvent?APP_CODE=STA&PAGE_CODE=PTS2_HOME",
+   "n_tramites": 43,
+   "n_tramitables_online": 0,
+   "n_procedimientos_tipo": 16,
+   "n_funciones_funcal": 15,
+   "documentos_por_tramite_mediana": 0,
+   "plazo_resolucion_dias_mediana": 90.0,
+   "silencio": {
+    "no procede": 19,
+    "positivo": 12,
+    "negativo": 11
+   },
+   "tasa": {
+    "no": 3,
+    "si": 2
+   },
+   "cobertura_epigrafes": {
+    "descripcion": 1.0,
+    "documentos_presentar": 0.19,
+    "plazo_resolucion": 0.14,
+    "silencio_administrativo": 0.98,
+    "pago_tasas": 0.12,
+    "normativa": 0.09,
+    "organo_gestor": 0.86
+   },
+   "estado": "con_datos",
+   "ine": "08123",
+   "nombre_oficial": "Molins de Rei",
+   "lat": 41.4199,
+   "lon": 2.0336,
+   "x": 693.4,
+   "y": 127.6
+  },
+  {
+   "slug": "motril",
+   "municipio": "Motril",
+   "provincia": "Granada",
+   "sede": "sede.motril.es",
+   "url_sede": "https://sede.motril.es/sta/CarpetaPublic/doEvent?APP_CODE=STA&PAGE_CODE=PTS2_HOME",
+   "n_tramites": 398,
+   "n_tramitables_online": 0,
+   "n_procedimientos_tipo": 95,
+   "n_funciones_funcal": 40,
+   "documentos_por_tramite_mediana": 3.0,
+   "plazo_resolucion_dias_mediana": 90,
+   "silencio": {
+    "positivo": 42,
+    "no procede": 118,
+    "negativo": 78
+   },
+   "tasa": {
+    "no": 164,
+    "si": 53,
+    "ver_ordenanza": 48
+   },
+   "cobertura_epigrafes": {
+    "descripcion": 0.99,
+    "documentos_presentar": 0.89,
+    "plazo_resolucion": 0.85,
+    "silencio_administrativo": 0.6,
+    "pago_tasas": 0.67,
+    "normativa": 0.86,
+    "organo_gestor": 0.92
+   },
+   "estado": "con_datos",
+   "ine": "18140",
+   "nombre_oficial": "Motril",
+   "lat": 36.745,
+   "lon": -3.4847,
+   "x": 474.5,
+   "y": 406.4
+  },
+  {
+   "slug": "malaga",
+   "municipio": "Málaga",
+   "provincia": "Málaga",
+   "sede": "sede.malaga.eu",
+   "url_sede": "https://sede.malaga.eu/sta/CarpetaPublic/doEvent?APP_CODE=STA&PAGE_CODE=PTS2_HOME",
+   "n_tramites": 758,
+   "n_tramitables_online": 0,
+   "n_procedimientos_tipo": 105,
+   "n_funciones_funcal": 41,
+   "documentos_por_tramite_mediana": 2.0,
+   "plazo_resolucion_dias_mediana": 90.0,
+   "silencio": {
+    "negativo": 317,
+    "no procede": 399,
+    "positivo": 40
+   },
+   "tasa": {
+    "no": 181,
+    "ver_ordenanza": 76,
+    "si": 63
+   },
+   "cobertura_epigrafes": {
+    "descripcion": 0.0,
+    "documentos_presentar": 0.99,
+    "plazo_resolucion": 0.77,
+    "silencio_administrativo": 1.0,
+    "pago_tasas": 0.42,
+    "normativa": 0.73,
+    "organo_gestor": 0.8
+   },
+   "estado": "con_datos",
+   "ine": "29067",
+   "nombre_oficial": "Málaga",
+   "lat": 36.767,
+   "lon": -4.4254,
+   "x": 431.3,
+   "y": 406
+  },
+  {
+   "slug": "oropesa-del-mar",
+   "municipio": "Oropesa del Mar",
+   "provincia": "Castellón",
+   "sede": "sede.oropesadelmar.es",
+   "url_sede": "https://sede.oropesadelmar.es/sta/CarpetaPublic/doEvent?APP_CODE=STA&PAGE_CODE=PTS2_HOME",
+   "n_tramites": 189,
+   "n_tramitables_online": 0,
+   "n_procedimientos_tipo": 74,
+   "n_funciones_funcal": 30,
+   "documentos_por_tramite_mediana": 4,
+   "plazo_resolucion_dias_mediana": 60,
+   "silencio": {
+    "no procede": 75,
+    "positivo": 27,
+    "negativo": 86
+   },
+   "tasa": {
+    "si": 27,
+    "no": 4
+   },
+   "cobertura_epigrafes": {
+    "descripcion": 0.99,
+    "documentos_presentar": 0.86,
+    "plazo_resolucion": 0.71,
+    "silencio_administrativo": 0.99,
+    "pago_tasas": 0.16,
+    "normativa": 0.85,
+    "organo_gestor": 0.93
+   },
+   "estado": "con_datos",
+   "ine": "12085",
+   "nombre_oficial": "Orpesa/Oropesa del Mar",
+   "lat": 40.0907,
+   "lon": 0.1239,
+   "x": 622.1,
+   "y": 209
+  },
+  {
+   "slug": "palencia",
+   "municipio": "Palencia",
+   "provincia": "Palencia",
+   "sede": "ovc.aytopalencia.es",
+   "url_sede": "https://ovc.aytopalencia.es/sta/CarpetaPublic/doEvent?APP_CODE=STA&PAGE_CODE=PTS2_HOME",
+   "n_tramites": 5,
+   "n_tramitables_online": 0,
+   "n_procedimientos_tipo": 2,
+   "n_funciones_funcal": 3,
+   "documentos_por_tramite_mediana": 0,
+   "plazo_resolucion_dias_mediana": null,
+   "silencio": {
+    "no procede": 4
+   },
+   "tasa": {},
+   "cobertura_epigrafes": {
+    "descripcion": 0.8,
+    "documentos_presentar": 0.0,
+    "plazo_resolucion": 0.0,
+    "silencio_administrativo": 0.8,
+    "pago_tasas": 0.0,
+    "normativa": 0.0,
+    "organo_gestor": 0.0
+   },
+   "estado": "con_datos",
+   "ine": "34120",
+   "nombre_oficial": "Palencia",
+   "lat": 41.9837,
+   "lon": -4.565,
+   "x": 422.7,
+   "y": 114.7
+  },
+  {
+   "slug": "parla",
+   "municipio": "Parla",
+   "provincia": "Madrid",
+   "sede": "sede.ayuntamientoparla.es",
+   "url_sede": "https://sede.ayuntamientoparla.es/sta/CarpetaPublic/doEvent?APP_CODE=STA&PAGE_CODE=PTS2_HOME",
+   "n_tramites": 155,
+   "n_tramitables_online": 0,
+   "n_procedimientos_tipo": 64,
+   "n_funciones_funcal": 30,
+   "documentos_por_tramite_mediana": 4,
+   "plazo_resolucion_dias_mediana": 30,
+   "silencio": {
+    "no procede": 105,
+    "positivo": 13,
+    "negativo": 37
+   },
+   "tasa": {
+    "si": 51,
+    "no": 3
+   },
+   "cobertura_epigrafes": {
+    "descripcion": 1.0,
+    "documentos_presentar": 0.9,
+    "plazo_resolucion": 0.69,
+    "silencio_administrativo": 1.0,
+    "pago_tasas": 0.35,
+    "normativa": 0.97,
+    "organo_gestor": 1.0
+   },
+   "estado": "con_datos",
+   "ine": "28106",
+   "nombre_oficial": "Parla",
+   "lat": 40.2295,
+   "lon": -3.768,
+   "x": 457.1,
+   "y": 210.7
+  },
+  {
+   "slug": "pilar-de-la-horadada",
+   "municipio": "Pilar de la Horadada",
+   "provincia": "Alicante",
+   "sede": "sede.pilardelahoradada.org",
+   "url_sede": "https://sede.pilardelahoradada.org/sta/CarpetaPublic/doEvent?APP_CODE=STA&PAGE_CODE=PTS2_HOME",
+   "n_tramites": 117,
+   "n_tramitables_online": 0,
+   "n_procedimientos_tipo": 44,
+   "n_funciones_funcal": 23,
+   "documentos_por_tramite_mediana": 3,
+   "plazo_resolucion_dias_mediana": null,
+   "silencio": {
+    "no procede": 108,
+    "negativo": 8
+   },
+   "tasa": {
+    "si": 23
+   },
+   "cobertura_epigrafes": {
+    "descripcion": 0.85,
+    "documentos_presentar": 0.91,
+    "plazo_resolucion": 0.0,
+    "silencio_administrativo": 0.99,
+    "pago_tasas": 0.2,
+    "normativa": 0.12,
+    "organo_gestor": 0.16
+   },
+   "estado": "con_datos",
+   "ine": "03902",
+   "nombre_oficial": "Pilar de la Horadada",
+   "lat": 37.8999,
+   "lon": -0.8295,
+   "x": 591,
+   "y": 334.7
+  },
+  {
+   "slug": "plasencia",
+   "municipio": "Plasencia",
+   "provincia": "Cáceres",
+   "sede": "sede.plasencia.es",
+   "url_sede": "https://sede.plasencia.es/sta/CarpetaPublic/doEvent?APP_CODE=STA&PAGE_CODE=PTS2_HOME",
+   "n_tramites": 183,
+   "n_tramitables_online": 1,
+   "n_procedimientos_tipo": 71,
+   "n_funciones_funcal": 32,
+   "documentos_por_tramite_mediana": 1,
+   "plazo_resolucion_dias_mediana": 90.0,
+   "silencio": {
+    "no procede": 89,
+    "positivo": 19,
+    "negativo": 11
+   },
+   "tasa": {
+    "no": 17,
+    "si": 30,
+    "ver_ordenanza": 11
+   },
+   "cobertura_epigrafes": {
+    "descripcion": 1.0,
+    "documentos_presentar": 0.85,
+    "plazo_resolucion": 0.47,
+    "silencio_administrativo": 0.65,
+    "pago_tasas": 0.32,
+    "normativa": 0.79,
+    "organo_gestor": 0.76
+   },
+   "estado": "con_datos",
+   "ine": "10148",
+   "nombre_oficial": "Plasencia",
+   "lat": 40.0146,
+   "lon": -6.1409,
+   "x": 356.5,
+   "y": 222.7
+  },
+  {
+   "slug": "puerto-del-rosario",
+   "municipio": "Puerto del Rosario",
+   "provincia": "Las Palmas",
+   "sede": "sede.puertodelrosario.org",
+   "url_sede": "https://sede.puertodelrosario.org/sta/CarpetaPublic/doEvent?APP_CODE=STA&PAGE_CODE=PTS2_HOME",
+   "n_tramites": 134,
+   "n_tramitables_online": 0,
+   "n_procedimientos_tipo": 47,
+   "n_funciones_funcal": 30,
+   "documentos_por_tramite_mediana": 0.0,
+   "plazo_resolucion_dias_mediana": 90.0,
+   "silencio": {
+    "no procede": 133,
+    "negativo": 1
+   },
+   "tasa": {
+    "ver_ordenanza": 3
+   },
+   "cobertura_epigrafes": {
+    "descripcion": 0.98,
+    "documentos_presentar": 0.36,
+    "plazo_resolucion": 0.19,
+    "silencio_administrativo": 1.0,
+    "pago_tasas": 0.02,
+    "normativa": 0.29,
+    "organo_gestor": 0.25
+   },
+   "estado": "con_datos",
+   "ine": "35017",
+   "nombre_oficial": "Puerto del Rosario",
+   "lat": 28.511,
+   "lon": -13.9517,
+   "x": 237.3,
+   "y": 554.7
+  },
+  {
+   "slug": "san-pedro-del-pinatar",
+   "municipio": "San Pedro del Pinatar",
+   "provincia": "Murcia",
+   "sede": "sede.sanpedrodelpinatar.es",
+   "url_sede": "https://sede.sanpedrodelpinatar.es/sta/CarpetaPublic/doEvent?APP_CODE=STA&PAGE_CODE=PTS2_HOME",
+   "n_tramites": 374,
+   "n_tramitables_online": 0,
+   "n_procedimientos_tipo": 91,
+   "n_funciones_funcal": 44,
+   "documentos_por_tramite_mediana": 2.0,
+   "plazo_resolucion_dias_mediana": 90.0,
+   "silencio": {
+    "no procede": 364,
+    "negativo": 10
+   },
+   "tasa": {
+    "si": 23
+   },
+   "cobertura_epigrafes": {
+    "descripcion": 0.84,
+    "documentos_presentar": 0.93,
+    "plazo_resolucion": 0.03,
+    "silencio_administrativo": 1.0,
+    "pago_tasas": 0.06,
+    "normativa": 0.03,
+    "organo_gestor": 0.03
+   },
+   "estado": "con_datos",
+   "ine": "30036",
+   "nombre_oficial": "San Pedro del Pinatar",
+   "lat": 37.8334,
+   "lon": -0.7876,
+   "x": 593.2,
+   "y": 338.3
+  },
+  {
+   "slug": "sant-adria-de-besos",
+   "municipio": "Sant Adrià de Besòs",
+   "provincia": "Barcelona",
+   "sede": "seu.sant-adria.net",
+   "url_sede": "https://seu.sant-adria.net/sta/CarpetaPublic/doEvent?APP_CODE=STA&PAGE_CODE=PTS2_HOME",
+   "n_tramites": 169,
+   "n_tramitables_online": 0,
+   "n_procedimientos_tipo": 46,
+   "n_funciones_funcal": 28,
+   "documentos_por_tramite_mediana": 4,
+   "plazo_resolucion_dias_mediana": 60,
+   "silencio": {
+    "no procede": 123,
+    "negativo": 28,
+    "positivo": 15,
+    "mixto": 1
+   },
+   "tasa": {
+    "no": 5,
+    "si": 21
+   },
+   "cobertura_epigrafes": {
+    "descripcion": 0.37,
+    "documentos_presentar": 0.88,
+    "plazo_resolucion": 0.25,
+    "silencio_administrativo": 0.99,
+    "pago_tasas": 0.15,
+    "normativa": 0.37,
+    "organo_gestor": 0.98
+   },
+   "estado": "con_datos",
+   "ine": "08194",
+   "nombre_oficial": "Sant Adrià de Besòs",
+   "lat": 41.4247,
+   "lon": 2.2213,
+   "x": 701,
+   "y": 126.4
+  },
+  {
+   "slug": "santa-cruz-de-tenerife",
+   "municipio": "Santa Cruz de Tenerife",
+   "provincia": "Santa Cruz de Tenerife",
+   "sede": "ovc.santacruzdetenerife.es",
+   "url_sede": "https://ovc.santacruzdetenerife.es/sta/CarpetaPublic/doEvent?APP_CODE=STA&PAGE_CODE=PTS2_HOME",
+   "n_tramites": 569,
+   "n_tramitables_online": 0,
+   "n_procedimientos_tipo": 72,
+   "n_funciones_funcal": 35,
+   "documentos_por_tramite_mediana": 2,
+   "plazo_resolucion_dias_mediana": 10,
+   "silencio": {
+    "no procede": 222
+   },
+   "tasa": {},
+   "cobertura_epigrafes": {
+    "descripcion": 0.4,
+    "documentos_presentar": 0.86,
+    "plazo_resolucion": 0.0,
+    "silencio_administrativo": 0.39,
+    "pago_tasas": 0.0,
+    "normativa": 0.01,
+    "organo_gestor": 0.08
+   },
+   "estado": "con_datos",
+   "ine": "38038",
+   "nombre_oficial": "Santa Cruz de Tenerife",
+   "lat": 28.5163,
+   "lon": -16.2263,
+   "x": 115.2,
+   "y": 530.5
+  },
+  {
+   "slug": "santa-perpetua-de-mogoda",
+   "municipio": "Santa Perpètua de Mogoda",
+   "provincia": "Barcelona",
+   "sede": "seu.staperpetua.cat",
+   "url_sede": "https://seu.staperpetua.cat/sta/CarpetaPublic/doEvent?APP_CODE=STA&PAGE_CODE=PTS2_HOME",
+   "n_tramites": 195,
+   "n_tramitables_online": 0,
+   "n_procedimientos_tipo": 48,
+   "n_funciones_funcal": 27,
+   "documentos_por_tramite_mediana": 7,
+   "plazo_resolucion_dias_mediana": 60.0,
+   "silencio": {
+    "no procede": 91,
+    "positivo": 30,
+    "negativo": 74
+   },
+   "tasa": {
+    "si": 78,
+    "no": 99,
+    "ver_ordenanza": 2
+   },
+   "cobertura_epigrafes": {
+    "descripcion": 0.56,
+    "documentos_presentar": 0.95,
+    "plazo_resolucion": 0.91,
+    "silencio_administrativo": 1.0,
+    "pago_tasas": 0.92,
+    "normativa": 0.75,
+    "organo_gestor": 0.97
+   },
+   "estado": "con_datos",
+   "ine": "08260",
+   "nombre_oficial": "Santa Perpètua de Mogoda",
+   "lat": 41.5331,
+   "lon": 2.1762,
+   "x": 698.4,
+   "y": 120.7
+  },
+  {
+   "slug": "santiago-de-compostela",
+   "municipio": "Santiago de Compostela",
+   "provincia": "A Coruña",
+   "sede": "sede.santiagodecompostela.gal",
+   "url_sede": "https://sede.santiagodecompostela.gal/sta/CarpetaPublic/doEvent?APP_CODE=STA&PAGE_CODE=PTS2_HOME",
+   "n_tramites": 344,
+   "n_tramitables_online": 0,
+   "n_procedimientos_tipo": 60,
+   "n_funciones_funcal": 32,
+   "documentos_por_tramite_mediana": 4.0,
+   "plazo_resolucion_dias_mediana": null,
+   "silencio": {
+    "negativo": 192,
+    "no procede": 103,
+    "positivo": 48
+   },
+   "tasa": {},
+   "cobertura_epigrafes": {
+    "descripcion": 1.0,
+    "documentos_presentar": 0.99,
+    "plazo_resolucion": 0.0,
+    "silencio_administrativo": 1.0,
+    "pago_tasas": 0.0,
+    "normativa": 0.0,
+    "organo_gestor": 0.99
+   },
+   "estado": "con_datos",
+   "ine": "15078",
+   "nombre_oficial": "Santiago de Compostela",
+   "lat": 42.9106,
+   "lon": -8.5179,
+   "x": 265.5,
+   "y": 60
+  },
+  {
+   "slug": "segorbe",
+   "municipio": "Segorbe",
+   "provincia": "Castellón",
+   "sede": "sede.segorbe.es",
+   "url_sede": "https://sede.segorbe.es/sta/CarpetaPublic/doEvent?APP_CODE=STA&PAGE_CODE=PTS2_HOME",
+   "n_tramites": 2,
+   "n_tramitables_online": 2,
+   "n_procedimientos_tipo": 2,
+   "n_funciones_funcal": 2,
+   "documentos_por_tramite_mediana": 1.5,
+   "plazo_resolucion_dias_mediana": null,
+   "silencio": {
+    "no procede": 2
+   },
+   "tasa": {},
+   "cobertura_epigrafes": {
+    "descripcion": 1.0,
+    "documentos_presentar": 0.5,
+    "plazo_resolucion": 0.5,
+    "silencio_administrativo": 1.0,
+    "pago_tasas": 0.0,
+    "normativa": 0.5,
+    "organo_gestor": 0.5
+   },
+   "estado": "con_datos",
+   "ine": "12104",
+   "nombre_oficial": "Segorbe",
+   "lat": 39.788,
+   "lon": -0.4628,
+   "x": 598.7,
+   "y": 227.9
+  },
+  {
+   "slug": "segovia",
+   "municipio": "Segovia",
+   "provincia": "Segovia",
+   "sede": "sede.segovia.es",
+   "url_sede": "https://sede.segovia.es/sta/CarpetaPublic/doEvent?APP_CODE=STA&PAGE_CODE=PTS2_HOME",
+   "n_tramites": 126,
+   "n_tramitables_online": 0,
+   "n_procedimientos_tipo": 48,
+   "n_funciones_funcal": 26,
+   "documentos_por_tramite_mediana": 3.0,
+   "plazo_resolucion_dias_mediana": 90.0,
+   "silencio": {
+    "positivo": 9,
+    "no procede": 73,
+    "negativo": 43,
+    "mixto": 1
+   },
+   "tasa": {
+    "si": 34,
+    "no": 5,
+    "ver_ordenanza": 3
+   },
+   "cobertura_epigrafes": {
+    "descripcion": 0.72,
+    "documentos_presentar": 0.98,
+    "plazo_resolucion": 0.06,
+    "silencio_administrativo": 1.0,
+    "pago_tasas": 0.33,
+    "normativa": 0.94,
+    "organo_gestor": 0.98
+   },
+   "estado": "con_datos",
+   "ine": "40194",
+   "nombre_oficial": "Segovia",
+   "lat": 40.9026,
+   "lon": -4.1692,
+   "x": 439.6,
+   "y": 173.8
+  },
+  {
+   "slug": "sueca",
+   "municipio": "Sueca",
+   "provincia": "Valencia",
+   "sede": "seutributaria.sueca.es",
+   "url_sede": "https://seutributaria.sueca.es/sta/CarpetaPublic/doEvent?APP_CODE=STA&PAGE_CODE=PTS2_HOME",
+   "n_tramites": 0,
+   "estado": "sin_datos",
+   "ine": "46235",
+   "nombre_oficial": "Sueca",
+   "lat": 39.2409,
+   "lon": -0.3083,
+   "x": 607.8,
+   "y": 257.7
+  },
+  {
+   "slug": "tarragona",
+   "municipio": "Tarragona",
+   "provincia": "Tarragona",
+   "sede": "seu.tarragona.cat",
+   "url_sede": "https://seu.tarragona.cat/sta/CarpetaPublic/doEvent?APP_CODE=STA&PAGE_CODE=PTS2_HOME",
+   "n_tramites": 222,
+   "n_tramitables_online": 53,
+   "n_procedimientos_tipo": 42,
+   "n_funciones_funcal": 31,
+   "documentos_por_tramite_mediana": 3.0,
+   "plazo_resolucion_dias_mediana": 90.0,
+   "silencio": {
+    "no procede": 138,
+    "negativo": 65,
+    "positivo": 19
+   },
+   "tasa": {
+    "no": 118,
+    "si": 65,
+    "ver_ordenanza": 2
+   },
+   "cobertura_epigrafes": {
+    "descripcion": 0.86,
+    "documentos_presentar": 0.76,
+    "plazo_resolucion": 0.61,
+    "silencio_administrativo": 1.0,
+    "pago_tasas": 0.83,
+    "normativa": 0.82,
+    "organo_gestor": 0.98
+   },
+   "estado": "con_datos",
+   "ine": "43148",
+   "nombre_oficial": "Tarragona",
+   "lat": 41.1331,
+   "lon": 1.2719,
+   "x": 664.1,
+   "y": 146.9
+  },
+  {
+   "slug": "terrassa",
+   "municipio": "Terrassa",
+   "provincia": "Barcelona",
+   "sede": "ariadnaseu.terrassa.cat",
+   "url_sede": "https://ariadnaseu.terrassa.cat/sta/CarpetaPublic/doEvent?APP_CODE=STA&PAGE_CODE=PTS2_HOME",
+   "n_tramites": 23,
+   "n_tramitables_online": 0,
+   "n_procedimientos_tipo": 13,
+   "n_funciones_funcal": 11,
+   "documentos_por_tramite_mediana": 4,
+   "plazo_resolucion_dias_mediana": 90,
+   "silencio": {
+    "no procede": 10,
+    "positivo": 4,
+    "negativo": 9
+   },
+   "tasa": {
+    "no": 17,
+    "si": 4
+   },
+   "cobertura_epigrafes": {
+    "descripcion": 1.0,
+    "documentos_presentar": 0.91,
+    "plazo_resolucion": 0.7,
+    "silencio_administrativo": 1.0,
+    "pago_tasas": 0.91,
+    "normativa": 0.91,
+    "organo_gestor": 0.96
+   },
+   "estado": "con_datos",
+   "ine": "08279",
+   "nombre_oficial": "Terrassa",
+   "lat": 41.5755,
+   "lon": 2.0083,
+   "x": 691.3,
+   "y": 119.3
+  },
+  {
+   "slug": "teruel",
+   "municipio": "Teruel",
+   "provincia": "Teruel",
+   "sede": "sede.teruel.es",
+   "url_sede": "https://sede.teruel.es/sta/CarpetaPublic/doEvent?APP_CODE=STA&PAGE_CODE=PTS2_HOME",
+   "n_tramites": 110,
+   "n_tramitables_online": 0,
+   "n_procedimientos_tipo": 51,
+   "n_funciones_funcal": 24,
+   "documentos_por_tramite_mediana": 4.0,
+   "plazo_resolucion_dias_mediana": 90.0,
+   "silencio": {
+    "negativo": 81,
+    "no procede": 22,
+    "positivo": 7
+   },
+   "tasa": {
+    "no": 47,
+    "si": 20,
+    "ver_ordenanza": 18
+   },
+   "cobertura_epigrafes": {
+    "descripcion": 0.0,
+    "documentos_presentar": 1.0,
+    "plazo_resolucion": 0.78,
+    "silencio_administrativo": 1.0,
+    "pago_tasas": 0.77,
+    "normativa": 0.98,
+    "organo_gestor": 1.0
+   },
+   "estado": "con_datos",
+   "ine": "44216",
+   "nombre_oficial": "Teruel",
+   "lat": 40.356,
+   "lon": -1.1195,
+   "x": 568.5,
+   "y": 198.6
+  },
+  {
+   "slug": "torre-pacheco",
+   "municipio": "Torre-Pacheco",
+   "provincia": "Murcia",
+   "sede": "sede.torrepacheco.es",
+   "url_sede": "https://sede.torrepacheco.es/sta/CarpetaPublic/doEvent?APP_CODE=STA&PAGE_CODE=PTS2_HOME",
+   "n_tramites": 212,
+   "n_tramitables_online": 0,
+   "n_procedimientos_tipo": 67,
+   "n_funciones_funcal": 30,
+   "documentos_por_tramite_mediana": 2.0,
+   "plazo_resolucion_dias_mediana": 90.0,
+   "silencio": {
+    "no procede": 202,
+    "negativo": 8,
+    "positivo": 1
+   },
+   "tasa": {
+    "si": 4,
+    "no": 3
+   },
+   "cobertura_epigrafes": {
+    "descripcion": 0.96,
+    "documentos_presentar": 0.92,
+    "plazo_resolucion": 0.06,
+    "silencio_administrativo": 1.0,
+    "pago_tasas": 0.03,
+    "normativa": 0.08,
+    "organo_gestor": 0.9
+   },
+   "estado": "con_datos",
+   "ine": "30037",
+   "nombre_oficial": "Torre-Pacheco",
+   "lat": 37.7772,
+   "lon": -0.9663,
+   "x": 585.4,
+   "y": 342
+  },
+  {
+   "slug": "torrelavega",
+   "municipio": "Torrelavega",
+   "provincia": "Cantabria",
+   "sede": "sede.torrelavega.es",
+   "url_sede": "https://sede.torrelavega.es/sta/CarpetaPublic/doEvent?APP_CODE=STA&PAGE_CODE=PTS2_HOME",
+   "n_tramites": 86,
+   "n_tramitables_online": 0,
+   "n_procedimientos_tipo": 44,
+   "n_funciones_funcal": 19,
+   "documentos_por_tramite_mediana": 3.0,
+   "plazo_resolucion_dias_mediana": 90.0,
+   "silencio": {
+    "negativo": 40,
+    "positivo": 19,
+    "no procede": 27
+   },
+   "tasa": {
+    "si": 19,
+    "no": 36,
+    "ver_ordenanza": 5
+   },
+   "cobertura_epigrafes": {
+    "descripcion": 1.0,
+    "documentos_presentar": 0.9,
+    "plazo_resolucion": 0.81,
+    "silencio_administrativo": 1.0,
+    "pago_tasas": 0.7,
+    "normativa": 0.9,
+    "organo_gestor": 0.92
+   },
+   "estado": "con_datos",
+   "ine": "39087",
+   "nombre_oficial": "Torrelavega",
+   "lat": 43.3355,
+   "lon": -4.0413,
+   "x": 442.7,
+   "y": 41.1
+  },
+  {
+   "slug": "tudela",
+   "municipio": "Tudela",
+   "provincia": "Navarra",
+   "sede": "sede.tudela.es",
+   "url_sede": "https://sede.tudela.es/sta/CarpetaPublic/doEvent?APP_CODE=STA&PAGE_CODE=PTS2_HOME",
+   "n_tramites": 238,
+   "n_tramitables_online": 0,
+   "n_procedimientos_tipo": 63,
+   "n_funciones_funcal": 32,
+   "documentos_por_tramite_mediana": 5.0,
+   "plazo_resolucion_dias_mediana": 90,
+   "silencio": {
+    "no procede": 107,
+    "negativo": 95,
+    "positivo": 34,
+    "otro": 2
+   },
+   "tasa": {
+    "si": 46,
+    "ver_ordenanza": 11,
+    "no": 107
+   },
+   "cobertura_epigrafes": {
+    "descripcion": 0.85,
+    "documentos_presentar": 0.97,
+    "plazo_resolucion": 0.66,
+    "silencio_administrativo": 1.0,
+    "pago_tasas": 0.69,
+    "normativa": 0.84,
+    "organo_gestor": 0.87
+   },
+   "estado": "con_datos",
+   "ine": "31232",
+   "nombre_oficial": "Tudela",
+   "lat": 42.081,
+   "lon": -1.6451,
+   "x": 540.7,
+   "y": 105.4
+  },
+  {
+   "slug": "tias",
+   "municipio": "Tías",
+   "provincia": "Las Palmas",
+   "sede": "sede.ayuntamientodetias.es",
+   "url_sede": "https://sede.ayuntamientodetias.es/sta/CarpetaPublic/doEvent?APP_CODE=STA&PAGE_CODE=PTS2_HOME",
+   "n_tramites": 71,
+   "n_tramitables_online": 0,
+   "n_procedimientos_tipo": 33,
+   "n_funciones_funcal": 20,
+   "documentos_por_tramite_mediana": 8,
+   "plazo_resolucion_dias_mediana": 30,
+   "silencio": {
+    "no procede": 60,
+    "negativo": 2,
+    "positivo": 1
+   },
+   "tasa": {
+    "no": 2,
+    "ver_ordenanza": 11,
+    "si": 2
+   },
+   "cobertura_epigrafes": {
+    "descripcion": 0.96,
+    "documentos_presentar": 0.85,
+    "plazo_resolucion": 0.07,
+    "silencio_administrativo": 0.89,
+    "pago_tasas": 0.21,
+    "normativa": 0.18,
+    "organo_gestor": 0.69
+   },
+   "estado": "con_datos",
+   "ine": "35028",
+   "nombre_oficial": "Tías",
+   "lat": 28.9549,
+   "lon": -13.6631,
+   "x": 257.5,
+   "y": 530.2
+  },
+  {
+   "slug": "valladolid",
+   "municipio": "Valladolid",
+   "provincia": "Valladolid",
+   "sede": "contribuyente.valladolid.es",
+   "url_sede": "https://contribuyente.valladolid.es/sta/CarpetaPublic/doEvent?APP_CODE=STA&PAGE_CODE=PTS2_HOME",
+   "n_tramites": 9,
+   "n_tramitables_online": 0,
+   "n_procedimientos_tipo": 5,
+   "n_funciones_funcal": 2,
+   "documentos_por_tramite_mediana": 0,
+   "plazo_resolucion_dias_mediana": null,
+   "silencio": {
+    "no procede": 9
+   },
+   "tasa": {},
+   "cobertura_epigrafes": {
+    "descripcion": 1.0,
+    "documentos_presentar": 0.0,
+    "plazo_resolucion": 0.0,
+    "silencio_administrativo": 1.0,
+    "pago_tasas": 0.0,
+    "normativa": 0.0,
+    "organo_gestor": 0.0
+   },
+   "estado": "con_datos",
+   "ine": "47186",
+   "nombre_oficial": "Valladolid",
+   "lat": 41.6614,
+   "lon": -4.7757,
+   "x": 414.2,
+   "y": 132.4
+  },
+  {
+   "slug": "vila-real",
+   "municipio": "Vila-real",
+   "provincia": "Castellón",
+   "sede": "seuelectronica.vila-real.es",
+   "url_sede": "https://seuelectronica.vila-real.es/sta/CarpetaPublic/doEvent?APP_CODE=STA&PAGE_CODE=PTS2_HOME",
+   "n_tramites": 287,
+   "n_tramitables_online": 0,
+   "n_procedimientos_tipo": 86,
+   "n_funciones_funcal": 33,
+   "documentos_por_tramite_mediana": 2,
+   "plazo_resolucion_dias_mediana": 90,
+   "silencio": {
+    "no procede": 124,
+    "negativo": 144,
+    "positivo": 19
+   },
+   "tasa": {
+    "no": 190,
+    "si": 45,
+    "ver_ordenanza": 8
+   },
+   "cobertura_epigrafes": {
+    "descripcion": 0.53,
+    "documentos_presentar": 0.94,
+    "plazo_resolucion": 0.82,
+    "silencio_administrativo": 1.0,
+    "pago_tasas": 0.85,
+    "normativa": 0.88,
+    "organo_gestor": 0.95
+   },
+   "estado": "con_datos",
+   "ine": "12135",
+   "nombre_oficial": "Vila-real",
+   "lat": 39.9328,
+   "lon": -0.1302,
+   "x": 612.1,
+   "y": 218.7
+  },
+  {
+   "slug": "viladecans",
+   "municipio": "Viladecans",
+   "provincia": "Barcelona",
+   "sede": "seuelectronica.viladecans.cat",
+   "url_sede": "https://seuelectronica.viladecans.cat/sta/CarpetaPublic/doEvent?APP_CODE=STA&PAGE_CODE=PTS2_HOME",
+   "n_tramites": 139,
+   "n_tramitables_online": 0,
+   "n_procedimientos_tipo": 44,
+   "n_funciones_funcal": 27,
+   "documentos_por_tramite_mediana": 5,
+   "plazo_resolucion_dias_mediana": 90,
+   "silencio": {
+    "no procede": 78,
+    "negativo": 45,
+    "positivo": 13,
+    "otro": 3
+   },
+   "tasa": {
+    "no": 25,
+    "si": 6,
+    "ver_ordenanza": 20
+   },
+   "cobertura_epigrafes": {
+    "descripcion": 0.99,
+    "documentos_presentar": 0.94,
+    "plazo_resolucion": 0.67,
+    "silencio_administrativo": 1.0,
+    "pago_tasas": 0.37,
+    "normativa": 0.74,
+    "organo_gestor": 0.91
+   },
+   "estado": "con_datos",
+   "ine": "08301",
+   "nombre_oficial": "Viladecans",
+   "lat": 41.303,
+   "lon": 2.0311,
+   "x": 694.1,
+   "y": 134
+  },
+  {
+   "slug": "vilanova-i-la-geltru",
+   "municipio": "Vilanova i la Geltrú",
+   "provincia": "Barcelona",
+   "sede": "tramitacio.vilanova.cat",
+   "url_sede": "https://tramitacio.vilanova.cat/sta/CarpetaPublic/doEvent?APP_CODE=STA&PAGE_CODE=PTS2_HOME",
+   "n_tramites": 561,
+   "n_tramitables_online": 0,
+   "n_procedimientos_tipo": 76,
+   "n_funciones_funcal": 38,
+   "documentos_por_tramite_mediana": 1,
+   "plazo_resolucion_dias_mediana": 90,
+   "silencio": {
+    "no procede": 264,
+    "positivo": 1
+   },
+   "tasa": {},
+   "cobertura_epigrafes": {
+    "descripcion": 1.0,
+    "documentos_presentar": 0.9,
+    "plazo_resolucion": 0.0,
+    "silencio_administrativo": 0.47,
+    "pago_tasas": 0.0,
+    "normativa": 0.0,
+    "organo_gestor": 0.0
+   },
+   "estado": "con_datos",
+   "ine": "08307",
+   "nombre_oficial": "Vilanova i la Geltrú",
+   "lat": 41.2365,
+   "lon": 1.7063,
+   "x": 681.2,
+   "y": 139.2
+  },
+  {
+   "slug": "villajoyosa-la-vila-joiosa",
+   "municipio": "Villajoyosa / La Vila Joiosa",
+   "provincia": "Alicante",
+   "sede": "sede.villajoyosa.com",
+   "url_sede": "https://sede.villajoyosa.com/sta/CarpetaPublic/doEvent?APP_CODE=STA&PAGE_CODE=PTS2_HOME",
+   "n_tramites": 0,
+   "estado": "sin_datos",
+   "ine": "03139",
+   "nombre_oficial": "la Vila Joiosa/Villajoyosa",
+   "lat": 38.5208,
+   "lon": -0.2524,
+   "x": 613.7,
+   "y": 297.7
+  }
+ ]
+}

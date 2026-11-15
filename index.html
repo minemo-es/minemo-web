@@ -227,6 +227,27 @@
   footer .contenedor { display: flex; justify-content: space-between; align-items: center; gap: 1rem; flex-wrap: wrap; }
   footer svg { height: 26px; width: auto; display: block; }
 
+
+  /* Módulo Encuentra tu trámite */
+  .cabecera nav a.nav-ett { color: var(--cobalto); font-weight: 700; }
+  .ett-banda { padding: 0 0 4.5rem; }
+  .ett-tarjeta {
+    display: grid; grid-template-columns: minmax(0, 1.3fr) minmax(0, 1fr); gap: 2rem; align-items: center;
+    background: var(--pizarra); color: var(--blanco); border-radius: 22px; padding: clamp(1.6rem, 4vw, 2.8rem);
+    box-shadow: 0 30px 60px -30px rgba(22,33,59,.45);
+  }
+  .ett-tarjeta .sello-ett { display: inline-block; background: var(--albero); color: var(--pizarra); font-weight: 700; font-size: .8rem;
+    text-transform: uppercase; letter-spacing: .06em; padding: .25rem .7rem; border-radius: 999px; }
+  .ett-tarjeta h2 { margin-top: .9rem; font-size: clamp(1.9rem, 3.6vw, 2.8rem); font-weight: 800; font-variation-settings: "wdth" 114; letter-spacing: -.02em; }
+  .ett-tarjeta p { margin-top: .8rem; color: #C3CCDF; max-width: 52ch; }
+  .ett-cifras { display: grid; grid-template-columns: 1fr 1fr; gap: .8rem; }
+  .ett-cifras div { background: #22305A; border-radius: 14px; padding: 1rem 1.1rem; }
+  .ett-cifras strong { display: block; font-size: clamp(1.8rem, 3.2vw, 2.5rem); font-weight: 800; font-variant-numeric: tabular-nums; font-variation-settings: "wdth" 112; color: var(--albero); line-height: 1.05; }
+  .ett-cifras span { font-size: .9rem; color: #C3CCDF; }
+  .ett-tarjeta .boton { margin-top: 1.4rem; background: var(--albero); color: var(--pizarra); }
+  .ett-tarjeta .boton:hover { background: var(--blanco); color: var(--pizarra); }
+  @media (max-width: 920px) { .ett-tarjeta { grid-template-columns: 1fr; } }
+
   /* ---------- Responsive ---------- */
   @media (max-width: 920px) {
     .portada .contenedor, .colabora .contenedor, .servicio .contenedor { grid-template-columns: 1fr; }
@@ -244,6 +265,7 @@
     .teselas { grid-template-columns: 1fr; }
     .reloj div { min-width: 4rem; }
   }
+  @media (max-width: 760px) { .cabecera nav a.nav-ett { display: inline; } }
   @media (prefers-reduced-motion: reduce) {
     html { scroll-behavior: auto; }
     .aviso .pulso, .firma .b, .firma .palabra { animation: none; }
@@ -262,6 +284,7 @@
       </svg>
     </a>
     <nav aria-label="Principal">
+      <a href="/encuentra-tu-tramite/" class="nav-ett">Encuentra tu trámite</a>
       <a href="#como">Cómo funciona</a>
       <a href="#que">Qué se podrá alojar</a>
       <a href="#colaboracion">Colaboración</a>
@@ -373,6 +396,25 @@
         </div>
         <figcaption>Cada ayuntamiento tendrá su propio espacio en minemo.es. Imagen orientativa.</figcaption>
       </figure>
+    </div>
+  </section>
+
+  <section class="ett-banda" aria-labelledby="t-ett">
+    <div class="contenedor">
+      <div class="ett-tarjeta">
+        <div>
+          <span class="sello-ett">Prototipo ya disponible</span>
+          <h2 id="t-ett">Encuentra tu trámite</h2>
+          <p>Un solo buscador para los catálogos de trámites de decenas de ayuntamientos. Pregunta con tus palabras, elige tu municipio en el mapa o compara cómo se tramita lo mismo en cada uno: documentos, plazos, silencio y tasas.</p>
+          <a class="boton" href="/encuentra-tu-tramite/">Probar el buscador</a>
+        </div>
+        <div class="ett-cifras" aria-label="Datos del prototipo">
+          <div><strong id="ett-n-tramites">14.905</strong><span>trámites</span></div>
+          <div><strong id="ett-n-municipios">71</strong><span>municipios</span></div>
+          <div><strong>59</strong><span>funciones FUNCAL</span></div>
+          <div><strong id="ett-n-procs">132</strong><span>procedimientos comparables</span></div>
+        </div>
+      </div>
     </div>
   </section>
 
@@ -524,6 +566,17 @@
     }
     tic();
   })();
+</script>
+
+<script>
+  // Cifras vivas del módulo Encuentra tu trámite
+  fetch('/encuentra-tu-tramite/data/meta.json').then(function (r) { return r.ok ? r.json() : null; }).then(function (m) {
+    if (!m) return;
+    var f = function (n) { return Number(n).toLocaleString('es-ES'); };
+    document.getElementById('ett-n-tramites').textContent = f(m.n_tramites);
+    document.getElementById('ett-n-municipios').textContent = f(m.n_municipios);
+    document.getElementById('ett-n-procs').textContent = f(m.n_procedimientos_tipo_con_tramites);
+  }).catch(function () {});
 </script>
 </body>
 </html>

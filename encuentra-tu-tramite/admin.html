@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Administración · Encuentra tu trámite · Minemo</title>
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#16213B">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,300..800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/ett.css">
+</head>
+<body>
+
+<header class="cabecera">
+  <div class="contenedor">
+    <a class="logo" href="/" aria-label="Minemo, inicio">
+      <svg viewBox="0 0 48 48" aria-hidden="true"><path d="M3 41V29a6.5 6.5 0 0 1 13 0v12z" fill="#F2B33D"/><path d="M17.5 41V13a6.5 6.5 0 0 1 13 0v28z" fill="#2348D6"/><path d="M32 41V22a6.5 6.5 0 0 1 13 0v19z" fill="#1F8A6D"/></svg>
+      <span class="logo-txt">minemo</span>
+    </a>
+    <nav aria-label="Principal"><a href="./">Ver el buscador</a></nav>
+  </div>
+</header>
+
+<main class="contenedor">
+  <!-- Acceso -->
+  <section class="adm-login" id="v-login">
+    <div class="tarjeta">
+      <p class="sello"><span class="pulso" aria-hidden="true"></span>Administración</p>
+      <h1 style="margin-top:.8rem">Encuentra tu trámite</h1>
+      <p class="sub">Acceso para quienes administran el contenido del buscador. Los cambios se guardan como commits en el repositorio <b>minemo-es/minemo-web</b> y se publican en minemo.es en un par de minutos.</p>
+
+      <form class="metodo-login" id="f-gas">
+        <h2>Entrar con la cuenta de administración (Google Apps Script)</h2>
+        <p>El script de Google guarda el token de GitHub; tú solo necesitas tu usuario y clave de administración.</p>
+        <label class="et-campo">Usuario<input class="campo" id="gas-usuario" autocomplete="username" required></label>
+        <label class="et-campo">Clave<input class="campo" id="gas-clave" type="password" autocomplete="current-password" required></label>
+        <details><summary style="cursor:pointer;font-size:.9rem">Dirección del servicio</summary>
+          <label class="et-campo" style="margin-top:.5rem">URL de la aplicación web de Apps Script
+            <input class="campo" id="gas-url" placeholder="https://script.google.com/macros/s/…/exec"></label>
+        </details>
+        <button class="boton" type="submit">Entrar</button>
+      </form>
+
+      <form class="metodo-login" id="f-gh">
+        <h2>Entrar con GitHub</h2>
+        <p>Para quien tenga permiso de escritura en el repositorio. Usa un <a href="https://github.com/settings/personal-access-tokens/new" target="_blank" rel="noopener">token de acceso detallado</a> limitado a <b>minemo-es/minemo-web</b> con permiso «Contents: Read and write». Se guarda solo en esta pestaña.</p>
+        <label class="et-campo">Token de GitHub<input class="campo" id="gh-token" type="password" autocomplete="off" required></label>
+        <button class="boton sec" type="submit">Entrar con GitHub</button>
+      </form>
+      <p class="error" id="login-error" role="alert"></p>
+    </div>
+  </section>
+
+  <!-- Aplicación -->
+  <section id="v-app" hidden>
+    <div class="adm-barra">
+      <h1>Administración · Encuentra tu trámite</h1>
+      <div class="quien"><span id="quien"></span><button class="boton sec peq" id="b-salir">Salir</button></div>
+    </div>
+    <div class="pestanas" role="tablist">
+      <button role="tab" aria-selected="true" data-tab="panel">Panel</button>
+      <button role="tab" aria-selected="false" data-tab="revision">Revisión de clasificaciones <span class="contador" id="n-revision">0</span></button>
+      <button role="tab" aria-selected="false" data-tab="procedimientos">Procedimientos tipo</button>
+      <button role="tab" aria-selected="false" data-tab="municipios">Municipios</button>
+      <button role="tab" aria-selected="false" data-tab="portal">Textos del portal</button>
+      <button role="tab" aria-selected="false" data-tab="ayuda">Actualización y ayuda</button>
+    </div>
+    <div class="panel-adm" id="contenido"><div class="cargando">Cargando datos…</div></div>
+    <div class="pendientes" id="pendientes" hidden>
+      <span id="pendientes-txt"></span>
+      <span><button class="boton sec peq" id="b-descartar" style="background:transparent;color:#fff;border-color:#56617A">Descartar</button>
+      <button class="boton peq" id="b-publicar">Publicar cambios</button></span>
+    </div>
+  </section>
+</main>
+
+<script src="js/ett-comun.js"></script>
+<script src="js/admin.js"></script>
+</body>
+</html>

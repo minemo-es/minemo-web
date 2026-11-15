@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Encuentra tu trámite [PROTOTIPO] · Minemo</title>
+<meta name="description" content="Un solo buscador para miles de trámites municipales: busca por municipio, compara cómo se tramita lo mismo en cada ayuntamiento y consulta la radiografía de la burocracia municipal.">
+<meta property="og:title" content="Encuentra tu trámite [PROTOTIPO] · Minemo">
+<meta property="og:description" content="Busca un trámite en tu ayuntamiento o compara cómo se tramita en todos.">
+<meta property="og:url" content="https://minemo.es/encuentra-tu-tramite/">
+<meta name="theme-color" content="#16213B">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,300..800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/ett.css">
+</head>
+<body>
+
+<header class="cabecera">
+  <div class="contenedor">
+    <a class="logo" href="/" aria-label="Minemo, inicio">
+      <svg viewBox="0 0 48 48" aria-hidden="true"><path d="M3 41V29a6.5 6.5 0 0 1 13 0v12z" fill="#F2B33D"/><path d="M17.5 41V13a6.5 6.5 0 0 1 13 0v28z" fill="#2348D6"/><path d="M32 41V22a6.5 6.5 0 0 1 13 0v19z" fill="#1F8A6D"/></svg>
+      <span class="logo-txt">minemo</span>
+    </a>
+    <nav aria-label="Secciones del buscador">
+      <a href="#buscar">Buscar</a>
+      <a href="#funciones">Funciones</a>
+      <a href="#radiografia">Radiografía</a>
+      <a href="#datos">Datos</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="portada" id="buscar" aria-labelledby="t-portada">
+    <div class="contenedor portada-rejilla">
+      <div class="portada-texto">
+        <p class="sello"><span class="pulso" aria-hidden="true"></span>Prototipo</p>
+        <h1 id="t-portada"><span id="p-titulo">Encuentra tu trámite</span></h1>
+        <p class="cifra-grande" aria-live="polite">
+          <strong id="c-tramites">14.905</strong> trámites de <strong id="c-municipios">71</strong> municipios,
+          <span class="a-un-clic">a un clic</span>
+        </p>
+        <p class="entradilla" id="p-subtitulo">Un solo buscador para los trámites municipales de las sedes electrónicas T-Systems (STA).</p>
+
+        <form class="buscador" id="f-buscar" role="search" autocomplete="off">
+          <label class="sr" for="q">¿Qué quieres hacer?</label>
+          <div class="caja">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5" fill="none" stroke="currentColor" stroke-width="2.2"/><path d="M15.5 15.5L21 21" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg>
+            <input id="q" type="search" placeholder="¿Qué quieres hacer? Ej.: pedir un certificado de padrón">
+          </div>
+          <div class="fila-filtros">
+            <label for="sel-mun">Municipio</label>
+            <select id="sel-mun"><option value="">Todos los municipios (comparar)</option></select>
+            <button class="boton" type="submit">Buscar</button>
+          </div>
+          <div class="ejemplos" id="ejemplos" aria-label="Ejemplos de búsqueda"></div>
+        </form>
+      </div>
+
+      <figure class="mapa" aria-labelledby="mapa-pie">
+        <div class="mapa-marco">
+          <svg id="mapa" viewBox="0 0 800 600" role="img" aria-label="Mapa de España con los municipios incluidos"></svg>
+          <div class="tooltip" id="tooltip" role="status" hidden></div>
+        </div>
+        <figcaption id="mapa-pie">
+          <span class="ley"><i class="pt pt-datos"></i>Con trámites</span>
+          <span class="ley"><i class="pt pt-sin"></i>Sin catálogo extraíble</span>
+          <span class="ley ley-proc" hidden><i class="pt pt-si"></i>Tiene el trámite</span>
+          <span class="ley ley-proc" hidden><i class="pt pt-no"></i>No consta</span>
+          <span class="mapa-ayuda">Pulsa un punto para elegir el municipio.</span>
+        </figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section class="resultados" aria-live="polite">
+    <div class="contenedor" id="resultados"></div>
+  </section>
+
+  <section class="seccion" id="funciones" aria-labelledby="t-funciones">
+    <div class="contenedor">
+      <h2 id="t-funciones">Los trámites, por funciones</h2>
+      <p class="intro">Todos los trámites están ordenados con el vocabulario <abbr title="Funciones comunes de la administración local">FUNCAL</abbr> de 59 funciones comunes. Elige una para ver sus trámites <span id="fun-ambito">en todos los municipios</span>.</p>
+      <div class="funciones" id="lista-funciones"></div>
+    </div>
+  </section>
+
+  <section class="seccion radiografia" id="radiografia" aria-labelledby="t-radio">
+    <div class="contenedor">
+      <h2 id="t-radio">Radiografía de la burocracia municipal</h2>
+      <p class="intro">Cuántos trámites publica cada ayuntamiento, cuántos documentos pide de media, en qué plazo resuelve y qué parte de su catálogo explica el silencio administrativo o las tasas. Pulsa una columna para ordenar.</p>
+      <div class="tabla-envoltura"><table class="tabla" id="tabla-radio"></table></div>
+    </div>
+  </section>
+
+  <section class="seccion datos" id="datos" aria-labelledby="t-datos">
+    <div class="contenedor rejilla-2">
+      <div>
+        <h2 id="t-datos">Datos abiertos del prototipo</h2>
+        <p class="intro" id="p-aviso">Prototipo en pruebas. La información procede de los catálogos públicos de cada sede electrónica; consulta siempre la ficha oficial antes de tramitar.</p>
+        <p class="metodo" id="metodo"></p>
+      </div>
+      <ul class="descargas">
+        <li><a href="data/indice.json" download>indice.json</a><span>Índice de búsqueda de todos los trámites</span></li>
+        <li><a href="data/procedimientos.json" download>procedimientos.json</a><span>Procedimientos tipo comparados entre municipios</span></li>
+        <li><a href="data/municipios.json" download>municipios.json</a><span>Municipios, sedes, coordenadas y estadísticas</span></li>
+        <li><a href="data/funcal.json" download>funcal.json</a><span>Vocabulario FUNCAL con recuentos</span></li>
+        <li><a href="proyecto/datos-normalizados/tramites.json.gz" download>tramites.json.gz</a><span>Todos los trámites normalizados (completo)</span></li>
+        <li><a href="https://github.com/minemo-es/minemo-web/tree/main/encuentra-tu-tramite">Repositorio en GitHub</a><span>Código, extracciones originales y scripts</span></li>
+      </ul>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="contenedor">
+    <span>© 2026 Minemo · Encuentra tu trámite [PROTOTIPO] · <span id="f-version"></span></span>
+    <span><a href="/">minemo.es</a> · <a href="admin.html">Administración</a></span>
+  </div>
+</footer>
+
+<script src="js/ett-comun.js"></script>
+<script src="js/buscador.js"></script>
+</body>
+</html>

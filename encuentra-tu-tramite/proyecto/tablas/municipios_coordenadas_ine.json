@@ -1,0 +1,762 @@
+{
+ "sede.coruna.gal": {
+  "municipio": "A Coruña",
+  "provincia": "A Coruña",
+  "ine": "15030",
+  "nombre_oficial": "A Coruña",
+  "lat": 43.3455,
+  "lon": -8.4231,
+  "x": 270.7,
+  "y": 36.8
+ },
+ "oat.aguimes.es": {
+  "municipio": "Agüimes",
+  "provincia": "Las Palmas",
+  "ine": "35002",
+  "nombre_oficial": "Agüimes",
+  "lat": 27.8954,
+  "lon": -15.4571,
+  "x": 148.6,
+  "y": 577.2
+ },
+ "firma.alaquas.org": {
+  "municipio": "Alaquàs",
+  "provincia": "Valencia",
+  "ine": "46005",
+  "nombre_oficial": "Alaquàs",
+  "lat": 39.4523,
+  "lon": -0.4699,
+  "x": 599.9,
+  "y": 246.5
+ },
+ "ovc.alcaladeguadaira.es": {
+  "municipio": "Alcalá de Guadaíra",
+  "provincia": "Sevilla",
+  "ine": "41004",
+  "nombre_oficial": "Alcalá de Guadaíra",
+  "lat": 37.2907,
+  "lon": -5.806,
+  "x": 368.5,
+  "y": 376
+ },
+ "sede.ayto-alcaladehenares.es": {
+  "municipio": "Alcalá de Henares",
+  "provincia": "Madrid",
+  "ine": "28005",
+  "nombre_oficial": "Alcalá de Henares",
+  "lat": 40.4944,
+  "lon": -3.3692,
+  "x": 473.6,
+  "y": 195.6
+ },
+ "sede.alcazardesanjuan.es": {
+  "municipio": "Alcázar de San Juan",
+  "provincia": "Ciudad Real",
+  "ine": "13005",
+  "nombre_oficial": "Alcázar de San Juan",
+  "lat": 39.284,
+  "lon": -3.2392,
+  "x": 481.1,
+  "y": 262.7
+ },
+ "sedeelectronica.alhamademurcia.es": {
+  "municipio": "Alhama de Murcia",
+  "provincia": "Murcia",
+  "ine": "30008",
+  "nombre_oficial": "Alhama de Murcia",
+  "lat": 37.8225,
+  "lon": -1.3884,
+  "x": 566.4,
+  "y": 340.8
+ },
+ "sede.aytoalmeria.es": {
+  "municipio": "Almería",
+  "provincia": "Almería",
+  "ine": "04013",
+  "nombre_oficial": "Almería",
+  "lat": 36.8748,
+  "lon": -2.3421,
+  "x": 526.4,
+  "y": 397
+ },
+ "sede.arandadeduero.es": {
+  "municipio": "Aranda de Duero",
+  "provincia": "Burgos",
+  "ine": "09018",
+  "nombre_oficial": "Aranda de Duero",
+  "lat": 41.6902,
+  "lon": -3.6861,
+  "x": 458.7,
+  "y": 130.2
+ },
+ "sedeelectronica.argandadelrey.es": {
+  "municipio": "Arganda del Rey",
+  "provincia": "Madrid",
+  "ine": "28014",
+  "nombre_oficial": "Arganda del Rey",
+  "lat": 40.2913,
+  "lon": -3.4448,
+  "x": 470.7,
+  "y": 206.9
+ },
+ "sta.arona.org": {
+  "municipio": "Arona",
+  "provincia": "Santa Cruz de Tenerife",
+  "ine": "38006",
+  "nombre_oficial": "Arona",
+  "lat": 28.056,
+  "lon": -16.6759,
+  "x": 84.8,
+  "y": 553.1
+ },
+ "sede.aspe.es": {
+  "municipio": "Aspe",
+  "provincia": "Alicante",
+  "ine": "03019",
+  "nombre_oficial": "Aspe",
+  "lat": 38.3296,
+  "lon": -0.7849,
+  "x": 591.1,
+  "y": 310.3
+ },
+ "ovc.azuqueca.es": {
+  "municipio": "Azuqueca de Henares",
+  "provincia": "Guadalajara",
+  "ine": "19046",
+  "nombre_oficial": "Azuqueca de Henares",
+  "lat": 40.5567,
+  "lon": -3.2645,
+  "x": 477.8,
+  "y": 192
+ },
+ "seu.badalona.cat": {
+  "municipio": "Badalona",
+  "provincia": "Barcelona",
+  "ine": "08015",
+  "nombre_oficial": "Badalona",
+  "lat": 41.4605,
+  "lon": 2.238,
+  "x": 701.4,
+  "y": 124.3
+ },
+ "sede.benalmadena.es": {
+  "municipio": "Benalmádena",
+  "provincia": "Málaga",
+  "ine": "29025",
+  "nombre_oficial": "Benalmádena",
+  "lat": 36.5961,
+  "lon": -4.5618,
+  "x": 425.2,
+  "y": 415.9
+ },
+ "seu.blanes.cat": {
+  "municipio": "Blanes",
+  "provincia": "Girona",
+  "ine": "17023",
+  "nombre_oficial": "Blanes",
+  "lat": 41.6878,
+  "lon": 2.7821,
+  "x": 721.8,
+  "y": 109
+ },
+ "sede.aytoburgos.es": {
+  "municipio": "Burgos",
+  "provincia": "Burgos",
+  "ine": "09059",
+  "nombre_oficial": "Burgos",
+  "lat": 42.3503,
+  "lon": -3.6832,
+  "x": 458,
+  "y": 94.2
+ },
+ "sede.burjassot.org": {
+  "municipio": "Burjassot",
+  "provincia": "Valencia",
+  "ine": "46078",
+  "nombre_oficial": "Burjassot",
+  "lat": 39.5086,
+  "lon": -0.411,
+  "x": 602.2,
+  "y": 243.2
+ },
+ "sede.caceres.es": {
+  "municipio": "Cáceres",
+  "provincia": "Cáceres",
+  "ine": "10037",
+  "nombre_oficial": "Cáceres",
+  "lat": 39.3709,
+  "lon": -6.4501,
+  "x": 342.4,
+  "y": 258.2
+ },
+ "sede.calahorra.es": {
+  "municipio": "Calahorra",
+  "provincia": "La Rioja",
+  "ine": "26036",
+  "nombre_oficial": "Calahorra",
+  "lat": 42.2961,
+  "lon": -1.9557,
+  "x": 527.6,
+  "y": 94.5
+ },
+ "seu.castelldefels.org": {
+  "municipio": "Castelldefels",
+  "provincia": "Barcelona",
+  "ine": "08056",
+  "nombre_oficial": "Castelldefels",
+  "lat": 41.2759,
+  "lon": 1.9701,
+  "x": 691.8,
+  "y": 135.7
+ },
+ "sede.denia.es": {
+  "municipio": "Dénia",
+  "provincia": "Alicante",
+  "ine": "03063",
+  "nombre_oficial": "Dénia",
+  "lat": 38.8242,
+  "lon": 0.0774,
+  "x": 626.6,
+  "y": 279.5
+ },
+ "sede.doshermanas.es": {
+  "municipio": "Dos Hermanas",
+  "provincia": "Sevilla",
+  "ine": "41038",
+  "nombre_oficial": "Dos Hermanas",
+  "lat": 37.2573,
+  "lon": -5.9618,
+  "x": 361.4,
+  "y": 377.8
+ },
+ "sede.elche.es": {
+  "municipio": "Elche / Elx",
+  "provincia": "Alicante",
+  "ine": "03065",
+  "nombre_oficial": "Elx/Elche",
+  "lat": 38.2469,
+  "lon": -0.6633,
+  "x": 596.9,
+  "y": 314.6
+ },
+ "sede.fuengirola.es": {
+  "municipio": "Fuengirola",
+  "provincia": "Málaga",
+  "ine": "29054",
+  "nombre_oficial": "Fuengirola",
+  "lat": 36.5579,
+  "lon": -4.6154,
+  "x": 422.7,
+  "y": 418.1
+ },
+ "sede.fuenlabrada.es": {
+  "municipio": "Fuenlabrada",
+  "provincia": "Madrid",
+  "ine": "28058",
+  "nombre_oficial": "Fuenlabrada",
+  "lat": 40.2838,
+  "lon": -3.7964,
+  "x": 455.9,
+  "y": 207.7
+ },
+ "eseu.gava.cat": {
+  "municipio": "Gavà",
+  "provincia": "Barcelona",
+  "ine": "08089",
+  "nombre_oficial": "Gavà",
+  "lat": 41.2936,
+  "lon": 1.9812,
+  "x": 692.1,
+  "y": 134.7
+ },
+ "sede.getafe.es": {
+  "municipio": "Getafe",
+  "provincia": "Madrid",
+  "ine": "28065",
+  "nombre_oficial": "Getafe",
+  "lat": 40.2995,
+  "lon": -3.6736,
+  "x": 461,
+  "y": 206.7
+ },
+ "sedeelectronica.gijon.es": {
+  "municipio": "Gijón / Xixón",
+  "provincia": "Asturias",
+  "ine": "33024",
+  "nombre_oficial": "Gijón",
+  "lat": 43.5,
+  "lon": -5.6825,
+  "x": 378.3,
+  "y": 32.4
+ },
+ "sede.granada.org": {
+  "municipio": "Granada",
+  "provincia": "Granada",
+  "ine": "18087",
+  "nombre_oficial": "Granada",
+  "lat": 37.1867,
+  "lon": -3.5905,
+  "x": 469,
+  "y": 381.4
+ },
+ "sede.granadilladeabona.es": {
+  "municipio": "Granadilla de Abona",
+  "provincia": "Santa Cruz de Tenerife",
+  "ine": "38017",
+  "nombre_oficial": "Granadilla de Abona",
+  "lat": 28.113,
+  "lon": -16.5644,
+  "x": 91.6,
+  "y": 551
+ },
+ "sede.icoddelosvinos.es": {
+  "municipio": "Icod de los Vinos",
+  "provincia": "Santa Cruz de Tenerife",
+  "ine": "38022",
+  "nombre_oficial": "Icod de los Vinos",
+  "lat": 28.3317,
+  "lon": -16.694,
+  "x": 87.7,
+  "y": 536.1
+ },
+ "sede.aytojaen.es": {
+  "municipio": "Jaén",
+  "provincia": "Jaén",
+  "ine": "23050",
+  "nombre_oficial": "Jaén",
+  "lat": 37.8087,
+  "lon": -3.751,
+  "x": 460.9,
+  "y": 346.2
+ },
+ "carpeta.laoliva.es": {
+  "municipio": "La Oliva",
+  "provincia": "Las Palmas",
+  "ine": "35014",
+  "nombre_oficial": "La Oliva",
+  "lat": 28.6521,
+  "lon": -13.9257,
+  "x": 240.2,
+  "y": 546.3
+ },
+ "seu.lapobladevallbona.es": {
+  "municipio": "La Pobla de Vallbona",
+  "provincia": "Valencia",
+  "ine": "46202",
+  "nombre_oficial": "la Pobla de Vallbona",
+  "lat": 39.6022,
+  "lon": -0.5424,
+  "x": 596.1,
+  "y": 238.5
+ },
+ "sede.lavallduixo.es": {
+  "municipio": "La Vall d'Uixó",
+  "provincia": "Castellón",
+  "ine": "12126",
+  "nombre_oficial": "la Vall d'Uixó",
+  "lat": 39.8148,
+  "lon": -0.2345,
+  "x": 608.3,
+  "y": 225.6
+ },
+ "sede.leganes.org": {
+  "municipio": "Leganés",
+  "provincia": "Madrid",
+  "ine": "28074",
+  "nombre_oficial": "Leganés",
+  "lat": 40.331,
+  "lon": -3.7707,
+  "x": 456.9,
+  "y": 205.1
+ },
+ "udaletxean.leioa.eus": {
+  "municipio": "Leioa",
+  "provincia": "Bizkaia",
+  "ine": "48054",
+  "nombre_oficial": "Leioa",
+  "lat": 43.328,
+  "lon": -2.9872,
+  "x": 484.1,
+  "y": 40.4
+ },
+ "sede.lliria.es": {
+  "municipio": "Llíria",
+  "provincia": "Valencia",
+  "ine": "46147",
+  "nombre_oficial": "Llíria",
+  "lat": 39.6903,
+  "lon": -0.6593,
+  "x": 590.7,
+  "y": 234
+ },
+ "seu.llucmajor.org": {
+  "municipio": "Llucmajor",
+  "provincia": "Illes Balears",
+  "ine": "07031",
+  "nombre_oficial": "Llucmajor",
+  "lat": 39.4501,
+  "lon": 2.8512,
+  "x": 741.9,
+  "y": 230.8
+ },
+ "sede.malaga.eu": {
+  "municipio": "Málaga",
+  "provincia": "Málaga",
+  "ine": "29067",
+  "nombre_oficial": "Málaga",
+  "lat": 36.767,
+  "lon": -4.4254,
+  "x": 431.3,
+  "y": 406
+ },
+ "seuelectronica.marratxi.es": {
+  "municipio": "Marratxí",
+  "provincia": "Illes Balears",
+  "ine": "07036",
+  "nombre_oficial": "Marratxí",
+  "lat": 39.6237,
+  "lon": 2.7296,
+  "x": 735.3,
+  "y": 222
+ },
+ "sede.mazarron.es": {
+  "municipio": "Mazarrón",
+  "provincia": "Murcia",
+  "ine": "30026",
+  "nombre_oficial": "Mazarrón",
+  "lat": 37.6205,
+  "lon": -1.3513,
+  "x": 568.8,
+  "y": 352.1
+ },
+ "sede.medinadelcampo.es": {
+  "municipio": "Medina del Campo",
+  "provincia": "Valladolid",
+  "ine": "47085",
+  "nombre_oficial": "Medina del Campo",
+  "lat": 41.3196,
+  "lon": -4.9045,
+  "x": 408.9,
+  "y": 151.1
+ },
+ "carpetaciudadana.mejoradadelcampo.es": {
+  "municipio": "Mejorada del Campo",
+  "provincia": "Madrid",
+  "ine": "28084",
+  "nombre_oficial": "Mejorada del Campo",
+  "lat": 40.4013,
+  "lon": -3.4757,
+  "x": 469.2,
+  "y": 200.9
+ },
+ "sede.melilla.es": {
+  "municipio": "Melilla",
+  "provincia": "Melilla",
+  "ine": "52001",
+  "nombre_oficial": "Melilla",
+  "lat": 35.2897,
+  "lon": -2.9488,
+  "x": 502.2,
+  "y": 489.4
+ },
+ "sedeelectronica.ayto-mieres.es": {
+  "municipio": "Mieres",
+  "provincia": "Asturias",
+  "ine": "33037",
+  "nombre_oficial": "Mieres",
+  "lat": 43.2334,
+  "lon": -5.755,
+  "x": 375.3,
+  "y": 46.7
+ },
+ "sede.mirandadeebro.es": {
+  "municipio": "Miranda de Ebro",
+  "provincia": "Burgos",
+  "ine": "09219",
+  "nombre_oficial": "Miranda de Ebro",
+  "lat": 42.672,
+  "lon": -2.9611,
+  "x": 486.4,
+  "y": 75.9
+ },
+ "molinsderei.net": {
+  "municipio": "Molins de Rei",
+  "provincia": "Barcelona",
+  "ine": "08123",
+  "nombre_oficial": "Molins de Rei",
+  "lat": 41.4199,
+  "lon": 2.0336,
+  "x": 693.4,
+  "y": 127.6
+ },
+ "sede.motril.es": {
+  "municipio": "Motril",
+  "provincia": "Granada",
+  "ine": "18140",
+  "nombre_oficial": "Motril",
+  "lat": 36.745,
+  "lon": -3.4847,
+  "x": 474.5,
+  "y": 406.4
+ },
+ "sede.oropesadelmar.es": {
+  "municipio": "Oropesa del Mar",
+  "provincia": "Castellón",
+  "ine": "12085",
+  "nombre_oficial": "Orpesa/Oropesa del Mar",
+  "lat": 40.0907,
+  "lon": 0.1239,
+  "x": 622.1,
+  "y": 209
+ },
+ "ovc.aytopalencia.es": {
+  "municipio": "Palencia",
+  "provincia": "Palencia",
+  "ine": "34120",
+  "nombre_oficial": "Palencia",
+  "lat": 41.9837,
+  "lon": -4.565,
+  "x": 422.7,
+  "y": 114.7
+ },
+ "sede.ayuntamientoparla.es": {
+  "municipio": "Parla",
+  "provincia": "Madrid",
+  "ine": "28106",
+  "nombre_oficial": "Parla",
+  "lat": 40.2295,
+  "lon": -3.768,
+  "x": 457.1,
+  "y": 210.7
+ },
+ "sede.pilardelahoradada.org": {
+  "municipio": "Pilar de la Horadada",
+  "provincia": "Alicante",
+  "ine": "03902",
+  "nombre_oficial": "Pilar de la Horadada",
+  "lat": 37.8999,
+  "lon": -0.8295,
+  "x": 591,
+  "y": 334.7
+ },
+ "sede.plasencia.es": {
+  "municipio": "Plasencia",
+  "provincia": "Cáceres",
+  "ine": "10148",
+  "nombre_oficial": "Plasencia",
+  "lat": 40.0146,
+  "lon": -6.1409,
+  "x": 356.5,
+  "y": 222.7
+ },
+ "sede.puertodelrosario.org": {
+  "municipio": "Puerto del Rosario",
+  "provincia": "Las Palmas",
+  "ine": "35017",
+  "nombre_oficial": "Puerto del Rosario",
+  "lat": 28.511,
+  "lon": -13.9517,
+  "x": 237.3,
+  "y": 554.7
+ },
+ "sede.sanpedrodelpinatar.es": {
+  "municipio": "San Pedro del Pinatar",
+  "provincia": "Murcia",
+  "ine": "30036",
+  "nombre_oficial": "San Pedro del Pinatar",
+  "lat": 37.8334,
+  "lon": -0.7876,
+  "x": 593.2,
+  "y": 338.3
+ },
+ "seu.sant-adria.net": {
+  "municipio": "Sant Adrià de Besòs",
+  "provincia": "Barcelona",
+  "ine": "08194",
+  "nombre_oficial": "Sant Adrià de Besòs",
+  "lat": 41.4247,
+  "lon": 2.2213,
+  "x": 701,
+  "y": 126.4
+ },
+ "ovc.santacruzdetenerife.es": {
+  "municipio": "Santa Cruz de Tenerife",
+  "provincia": "Santa Cruz de Tenerife",
+  "ine": "38038",
+  "nombre_oficial": "Santa Cruz de Tenerife",
+  "lat": 28.5163,
+  "lon": -16.2263,
+  "x": 115.2,
+  "y": 530.5
+ },
+ "seu.staperpetua.cat": {
+  "municipio": "Santa Perpètua de Mogoda",
+  "provincia": "Barcelona",
+  "ine": "08260",
+  "nombre_oficial": "Santa Perpètua de Mogoda",
+  "lat": 41.5331,
+  "lon": 2.1762,
+  "x": 698.4,
+  "y": 120.7
+ },
+ "sede.santiagodecompostela.gal": {
+  "municipio": "Santiago de Compostela",
+  "provincia": "A Coruña",
+  "ine": "15078",
+  "nombre_oficial": "Santiago de Compostela",
+  "lat": 42.9106,
+  "lon": -8.5179,
+  "x": 265.5,
+  "y": 60
+ },
+ "sede.segorbe.es": {
+  "municipio": "Segorbe",
+  "provincia": "Castellón",
+  "ine": "12104",
+  "nombre_oficial": "Segorbe",
+  "lat": 39.788,
+  "lon": -0.4628,
+  "x": 598.7,
+  "y": 227.9
+ },
+ "sede.segovia.es": {
+  "municipio": "Segovia",
+  "provincia": "Segovia",
+  "ine": "40194",
+  "nombre_oficial": "Segovia",
+  "lat": 40.9026,
+  "lon": -4.1692,
+  "x": 439.6,
+  "y": 173.8
+ },
+ "seutributaria.sueca.es": {
+  "municipio": "Sueca",
+  "provincia": "Valencia",
+  "ine": "46235",
+  "nombre_oficial": "Sueca",
+  "lat": 39.2409,
+  "lon": -0.3083,
+  "x": 607.8,
+  "y": 257.7
+ },
+ "seu.tarragona.cat": {
+  "municipio": "Tarragona",
+  "provincia": "Tarragona",
+  "ine": "43148",
+  "nombre_oficial": "Tarragona",
+  "lat": 41.1331,
+  "lon": 1.2719,
+  "x": 664.1,
+  "y": 146.9
+ },
+ "ariadnaseu.terrassa.cat": {
+  "municipio": "Terrassa",
+  "provincia": "Barcelona",
+  "ine": "08279",
+  "nombre_oficial": "Terrassa",
+  "lat": 41.5755,
+  "lon": 2.0083,
+  "x": 691.3,
+  "y": 119.3
+ },
+ "sede.teruel.es": {
+  "municipio": "Teruel",
+  "provincia": "Teruel",
+  "ine": "44216",
+  "nombre_oficial": "Teruel",
+  "lat": 40.356,
+  "lon": -1.1195,
+  "x": 568.5,
+  "y": 198.6
+ },
+ "sede.ayuntamientodetias.es": {
+  "municipio": "Tías",
+  "provincia": "Las Palmas",
+  "ine": "35028",
+  "nombre_oficial": "Tías",
+  "lat": 28.9549,
+  "lon": -13.6631,
+  "x": 257.5,
+  "y": 530.2
+ },
+ "sede.torrepacheco.es": {
+  "municipio": "Torre-Pacheco",
+  "provincia": "Murcia",
+  "ine": "30037",
+  "nombre_oficial": "Torre-Pacheco",
+  "lat": 37.7772,
+  "lon": -0.9663,
+  "x": 585.4,
+  "y": 342
+ },
+ "sede.torrelavega.es": {
+  "municipio": "Torrelavega",
+  "provincia": "Cantabria",
+  "ine": "39087",
+  "nombre_oficial": "Torrelavega",
+  "lat": 43.3355,
+  "lon": -4.0413,
+  "x": 442.7,
+  "y": 41.1
+ },
+ "sede.tudela.es": {
+  "municipio": "Tudela",
+  "provincia": "Navarra",
+  "ine": "31232",
+  "nombre_oficial": "Tudela",
+  "lat": 42.081,
+  "lon": -1.6451,
+  "x": 540.7,
+  "y": 105.4
+ },
+ "contribuyente.valladolid.es": {
+  "municipio": "Valladolid",
+  "provincia": "Valladolid",
+  "ine": "47186",
+  "nombre_oficial": "Valladolid",
+  "lat": 41.6614,
+  "lon": -4.7757,
+  "x": 414.2,
+  "y": 132.4
+ },
+ "seuelectronica.vila-real.es": {
+  "municipio": "Vila-real",
+  "provincia": "Castellón",
+  "ine": "12135",
+  "nombre_oficial": "Vila-real",
+  "lat": 39.9328,
+  "lon": -0.1302,
+  "x": 612.1,
+  "y": 218.7
+ },
+ "seuelectronica.viladecans.cat": {
+  "municipio": "Viladecans",
+  "provincia": "Barcelona",
+  "ine": "08301",
+  "nombre_oficial": "Viladecans",
+  "lat": 41.303,
+  "lon": 2.0311,
+  "x": 694.1,
+  "y": 134
+ },
+ "tramitacio.vilanova.cat": {
+  "municipio": "Vilanova i la Geltrú",
+  "provincia": "Barcelona",
+  "ine": "08307",
+  "nombre_oficial": "Vilanova i la Geltrú",
+  "lat": 41.2365,
+  "lon": 1.7063,
+  "x": 681.2,
+  "y": 139.2
+ },
+ "sede.villajoyosa.com": {
+  "municipio": "Villajoyosa / La Vila Joiosa",
+  "provincia": "Alicante",
+  "ine": "03139",
+  "nombre_oficial": "la Vila Joiosa/Villajoyosa",
+  "lat": 38.5208,
+  "lon": -0.2524,
+  "x": 613.7,
+  "y": 297.7
+ }
+}

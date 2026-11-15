@@ -1,0 +1,7 @@
+{
+  "titulo": "Encuentra tu trámite",
+  "subtitulo": "Un solo buscador para los trámites municipales de las sedes electrónicas T-Systems (STA).",
+  "aviso": "Prototipo en pruebas. La información procede de los catálogos públicos de cada sede electrónica; consulta siempre la ficha oficial antes de tramitar.",
+  "ejemplos": ["quiero hacer un fraccionamiento de pago", "pedir un certificado de padrón", "licencia de obra menor", "pedir un vado", "bonificación del IBI"],
+  "destacados": ["padron-certificado", "fraccionamiento", "obra-menor", "vado", "instancia-general", "matrimonio-civil"]
+}

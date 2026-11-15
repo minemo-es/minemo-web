@@ -1,0 +1,1381 @@
+{
+ "vocabulario": "FUNCAL · 59 funciones comunes y funciones específicas",
+ "fuente": "59_Funciones_comunes.xlsx",
+ "funciones": [
+  {
+   "codigo": "01",
+   "nombre": "Pleno",
+   "especificas": [
+    {
+     "codigo": "01-01",
+     "nombre": "Sesiones y acuerdos del Pleno"
+    },
+    {
+     "codigo": "01-02",
+     "nombre": "Constitución de la Corporación"
+    },
+    {
+     "codigo": "01-03",
+     "nombre": "Mociones y proposiciones"
+    },
+    {
+     "codigo": "01-04",
+     "nombre": "Junta de Portavoces"
+    }
+   ]
+  },
+  {
+   "codigo": "02",
+   "nombre": "Alcaldía-Presidencia",
+   "especificas": [
+    {
+     "codigo": "02-01",
+     "nombre": "Decretos del Alcalde"
+    },
+    {
+     "codigo": "02-02",
+     "nombre": "Resoluciones de los concejales delegados"
+    },
+    {
+     "codigo": "02-03",
+     "nombre": "Bandos, avisos y pregones"
+    },
+    {
+     "codigo": "02-04",
+     "nombre": "Anuncios y edictos"
+    }
+   ]
+  },
+  {
+   "codigo": "03",
+   "nombre": "Junta Local de Gobierno",
+   "especificas": [
+    {
+     "codigo": "03-01",
+     "nombre": "Sesiones y acuerdos de Junta Local de Gobierno"
+    }
+   ]
+  },
+  {
+   "codigo": "04",
+   "nombre": "Comisiones informativas y especiales",
+   "especificas": [
+    {
+     "codigo": "04-01",
+     "nombre": "Sesiones y acuerdos de Comisiones Informativas y especiales"
+    }
+   ]
+  },
+  {
+   "codigo": "05",
+   "nombre": "Consejos sectoriales",
+   "especificas": [
+    {
+     "codigo": "05-01",
+     "nombre": "Sesiones y acuerdos de consejo sectoriales"
+    }
+   ]
+  },
+  {
+   "codigo": "06",
+   "nombre": "Juntas municipales de distrito",
+   "especificas": [
+    {
+     "codigo": "06-01",
+     "nombre": "Sesiones y acuerdos de Junta municipales de distrito"
+    }
+   ]
+  },
+  {
+   "codigo": "07",
+   "nombre": "Cargos públicos",
+   "especificas": [
+    {
+     "codigo": "07-01",
+     "nombre": "Nombramiento y cese de cargo público"
+    },
+    {
+     "codigo": "07-02",
+     "nombre": "Declaración de incompatibilidad de cargo público"
+    },
+    {
+     "codigo": "07-03",
+     "nombre": "Declaración de bienes y actividades de cargos públicos"
+    },
+    {
+     "codigo": "07-04",
+     "nombre": "Nombramiento de representantes en otros organismos"
+    },
+    {
+     "codigo": "07-05",
+     "nombre": "Retribuciones y régimen de dedicación de cargo público"
+    }
+   ]
+  },
+  {
+   "codigo": "08",
+   "nombre": "Normas municipales",
+   "especificas": [
+    {
+     "codigo": "08-01",
+     "nombre": "Ordenanzas y reglamentos"
+    },
+    {
+     "codigo": "08-02",
+     "nombre": "Plan Anual Normativo"
+    }
+   ]
+  },
+  {
+   "codigo": "09",
+   "nombre": "Convenios administrativos",
+   "especificas": [
+    {
+     "codigo": "09-01",
+     "nombre": "Convenios administrativos"
+    }
+   ]
+  },
+  {
+   "codigo": "10",
+   "nombre": "Territorio",
+   "especificas": [
+    {
+     "codigo": "10-01",
+     "nombre": "Deslindes del término municipal"
+    },
+    {
+     "codigo": "10-02",
+     "nombre": "Alteración del término municipal"
+    },
+    {
+     "codigo": "10-03",
+     "nombre": "Nomenclator de vías públicas"
+    }
+   ]
+  },
+  {
+   "codigo": "11",
+   "nombre": "Protocolo",
+   "especificas": [
+    {
+     "codigo": "11-01",
+     "nombre": "Celebración de ceremonias de boda civil"
+    },
+    {
+     "codigo": "11-02",
+     "nombre": "Distinciones honoríficas"
+    },
+    {
+     "codigo": "11-03",
+     "nombre": "Hermanamientos"
+    },
+    {
+     "codigo": "11-04",
+     "nombre": "Organización de actos públicos"
+    },
+    {
+     "codigo": "11-05",
+     "nombre": "Agenda de actividades"
+    }
+   ]
+  },
+  {
+   "codigo": "12",
+   "nombre": "Patrimonio local",
+   "especificas": [
+    {
+     "codigo": "12-01",
+     "nombre": "Conservación, protección y defensa del patrimonio"
+    },
+    {
+     "codigo": "12-02",
+     "nombre": "Alteración de calificación jurídica de bienes"
+    },
+    {
+     "codigo": "12-03",
+     "nombre": "Utilización y aprovechamiento de bienes"
+    },
+    {
+     "codigo": "12-04",
+     "nombre": "Expropiación de bienes"
+    },
+    {
+     "codigo": "12-05",
+     "nombre": "Adquisición de bienes"
+    },
+    {
+     "codigo": "12-06",
+     "nombre": "Enajenación de bienes"
+    },
+    {
+     "codigo": "12-07",
+     "nombre": "Inventarios de bienes"
+    },
+    {
+     "codigo": "12-08",
+     "nombre": "Concesiones administrativas de bienes"
+    },
+    {
+     "codigo": "12-09",
+     "nombre": "Arrendamientos de bienes"
+    }
+   ]
+  },
+  {
+   "codigo": "13",
+   "nombre": "Padrón de habitantes",
+   "especificas": [
+    {
+     "codigo": "13-01",
+     "nombre": "Padrones municipales de habitantes"
+    },
+    {
+     "codigo": "13-02",
+     "nombre": "Rectificaciones, altas y bajas del padrón municipal de habitantes"
+    },
+    {
+     "codigo": "13-03",
+     "nombre": "Cambios de domicilio del padrón municipal de habitantes"
+    },
+    {
+     "codigo": "13-04",
+     "nombre": "Revisiones anuales del padrón municipal de habitantes"
+    },
+    {
+     "codigo": "13-05",
+     "nombre": "Certificados y justificantes de empadronamiento y convivencia"
+    },
+    {
+     "codigo": "13-06",
+     "nombre": "Informes y estadísticas de población"
+    }
+   ]
+  },
+  {
+   "codigo": "14",
+   "nombre": "Elecciones",
+   "especificas": [
+    {
+     "codigo": "14-01",
+     "nombre": "Censo electoral"
+    },
+    {
+     "codigo": "14-02",
+     "nombre": "Elecciones de miembros a tribunal de jurado"
+    },
+    {
+     "codigo": "14-03",
+     "nombre": "Listas de altas y bajas de electores"
+    },
+    {
+     "codigo": "14-04",
+     "nombre": "Rectificaciones del censo electoral"
+    },
+    {
+     "codigo": "14-05",
+     "nombre": "Revisiones y reclamaciones al censo electoral"
+    },
+    {
+     "codigo": "14-06",
+     "nombre": "Celebraciones de referéndums y plebiscitos"
+    }
+   ]
+  },
+  {
+   "codigo": "15",
+   "nombre": "Contratación",
+   "especificas": [
+    {
+     "codigo": "15-01",
+     "nombre": "Encomiendas y convenios de gestión"
+    },
+    {
+     "codigo": "15-02",
+     "nombre": "Contratos de obras"
+    },
+    {
+     "codigo": "15-03",
+     "nombre": "Contratos de concesión de obra pública"
+    },
+    {
+     "codigo": "15-04",
+     "nombre": "Contratos de concesión de los servicios públicos"
+    },
+    {
+     "codigo": "15-05",
+     "nombre": "Contratos de servicios"
+    },
+    {
+     "codigo": "15-06",
+     "nombre": "Contratos de suministros"
+    },
+    {
+     "codigo": "15-07",
+     "nombre": "Contratos mixtos"
+    },
+    {
+     "codigo": "15-08",
+     "nombre": "Contratos especiales"
+    },
+    {
+     "codigo": "15-09",
+     "nombre": "Contratos privados"
+    }
+   ]
+  },
+  {
+   "codigo": "16",
+   "nombre": "Tecnologías de la información",
+   "especificas": [
+    {
+     "codigo": "16-01",
+     "nombre": "Registro de incidencias de seguridad"
+    },
+    {
+     "codigo": "16-02",
+     "nombre": "Administración, elaboración y mantenimiento de los recursos informáticos"
+    },
+    {
+     "codigo": "16-03",
+     "nombre": "Gestión de las incidencias de los usuarios"
+    },
+    {
+     "codigo": "16-04",
+     "nombre": "Registro de recursos informáticos"
+    },
+    {
+     "codigo": "16-05",
+     "nombre": "Gestión de certificados digitales"
+    }
+   ]
+  },
+  {
+   "codigo": "17",
+   "nombre": "Registro General",
+   "especificas": [
+    {
+     "codigo": "17-01",
+     "nombre": "Gestión del Registro General"
+    },
+    {
+     "codigo": "17-02",
+     "nombre": "Registros de entrada y salida de documentos"
+    },
+    {
+     "codigo": "17-03",
+     "nombre": "Gestión de cita previa"
+    }
+   ]
+  },
+  {
+   "codigo": "18",
+   "nombre": "Archivo y gestión documental",
+   "especificas": [
+    {
+     "codigo": "18-01",
+     "nombre": "Gestión del archivo"
+    },
+    {
+     "codigo": "18-02",
+     "nombre": "Políticas de gestión de documentos"
+    },
+    {
+     "codigo": "18-03",
+     "nombre": "Consulta y prestamo de documentos"
+    },
+    {
+     "codigo": "18-04",
+     "nombre": "Identificación y valoración documental"
+    },
+    {
+     "codigo": "18-05",
+     "nombre": "Transferencia de documentos"
+    }
+   ]
+  },
+  {
+   "codigo": "19",
+   "nombre": "Protección de datos",
+   "especificas": [
+    {
+     "codigo": "19-01",
+     "nombre": "Gestión de de tratamiento de datos personales"
+    },
+    {
+     "codigo": "19-02",
+     "nombre": "Ejercicio de derechos de los interesados"
+    }
+   ]
+  },
+  {
+   "codigo": "20",
+   "nombre": "Prensa y comunicación",
+   "especificas": [
+    {
+     "codigo": "20-01",
+     "nombre": "Campañas de publicidad e imagen corporativa"
+    },
+    {
+     "codigo": "20-02",
+     "nombre": "Gestión de sitios web y redes sociales"
+    },
+    {
+     "codigo": "20-03",
+     "nombre": "Gestión de publicaciones"
+    },
+    {
+     "codigo": "20-04",
+     "nombre": "Notas y dossieres de prensa"
+    }
+   ]
+  },
+  {
+   "codigo": "21",
+   "nombre": "Transparencia",
+   "especificas": [
+    {
+     "codigo": "21-01",
+     "nombre": "Publicidad activa y datos abiertos"
+    },
+    {
+     "codigo": "21-02",
+     "nombre": "Inventario de activos de información"
+    },
+    {
+     "codigo": "21-03",
+     "nombre": "Solicitudes de acceso a la información pública"
+    }
+   ]
+  },
+  {
+   "codigo": "22",
+   "nombre": "Participación",
+   "especificas": [
+    {
+     "codigo": "22-01",
+     "nombre": "Derecho de petición"
+    },
+    {
+     "codigo": "22-02",
+     "nombre": "Gestión de quejas y sugerencias"
+    },
+    {
+     "codigo": "22-03",
+     "nombre": "Iniciativas populares"
+    },
+    {
+     "codigo": "22-04",
+     "nombre": "Procesos participativos"
+    },
+    {
+     "codigo": "22-05",
+     "nombre": "Registro de Asociaciones"
+    }
+   ]
+  },
+  {
+   "codigo": "23",
+   "nombre": "Calidad",
+   "especificas": [
+    {
+     "codigo": "23-01",
+     "nombre": "Planes y auditorías de calidad"
+    },
+    {
+     "codigo": "23-02",
+     "nombre": "Memorias anuales de gestión"
+    },
+    {
+     "codigo": "23-03",
+     "nombre": "Cartas de servicios"
+    }
+   ]
+  },
+  {
+   "codigo": "24",
+   "nombre": "Procedimientos judiciales",
+   "especificas": [
+    {
+     "codigo": "24-01",
+     "nombre": "Procedimientos de jurisdicción civil"
+    },
+    {
+     "codigo": "24-02",
+     "nombre": "Procedimientos de jurisdicción contencioso-administrativo"
+    },
+    {
+     "codigo": "24-03",
+     "nombre": "Procedimientos de jurisdicción económico-administrativo"
+    },
+    {
+     "codigo": "24-04",
+     "nombre": "Procedimientos de jurisdicción social"
+    },
+    {
+     "codigo": "24-05",
+     "nombre": "Procedimientos de jurisdicción penal"
+    },
+    {
+     "codigo": "24-06",
+     "nombre": "Procedimientos de responsabilidad patrimonial"
+    },
+    {
+     "codigo": "24-07",
+     "nombre": "Reclamaciones patrimoniales"
+    },
+    {
+     "codigo": "24-08",
+     "nombre": "Procedimientos relativos a Juzgados de Paz"
+    },
+    {
+     "codigo": "24-09",
+     "nombre": "Otorgamiento de poderes para pleitos"
+    },
+    {
+     "codigo": "24-10",
+     "nombre": "Recursos administrativos a resoluciones y dictámenes de otras administraciones"
+    }
+   ]
+  },
+  {
+   "codigo": "25",
+   "nombre": "Personal",
+   "especificas": [
+    {
+     "codigo": "25-01",
+     "nombre": "Organización de los recursos humanos"
+    },
+    {
+     "codigo": "25-02",
+     "nombre": "Selección y provisión de puestos de trabajo"
+    },
+    {
+     "codigo": "25-03",
+     "nombre": "Plantilla"
+    },
+    {
+     "codigo": "25-04",
+     "nombre": "Relaciones de puestos de trabajo"
+    },
+    {
+     "codigo": "25-05",
+     "nombre": "Contrataciones de personal laboral"
+    },
+    {
+     "codigo": "25-06",
+     "nombre": "Situaciones administrativas"
+    },
+    {
+     "codigo": "25-07",
+     "nombre": "Expedientes personales"
+    },
+    {
+     "codigo": "25-08",
+     "nombre": "Elaboración de nóminas"
+    },
+    {
+     "codigo": "25-09",
+     "nombre": "Licencias y permisos"
+    },
+    {
+     "codigo": "25-10",
+     "nombre": "Ayudas sociales y familiares"
+    },
+    {
+     "codigo": "25-11",
+     "nombre": "Formación"
+    },
+    {
+     "codigo": "25-12",
+     "nombre": "Riesgos laborales"
+    },
+    {
+     "codigo": "25-13",
+     "nombre": "Revisiones médicas"
+    },
+    {
+     "codigo": "25-14",
+     "nombre": "Negociación colectiva"
+    },
+    {
+     "codigo": "25-15",
+     "nombre": "Gestión de huelgas"
+    },
+    {
+     "codigo": "25-16",
+     "nombre": "Elecciones sindicales"
+    },
+    {
+     "codigo": "25-17",
+     "nombre": "Comisión paritaria"
+    },
+    {
+     "codigo": "25-18",
+     "nombre": "Junta de Personal"
+    },
+    {
+     "codigo": "25-19",
+     "nombre": "Comité de empresa"
+    },
+    {
+     "codigo": "25-20",
+     "nombre": "Procedimiento disciplinarios de personal"
+    }
+   ]
+  },
+  {
+   "codigo": "26",
+   "nombre": "Subvenciones",
+   "especificas": [
+    {
+     "codigo": "26-01",
+     "nombre": "Subvenciones recibidas por la Administración Local"
+    },
+    {
+     "codigo": "26-02",
+     "nombre": "Subvenciones otorgadas por la Administración Local"
+    }
+   ]
+  },
+  {
+   "codigo": "27",
+   "nombre": "Presupuesto",
+   "especificas": [
+    {
+     "codigo": "27-01",
+     "nombre": "Plan económico financiero"
+    },
+    {
+     "codigo": "27-02",
+     "nombre": "Aprobación presupuesto"
+    },
+    {
+     "codigo": "27-03",
+     "nombre": "Cuenta general"
+    },
+    {
+     "codigo": "27-04",
+     "nombre": "Generación de créditos"
+    },
+    {
+     "codigo": "27-05",
+     "nombre": "Transferencia de créditos"
+    },
+    {
+     "codigo": "27-06",
+     "nombre": "Incorporación de remanentes"
+    },
+    {
+     "codigo": "27-07",
+     "nombre": "Ejecución presupuestaria"
+    },
+    {
+     "codigo": "27-08",
+     "nombre": "Prorroga presupuesto"
+    },
+    {
+     "codigo": "27-09",
+     "nombre": "Crédito extraordinario"
+    },
+    {
+     "codigo": "27-10",
+     "nombre": "Suplemento crédito"
+    },
+    {
+     "codigo": "27-11",
+     "nombre": "Ampliación de crédito"
+    },
+    {
+     "codigo": "27-12",
+     "nombre": "Liquidación de presupuesto"
+    },
+    {
+     "codigo": "27-13",
+     "nombre": "Anticipos de caja fija"
+    }
+   ]
+  },
+  {
+   "codigo": "28",
+   "nombre": "Fiscalización",
+   "especificas": [
+    {
+     "codigo": "28-01",
+     "nombre": "Control de gastos e ingresos"
+    },
+    {
+     "codigo": "28-02",
+     "nombre": "Auditorías de economia y hacienda"
+    },
+    {
+     "codigo": "28-03",
+     "nombre": "Balances"
+    },
+    {
+     "codigo": "28-04",
+     "nombre": "Actas de arqueo"
+    }
+   ]
+  },
+  {
+   "codigo": "29",
+   "nombre": "Financiación",
+   "especificas": [
+    {
+     "codigo": "29-01",
+     "nombre": "Operaciones de crédito"
+    }
+   ]
+  },
+  {
+   "codigo": "30",
+   "nombre": "Recaudación",
+   "especificas": [
+    {
+     "codigo": "30-01",
+     "nombre": "Liquidación de tributos"
+    },
+    {
+     "codigo": "30-02",
+     "nombre": "Domiciliación de tributos"
+    },
+    {
+     "codigo": "30-03",
+     "nombre": "Fraccionamiento de tributos"
+    },
+    {
+     "codigo": "30-04",
+     "nombre": "Compensacion de deudas"
+    },
+    {
+     "codigo": "30-05",
+     "nombre": "Exenciones y bonificaciones"
+    },
+    {
+     "codigo": "30-06",
+     "nombre": "Apremios"
+    },
+    {
+     "codigo": "30-07",
+     "nombre": "Embargos"
+    },
+    {
+     "codigo": "30-08",
+     "nombre": "Padrones y listas cobratorias"
+    },
+    {
+     "codigo": "30-09",
+     "nombre": "Devolución de ingresos indebidos"
+    },
+    {
+     "codigo": "30-10",
+     "nombre": "Tasas y precios públicos"
+    },
+    {
+     "codigo": "30-11",
+     "nombre": "Inspección tributaria"
+    },
+    {
+     "codigo": "30-12",
+     "nombre": "Sancionador en materia tributaria"
+    }
+   ]
+  },
+  {
+   "codigo": "31",
+   "nombre": "Tesorería",
+   "especificas": [
+    {
+     "codigo": "31-01",
+     "nombre": "Planes y programas de tesorería"
+    },
+    {
+     "codigo": "31-02",
+     "nombre": "Custodia de fondos y valores"
+    }
+   ]
+  },
+  {
+   "codigo": "32",
+   "nombre": "Seguridad ciudadana",
+   "especificas": [
+    {
+     "codigo": "32-01",
+     "nombre": "Atestados"
+    },
+    {
+     "codigo": "32-02",
+     "nombre": "Denuncias"
+    },
+    {
+     "codigo": "32-03",
+     "nombre": "Seguridad vial"
+    },
+    {
+     "codigo": "32-04",
+     "nombre": "Incendios"
+    },
+    {
+     "codigo": "32-05",
+     "nombre": "Permisos de armas"
+    },
+    {
+     "codigo": "32-06",
+     "nombre": "Protección civil"
+    }
+   ]
+  },
+  {
+   "codigo": "33",
+   "nombre": "Movilidad",
+   "especificas": [
+    {
+     "codigo": "33-01",
+     "nombre": "Transporte Público"
+    },
+    {
+     "codigo": "33-02",
+     "nombre": "Aparcamiento y movilidad"
+    },
+    {
+     "codigo": "33-03",
+     "nombre": "Ordenación del Tráfico"
+    },
+    {
+     "codigo": "33-04",
+     "nombre": "Licencias taxi"
+    },
+    {
+     "codigo": "33-05",
+     "nombre": "Autobuses Urbanos"
+    },
+    {
+     "codigo": "33-06",
+     "nombre": "Sancionador en materia de tráfico y transporte"
+    }
+   ]
+  },
+  {
+   "codigo": "34",
+   "nombre": "Medio ambiente",
+   "especificas": [
+    {
+     "codigo": "34-01",
+     "nombre": "Protección y control del medio ambiente"
+    },
+    {
+     "codigo": "34-02",
+     "nombre": "Protección de los espacios naturales"
+    },
+    {
+     "codigo": "34-03",
+     "nombre": "Protección de fauna y animales"
+    },
+    {
+     "codigo": "34-04",
+     "nombre": "Tenencia de animales en el entorno urbano"
+    },
+    {
+     "codigo": "34-05",
+     "nombre": "Control y recogida de animales"
+    },
+    {
+     "codigo": "34-06",
+     "nombre": "Eficiencia energética"
+    },
+    {
+     "codigo": "34-07",
+     "nombre": "Recursos hídricos"
+    },
+    {
+     "codigo": "34-08",
+     "nombre": "Contaminación atmoférica"
+    },
+    {
+     "codigo": "34-09",
+     "nombre": "Ruidos y vibraciones"
+    },
+    {
+     "codigo": "34-10",
+     "nombre": "Programas de formación y sensibilización"
+    },
+    {
+     "codigo": "34-11",
+     "nombre": "Sancionadores en materia de medio ambiente"
+    }
+   ]
+  },
+  {
+   "codigo": "35",
+   "nombre": "Animales peligrosos",
+   "especificas": [
+    {
+     "codigo": "35-01",
+     "nombre": "Registros y licencias para tenencia de animales peligrosos"
+    },
+    {
+     "codigo": "35-02",
+     "nombre": "Sanciones en materia de animales peligrosos"
+    }
+   ]
+  },
+  {
+   "codigo": "36",
+   "nombre": "Mantenimiento urbano",
+   "especificas": [
+    {
+     "codigo": "36-01",
+     "nombre": "Mantenimiento de vías públicas"
+    },
+    {
+     "codigo": "36-02",
+     "nombre": "Limpieza viaria"
+    },
+    {
+     "codigo": "36-03",
+     "nombre": "Mobiliario urbano"
+    },
+    {
+     "codigo": "36-04",
+     "nombre": "Saneamiento urbano"
+    },
+    {
+     "codigo": "36-05",
+     "nombre": "Parques, jardinesy arbolado urbano"
+    },
+    {
+     "codigo": "36-06",
+     "nombre": "Abastecimiento de agua"
+    },
+    {
+     "codigo": "36-07",
+     "nombre": "Alcantarillado y depuración"
+    },
+    {
+     "codigo": "36-08",
+     "nombre": "Alumbrado público"
+    },
+    {
+     "codigo": "36-09",
+     "nombre": "Recogida y tratamiento de residuos"
+    },
+    {
+     "codigo": "36-10",
+     "nombre": "Gestión de incidencias en vía pública"
+    }
+   ]
+  },
+  {
+   "codigo": "37",
+   "nombre": "Urbanismo",
+   "especificas": [
+    {
+     "codigo": "37-01",
+     "nombre": "Planeamiento urbanístico"
+    },
+    {
+     "codigo": "37-02",
+     "nombre": "Licencias de primera ocupación"
+    },
+    {
+     "codigo": "37-03",
+     "nombre": "Licencias de obras particulares"
+    },
+    {
+     "codigo": "37-04",
+     "nombre": "Licencias de cambios de uso"
+    },
+    {
+     "codigo": "37-05",
+     "nombre": "Licencias de concesión de vados"
+    },
+    {
+     "codigo": "37-06",
+     "nombre": "Licencias de cala"
+    },
+    {
+     "codigo": "37-07",
+     "nombre": "Expropiaciones urbanísticas"
+    },
+    {
+     "codigo": "37-08",
+     "nombre": "Alineaciones y rasantes"
+    },
+    {
+     "codigo": "37-09",
+     "nombre": "Obras públicas"
+    },
+    {
+     "codigo": "37-10",
+     "nombre": "Órdenes de ejecución"
+    },
+    {
+     "codigo": "37-11",
+     "nombre": "Declaración de Ruína"
+    },
+    {
+     "codigo": "37-12",
+     "nombre": "Juntas de compensación"
+    },
+    {
+     "codigo": "37-13",
+     "nombre": "Segregaciones y agrupaciones de parcelas"
+    },
+    {
+     "codigo": "37-14",
+     "nombre": "Ocupación de vía pública"
+    },
+    {
+     "codigo": "37-15",
+     "nombre": "Sancionador en materia urbanística"
+    }
+   ]
+  },
+  {
+   "codigo": "38",
+   "nombre": "Industria y Comercio",
+   "especificas": [
+    {
+     "codigo": "38-01",
+     "nombre": "Consultas previas a la concesión de licencias"
+    },
+    {
+     "codigo": "38-02",
+     "nombre": "Licencias de actividades calificadas"
+    },
+    {
+     "codigo": "38-03",
+     "nombre": "Licencias de actividades inocuas"
+    },
+    {
+     "codigo": "38-04",
+     "nombre": "Cambios de titularidad de licencias"
+    },
+    {
+     "codigo": "38-05",
+     "nombre": "Licencias de funcionamiento"
+    },
+    {
+     "codigo": "38-06",
+     "nombre": "Licencias de venta de bebidas alcohólicas"
+    },
+    {
+     "codigo": "38-07",
+     "nombre": "Autorizaciones y licencias  de mercados"
+    },
+    {
+     "codigo": "38-08",
+     "nombre": "Licencias de atracciones feriales"
+    },
+    {
+     "codigo": "38-09",
+     "nombre": "Licencias de terrazas veladores"
+    },
+    {
+     "codigo": "38-10",
+     "nombre": "Licencias de quioscos de temporada"
+    },
+    {
+     "codigo": "38-11",
+     "nombre": "Sancionadores en materia de industria"
+    }
+   ]
+  },
+  {
+   "codigo": "39",
+   "nombre": "Servicios sociales",
+   "especificas": [
+    {
+     "codigo": "39-01",
+     "nombre": "Gestión de centros de asistencia social"
+    },
+    {
+     "codigo": "39-02",
+     "nombre": "Asistencia social primaria"
+    },
+    {
+     "codigo": "39-03",
+     "nombre": "Emergencia social"
+    },
+    {
+     "codigo": "39-04",
+     "nombre": "Servicio de ayuda a domicilio"
+    },
+    {
+     "codigo": "39-05",
+     "nombre": "Apoyo a entidades sociosanitarias"
+    },
+    {
+     "codigo": "39-06",
+     "nombre": "Vivienda social"
+    }
+   ]
+  },
+  {
+   "codigo": "40",
+   "nombre": "Igualdad de género",
+   "especificas": [
+    {
+     "codigo": "40-01",
+     "nombre": "Programas de igualdad de género"
+    },
+    {
+     "codigo": "40-02",
+     "nombre": "Programas de formación y sensibilización"
+    }
+   ]
+  },
+  {
+   "codigo": "41",
+   "nombre": "Sanidad",
+   "especificas": [
+    {
+     "codigo": "41-01",
+     "nombre": "Gestión de centros sanitarios"
+    },
+    {
+     "codigo": "41-02",
+     "nombre": "Programas de prevención y atención sanitaria"
+    },
+    {
+     "codigo": "41-03",
+     "nombre": "Programas de prevención y atención a drogodependencias"
+    },
+    {
+     "codigo": "41-04",
+     "nombre": "Inspecciones sanitarias"
+    },
+    {
+     "codigo": "41-05",
+     "nombre": "Sanciones en materia de salud pública"
+    }
+   ]
+  },
+  {
+   "codigo": "42",
+   "nombre": "Plagas",
+   "especificas": [
+    {
+     "codigo": "42-01",
+     "nombre": "Control de plagas"
+    }
+   ]
+  },
+  {
+   "codigo": "43",
+   "nombre": "Cementerios",
+   "especificas": [
+    {
+     "codigo": "43-01",
+     "nombre": "Gestión de cementerios"
+    },
+    {
+     "codigo": "43-02",
+     "nombre": "Gestión de tanatorios"
+    }
+   ]
+  },
+  {
+   "codigo": "44",
+   "nombre": "Educación",
+   "especificas": [
+    {
+     "codigo": "44-01",
+     "nombre": "Gestión de centros y equipamientos educativos"
+    },
+    {
+     "codigo": "44-02",
+     "nombre": "Programación de actividades educativas"
+    }
+   ]
+  },
+  {
+   "codigo": "45",
+   "nombre": "Cultura",
+   "especificas": [
+    {
+     "codigo": "45-01",
+     "nombre": "Gestión de centros y equipamientos culturales"
+    },
+    {
+     "codigo": "45-02",
+     "nombre": "Programación de actividades culturales"
+    }
+   ]
+  },
+  {
+   "codigo": "46",
+   "nombre": "Fiestas",
+   "especificas": [
+    {
+     "codigo": "46-01",
+     "nombre": "Programación de actividades de fiestas"
+    }
+   ]
+  },
+  {
+   "codigo": "47",
+   "nombre": "Patrimonio histórico",
+   "especificas": [
+    {
+     "codigo": "47-01",
+     "nombre": "Conservación y protección del patrimonio histórico"
+    },
+    {
+     "codigo": "47-02",
+     "nombre": "Formación y sensibilización sobre patrimonio histórico"
+    }
+   ]
+  },
+  {
+   "codigo": "48",
+   "nombre": "Deportes",
+   "especificas": [
+    {
+     "codigo": "48-01",
+     "nombre": "Gestión de centros y equipamientos deportivos"
+    },
+    {
+     "codigo": "48-02",
+     "nombre": "Programación de actividades deportivas"
+    }
+   ]
+  },
+  {
+   "codigo": "49",
+   "nombre": "Personas mayores",
+   "especificas": [
+    {
+     "codigo": "49-01",
+     "nombre": "Gestión de centros y equipamientos de personas mayores"
+    },
+    {
+     "codigo": "49-02",
+     "nombre": "Programación de actividades de personas mayores"
+    }
+   ]
+  },
+  {
+   "codigo": "50",
+   "nombre": "Juventud",
+   "especificas": [
+    {
+     "codigo": "50-01",
+     "nombre": "Gestión de centros y equipamientos juveniles"
+    },
+    {
+     "codigo": "50-02",
+     "nombre": "Programación de actividades juveniles",
+     "nota": "Corregido: en el XLS figura como 52-02"
+    }
+   ]
+  },
+  {
+   "codigo": "51",
+   "nombre": "Infancia",
+   "especificas": [
+    {
+     "codigo": "51-01",
+     "nombre": "Gestión de centros y equipamientos de infancia"
+    },
+    {
+     "codigo": "51-02",
+     "nombre": "Programación de actividades de infancia"
+    }
+   ]
+  },
+  {
+   "codigo": "52",
+   "nombre": "Agricultura y ganadería",
+   "especificas": [
+    {
+     "codigo": "52-01",
+     "nombre": "Gestión de actividades agrícolas y ganaderas"
+    }
+   ]
+  },
+  {
+   "codigo": "53",
+   "nombre": "Pesca",
+   "especificas": [
+    {
+     "codigo": "53-01",
+     "nombre": "Gestión de actividades pesqueras"
+    }
+   ]
+  },
+  {
+   "codigo": "54",
+   "nombre": "Montes",
+   "especificas": [
+    {
+     "codigo": "54-01",
+     "nombre": "Gestión de actividades forestales"
+    }
+   ]
+  },
+  {
+   "codigo": "55",
+   "nombre": "Fomento de la actividad económica",
+   "especificas": [
+    {
+     "codigo": "55-01",
+     "nombre": "Fomento de la actividad comercial y económica"
+    },
+    {
+     "codigo": "55-02",
+     "nombre": "Ferias y Congresos"
+    }
+   ]
+  },
+  {
+   "codigo": "56",
+   "nombre": "Promoción del empleo",
+   "especificas": [
+    {
+     "codigo": "56-01",
+     "nombre": "Planes de empleo"
+    },
+    {
+     "codigo": "56-02",
+     "nombre": "Programas de formación e inserción laboral"
+    }
+   ]
+  },
+  {
+   "codigo": "57",
+   "nombre": "Turismo",
+   "especificas": [
+    {
+     "codigo": "57-01",
+     "nombre": "Gestión y fomento del turismo"
+    }
+   ]
+  },
+  {
+   "codigo": "58",
+   "nombre": "Consumo",
+   "especificas": [
+    {
+     "codigo": "58-01",
+     "nombre": "Arbitraje y consumo"
+    }
+   ]
+  },
+  {
+   "codigo": "59",
+   "nombre": "Asistencia a entidades locales",
+   "especificas": [
+    {
+     "codigo": "59-01",
+     "nombre": "Programas y actuaciones de asistencia a entidades locales"
+    },
+    {
+     "codigo": "59-02",
+     "nombre": "Asistencia técnica, jurídica y económica a entidades locales"
+    }
+   ]
+  }
+ ]
+}

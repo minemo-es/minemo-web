@@ -1,0 +1,2592 @@
+{
+ "estado": "en marcha",
+ "i": 45,
+ "total": 75,
+ "actual": "https://carpetaciudadana.mejoradadelcampo.es",
+ "resultados": [
+  {
+   "sede": "https://sede.tudela.es",
+   "estado": "terminado",
+   "total": 240,
+   "ok": 238,
+   "errores": 2,
+   "zip": "tramites_sede_sede-tudela-es_por-organo_2026-11-15.zip"
+  },
+  {
+   "sede": "https://sede.coruna.gal",
+   "inicio": "2026-11-15T10:30:15.910Z",
+   "http": 200,
+   "url_final": "https://sede.coruna.gal/sta/CarpetaPublic/doEvent?APP_CODE=STA&PAGE_CODE=CATALOGO",
+   "host": "sede.coruna.gal",
+   "estado": "terminado",
+   "version": "sta-multi 1.0 (base extractor_sede 1.2)",
+   "total": 1,
+   "hechos": 1,
+   "zip": "tramites_sede_sede-coruna-gal_por-organo_2026-11-15.zip",
+   "zip_bytes": 10766,
+   "fin": "2026-11-15T10:30:16.612Z",
+   "ok": 1,
+   "errores": 0,
+   "organos": 1,
+   "media_epigrafes": 2,
+   "ejemplo": {
+    "titulo": "Consentimiento para la práctica de la notificación electrónica",
+    "organo": "Sin órgano gestor",
+    "secciones": [
+     "descripcion",
+     "silencio_administrativo"
+    ]
+   },
+   "cobertura": {
+    "descripcion": 1,
+    "finalidad": 0,
+    "organo_gestor": 0,
+    "plazo_resolucion": 0,
+    "silencio_administrativo": 1,
+    "normativa": 0,
+    "pago_tasas": 0,
+    "informacion_adicional": 0,
+    "documentacion_relacionada": 0,
+    "documentos_presentar": 0
+   },
+   "ejemplo_errores": []
+  },
+  {
+   "sede": "https://oat.aguimes.es",
+   "inicio": "2026-11-15T10:30:32.266Z",
+   "http": 200,
+   "url_final": "https://oat.aguimes.es/sta/CarpetaPublic/doEvent?APP_CODE=STA&PAGE_CODE=CATALOGO",
+   "host": "oat.aguimes.es",
+   "estado": "terminado",
+   "version": "sta-multi 1.0 (base extractor_sede 1.2)",
+   "total": 453,
+   "hechos": 453,
+   "zip": "tramites_sede_oat-aguimes-es_por-organo_2026-11-15.zip",
+   "zip_bytes": 274886,
+   "fin": "2026-11-15T10:31:56.749Z",
+   "ok": 0,
+   "errores": 453,
+   "organos": 0,
+   "media_epigrafes": 0,
+   "ejemplo": null,
+   "cobertura": {
+    "descripcion": 0,
+    "finalidad": 0,
+    "organo_gestor": 0,
+    "plazo_resolucion": 0,
+    "silencio_administrativo": 0,
+    "normativa": 0,
+    "pago_tasas": 0,
+    "informacion_adicional": 0,
+    "documentacion_relacionada": 0,
+    "documentos_presentar": 0
+   },
+   "ejemplo_errores": [
+    {
+     "t": "Presentación de documentación a expedientes en trámite",
+     "e": "Sin epígrafes STA reconocibles",
+     "d": [
+      "Alto:",
+      "Documentación requerida",
+      "Solicitud",
+      "Sobre la Sede",
+      "Servicios Personales",
+      "Servicios Generales",
+      "Ilustre Ayuntamiento de Agüimes"
+     ]
+    },
+    {
+     "t": "Abrir nuevo hueco o modificar a puerta de garaje en fachada",
+     "e": "Sin epígrafes STA reconocibles",
+     "d": [
+      "Absentismo escolar\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nVolver",
+      "Alto:",
+      "Documentación requerida",
+      "Solicitud",
+      "Sobre la Sede",
+      "Servicios Personales",
+      "Servicios Generales",
+      "Ilustre Ayuntamiento de Agüimes"
+     ]
+    },
+    {
+     "t": "Absentismo escolar",
+     "e": "Sin epígrafes STA reconocibles",
+     "d": [
+      "Absentismo escolar\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nVolver",
+      "Alto:",
+      "Documentación requerida",
+      "Solicitud",
+      "Sobre la Sede",
+      "Servicios Personales",
+      "Servicios Generales",
+      "Ilustre Ayuntamiento de Agüimes"
+     ]
+    }
+   ]
+  },
+  {
+   "sede": "https://firma.alaquas.org",
+   "inicio": "2026-11-15T10:32:11.248Z",
+   "http": 200,
+   "url_final": "https://firma.alaquas.org/sta/CarpetaPublic/doEvent?APP_CODE=STA&PAGE_CODE=CATALOGO",
+   "host": "firma.alaquas.org",
+   "estado": "catalogo_vacio",
+   "version": "sta-multi 1.0 (base extractor_sede 1.2)",
+   "catalogo_por_fetch": true,
+   "total": 0
+  },
+  {
+   "sede": "https://ovc.alcaladeguadaira.es",
+   "inicio": "2026-11-15T10:32:20.614Z",
+   "http": 200,
+   "url_final": "https://ovc.alcaladeguadaira.es/sta/CarpetaPublic/doEvent?APP_CODE=STA&PAGE_CODE=CATALOGO",
+   "host": "ovc.alcaladeguadaira.es",
+   "estado": "terminado",
+   "version": "sta-multi 1.0 (base extractor_sede 1.2)",
+   "total": 3,
+   "hechos": 3,
+   "zip": "tramites_sede_ovc-alcaladeguadaira-es_por-organo_2026-11-15.zip",
+   "zip_bytes": 28895,
+   "fin": "2026-11-15T10:32:22.359Z",
+   "ok": 3,
+   "errores": 0,
+   "organos": 1,
+   "media_epigrafes": 2,
+   "ejemplo": {
+    "titulo": "Recurso de Reposición Providencia de Apremio",
+    "organo": "Sin órgano gestor",
+    "secciones": [
+     "descripcion",
+     "silencio_administrativo"
+    ]
+   },
+   "cobertura": {
+    "descripcion": 3,
+    "finalidad": 0,
+    "organo_gestor": 0,
+    "plazo_resolucion": 0,
+    "silencio_administrativo": 3,
+    "normativa": 0,
+    "pago_tasas": 0,
+    "informacion_adicional": 0,
+    "documentacion_relacionada": 0,
+    "documentos_presentar": 0
+   },
+   "ejemplo_errores": []
+  },
+  {
+   "sede": "https://sede.ayto-alcaladehenares.es",
+   "inicio": "2026-11-15T10:32:41.769Z",
+   "http": 200,
+   "url_final": "https://sede.ayto-alcaladehenares.es/sta/CarpetaPublic/doEvent?APP_CODE=STA&PAGE_CODE=CATALOGO",
+   "host": "sede.ayto-alcaladehenares.es",
+   "estado": "terminado",
+   "version": "sta-multi 1.0 (base extractor_sede 1.2)",
+   "total": 320,
+   "hechos": 320,
+   "zip": "tramites_sede_sede-ayto-alcaladehenares-es_por-organo_2026-11-15.zip",
+   "zip_bytes": 9860505,
+   "fin": "2026-11-15T10:34:38.738Z",
+   "ok": 318,
+   "errores": 2,
+   "organos": 5,
+   "media_epigrafes": 5.12,
+   "ejemplo": {
+    "titulo": "Sugerencias y Reclamaciones",
+    "organo": "Sin órgano gestor",
+    "secciones": [
+     "finalidad",
+     "silencio_administrativo",
+     "informacion_adicional",
+     "documentacion_relacionada",
+     "documentos_presentar"
+    ]
+   },
+   "cobertura": {
+    "descripcion": 90,
+    "finalidad": 218,
+    "organo_gestor": 20,
+    "plazo_resolucion": 133,
+    "silencio_administrativo": 318,
+    "normativa": 200,
+    "pago_tasas": 16,
+    "informacion_adicional": 73,
+    "documentacion_relacionada": 277,
+    "documentos_presentar": 284
+   },
+   "ejemplo_errores": [
+    {
+     "t": "Gestión Tributaria: Devolución derivada de la normativa del tributo",
+     "e": "Sin epígrafes STA reconocibles",
+     "d": [
+      "SEDE ELECTRÓNICA",
+      "No hay subtitulo"
+     ]
+    },
+    {
+     "t": "Recaudación: Recurso potestativo de reposición contra resolución de devolución de ingresos indebidos",
+     "e": "Sin epígrafes STA reconocibles",
+     "d": [
+      "SEDE ELECTRÓNICA",
+      "No hay subtitulo"
+     ]
+    }
+   ]
+  },
+  {
+   "sede": "https://sede.alcazardesanjuan.es",
+   "inicio": "2026-11-15T10:34:56.496Z",
+   "http": 200,
+   "url_final": "https://sede.alcazardesanjuan.es/sta/CarpetaPublic/doEvent?APP_CODE=STA&PAGE_CODE=CATALOGO",
+   "host": "sede.alcazardesanjuan.es",
+   "estado": "terminado",
+   "version": "sta-multi 1.0 (base extractor_sede 1.2)",
+   "total": 270,
+   "hechos": 270,
+   "zip": "tramites_sede_sede-alcazardesanjuan-es_por-organo_2026-11-15.zip",
+   "zip_bytes": 8502800,
+   "fin": "2026-11-15T10:36:03.718Z",
+   "ok": 267,
+   "errores": 3,
+   "organos": 59,
+   "media_epigrafes": 8.43,
+   "ejemplo": {
+    "titulo": "Aportación de documentación al Ayuntamiento",
+    "organo": "Órgano destinatario de la documentación",
+    "secciones": [
+     "descripcion",
+     "finalidad",
+     "organo_gestor",
+     "silencio_administrativo",
+     "normativa",
+     "documentacion_relacionada"
+    ]
+   },
+   "cobertura": {
+    "descripcion": 202,
+    "finalidad": 257,
+    "organo_gestor": 260,
+    "plazo_resolucion": 241,
+    "silencio_administrativo": 267,
+    "normativa": 255,
+    "pago_tasas": 156,
+    "informacion_adicional": 103,
+    "documentacion_relacionada": 254,
+    "documentos_presentar": 255
+   },
+   "ejemplo_errores": [
+    {
+     "t": "Certificado de servicios prestados (Sólo para Empleados Públicos)",
+     "e": "Sin epígrafes STA reconocibles",
+     "d": [
+      "No hay subtitulo"
+     ]
+    },
+    {
+     "t": "Concesión demanial",
+     "e": "Sin epígrafes STA reconocibles",
+     "d": [
+      "No hay subtitulo"
+     ]
+    },
+    {
+     "t": "Renuncia a contrato laboral (Sólo para Empleados Públicos)",
+     "e": "Sin epígrafes STA reconocibles",
+     "d": [
+      "No hay subtitulo"
+     ]
+    }
+   ]
+  },
+  {
+   "sede": "https://sedeelectronica.alhamademurcia.es",
+   "inicio": "2026-11-15T10:36:22.225Z",
+   "http": 200,
+   "url_final": "https://sedeelectronica.alhamademurcia.es/sta/CarpetaPublic/doEvent?APP_CODE=STA&PAGE_CODE=CATALOGO",
+   "host": "sedeelectronica.alhamademurcia.es",
+   "estado": "terminado",
+   "version": "sta-multi 1.1 (base extractor_sede 1.2; PTS2 y PTS)",
+   "total": 238,
+   "hechos": 238,
+   "zip": "tramites_sede_sedeelectronica-alhamademurcia-es_por-organo_2026-11-15.zip",
+   "zip_bytes": 3808069,
+   "fin": "2026-11-15T10:37:06.787Z",
+   "ok": 235,
+   "errores": 3,
+   "organos": 3,
+   "media_epigrafes": 3.43,
+   "ejemplo": {
+    "titulo": "Solicitud de aporte de documentación",
+    "organo": "El que proceda",
+    "secciones": [
+     "descripcion",
+     "finalidad",
+     "organo_gestor",
+     "silencio_administrativo",
+     "normativa"
+    ]
+   },
+   "cobertura": {
+    "descripcion": 209,
+    "finalidad": 53,
+    "organo_gestor": 38,
+    "plazo_resolucion": 51,
+    "silencio_administrativo": 129,
+    "normativa": 159,
+    "pago_tasas": 13,
+    "informacion_adicional": 0,
+    "documentacion_relacionada": 19,
+    "documentos_presentar": 136
+   },
+   "ejemplo_errores": [
+    {
+     "t": "Licencias de transporte público de viajeros",
+     "e": "Sin epígrafes STA reconocibles",
+     "d": [
+      "Sede electrónica",
+      "No hay subtitulo"
+     ]
+    },
+    {
+     "t": "Reclamaciones en materia de consumo",
+     "e": "Sin epígrafes STA reconocibles",
+     "d": [
+      "Sede electrónica",
+      "No hay subtitulo",
+      "Catálogo de servicios",
+      "Ámbito:",
+      "Medio de presentación:"
+     ]
+    },
+    {
+     "t": "Utilización de las instalaciones Educativas",
+     "e": "Sin epígrafes STA reconocibles",
+     "d": [
+      "Sede electrónica",
+      "No hay subtitulo",
+      "Catálogo de servicios",
+      "Ámbito:",
+      "Medio de presentación:"
+     ]
+    }
+   ]
+  },
+  {
+   "sede": "https://sede.aytoalmeria.es",
+   "inicio": "2026-11-15T10:37:20.103Z",
+   "http": 200,
+   "url_final": "https://sede.aytoalmeria.es/sta/CarpetaPublic/doEvent?APP_CODE=STA&PAGE_CODE=CATALOGO",
+   "host": "sede.aytoalmeria.es",
+   "estado": "terminado",
+   "version": "sta-multi 1.1 (base extractor_sede 1.2; PTS2 y PTS)",
+   "total": 382,
+   "hechos": 382,
+   "zip": "tramites_sede_sede-aytoalmeria-es_por-organo_2026-11-15.zip",
+   "zip_bytes": 12038172,
+   "fin": "2026-11-15T10:38:38.833Z",
+   "ok": 381,
+   "errores": 1,
+   "organos": 106,
+   "media_epigrafes": 6.49,
+   "ejemplo": {
+    "titulo": "Sugerencias y Reclamaciones Participacion y Distritos",
+    "organo": "Concejalía Delegada",
+    "secciones": [
+     "descripcion",
+     "finalidad",
+     "organo_gestor",
+     "plazo_resolucion",
+     "silencio_administrativo",
+     "normativa",
+     "pago_tasas",
+     "documentacion_relacionada",
+     "documentos_presentar"
+    ]
+   },
+   "cobertura": {
+    "descripcion": 353,
+    "finalidad": 277,
+    "organo_gestor": 274,
+    "plazo_resolucion": 231,
+    "silencio_administrativo": 342,
+    "normativa": 253,
+    "pago_tasas": 196,
+    "informacion_adicional": 82,
+    "documentacion_relacionada": 215,
+    "documentos_presentar": 248
+   },
+   "ejemplo_errores": [
+    {
+     "t": "Endosos de créditos y facturas",
+     "e": "Sin epígrafes STA reconocibles",
+     "d": [
+      "Sede electrónica",
+      "No hay subtitulo"
+     ]
+    }
+   ]
+  },
+  {
+   "sede": "https://sede.arandadeduero.es",
+   "inicio": "2026-11-15T10:39:02.862Z",
+   "http": 200,
+   "url_final": "https://sede.arandadeduero.es/sta/CarpetaPublic/doEvent?APP_CODE=STA&PAGE_CODE=CATALOGO",
+   "host": "sede.arandadeduero.es",
+   "estado": "terminado",
+   "version": "sta-multi 1.1 (base extractor_sede 1.2; PTS2 y PTS)",
+   "total": 418,
+   "hechos": 418,
+   "zip": "tramites_sede_sede-arandadeduero-es_por-organo_2026-11-15.zip",
+   "zip_bytes": 12822336,
+   "fin": "2026-11-15T10:40:30.635Z",
+   "ok": 413,
+   "errores": 5,
+   "organos": 64,
+   "media_epigrafes": 7.02,
+   "ejemplo": {
+    "titulo": "Aportación de documentación",
+    "organo": "Oficina de Atención al Ciudadano",
+    "secciones": [
+     "descripcion",
+     "finalidad",
+     "organo_gestor",
+     "plazo_resolucion",
+     "silencio_administrativo",
+     "normativa"
+    ]
+   },
+   "cobertura": {
+    "descripcion": 411,
+    "finalidad": 304,
+    "organo_gestor": 384,
+    "plazo_resolucion": 253,
+    "silencio_administrativo": 410,
+    "normativa": 286,
+    "pago_tasas": 74,
+    "informacion_adicional": 93,
+    "documentacion_relacionada": 329,
+    "documentos_presentar": 355
+   },
+   "ejemplo_errores": [
+    {
+     "t": "Acuerdo de Disolución de Junta de Compensación",
+     "e": "Sin epígrafes STA reconocibles",
+     "d": [
+      "SEDE ELECTRÓNICA",
+      "No hay subtitulo"
+     ]
+    },
+    {
+     "t": "Disolución de asociación adminsitrativa-urbanistica colaboradora",
+     "e": "Sin epígrafes STA reconocibles",
+     "d": [
+      "SEDE ELECTRÓNICA",
+      "No hay subtitulo"
+     ]
+    },
+    {
+     "t": "Expropiación forzosa por Razón de Urbanismo mediante procedimiento de Urgencia",
+     "e": "Sin epígrafes STA reconocibles",
+     "d": [
+      "SEDE ELECTRÓNICA",
+      "No hay subtitulo"
+     ]
+    }
+   ]
+  },
+  {
+   "sede": "https://sedeelectronica.argandadelrey.es",
+   "inicio": "2026-11-15T10:40:48.458Z",
+   "http": 200,
+   "url_final": "https://sedeelectronica.argandadelrey.es/sta/CarpetaPublic/doEvent?APP_CODE=STA&PAGE_CODE=CATALOGO",
+   "host": "sedeelectronica.argandadelrey.es",
+   "estado": "terminado",
+   "version": "sta-multi 1.1 (base extractor_sede 1.2; PTS2 y PTS)",
+   "total": 114,
+   "hechos": 114,
+   "zip": "tramites_sede_sedeelectronica-argandadelrey-es_por-organo_2026-11-15.zip",
+   "zip_bytes": 5811936,
+   "fin": "2026-11-15T10:41:49.198Z",
+   "ok": 113,
+   "errores": 1,
+   "organos": 26,
+   "media_epigrafes": 8.72,
+   "ejemplo": {
+    "titulo": "Solicitud de instancia general",
+    "organo": "Unidad que corresponda en función de la materia objeto de solicitud",
+    "secciones": [
+     "descripcion",
+     "finalidad",
+     "organo_gestor",
+     "plazo_resolucion",
+     "silencio_administrativo",
+     "normativa",
+     "documentacion_relacionada",
+     "documentos_presentar"
+    ]
+   },
+   "cobertura": {
+    "descripcion": 113,
+    "finalidad": 109,
+    "organo_gestor": 111,
+    "plazo_resolucion": 92,
+    "silencio_administrativo": 110,
+    "normativa": 106,
+    "pago_tasas": 47,
+    "informacion_adicional": 77,
+    "documentacion_relacionada": 109,
+    "documentos_presentar": 111
+   },
+   "ejemplo_errores": [
+    {
+     "t": "Informes y certificados urbanísticos - Cedula urbanística",
+     "e": "Sin epígrafes STA reconocibles",
+     "d": [
+      "Sede Electrónica",
+      "No hay subtitulo"
+     ]
+    }
+   ]
+  },
+  {
+   "sede": "https://sta.arona.org",
+   "inicio": "2026-11-15T10:42:06.367Z",
+   "http": 200,
+   "url_final": "https://sta.arona.org/sta/CarpetaPublic/doEvent?APP_CODE=STA&PAGE_CODE=CATALOGO",
+   "host": "sta.arona.org",
+   "estado": "terminado",
+   "version": "sta-multi 1.1 (base extractor_sede 1.2; PTS2 y PTS)",
+   "total": 227,
+   "hechos": 227,
+   "zip": "tramites_sede_sta-arona-org_por-organo_2026-11-15.zip",
+   "zip_bytes": 8124370,
+   "fin": "2026-11-15T10:43:40.675Z",
+   "ok": 218,
+   "errores": 9,
+   "organos": 3,
+   "media_epigrafes": 3,
+   "ejemplo": {
+    "titulo": "002 - Derecho de Acceso (Ley de Transparencia)",
+    "organo": "Sin órgano gestor",
+    "secciones": [
+     "descripcion",
+     "silencio_administrativo",
+     "documentos_presentar"
+    ]
+   },
+   "cobertura": {
+    "descripcion": 218,
+    "finalidad": 3,
+    "organo_gestor": 3,
+    "plazo_resolucion": 3,
+    "silencio_administrativo": 208,
+    "normativa": 2,
+    "pago_tasas": 2,
+    "informacion_adicional": 2,
+    "documentacion_relacionada": 0,
+    "documentos_presentar": 214
+   },
+   "ejemplo_errores": [
+    {
+     "t": "005 - Solicitud general",
+     "e": "Sin epígrafes STA reconocibles",
+     "d": [
+      "Carpeta Ciudadana",
+      "No hay subtitulo"
+     ]
+    },
+    {
+     "t": "Actividad Clasificada - Comunicación de Transmisión de Instalación o Actividad Clasificada",
+     "e": "Sin epígrafes STA reconocibles",
+     "d": [
+      "Carpeta Ciudadana",
+      "No hay subtitulo"
+     ]
+    },
+    {
+     "t": "Asignación de un plus para el OASS",
+     "e": "Sin epígrafes STA reconocibles",
+     "d": [
+      "Carpeta Ciudadana",
+      "No hay subtitulo"
+     ]
+    }
+   ]
+  },
+  {
+   "sede": "https://sede.aspe.es",
+   "inicio": "2026-11-15T10:44:03.047Z",
+   "http": 200,
+   "url_final": "https://sede.aspe.es/sta/CarpetaPublic/doEvent?APP_CODE=STA&PAGE_CODE=CATALOGO",
+   "host": "sede.aspe.es",
+   "estado": "terminado",
+   "version": "sta-multi 1.1 (base extractor_sede 1.2; PTS2 y PTS)",
+   "total": 89,
+   "hechos": 89,
+   "zip": "tramites_sede_sede-aspe-es_por-organo_2026-11-15.zip",
+   "zip_bytes": 1891963,
+   "fin": "2026-11-15T10:44:59.488Z",
+   "ok": 88,
+   "errores": 1,
+   "organos": 1,
+   "media_epigrafes": 3.1,
+   "ejemplo": {
+    "titulo": "Solicitud General (Genérica) de Registro Electrónico de Entrada",
+    "organo": "Sin órgano gestor",
+    "secciones": [
+     "descripcion",
+     "silencio_administrativo",
+     "documentos_presentar"
+    ]
+   },
+   "cobertura": {
+    "descripcion": 88,
+    "finalidad": 16,
+    "organo_gestor": 0,
+    "plazo_resolucion": 0,
+    "silencio_administrativo": 83,
+    "normativa": 0,
+    "pago_tasas": 0,
+    "informacion_adicional": 0,
+    "documentacion_relacionada": 3,
+    "documentos_presentar": 83
+   },
+   "ejemplo_errores": [
+    {
+     "t": "Emergencia Habitacional. EMH",
+     "e": "Sin epígrafes STA reconocibles",
+     "d": [
+      "CARPETA CIUDADANA",
+      "No hay subtitulo"
+     ]
+    }
+   ]
+  },
+  {
+   "sede": "https://ovc.azuqueca.es",
+   "inicio": "2026-11-15T10:45:12.294Z",
+   "http": 200,
+   "url_final": "https://ovc.azuqueca.es/sta/CarpetaPublic/doEvent?APP_CODE=STA&PAGE_CODE=CATALOGO",
+   "host": "ovc.azuqueca.es",
+   "estado": "terminado",
+   "version": "sta-multi 1.1 (base extractor_sede 1.2; PTS2 y PTS)",
+   "total": 3,
+   "hechos": 3,
+   "zip": "tramites_sede_ovc-azuqueca-es_por-organo_2026-11-15.zip",
+   "zip_bytes": 26958,
+   "fin": "2026-11-15T10:45:13.712Z",
+   "ok": 3,
+   "errores": 0,
+   "organos": 1,
+   "media_epigrafes": 2,
+   "ejemplo": {
+    "titulo": "Recurso contra la providencia de apremio",
+    "organo": "Sin órgano gestor",
+    "secciones": [
+     "descripcion",
+     "silencio_administrativo"
+    ]
+   },
+   "cobertura": {
+    "descripcion": 3,
+    "finalidad": 0,
+    "organo_gestor": 0,
+    "plazo_resolucion": 0,
+    "silencio_administrativo": 3,
+    "normativa": 0,
+    "pago_tasas": 0,
+    "informacion_adicional": 0,
+    "documentacion_relacionada": 0,
+    "documentos_presentar": 0
+   },
+   "ejemplo_errores": []
+  },
+  {
+   "sede": "https://seu.badalona.cat",
+   "inicio": "2026-11-15T10:45:34.837Z",
+   "http": 200,
+   "url_final": "https://seu.badalona.cat/sta/CarpetaPublic/doEvent?APP_CODE=STA&PAGE_CODE=CATALOGO",
+   "host": "seu.badalona.cat",
+   "estado": "terminado",
+   "version": "sta-multi 1.1 (base extractor_sede 1.2; PTS2 y PTS)",
+   "total": 360,
+   "hechos": 360,
+   "zip": "tramites_sede_seu-badalona-cat_por-organo_2026-11-15.zip",
+   "zip_bytes": 5880012,
+   "fin": "2026-11-15T10:48:06.998Z",
+   "ok": 308,
+   "errores": 52,
+   "organos": 1,
+   "media_epigrafes": 1,
+   "ejemplo": {
+    "titulo": "Aportació de documentació a l'Ajuntament",
+    "organo": "Sin órgano gestor",
+    "secciones": [
+     "normativa"
+    ]
+   },
+   "cobertura": {
+    "descripcion": 0,
+    "finalidad": 0,
+    "organo_gestor": 0,
+    "plazo_resolucion": 0,
+    "silencio_administrativo": 0,
+    "normativa": 308,
+    "pago_tasas": 0,
+    "informacion_adicional": 0,
+    "documentacion_relacionada": 0,
+    "documentos_presentar": 0
+   },
+   "ejemplo_errores": [
+    {
+     "t": "Acollida d'animals de companyia al CCAAC",
+     "e": "Sin epígrafes STA reconocibles",
+     "d": [
+      "Dades meves",
+      "Informació de la Seu",
+      "Serveis Personals",
+      "Serveis Generals",
+      "Excm. Ajuntament de Badalona"
+     ]
+    },
+    {
+     "t": "Activitats per a dones",
+     "e": "Sin epígrafes STA reconocibles",
+     "d": [
+      "Dades meves",
+      "Activitats per a dones\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nTornar",
+      "Informació de la Seu",
+      "Serveis Personals",
+      "Serveis Generals",
+      "Excm. Ajuntament de Badalona"
+     ]
+    },
+    {
+     "t": "Alertes tributàries SMS i E-MAIL",
+     "e": "Sin epígrafes STA reconocibles",
+     "d": [
+      "Dades meves",
+      "Tramitació electrònica",
+      "Informació de la Seu",
+      "Serveis Personals",
+      "Serveis Generals",
+      "Excm. Ajuntament de Badalona"
+     ]
+    }
+   ]
+  },
+  {
+   "sede": "https://sede.benalmadena.es",
+   "inicio": "2026-11-15T10:48:29.047Z",
+   "http": 200,
+   "url_final": "https://sede.benalmadena.es/sta/CarpetaPublic/doEvent?APP_CODE=STA&PAGE_CODE=CATALOGO",
+   "host": "sede.benalmadena.es",
+   "estado": "terminado",
+   "version": "sta-multi 1.1 (base extractor_sede 1.2; PTS2 y PTS)",
+   "total": 396,
+   "hechos": 396,
+   "zip": "tramites_sede_sede-benalmadena-es_por-organo_2026-11-15.zip",
+   "zip_bytes": 13130776,
+   "fin": "2026-11-15T10:50:49.263Z",
+   "ok": 396,
+   "errores": 0,
+   "organos": 1,
+   "media_epigrafes": 6.62,
+   "ejemplo": {
+    "titulo": "Aportación de documentación a un expediente",
+    "organo": "Sin órgano gestor",
+    "secciones": [
+     "descripcion",
+     "finalidad",
+     "plazo_resolucion",
+     "silencio_administrativo",
+     "normativa"
+    ]
+   },
+   "cobertura": {
+    "descripcion": 395,
+    "finalidad": 390,
+    "organo_gestor": 0,
+    "plazo_resolucion": 297,
+    "silencio_administrativo": 393,
+    "normativa": 377,
+    "pago_tasas": 223,
+    "informacion_adicional": 0,
+    "documentacion_relacionada": 159,
+    "documentos_presentar": 388
+   },
+   "ejemplo_errores": []
+  },
+  {
+   "sede": "https://seu.blanes.cat",
+   "inicio": "2026-11-15T10:51:06.464Z",
+   "http": 200,
+   "url_final": "https://seu.blanes.cat/sta/CarpetaPublic/doEvent?APP_CODE=STA&PAGE_CODE=CATALOGO",
+   "host": "seu.blanes.cat",
+   "estado": "terminado",
+   "version": "sta-multi 1.1 (base extractor_sede 1.2; PTS2 y PTS)",
+   "total": 151,
+   "hechos": 151,
+   "zip": "tramites_sede_seu-blanes-cat_por-organo_2026-11-15.zip",
+   "zip_bytes": 1684730,
+   "fin": "2026-11-15T10:51:51.827Z",
+   "ok": 125,
+   "errores": 26,
+   "organos": 1,
+   "media_epigrafes": 1,
+   "ejemplo": {
+    "titulo": "Activitats amb risc d'incendi forestal (15 de març- 15 d'octubre)",
+    "organo": "Sin órgano gestor",
+    "secciones": [
+     "normativa"
+    ]
+   },
+   "cobertura": {
+    "descripcion": 0,
+    "finalidad": 0,
+    "organo_gestor": 0,
+    "plazo_resolucion": 0,
+    "silencio_administrativo": 0,
+    "normativa": 125,
+    "pago_tasas": 0,
+    "informacion_adicional": 0,
+    "documentacion_relacionada": 0,
+    "documentos_presentar": 0
+   },
+   "ejemplo_errores": [
+    {
+     "t": "Admissió d'al·legacions a denúncia de trànsit",
+     "e": "Sin epígrafes STA reconocibles",
+     "d": [
+      "- Telemàticament:",
+      "- Presencialment:",
+      "A l’Oficina del Consell Comarcal de la Selva",
+      "A l’Oficina d’Atenció Ciutadana (AMIC)",
+      "Es recomana demanar cita prèvia:",
+      "Per internet:",
+      "Per Telèfon:",
+      "- Correu postal",
+      "INFORMACIÓ I ADVERTÈNCIES LEGALS",
+      "ÒRGAN INSTRUCTOR:",
+      "AUTORITAT SANCIONADORA:",
+      "PAGAMENT:"
+     ]
+    },
+    {
+     "t": "Canvi de titular comunicació prèvia",
+     "e": "Sin epígrafes STA reconocibles",
+     "d": [
+      "TRÀMITS PRESENCIALS",
+      "A l'oficina del Consell Comarcal de la Selva",
+      "TRÀMITS ONLINE (FUE)",
+      "Informació de la Seu",
+      "Serveis Personals",
+      "Serveis Generals",
+      "Ajuntament de Blanes"
+     ]
+    },
+    {
+     "t": "Comunicació prèvia de modificació no substancial d'activitat amb efectes sobre persones o medi",
+     "e": "Sin epígrafes STA reconocibles",
+     "d": [
+      "TRÀMITS PRESENCIALS",
+      "A l'oficina del Consell Comarcal de la Selva",
+      "TRÀMITS ONLINE (FUE)",
+      "Informació de la Seu",
+      "Serveis Personals",
+      "Serveis Generals",
+      "Ajuntament de Blanes"
+     ]
+    }
+   ]
+  },
+  {
+   "sede": "https://sede.aytoburgos.es",
+   "inicio": "2026-11-15T10:52:09.235Z",
+   "http": 200,
+   "url_final": "https://sede.aytoburgos.es/sta/CarpetaPublic/doEvent?APP_CODE=STA&PAGE_CODE=CATALOGO",
+   "host": "sede.aytoburgos.es",
+   "estado": "terminado",
+   "version": "sta-multi 1.1 (base extractor_sede 1.2; PTS2 y PTS)",
+   "total": 274,
+   "hechos": 274,
+   "zip": "tramites_sede_sede-aytoburgos-es_por-organo_2026-11-15.zip",
+   "zip_bytes": 7596729,
+   "fin": "2026-11-15T10:53:27.591Z",
+   "ok": 271,
+   "errores": 3,
+   "organos": 55,
+   "media_epigrafes": 7.04,
+   "ejemplo": {
+    "titulo": "Aportación de documentación a expediente",
+    "organo": "Sin órgano gestor",
+    "secciones": [
+     "descripcion",
+     "finalidad",
+     "silencio_administrativo",
+     "documentos_presentar"
+    ]
+   },
+   "cobertura": {
+    "descripcion": 258,
+    "finalidad": 204,
+    "organo_gestor": 256,
+    "plazo_resolucion": 140,
+    "silencio_administrativo": 271,
+    "normativa": 186,
+    "pago_tasas": 152,
+    "informacion_adicional": 55,
+    "documentacion_relacionada": 132,
+    "documentos_presentar": 255
+   },
+   "ejemplo_errores": [
+    {
+     "t": "Aceptación cesiones gratuitas de terrenos exteriores a las alineaciones planeamiento urbanístico",
+     "e": "Sin epígrafes STA reconocibles",
+     "d": [
+      "Sede Electrónica",
+      "No hay subtitulo"
+     ]
+    },
+    {
+     "t": "Plan personalizado de pago",
+     "e": "Sin epígrafes STA reconocibles",
+     "d": [
+      "Sede Electrónica",
+      "No hay subtitulo"
+     ]
+    },
+    {
+     "t": "Restos óseos para estudio e investigación",
+     "e": "Sin epígrafes STA reconocibles",
+     "d": [
+      "Sede Electrónica",
+      "No hay subtitulo"
+     ]
+    }
+   ]
+  },
+  {
+   "sede": "https://sede.burjassot.org",
+   "inicio": "2026-11-15T10:53:41.250Z",
+   "http": 200,
+   "url_final": "https://sede.burjassot.org/sta/CarpetaPublic/doEvent?APP_CODE=STA&PAGE_CODE=CATALOGO",
+   "host": "sede.burjassot.org",
+   "estado": "terminado",
+   "version": "sta-multi 1.1 (base extractor_sede 1.2; PTS2 y PTS)",
+   "total": 111,
+   "hechos": 111,
+   "zip": "tramites_sede_sede-burjassot-org_por-organo_2026-11-15.zip",
+   "zip_bytes": 4811430,
+   "fin": "2026-11-15T10:54:18.069Z",
+   "ok": 111,
+   "errores": 0,
+   "organos": 36,
+   "media_epigrafes": 7.4,
+   "ejemplo": {
+    "titulo": "Aportación de documentación al Ayuntamiento",
+    "organo": "Oficina de Atención al Ciudadano",
+    "secciones": [
+     "descripcion",
+     "finalidad",
+     "organo_gestor",
+     "silencio_administrativo",
+     "normativa"
+    ]
+   },
+   "cobertura": {
+    "descripcion": 110,
+    "finalidad": 99,
+    "organo_gestor": 93,
+    "plazo_resolucion": 47,
+    "silencio_administrativo": 111,
+    "normativa": 80,
+    "pago_tasas": 21,
+    "informacion_adicional": 73,
+    "documentacion_relacionada": 91,
+    "documentos_presentar": 96
+   },
+   "ejemplo_errores": []
+  },
+  {
+   "sede": "https://sede.caceres.es",
+   "inicio": "2026-11-15T10:54:33.852Z",
+   "http": 200,
+   "url_final": "https://sede.caceres.es/sta/CarpetaPublic/doEvent?APP_CODE=STA&PAGE_CODE=CATALOGO",
+   "host": "sede.caceres.es",
+   "estado": "terminado",
+   "version": "sta-multi 1.1 (base extractor_sede 1.2; PTS2 y PTS)",
+   "total": 335,
+   "hechos": 335,
+   "zip": "tramites_sede_sede-caceres-es_por-organo_2026-11-15.zip",
+   "zip_bytes": 13947815,
+   "fin": "2026-11-15T10:55:42.768Z",
+   "ok": 332,
+   "errores": 3,
+   "organos": 80,
+   "media_epigrafes": 7.98,
+   "ejemplo": {
+    "titulo": "Aportación de documentación",
+    "organo": "Oficina de Atención al Ciudadano",
+    "secciones": [
+     "descripcion",
+     "finalidad",
+     "organo_gestor",
+     "plazo_resolucion",
+     "silencio_administrativo",
+     "normativa"
+    ]
+   },
+   "cobertura": {
+    "descripcion": 260,
+    "finalidad": 315,
+    "organo_gestor": 327,
+    "plazo_resolucion": 258,
+    "silencio_administrativo": 306,
+    "normativa": 291,
+    "pago_tasas": 198,
+    "informacion_adicional": 260,
+    "documentacion_relacionada": 122,
+    "documentos_presentar": 312
+   },
+   "ejemplo_errores": [
+    {
+     "t": "Alojamiento Interino en Despachos o Puestos de Coworking del Edificio Embarcadero de ALDEALAB",
+     "e": "Sin epígrafes STA reconocibles",
+     "d": [
+      "Sede electrónica",
+      "No hay subtitulo",
+      "Catálogo de trámites",
+      "Instancia General",
+      "Modelo de Autorización",
+      "Autorizacion Presentacion Solicitud",
+      "Ficheros Grandes",
+      "Departamento:",
+      "Medio de presentación:"
+     ]
+    },
+    {
+     "t": "Anticipos reintegrables para trabajadores del Ayuntamiento",
+     "e": "Sin epígrafes STA reconocibles",
+     "d": [
+      "Sede electrónica",
+      "No hay subtitulo",
+      "Catálogo de trámites",
+      "Instancia General",
+      "Modelo de Autorización",
+      "Autorizacion Presentacion Solicitud",
+      "Ficheros Grandes",
+      "Departamento:",
+      "Medio de presentación:"
+     ]
+    },
+    {
+     "t": "Liquidación IVTM para matriculación de vehículos",
+     "e": "Sin epígrafes STA reconocibles",
+     "d": [
+      "Sede electrónica",
+      "No hay subtitulo"
+     ]
+    }
+   ]
+  },
+  {
+   "sede": "https://sede.calahorra.es",
+   "inicio": "2026-11-15T10:55:59.011Z",
+   "http": 200,
+   "url_final": "https://sede.calahorra.es/sta/CarpetaPublic/doEvent?APP_CODE=STA&PAGE_CODE=CATALOGO",
+   "host": "sede.calahorra.es",
+   "estado": "terminado",
+   "version": "sta-multi 1.1 (base extractor_sede 1.2; PTS2 y PTS)",
+   "total": 110,
+   "hechos": 110,
+   "zip": "tramites_sede_sede-calahorra-es_por-organo_2026-11-15.zip",
+   "zip_bytes": 2189135,
+   "fin": "2026-11-15T10:56:22.915Z",
+   "ok": 108,
+   "errores": 2,
+   "organos": 1,
+   "media_epigrafes": 2.01,
+   "ejemplo": {
+    "titulo": "Quejas y Sugerencias",
+    "organo": "Sin órgano gestor",
+    "secciones": [
+     "descripcion",
+     "documentos_presentar"
+    ]
+   },
+   "cobertura": {
+    "descripcion": 107,
+    "finalidad": 0,
+    "organo_gestor": 0,
+    "plazo_resolucion": 0,
+    "silencio_administrativo": 0,
+    "normativa": 7,
+    "pago_tasas": 1,
+    "informacion_adicional": 3,
+    "documentacion_relacionada": 0,
+    "documentos_presentar": 99
+   },
+   "ejemplo_errores": [
+    {
+     "t": "Presentación de documentación a expedientes en trámite",
+     "e": "Sin epígrafes STA reconocibles",
+     "d": [
+      "Sede electrónica",
+      "No hay subtitulo",
+      "Aportación de Documentación",
+      "Para qué sirve este expediente",
+      "CÓDIGO DEL EXPEDIENTE ELECTRÓNICO: AP-DOCGEN",
+      "Sobre el trámite",
+      "¿Quién puede solicitarlo / iniciarlo?",
+      "¿Cuándo puedo solicitarlo / iniciarlo?",
+      "¿Dónde puedo solicitarlo?",
+      "Modos de aportación:",
+      "Aportación libre",
+      "Aportación de documentación por requerimiento"
+     ]
+    },
+    {
+     "t": "Solicitud de devolución de ingresos por prorrateo",
+     "e": "Sin epígrafes STA reconocibles",
+     "d": [
+      "Sede electrónica",
+      "No hay subtitulo"
+     ]
+    }
+   ]
+  },
+  {
+   "sede": "https://seu.castelldefels.org",
+   "inicio": "2026-11-15T10:56:37.089Z",
+   "http": 200,
+   "url_final": "https://seu.castelldefels.org/sta/CarpetaPublic/doEvent?APP_CODE=STA&PAGE_CODE=CATALOGO",
+   "host": "seu.castelldefels.org",
+   "estado": "terminado",
+   "version": "sta-multi 1.1 (base extractor_sede 1.2; PTS2 y PTS)",
+   "total": 230,
+   "hechos": 230,
+   "zip": "tramites_sede_seu-castelldefels-org_por-organo_2026-11-15.zip",
+   "zip_bytes": 2654610,
+   "fin": "2026-11-15T10:57:36.813Z",
+   "ok": 140,
+   "errores": 90,
+   "organos": 1,
+   "media_epigrafes": 1,
+   "ejemplo": {
+    "titulo": "CP01.1 Obres - Comunicació prèvia d'obres (sense projecte)",
+    "organo": "Sin órgano gestor",
+    "secciones": [
+     "normativa"
+    ]
+   },
+   "cobertura": {
+    "descripcion": 0,
+    "finalidad": 0,
+    "organo_gestor": 0,
+    "plazo_resolucion": 0,
+    "silencio_administrativo": 0,
+    "normativa": 140,
+    "pago_tasas": 0,
+    "informacion_adicional": 0,
+    "documentacion_relacionada": 0,
+    "documentos_presentar": 0
+   },
+   "ejemplo_errores": [
+    {
+     "t": "Presentació de documentació a expedients en tràmit",
+     "e": "Sin epígrafes STA reconocibles",
+     "d": [
+      "Seu electrònica",
+      "No hay subtitulo",
+      "Aportació de documentació a un expedient en tràmit.",
+      "Terminis de presentació",
+      "Nivell d'identificació del sol·licitant",
+      "Substancial:",
+      "Documents a presentar",
+      "suport.oac@castelldefels.org"
+     ]
+    },
+    {
+     "t": "CP02 Obres - Comunicació prèvia - Primera ocupació i utilització",
+     "e": "Sin epígrafes STA reconocibles",
+     "d": [
+      "Seu electrònica",
+      "No hay subtitulo",
+      "Descripció",
+      "Finalitat",
+      "Qui ho pot presentar",
+      "Terminis de presentació",
+      "Òrgan gestor",
+      "Termini de resolució",
+      "Informació addicional",
+      "Tramitació presencial:",
+      "Documentació relacionada",
+      "Nivell d'identificació del sol·licitant"
+     ]
+    },
+    {
+     "t": "Adquisició d'entrades pels espectacles de la programació estable de teatre, música i dansa.",
+     "e": "Sin epígrafes STA reconocibles",
+     "d": [
+      "Seu electrònica",
+      "No hay subtitulo",
+      "Descripció",
+      "Finalitat",
+      "Servei d'Atenció a les persones amb discapacitat",
+      "Terminis de presentació",
+      "Termini de resolució",
+      "Pagament de taxes",
+      "Informació addicional",
+      "suport.oac@castelldefels.org"
+     ]
+    }
+   ]
+  },
+  {
+   "sede": "https://sede.denia.es",
+   "inicio": "2026-11-15T10:57:48.962Z",
+   "http": 200,
+   "url_final": "https://sede.denia.es/sta/CarpetaPublic/doEvent?APP_CODE=STA&PAGE_CODE=CATALOGO",
+   "host": "sede.denia.es",
+   "estado": "terminado",
+   "version": "sta-multi 1.1 (base extractor_sede 1.2; PTS2 y PTS)",
+   "total": 256,
+   "hechos": 256,
+   "zip": "tramites_sede_sede-denia-es_por-organo_2026-11-15.zip",
+   "zip_bytes": 2900613,
+   "fin": "2026-11-15T10:58:50.904Z",
+   "ok": 217,
+   "errores": 39,
+   "organos": 1,
+   "media_epigrafes": 1,
+   "ejemplo": {
+    "titulo": "Aportació de documentació",
+    "organo": "Sin órgano gestor",
+    "secciones": [
+     "normativa"
+    ]
+   },
+   "cobertura": {
+    "descripcion": 0,
+    "finalidad": 0,
+    "organo_gestor": 0,
+    "plazo_resolucion": 0,
+    "silencio_administrativo": 0,
+    "normativa": 217,
+    "pago_tasas": 0,
+    "informacion_adicional": 0,
+    "documentacion_relacionada": 0,
+    "documentos_presentar": 0
+   },
+   "ejemplo_errores": [
+    {
+     "t": "Sol·licitud d'instància general",
+     "e": "Sin epígrafes STA reconocibles",
+     "d": [
+      "Seu electrònica",
+      "No hay subtitulo",
+      "Sol·licitud d'instància general",
+      "Descripció",
+      "Finalitat",
+      "Efecte del silenci Administratiu",
+      "Documentació relacionada",
+      "Nivell d'identificació del sol·licitant",
+      "Documents a Presentar",
+      "Documentació / Documentación requerida",
+      "Sol·licitud",
+      "Documentació / Documentación complementaria"
+     ]
+    },
+    {
+     "t": "Alta o modificació dades bancaries",
+     "e": "Sin epígrafes STA reconocibles",
+     "d": [
+      "Seu electrònica",
+      "No hay subtitulo",
+      "Alta o modificació dades bancaries",
+      "Descripció",
+      "Finalitat",
+      "Qui ho pot presentar",
+      "Terminis de Presentació",
+      "Presentació",
+      "Òrgan Gestor",
+      "Efecte del silenci Administratiu",
+      "Documentació relacionada",
+      "Nivell d'identificació del sol·licitant"
+     ]
+    },
+    {
+     "t": "Assumptes de la Policia Local",
+     "e": "Sin epígrafes STA reconocibles",
+     "d": [
+      "Seu electrònica",
+      "No hay subtitulo",
+      "Assumptes de la Policia Local",
+      "Descripció",
+      "Finalitat",
+      "Qui ho pot presentar",
+      "Òrgan Gestor",
+      "Efecte del silenci Administratiu",
+      "Documentació relacionada",
+      "Nivell d'identificació del sol·licitant",
+      "Documents a Presentar",
+      "Documentació/Documentación requerida"
+     ]
+    }
+   ]
+  },
+  {
+   "sede": "https://sede.doshermanas.es",
+   "inicio": "2026-11-15T10:59:09.571Z",
+   "http": 200,
+   "url_final": "https://sede.doshermanas.es/sta/CarpetaPublic/doEvent?APP_CODE=STA&PAGE_CODE=CATALOGO",
+   "host": "sede.doshermanas.es",
+   "estado": "terminado",
+   "version": "sta-multi 1.1 (base extractor_sede 1.2; PTS2 y PTS)",
+   "total": 243,
+   "hechos": 243,
+   "zip": "tramites_sede_sede-doshermanas-es_por-organo_2026-11-15.zip",
+   "zip_bytes": 5460132,
+   "fin": "2026-11-15T11:00:41.477Z",
+   "ok": 242,
+   "errores": 1,
+   "organos": 37,
+   "media_epigrafes": 6.12,
+   "ejemplo": {
+    "titulo": "Quejas, preguntas y sugerencias",
+    "organo": "Sin órgano gestor",
+    "secciones": [
+     "descripcion",
+     "silencio_administrativo",
+     "normativa",
+     "pago_tasas",
+     "documentos_presentar"
+    ]
+   },
+   "cobertura": {
+    "descripcion": 236,
+    "finalidad": 27,
+    "organo_gestor": 216,
+    "plazo_resolucion": 91,
+    "silencio_administrativo": 242,
+    "normativa": 228,
+    "pago_tasas": 136,
+    "informacion_adicional": 35,
+    "documentacion_relacionada": 33,
+    "documentos_presentar": 236
+   },
+   "ejemplo_errores": [
+    {
+     "t": "Alta/modificación de bienes en el Inventario Municipal",
+     "e": "Sin epígrafes STA reconocibles",
+     "d": [
+      "Sede electrónica",
+      "No hay subtitulo",
+      "Alta/modificación de bienes en el Inventario Municipal",
+      "REQUISITOS Y RECOMENDACIONES TÉCNICAS"
+     ]
+    }
+   ]
+  },
+  {
+   "sede": "https://sede.elche.es",
+   "inicio": "2026-11-15T11:01:00.449Z",
+   "http": 200,
+   "url_final": "https://sede.elche.es/sta/CarpetaPublic/doEvent?APP_CODE=STA&PAGE_CODE=CATALOGO",
+   "host": "sede.elche.es",
+   "estado": "terminado",
+   "version": "sta-multi 1.1 (base extractor_sede 1.2; PTS2 y PTS)",
+   "total": 525,
+   "hechos": 525,
+   "zip": "tramites_sede_sede-elche-es_por-organo_2026-11-15.zip",
+   "zip_bytes": 17616235,
+   "fin": "2026-11-15T11:03:35.182Z",
+   "ok": 520,
+   "errores": 5,
+   "organos": 190,
+   "media_epigrafes": 6.9,
+   "ejemplo": {
+    "titulo": "Exención de la tarifa para el acceso al autobús para estudiantes menores de 26 años",
+    "organo": "Oficina Municipal de Tramitación de Ayudas",
+    "secciones": [
+     "finalidad",
+     "organo_gestor",
+     "plazo_resolucion",
+     "silencio_administrativo",
+     "normativa",
+     "pago_tasas",
+     "informacion_adicional",
+     "documentacion_relacionada",
+     "documentos_presentar"
+    ]
+   },
+   "cobertura": {
+    "descripcion": 0,
+    "finalidad": 520,
+    "organo_gestor": 495,
+    "plazo_resolucion": 292,
+    "silencio_administrativo": 520,
+    "normativa": 380,
+    "pago_tasas": 266,
+    "informacion_adicional": 418,
+    "documentacion_relacionada": 212,
+    "documentos_presentar": 486
+   },
+   "ejemplo_errores": [
+    {
+     "t": "Certificaciones generales (Visitelche)",
+     "e": "Sin epígrafes STA reconocibles",
+     "d": [
+      "Sede electrónica",
+      "No hay subtitulo",
+      "Certificaciones generales (Visitelche)"
+     ]
+    },
+    {
+     "t": "Inhumaciones de beneficencia",
+     "e": "Sin epígrafes STA reconocibles",
+     "d": [
+      "Mensaje de error"
+     ]
+    },
+    {
+     "t": "Prestación económica de acogimiento familiar",
+     "e": "Sin epígrafes STA reconocibles",
+     "d": [
+      "Sede electrónica",
+      "No hay subtitulo",
+      "Catálogo de servicios",
+      "Importante:",
+      "Ámbito:",
+      "Medio de presentación:"
+     ]
+    }
+   ]
+  },
+  {
+   "sede": "https://sede.fuengirola.es",
+   "inicio": "2026-11-15T11:03:59.334Z",
+   "http": 200,
+   "url_final": "https://sede.fuengirola.es/sta/CarpetaPublic/doEvent?APP_CODE=STA&PAGE_CODE=CATALOGO",
+   "host": "sede.fuengirola.es",
+   "estado": "terminado",
+   "version": "sta-multi 1.1 (base extractor_sede 1.2; PTS2 y PTS)",
+   "total": 223,
+   "hechos": 223,
+   "zip": "tramites_sede_sede-fuengirola-es_por-organo_2026-11-15.zip",
+   "zip_bytes": 7338390,
+   "fin": "2026-11-15T11:05:21.802Z",
+   "ok": 221,
+   "errores": 2,
+   "organos": 7,
+   "media_epigrafes": 6.62,
+   "ejemplo": {
+    "titulo": "Solicitud General - Registro General de Entrada",
+    "organo": "Ayuntamiento de Fuengirola",
+    "secciones": [
+     "descripcion",
+     "finalidad",
+     "organo_gestor",
+     "silencio_administrativo",
+     "documentacion_relacionada",
+     "documentos_presentar"
+    ]
+   },
+   "cobertura": {
+    "descripcion": 219,
+    "finalidad": 173,
+    "organo_gestor": 196,
+    "plazo_resolucion": 4,
+    "silencio_administrativo": 219,
+    "normativa": 126,
+    "pago_tasas": 61,
+    "informacion_adicional": 189,
+    "documentacion_relacionada": 142,
+    "documentos_presentar": 135
+   },
+   "ejemplo_errores": [
+    {
+     "t": "Solicitud general de instalaciones (personas y entidades NO locales)",
+     "e": "Sin epígrafes STA reconocibles",
+     "d": [
+      "Sede electrónica",
+      "No hay subtitulo"
+     ]
+    },
+    {
+     "t": "Solicitud Licencia para Montaje de Grúa",
+     "e": "Sin epígrafes STA reconocibles",
+     "d": [
+      "Sede electrónica",
+      "No hay subtitulo"
+     ]
+    }
+   ]
+  },
+  {
+   "sede": "https://sede.fuenlabrada.es",
+   "inicio": "2026-11-15T11:05:37.502Z",
+   "http": 200,
+   "url_final": "https://sede.fuenlabrada.es/sta/CarpetaPublic/doEvent?APP_CODE=STA&PAGE_CODE=CATALOGO",
+   "host": "sede.fuenlabrada.es",
+   "estado": "terminado",
+   "version": "sta-multi 1.1 (base extractor_sede 1.2; PTS2 y PTS)",
+   "total": 191,
+   "hechos": 191,
+   "zip": "tramites_sede_sede-fuenlabrada-es_por-organo_2026-11-15.zip",
+   "zip_bytes": 5203471,
+   "fin": "2026-11-15T11:06:26.267Z",
+   "ok": 187,
+   "errores": 4,
+   "organos": 48,
+   "media_epigrafes": 6.47,
+   "ejemplo": {
+    "titulo": "Actuaciones municipales en expedientes de alteración del término municipal, nombre o capitalidad del municipio, o de sus símbolos (bandera o escudo)",
+    "organo": "Secretaria General Pleno",
+    "secciones": [
+     "descripcion",
+     "organo_gestor",
+     "plazo_resolucion",
+     "silencio_administrativo",
+     "normativa",
+     "pago_tasas",
+     "documentos_presentar"
+    ]
+   },
+   "cobertura": {
+    "descripcion": 187,
+    "finalidad": 22,
+    "organo_gestor": 184,
+    "plazo_resolucion": 63,
+    "silencio_administrativo": 187,
+    "normativa": 180,
+    "pago_tasas": 183,
+    "informacion_adicional": 0,
+    "documentacion_relacionada": 21,
+    "documentos_presentar": 182
+   },
+   "ejemplo_errores": [
+    {
+     "t": "Cesión gratuita de uso de locales Junta de Distrito Vivero-Hospital-Universidad",
+     "e": "Sin epígrafes STA reconocibles",
+     "d": [
+      "SEDE ELECTRÓNICA",
+      "No hay subtitulo",
+      "Catálogo de servicios",
+      "Ámbito:",
+      "Medio de presentación:"
+     ]
+    },
+    {
+     "t": "Concesión de tarjetas y/o reserva de estacionamiento de vehículos para personas con diversidad funcional",
+     "e": "Sin epígrafes STA reconocibles",
+     "d": [
+      "SEDE ELECTRÓNICA",
+      "No hay subtitulo"
+     ]
+    },
+    {
+     "t": "Expedientes personales de usuarios del Centro de Tratamiento de Adicciones",
+     "e": "Sin epígrafes STA reconocibles",
+     "d": [
+      "SEDE ELECTRÓNICA",
+      "No hay subtitulo",
+      "Catálogo de servicios",
+      "Ámbito:",
+      "Medio de presentación:"
+     ]
+    }
+   ]
+  },
+  {
+   "sede": "https://eseu.gava.cat",
+   "inicio": "2026-11-15T11:06:43.887Z",
+   "http": 200,
+   "url_final": "https://eseu.gava.cat/sta/CarpetaPublic/doEvent?APP_CODE=STA&PAGE_CODE=CATALOGO",
+   "host": "eseu.gava.cat",
+   "estado": "terminado",
+   "version": "sta-multi 1.1 (base extractor_sede 1.2; PTS2 y PTS)",
+   "total": 315,
+   "hechos": 315,
+   "zip": "tramites_sede_eseu-gava-cat_por-organo_2026-11-15.zip",
+   "zip_bytes": 9809076,
+   "fin": "2026-11-15T11:07:48.868Z",
+   "ok": 314,
+   "errores": 1,
+   "organos": 1,
+   "media_epigrafes": 5.54,
+   "ejemplo": {
+    "titulo": "Presentación de instancias, solicitudes y documentos en el Registro General del Ayuntamiento",
+    "organo": "Sin órgano gestor",
+    "secciones": [
+     "descripcion",
+     "plazo_resolucion",
+     "silencio_administrativo",
+     "pago_tasas",
+     "informacion_adicional",
+     "documentos_presentar"
+    ]
+   },
+   "cobertura": {
+    "descripcion": 300,
+    "finalidad": 0,
+    "organo_gestor": 0,
+    "plazo_resolucion": 118,
+    "silencio_administrativo": 314,
+    "normativa": 142,
+    "pago_tasas": 268,
+    "informacion_adicional": 223,
+    "documentacion_relacionada": 150,
+    "documentos_presentar": 226
+   },
+   "ejemplo_errores": [
+    {
+     "t": "Certificado de antigüedad y legalidad urbanística",
+     "e": "Sin epígrafes STA reconocibles",
+     "d": [
+      "Sede electrónica",
+      "No hay subtitulo",
+      "Certificado de antigüedad y legalidad urbanística"
+     ]
+    }
+   ]
+  },
+  {
+   "sede": "https://sede.getafe.es",
+   "inicio": "2026-11-15T11:08:09.373Z",
+   "http": 200,
+   "url_final": "https://sede.getafe.es/sta/CarpetaPublic/doEvent?APP_CODE=STA&PAGE_CODE=CATALOGO",
+   "host": "sede.getafe.es",
+   "estado": "terminado",
+   "version": "sta-multi 1.1 (base extractor_sede 1.2; PTS2 y PTS)",
+   "total": 264,
+   "hechos": 264,
+   "zip": "tramites_sede_sede-getafe-es_por-organo_2026-11-15.zip",
+   "zip_bytes": 9226172,
+   "fin": "2026-11-15T11:09:29.912Z",
+   "ok": 263,
+   "errores": 1,
+   "organos": 1,
+   "media_epigrafes": 6.43,
+   "ejemplo": {
+    "titulo": "PADRON.Solicitud volante/certificado de empadronamiento",
+    "organo": "Sin órgano gestor",
+    "secciones": [
+     "descripcion",
+     "finalidad",
+     "silencio_administrativo",
+     "normativa",
+     "informacion_adicional",
+     "documentacion_relacionada",
+     "documentos_presentar"
+    ]
+   },
+   "cobertura": {
+    "descripcion": 259,
+    "finalidad": 246,
+    "organo_gestor": 0,
+    "plazo_resolucion": 119,
+    "silencio_administrativo": 259,
+    "normativa": 222,
+    "pago_tasas": 23,
+    "informacion_adicional": 148,
+    "documentacion_relacionada": 164,
+    "documentos_presentar": 251
+   },
+   "ejemplo_errores": [
+    {
+     "t": "CSM-SOLARB.Solicitud arbitraje",
+     "e": "Sin epígrafes STA reconocibles",
+     "d": [
+      "No hay subtitulo",
+      "91 202 79 00"
+     ]
+    }
+   ]
+  },
+  {
+   "sede": "https://sedeelectronica.gijon.es",
+   "inicio": "2026-11-15T11:09:47.542Z",
+   "http": 200,
+   "url_final": "https://sedeelectronica.gijon.es/sta/CarpetaPublic/doEvent?APP_CODE=STA&PAGE_CODE=CATALOGO",
+   "host": "sedeelectronica.gijon.es",
+   "estado": "terminado",
+   "version": "sta-multi 1.1 (base extractor_sede 1.2; PTS2 y PTS)",
+   "total": 95,
+   "hechos": 95,
+   "zip": "tramites_sede_sedeelectronica-gijon-es_por-organo_2026-11-15.zip",
+   "zip_bytes": 2619865,
+   "fin": "2026-11-15T11:10:24.138Z",
+   "ok": 72,
+   "errores": 23,
+   "organos": 26,
+   "media_epigrafes": 6.43,
+   "ejemplo": {
+    "titulo": "Solicitud de Fotos Infracciones de Tráfico",
+    "organo": "Sin órgano gestor",
+    "secciones": [
+     "descripcion",
+     "finalidad",
+     "silencio_administrativo",
+     "normativa"
+    ]
+   },
+   "cobertura": {
+    "descripcion": 67,
+    "finalidad": 62,
+    "organo_gestor": 53,
+    "plazo_resolucion": 28,
+    "silencio_administrativo": 72,
+    "normativa": 60,
+    "pago_tasas": 7,
+    "informacion_adicional": 30,
+    "documentacion_relacionada": 21,
+    "documentos_presentar": 63
+   },
+   "ejemplo_errores": [
+    {
+     "t": "Aporte de documentación Carpeta Ciudadana - EMA",
+     "e": "Sin epígrafes STA reconocibles",
+     "d": [
+      "Sede Electrónica",
+      "Ayuntamiento de Gijón"
+     ]
+    },
+    {
+     "t": "Aporte de Documentación Proceso de Estabilización LEY 20/21",
+     "e": "Sin epígrafes STA reconocibles",
+     "d": [
+      "Sede Electrónica",
+      "Ayuntamiento de Gijón",
+      "Catálogo de servicios",
+      "Ámbito:",
+      "Medio de presentación:"
+     ]
+    },
+    {
+     "t": "Autolectura de Pedestal móvil (PEDES) - EMA",
+     "e": "Sin epígrafes STA reconocibles",
+     "d": [
+      "Sede Electrónica",
+      "Ayuntamiento de Gijón"
+     ]
+    }
+   ]
+  },
+  {
+   "sede": "https://sede.granada.org",
+   "inicio": "2026-11-15T11:10:45.148Z",
+   "http": 200,
+   "url_final": "https://sede.granada.org/sta/CarpetaPublic/doEvent?APP_CODE=STA&PAGE_CODE=CATALOGO",
+   "host": "sede.granada.org",
+   "estado": "terminado",
+   "version": "sta-multi 1.1 (base extractor_sede 1.2; PTS2 y PTS)",
+   "total": 540,
+   "hechos": 540,
+   "zip": "tramites_sede_sede-granada-org_por-organo_2026-11-15.zip",
+   "zip_bytes": 12970102,
+   "fin": "2026-11-15T11:12:53.460Z",
+   "ok": 538,
+   "errores": 2,
+   "organos": 54,
+   "media_epigrafes": 6.82,
+   "ejemplo": {
+    "titulo": "Quejas y sugerencias",
+    "organo": "Servicio municipal de atención a la ciudadanía",
+    "secciones": [
+     "descripcion",
+     "finalidad",
+     "organo_gestor",
+     "plazo_resolucion",
+     "normativa",
+     "documentos_presentar"
+    ]
+   },
+   "cobertura": {
+    "descripcion": 500,
+    "finalidad": 503,
+    "organo_gestor": 501,
+    "plazo_resolucion": 340,
+    "silencio_administrativo": 496,
+    "normativa": 495,
+    "pago_tasas": 113,
+    "informacion_adicional": 93,
+    "documentacion_relacionada": 187,
+    "documentos_presentar": 439
+   },
+   "ejemplo_errores": [
+    {
+     "t": "IIVTNU. Plusvalía. No sujeción por inexistencia de incremento de valor",
+     "e": "Sin epígrafes STA reconocibles",
+     "d": [
+      "Sede electrónica",
+      "No hay subtitulo"
+     ]
+    },
+    {
+     "t": "Prórroga del plazo para inicio y terminación de obras con Licencia en vigor",
+     "e": "Sin epígrafes STA reconocibles",
+     "d": [
+      "Sede electrónica",
+      "No hay subtitulo"
+     ]
+    }
+   ]
+  },
+  {
+   "sede": "https://sede.granadilladeabona.es",
+   "inicio": "2026-11-15T11:13:11.032Z",
+   "http": 200,
+   "url_final": "https://sede.granadilladeabona.es/sta/CarpetaPublic/doEvent?APP_CODE=STA&PAGE_CODE=CATALOGO",
+   "host": "sede.granadilladeabona.es",
+   "estado": "terminado",
+   "version": "sta-multi 1.1 (base extractor_sede 1.2; PTS2 y PTS)",
+   "total": 131,
+   "hechos": 131,
+   "zip": "tramites_sede_sede-granadilladeabona-es_por-organo_2026-11-15.zip",
+   "zip_bytes": 8085654,
+   "fin": "2026-11-15T11:14:00.264Z",
+   "ok": 130,
+   "errores": 1,
+   "organos": 33,
+   "media_epigrafes": 7.32,
+   "ejemplo": {
+    "titulo": "Aportación de documentación",
+    "organo": "Oficina de Atención al Ciudadano",
+    "secciones": [
+     "finalidad",
+     "organo_gestor",
+     "silencio_administrativo",
+     "normativa",
+     "documentacion_relacionada"
+    ]
+   },
+   "cobertura": {
+    "descripcion": 0,
+    "finalidad": 120,
+    "organo_gestor": 121,
+    "plazo_resolucion": 69,
+    "silencio_administrativo": 130,
+    "normativa": 120,
+    "pago_tasas": 41,
+    "informacion_adicional": 121,
+    "documentacion_relacionada": 105,
+    "documentos_presentar": 124
+   },
+   "ejemplo_errores": [
+    {
+     "t": "Solicitud de subvención para la realización de las fiestas populares en los barrios del municipio de Granadilla de Abona",
+     "e": "Sin epígrafes STA reconocibles",
+     "d": [
+      "SEDE ELECTRÓNICA",
+      "No hay subtitulo"
+     ]
+    }
+   ]
+  },
+  {
+   "sede": "https://sede.icoddelosvinos.es",
+   "inicio": "2026-11-15T11:14:21.669Z",
+   "http": 200,
+   "url_final": "https://sede.icoddelosvinos.es/sta/CarpetaPublic/doEvent?APP_CODE=STA&PAGE_CODE=CATALOGO",
+   "host": "sede.icoddelosvinos.es",
+   "estado": "terminado",
+   "version": "sta-multi 1.1 (base extractor_sede 1.2; PTS2 y PTS)",
+   "total": 5,
+   "hechos": 5,
+   "zip": "tramites_sede_sede-icoddelosvinos-es_por-organo_2026-11-15.zip",
+   "zip_bytes": 78664,
+   "fin": "2026-11-15T11:14:24.187Z",
+   "ok": 5,
+   "errores": 0,
+   "organos": 4,
+   "media_epigrafes": 4.2,
+   "ejemplo": {
+    "titulo": "Solicitud para elegir el medio preferente de notificación",
+    "organo": "Sin órgano gestor",
+    "secciones": [
+     "descripcion",
+     "silencio_administrativo"
+    ]
+   },
+   "cobertura": {
+    "descripcion": 5,
+    "finalidad": 3,
+    "organo_gestor": 3,
+    "plazo_resolucion": 1,
+    "silencio_administrativo": 5,
+    "normativa": 1,
+    "pago_tasas": 0,
+    "informacion_adicional": 0,
+    "documentacion_relacionada": 1,
+    "documentos_presentar": 2
+   },
+   "ejemplo_errores": []
+  },
+  {
+   "sede": "https://sede.aytojaen.es",
+   "inicio": "2026-11-15T11:14:36.548Z",
+   "http": 200,
+   "url_final": "https://sede.aytojaen.es/sta/CarpetaPublic/doEvent?APP_CODE=STA&PAGE_CODE=CATALOGO",
+   "host": "sede.aytojaen.es",
+   "estado": "terminado",
+   "version": "sta-multi 1.1 (base extractor_sede 1.2; PTS2 y PTS)",
+   "total": 109,
+   "hechos": 109,
+   "zip": "tramites_sede_sede-aytojaen-es_por-organo_2026-11-15.zip",
+   "zip_bytes": 3674190,
+   "fin": "2026-11-15T11:15:00.819Z",
+   "ok": 108,
+   "errores": 1,
+   "organos": 56,
+   "media_epigrafes": 6.9,
+   "ejemplo": {
+    "titulo": "00050. Aportación de documentación a expedientes",
+    "organo": "Ayuntamiento de Jaén",
+    "secciones": [
+     "finalidad",
+     "organo_gestor",
+     "silencio_administrativo",
+     "documentos_presentar"
+    ]
+   },
+   "cobertura": {
+    "descripcion": 96,
+    "finalidad": 104,
+    "organo_gestor": 106,
+    "plazo_resolucion": 56,
+    "silencio_administrativo": 108,
+    "normativa": 93,
+    "pago_tasas": 36,
+    "informacion_adicional": 75,
+    "documentacion_relacionada": 0,
+    "documentos_presentar": 71
+   },
+   "ejemplo_errores": [
+    {
+     "t": "50003. Licencia Administrativa Para Animales Potencialmente Peligrosos",
+     "e": "Sin epígrafes STA reconocibles",
+     "d": [
+      "Sede Electrónica",
+      "Ayuntamiento de Jaén"
+     ]
+    }
+   ]
+  },
+  {
+   "sede": "https://carpeta.laoliva.es",
+   "inicio": "2026-11-15T11:15:16.277Z",
+   "http": 200,
+   "url_final": "https://carpeta.laoliva.es/sta/CarpetaPublic/doEvent?APP_CODE=STA&PAGE_CODE=CATALOGO",
+   "host": "carpeta.laoliva.es",
+   "estado": "catalogo_vacio",
+   "version": "sta-multi 1.1 (base extractor_sede 1.2; PTS2 y PTS)",
+   "catalogo_por_fetch": true,
+   "total": 0
+  },
+  {
+   "sede": "https://seu.lapobladevallbona.es",
+   "inicio": "2026-11-15T11:15:27.115Z",
+   "http": 200,
+   "url_final": "https://seu.lapobladevallbona.es/sta/CarpetaPublic/doEvent?APP_CODE=STA&PAGE_CODE=CATALOGO",
+   "host": "seu.lapobladevallbona.es",
+   "estado": "terminado",
+   "version": "sta-multi 1.1 (base extractor_sede 1.2; PTS2 y PTS)",
+   "total": 190,
+   "hechos": 190,
+   "zip": "tramites_sede_seu-lapobladevallbona-es_por-organo_2026-11-15.zip",
+   "zip_bytes": 8643331,
+   "fin": "2026-11-15T11:16:49.785Z",
+   "ok": 190,
+   "errores": 0,
+   "organos": 64,
+   "media_epigrafes": 7.05,
+   "ejemplo": {
+    "titulo": "Aportación de documentación",
+    "organo": "Oficina de Atención al Ciudadano",
+    "secciones": [
+     "descripcion",
+     "finalidad",
+     "organo_gestor",
+     "plazo_resolucion",
+     "silencio_administrativo",
+     "normativa"
+    ]
+   },
+   "cobertura": {
+    "descripcion": 184,
+    "finalidad": 172,
+    "organo_gestor": 152,
+    "plazo_resolucion": 86,
+    "silencio_administrativo": 187,
+    "normativa": 127,
+    "pago_tasas": 54,
+    "informacion_adicional": 55,
+    "documentacion_relacionada": 162,
+    "documentos_presentar": 160
+   },
+   "ejemplo_errores": []
+  },
+  {
+   "sede": "https://sede.lavallduixo.es",
+   "inicio": "2026-11-15T11:17:18.313Z",
+   "http": 200,
+   "url_final": "https://sede.lavallduixo.es/sta/CarpetaPublic/doEvent?APP_CODE=STA&PAGE_CODE=CATALOGO",
+   "host": "sede.lavallduixo.es",
+   "estado": "terminado",
+   "version": "sta-multi 1.1 (base extractor_sede 1.2; PTS2 y PTS)",
+   "total": 282,
+   "hechos": 282,
+   "zip": "tramites_sede_sede-lavallduixo-es_por-organo_2026-11-15.zip",
+   "zip_bytes": 1310043,
+   "fin": "2026-11-15T11:34:13.534Z",
+   "ok": 98,
+   "errores": 184,
+   "organos": 1,
+   "media_epigrafes": 1.68,
+   "ejemplo": {
+    "titulo": "Aportació de documentació",
+    "organo": "Sin órgano gestor",
+    "secciones": [
+     "descripcion",
+     "normativa"
+    ]
+   },
+   "cobertura": {
+    "descripcion": 80,
+    "finalidad": 0,
+    "organo_gestor": 0,
+    "plazo_resolucion": 0,
+    "silencio_administrativo": 0,
+    "normativa": 85,
+    "pago_tasas": 0,
+    "informacion_adicional": 0,
+    "documentacion_relacionada": 0,
+    "documentos_presentar": 0
+   },
+   "ejemplo_errores": [
+    {
+     "t": "sol·licitud de propòsit general.",
+     "e": "Sin epígrafes STA reconocibles",
+     "d": [
+      "Seu electrònica",
+      "No hay subtitulo",
+      "Sol·licitud de Propòsit General",
+      "Finalitat",
+      "Qui ho pot Presentar",
+      "Terminis de Presentació",
+      "Presentació",
+      "Òrgan Gestor",
+      "Termini de resolució",
+      "Efecte del silenci Administratiu",
+      "Recursos",
+      "Documentació relacionada"
+     ]
+    },
+    {
+     "t": "Certificado de los Servicios Sociales a Efectos de Solicitud del Ingreso Mínimo Vital",
+     "e": "Sin epígrafes STA reconocibles",
+     "d": [
+      "Seu electrònica",
+      "No hay subtitulo",
+      "Efecte del silenci Administratiu",
+      "Nivell d'identificació del sol·licitant",
+      "Substancial:"
+     ]
+    },
+    {
+     "t": "Declaració Responsable de Primera Ocupació d'Habitatge / Magatzem / Garatge, amb Llicència d'Obra d'Habilitació en Edifici Existent",
+     "e": "Sin epígrafes STA reconocibles",
+     "d": [
+      "Seu electrònica",
+      "No hay subtitulo"
+     ]
+    }
+   ]
+  },
+  {
+   "sede": "https://sede.leganes.org",
+   "inicio": "2026-11-15T11:34:27.717Z",
+   "http": 200,
+   "url_final": "https://sede.leganes.org/sta/CarpetaPublic/doEvent?APP_CODE=STA&PAGE_CODE=CATALOGO",
+   "host": "sede.leganes.org",
+   "estado": "terminado",
+   "version": "sta-multi 1.1 (base extractor_sede 1.2; PTS2 y PTS)",
+   "total": 123,
+   "hechos": 123,
+   "zip": "tramites_sede_sede-leganes-org_por-organo_2026-11-15.zip",
+   "zip_bytes": 5141957,
+   "fin": "2026-11-15T11:35:02.050Z",
+   "ok": 122,
+   "errores": 1,
+   "organos": 60,
+   "media_epigrafes": 7.85,
+   "ejemplo": {
+    "titulo": "Acreditación para la Obtención del Certificado Digital de la FNMT",
+    "organo": "L01280745. Ayuntamiento de Leganés",
+    "secciones": [
+     "descripcion",
+     "finalidad",
+     "organo_gestor",
+     "silencio_administrativo",
+     "pago_tasas",
+     "informacion_adicional"
+    ]
+   },
+   "cobertura": {
+    "descripcion": 114,
+    "finalidad": 121,
+    "organo_gestor": 111,
+    "plazo_resolucion": 28,
+    "silencio_administrativo": 122,
+    "normativa": 91,
+    "pago_tasas": 62,
+    "informacion_adicional": 108,
+    "documentacion_relacionada": 87,
+    "documentos_presentar": 114
+   },
+   "ejemplo_errores": [
+    {
+     "t": "Presentación de documentación a expedientes en trámite",
+     "e": "Sin epígrafes STA reconocibles",
+     "d": [
+      "Mensaje de error"
+     ]
+    }
+   ]
+  },
+  {
+   "sede": "https://udaletxean.leioa.eus",
+   "inicio": "2026-11-15T11:35:16.441Z",
+   "http": 200,
+   "url_final": "https://udaletxean.leioa.eus/sta/CarpetaPublic/doEvent?APP_CODE=STA&PAGE_CODE=CATALOGO",
+   "host": "udaletxean.leioa.eus",
+   "estado": "terminado",
+   "version": "sta-multi 1.1 (base extractor_sede 1.2; PTS2 y PTS)",
+   "total": 154,
+   "hechos": 154,
+   "zip": "tramites_sede_udaletxean-leioa-eus_por-organo_2026-11-15.zip",
+   "zip_bytes": 199828,
+   "fin": "2026-11-15T11:36:24.555Z",
+   "ok": 0,
+   "errores": 154,
+   "organos": 0,
+   "media_epigrafes": 0,
+   "ejemplo": null,
+   "cobertura": {
+    "descripcion": 0,
+    "finalidad": 0,
+    "organo_gestor": 0,
+    "plazo_resolucion": 0,
+    "silencio_administrativo": 0,
+    "normativa": 0,
+    "pago_tasas": 0,
+    "informacion_adicional": 0,
+    "documentacion_relacionada": 0,
+    "documentos_presentar": 0
+   },
+   "ejemplo_errores": [
+    {
+     "t": "Izapideko espedienteetarako dokumentazio aurkezpena",
+     "e": "Sin epígrafes STA reconocibles",
+     "d": [
+      "Egoitza Elektronikoa",
+      "No hay subtitulo",
+      "Aportación de documentación",
+      "Deskribapena",
+      "Administrazioaren isilbidearen ondorioa",
+      "Eskatzailearen identifikazio maila",
+      "Handia:",
+      "Nabarmena:"
+     ]
+    },
+    {
+     "t": "instantzia/eskabide orokorra",
+     "e": "Sin epígrafes STA reconocibles",
+     "d": [
+      "Egoitza Elektronikoa",
+      "No hay subtitulo",
+      "Deskribapena",
+      "Xedea",
+      "FAMILIA GUNEA",
+      "Nork aurkez dezakeen",
+      "Aurkezpena",
+      "2026ko urriaren 28tik azaroaren 4ra bitartekoa",
+      "Aurkezpen lekua",
+      "Organo kudeatzailea",
+      "Ebazteko epea",
+      "Administrazioaren isilbidearen ondorioa"
+     ]
+    },
+    {
+     "t": "INSKRIPZIOA FAMILIA EREMUAN, FAMILIEN PRESTAKUNTZARAKO ETA BIZIKIDETZARAKO INGURUNEAN. (2026)",
+     "e": "Sin epígrafes STA reconocibles",
+     "d": [
+      "Egoitza Elektronikoa",
+      "No hay subtitulo",
+      "Deskribapena",
+      "Xedea",
+      "FAMILIA GUNEA",
+      "Nork aurkez dezakeen",
+      "Aurkezpena",
+      "2026ko urriaren 28tik azaroaren 4ra bitartekoa",
+      "Aurkezpen lekua",
+      "Organo kudeatzailea",
+      "Ebazteko epea",
+      "Administrazioaren isilbidearen ondorioa"
+     ]
+    }
+   ]
+  },
+  {
+   "sede": "https://sede.lliria.es",
+   "inicio": "2026-11-15T11:36:40.681Z",
+   "http": 200,
+   "url_final": "https://sede.lliria.es/sta/CarpetaPublic/doEvent?APP_CODE=STA&PAGE_CODE=CATALOGO",
+   "host": "sede.lliria.es",
+   "estado": "terminado",
+   "version": "sta-multi 1.1 (base extractor_sede 1.2; PTS2 y PTS)",
+   "total": 221,
+   "hechos": 221,
+   "zip": "tramites_sede_sede-lliria-es_por-organo_2026-11-15.zip",
+   "zip_bytes": 10501722,
+   "fin": "2026-11-15T11:38:10.727Z",
+   "ok": 220,
+   "errores": 1,
+   "organos": 73,
+   "media_epigrafes": 8.2,
+   "ejemplo": {
+    "titulo": "Solicitud de declaración individualizada de minimización de impacto territorial.",
+    "organo": "Urbanismo-2",
+    "secciones": [
+     "descripcion",
+     "finalidad",
+     "organo_gestor",
+     "plazo_resolucion",
+     "silencio_administrativo",
+     "normativa",
+     "documentacion_relacionada",
+     "documentos_presentar"
+    ]
+   },
+   "cobertura": {
+    "descripcion": 218,
+    "finalidad": 215,
+    "organo_gestor": 204,
+    "plazo_resolucion": 186,
+    "silencio_administrativo": 218,
+    "normativa": 198,
+    "pago_tasas": 103,
+    "informacion_adicional": 50,
+    "documentacion_relacionada": 203,
+    "documentos_presentar": 208
+   },
+   "ejemplo_errores": [
+    {
+     "t": "Presentación de documentación a expedientes en trámite",
+     "e": "Sin epígrafes STA reconocibles",
+     "d": [
+      "Catálogo de servicios",
+      "¡ATENCIÓN!",
+      "\"No se ha podido conectar con AutoFirma\"",
+      "Ámbito:",
+      "Medio de presentación:",
+      "Sobre la Sede",
+      "Servicios Personales",
+      "Servicios Generales",
+      "Ayuntamiento de Llíria"
+     ]
+    }
+   ]
+  },
+  {
+   "sede": "https://seu.llucmajor.org",
+   "inicio": "2026-11-15T11:38:22.034Z",
+   "estado": "error_navegacion",
+   "error": "page.goto: net::ERR_CERT_AUTHORITY_INVALID at https://seu.llucmajor.org/sta/CarpetaPublic/doEvent?APP_CODE=STA&PAGE_CODE=CATALOGO\nCall log:\n\u001b[2m  - navigating to \"https://seu.llucmajor.org/sta/CarpetaPublic/doEvent?APP_CODE=STA&PAGE_CODE=CATALOGO\", waiting until \"load\"\u001b[22m\n"
+  },
+  {
+   "sede": "https://sede.malaga.eu",
+   "inicio": "2026-11-15T11:38:33.153Z",
+   "http": 200,
+   "url_final": "https://sede.malaga.eu/sta/CarpetaPublic/doEvent?APP_CODE=STA&PAGE_CODE=CATALOGO",
+   "host": "sede.malaga.eu",
+   "estado": "terminado",
+   "version": "sta-multi 1.1 (base extractor_sede 1.2; PTS2 y PTS)",
+   "total": 765,
+   "hechos": 765,
+   "zip": "tramites_sede_sede-malaga-eu_por-organo_2026-11-15.zip",
+   "zip_bytes": 26694634,
+   "fin": "2026-11-15T11:41:30.571Z",
+   "ok": 758,
+   "errores": 7,
+   "organos": 131,
+   "media_epigrafes": 7,
+   "ejemplo": {
+    "titulo": "Tributos. Fraccionamiento o aplazamiento de deudas. Solicitud.",
+    "organo": "Sin órgano gestor",
+    "secciones": [
+     "finalidad",
+     "silencio_administrativo",
+     "normativa",
+     "informacion_adicional",
+     "documentacion_relacionada",
+     "documentos_presentar"
+    ]
+   },
+   "cobertura": {
+    "descripcion": 0,
+    "finalidad": 733,
+    "organo_gestor": 608,
+    "plazo_resolucion": 581,
+    "silencio_administrativo": 756,
+    "normativa": 550,
+    "pago_tasas": 320,
+    "informacion_adicional": 353,
+    "documentacion_relacionada": 652,
+    "documentos_presentar": 754
+   },
+   "ejemplo_errores": [
+    {
+     "t": "Becas para deportistas individuales de alta competición con proyección internacional",
+     "e": "Sin epígrafes STA reconocibles",
+     "d": [
+      "Sede electrónica",
+      "No hay subtitulo"
+     ]
+    },
+    {
+     "t": "IBI. Bonificación por familia numerosa",
+     "e": "Sin epígrafes STA reconocibles",
+     "d": [
+      "Sede electrónica",
+      "No hay subtitulo"
+     ]
+    },
+    {
+     "t": "Licencia para la tenencia de animales potencialmente peligrosos",
+     "e": "Sin epígrafes STA reconocibles",
+     "d": [
+      "Sede electrónica",
+      "No hay subtitulo"
+     ]
+    }
+   ]
+  },
+  {
+   "sede": "https://seuelectronica.marratxi.es",
+   "inicio": "2026-11-15T11:41:47.050Z",
+   "http": 200,
+   "url_final": "https://seuelectronica.marratxi.es/sta/CarpetaPublic/doEvent?APP_CODE=STA&PAGE_CODE=CATALOGO",
+   "host": "seuelectronica.marratxi.es",
+   "estado": "terminado",
+   "version": "sta-multi 1.1 (base extractor_sede 1.2; PTS2 y PTS)",
+   "total": 47,
+   "hechos": 47,
+   "zip": "tramites_sede_seuelectronica-marratxi-es_por-organo_2026-11-15.zip",
+   "zip_bytes": 503530,
+   "fin": "2026-11-15T11:42:03.890Z",
+   "ok": 42,
+   "errores": 5,
+   "organos": 1,
+   "media_epigrafes": 1,
+   "ejemplo": {
+    "titulo": "Acreditació rehabilitació integral",
+    "organo": "Sin órgano gestor",
+    "secciones": [
+     "normativa"
+    ]
+   },
+   "cobertura": {
+    "descripcion": 0,
+    "finalidad": 0,
+    "organo_gestor": 0,
+    "plazo_resolucion": 0,
+    "silencio_administrativo": 0,
+    "normativa": 42,
+    "pago_tasas": 0,
+    "informacion_adicional": 0,
+    "documentacion_relacionada": 0,
+    "documentos_presentar": 0
+   },
+   "ejemplo_errores": [
+    {
+     "t": "Bonificació de l'Impost Béns Immobles (IBI): bonificació 90% per família nombrosa",
+     "e": "Sin epígrafes STA reconocibles",
+     "d": [
+      "Seu electrònica",
+      "No hay subtitulo"
+     ]
+    },
+    {
+     "t": "Preinscripció mercat dominical",
+     "e": "Sin epígrafes STA reconocibles",
+     "d": [
+      "Seu electrònica",
+      "No hay subtitulo",
+      "Preinscripció mercat dominical",
+      "Descripció",
+      "Efecte del silenci Administratiu",
+      "Documentació relacionada",
+      "Nivell d'identificació del sol·licitant",
+      "Substancial:",
+      "Documents a Presentar",
+      "Documentacio",
+      "Model preinscripció",
+      "Document d'alta i al corrent de pagament de l'IAE"
+     ]
+    },
+    {
+     "t": "Sol·licitud d'ocupació de via pública",
+     "e": "Sin epígrafes STA reconocibles",
+     "d": [
+      "Seu electrònica",
+      "No hay subtitulo",
+      "Sol·licitud d'ocupació de via pública",
+      "Descripció",
+      "Finalitat",
+      "Qui ho pot Presentar",
+      "Terminis de Presentació",
+      "Presentació",
+      "Òrgan Gestor",
+      "Termini de resolució",
+      "Efecte del silenci Administratiu",
+      "Recursos"
+     ]
+    }
+   ]
+  },
+  {
+   "sede": "https://sede.mazarron.es",
+   "inicio": "2026-11-15T11:42:16.425Z",
+   "http": 200,
+   "url_final": "https://sede.mazarron.es/sta/CarpetaPublic/doEvent?APP_CODE=STA&PAGE_CODE=CATALOGO",
+   "host": "sede.mazarron.es",
+   "estado": "terminado",
+   "version": "sta-multi 1.1 (base extractor_sede 1.2; PTS2 y PTS)",
+   "total": 71,
+   "hechos": 71,
+   "zip": "tramites_sede_sede-mazarron-es_por-organo_2026-11-15.zip",
+   "zip_bytes": 1303584,
+   "fin": "2026-11-15T11:42:31.201Z",
+   "ok": 70,
+   "errores": 1,
+   "organos": 3,
+   "media_epigrafes": 4.64,
+   "ejemplo": {
+    "titulo": "Solicitud de consentimiento",
+    "organo": "Sin órgano gestor",
+    "secciones": [
+     "descripcion",
+     "silencio_administrativo"
+    ]
+   },
+   "cobertura": {
+    "descripcion": 69,
+    "finalidad": 39,
+    "organo_gestor": 36,
+    "plazo_resolucion": 37,
+    "silencio_administrativo": 69,
+    "normativa": 36,
+    "pago_tasas": 1,
+    "informacion_adicional": 0,
+    "documentacion_relacionada": 0,
+    "documentos_presentar": 38
+   },
+   "ejemplo_errores": [
+    {
+     "t": "Solicitudes de Sanidad",
+     "e": "Sin epígrafes STA reconocibles",
+     "d": [
+      "Sede electrónica",
+      "No hay subtitulo"
+     ]
+    }
+   ]
+  },
+  {
+   "sede": "https://sede.medinadelcampo.es",
+   "inicio": "2026-11-15T11:42:43.395Z",
+   "http": 200,
+   "url_final": "https://sede.medinadelcampo.es/sta/CarpetaPublic/doEvent?APP_CODE=STA&PAGE_CODE=CATALOGO",
+   "host": "sede.medinadelcampo.es",
+   "estado": "terminado",
+   "version": "sta-multi 1.1 (base extractor_sede 1.2; PTS2 y PTS)",
+   "total": 156,
+   "hechos": 156,
+   "zip": "tramites_sede_sede-medinadelcampo-es_por-organo_2026-11-15.zip",
+   "zip_bytes": 3903954,
+   "fin": "2026-11-15T11:43:10.539Z",
+   "ok": 156,
+   "errores": 0,
+   "organos": 34,
+   "media_epigrafes": 5.78,
+   "ejemplo": {
+    "titulo": "Aportación de documentación solicitada",
+    "organo": "Sin órgano gestor",
+    "secciones": [
+     "descripcion",
+     "finalidad",
+     "silencio_administrativo",
+     "normativa",
+     "informacion_adicional"
+    ]
+   },
+   "cobertura": {
+    "descripcion": 131,
+    "finalidad": 94,
+    "organo_gestor": 89,
+    "plazo_resolucion": 64,
+    "silencio_administrativo": 156,
+    "normativa": 91,
+    "pago_tasas": 21,
+    "informacion_adicional": 54,
+    "documentacion_relacionada": 56,
+    "documentos_presentar": 146
+   },
+   "ejemplo_errores": []
+  },
+  {
+   "sede": "https://carpetaciudadana.mejoradadelcampo.es",
+   "inicio": "2026-11-15T11:43:22.067Z",
+   "http": 200,
+   "url_final": "https://carpetaciudadana.mejoradadelcampo.es/sta/CarpetaPublic/doEvent?APP_CODE=STA&PAGE_CODE=CATALOGO",
+   "host": "carpetaciudadana.mejoradadelcampo.es",
+   "estado": "terminado",
+   "version": "sta-multi 1.1 (base extractor_sede 1.2; PTS2 y PTS)",
+   "total": 8,
+   "hechos": 8,
+   "zip": "tramites_sede_carpetaciudadana-mejoradadelcampo-es_por-organo_2026-11-15.zip",
+   "zip_bytes": 81060,
+   "fin": "2026-11-15T11:43:25.174Z",
+   "ok": 8,
+   "errores": 0,
+   "organos": 1,
+   "media_epigrafes": 2,
+   "ejemplo": {
+    "titulo": "IBI Bonificación por familia numerosa",
+    "organo": "Sin órgano gestor",
+    "secciones": [
+     "descripcion",
+     "silencio_administrativo"
+    ]
+   },
+   "cobertura": {
+    "descripcion": 8,
+    "finalidad": 0,
+    "organo_gestor": 0,
+    "plazo_resolucion": 0,
+    "silencio_administrativo": 8,
+    "normativa": 0,
+    "pago_tasas": 0,
+    "informacion_adicional": 0,
+    "documentacion_relacionada": 0,
+    "documentos_presentar": 0
+   },
+   "ejemplo_errores": []
+  }
+ ],
+ "inicio": "2026-11-15T10:30:06.925Z"
+}

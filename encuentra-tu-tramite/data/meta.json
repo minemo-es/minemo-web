@@ -1,0 +1,42 @@
+{
+ "nombre": "Encuentra tu trámite [PROTOTIPO]",
+ "version": "2026-11-15",
+ "fuente": "Catálogos de procedimientos de sedes electrónicas municipales T-Systems (STA), extracción SEDE() v1.2 formato elvira-recurso-1",
+ "n_municipios": 71,
+ "n_tramites": 14905,
+ "n_procedimientos_tipo": 134,
+ "n_procedimientos_tipo_con_tramites": 132,
+ "clasificacion_metodos": {
+  "regla_procedimiento_titulo": 10894,
+  "regla_procedimiento_descripcion": 395,
+  "modelo_supervisado": 1082,
+  "modelo_supervisado+organo": 726,
+  "regla_funcal_titulo": 1652,
+  "regla_funcal_descripcion": 156
+ },
+ "con_procedimiento_tipo": 10894,
+ "tipos_documento": [
+  "solicitud",
+  "representacion",
+  "identidad",
+  "pago-tasa",
+  "declaracion-responsable",
+  "proyecto-tecnico",
+  "memoria",
+  "planos",
+  "fotografias",
+  "presupuesto",
+  "seguro",
+  "titularidad-propiedad",
+  "bancario",
+  "empadronamiento",
+  "libro-familia",
+  "renta-ingresos",
+  "vehiculo",
+  "certificado-tecnico",
+  "estatutos-sociedad",
+  "medico-sanitario",
+  "generico-otros",
+  "otro"
+ ]
+}

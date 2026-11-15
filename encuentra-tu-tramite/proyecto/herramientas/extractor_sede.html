@@ -1,0 +1,866 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Extractor de trámites de la Sede · Abuela Elvira</title>
+<script>
+/* ===== PASARELA DIRECTA AL BANCO DE RECURSOS (sin abrir ADMIN.html) =====
+   apiUrl = la MISMA URL /exec que usa ADMIN.html (línea 13 de ese archivo).
+   Aloja este archivo en la misma carpeta que admin.html: así comparte la sesión «Recordarme». */
+window.SA_CONFIG = window.SA_CONFIG || {
+  apiUrl: 'https://script.google.com/macros/s/AKfycbxuPUXdKKVgbVeoDD_Zzzv6G7W9HOJ7fiQlpjMaLvXYYMI6FoasVOpl8cheaTwx1OlJ/exec'
+};
+</script>
+<style>
+:root{--navy:#112d56;--blue:#153e77;--link:#1959a0;--ice:#eef3fa;--line:#dbe4ef;--text:#233348;--muted:#5a6b80;--gold:#c9a668;--green:#137558;--green-bg:#e6f4ee;--red:#a94643;--red-bg:#fbeceb;--amber:#8a5a00;--amber-bg:#fff4dc;--bg:#f3f6fa}
+*,*::before,*::after{box-sizing:border-box}
+html,body{margin:0;background:var(--bg);color:var(--text);font:14px/1.5 system-ui,-apple-system,'Segoe UI',Arial,sans-serif}
+a{color:var(--link);text-underline-offset:3px}
+button,input,select,textarea{font:inherit;color:inherit}
+.top{background:var(--navy);color:#fff;border-bottom:3px solid var(--gold)}
+.top-in{max-width:1180px;margin:0 auto;padding:14px 20px;display:flex;gap:14px;align-items:center;flex-wrap:wrap}
+.top h1{font-size:19px;margin:0}.top .sub{font-size:12.5px;opacity:.85}
+main{max-width:1180px;margin:0 auto;padding:18px 20px 60px}
+.card{background:#fff;border:1px solid var(--line);border-radius:12px;padding:16px 18px;margin-bottom:14px}
+h2{font-size:16px;margin:0 0 8px;color:#1c3557}h3{font-size:13px;margin:14px 0 6px;color:#18375f;text-transform:uppercase;letter-spacing:.04em}
+.paso{display:inline-grid;place-items:center;width:24px;height:24px;border-radius:50%;background:var(--gold);color:var(--navy);font-weight:800;font-size:13px;margin-right:6px}
+.muted{color:var(--muted)}.small{font-size:12.5px}.mono{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:12px}
+.btn{cursor:pointer;border:1px solid var(--blue);background:var(--blue);color:#fff;padding:7px 13px;border-radius:7px;font-weight:650;white-space:nowrap;text-decoration:none;display:inline-block}
+.btn:hover{background:#0a2f60}.btn.alt{background:#fff;color:var(--blue)}.btn.alt:hover{background:var(--ice)}.btn.sm{padding:3px 9px;font-size:12px}.btn:disabled{opacity:.5;cursor:default}
+.bm{cursor:grab;background:var(--gold);border-color:#b38f4c;color:var(--navy);font-size:15px;padding:9px 16px}
+.row{display:flex;gap:8px;flex-wrap:wrap;align-items:center}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:14px}
+.banner{border-radius:9px;padding:9px 12px;margin:8px 0;font-size:13px}.banner.info{background:var(--ice);border:1px solid #c8d8ee}.banner.ok{background:var(--green-bg);border:1px solid #b4dcc9}.banner.warn{background:var(--amber-bg);border:1px solid #edd39b}.banner.err{background:var(--red-bg);border:1px solid #e3b9b7}
+.drop{border:2px dashed #b9c9de;border-radius:10px;padding:16px;text-align:center;background:#f8fbff}
+input[type=search],select{border:1px solid #c9d5e3;border-radius:7px;padding:6px 9px;background:#fff}
+table{width:100%;border-collapse:collapse}th,td{text-align:left;padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top;font-size:13px}th{font-size:11.5px;text-transform:uppercase;letter-spacing:.04em;color:var(--muted);background:#f8fbff;position:sticky;top:0}
+tr.g td{background:var(--ice);font-weight:700;color:var(--navy)}tr.it{cursor:pointer}tr.it:hover td{background:#fafcff}tr.sel td{background:#fff8e8}
+.dots{display:flex;gap:2px}.dots i{width:9px;height:9px;border-radius:2px;background:#e1e7ef;display:block}.dots i.on{background:var(--green)}
+.pill{display:inline-block;font-size:11px;font-weight:700;padding:1px 7px;border-radius:9px;background:var(--ice);color:var(--blue)}.pill.ko{background:var(--red-bg);color:var(--red)}
+.scroll{max-height:62vh;overflow:auto;border:1px solid var(--line);border-radius:9px}
+.sec{border-left:3px solid var(--gold);padding:2px 0 2px 10px;margin:8px 0}.sec b{color:var(--navy)}.sec div{white-space:pre-wrap}
+.ln{display:inline-block;margin:3px 4px 0 0;padding:2px 8px;border:1px solid #c8d8ee;border-radius:12px;font-size:12px;background:#fff}
+pre{white-space:pre-wrap;word-break:break-word;background:#0f2340;color:#dfe9f7;border-radius:9px;padding:10px;max-height:50vh;overflow:auto;font-size:11.5px}
+code{background:var(--ice);padding:0 4px;border-radius:4px}
+#toast{position:fixed;bottom:16px;left:50%;transform:translateX(-50%);z-index:50;display:grid;gap:6px}#toast div{background:var(--navy);color:#fff;padding:8px 14px;border-radius:8px;box-shadow:0 6px 20px #0004}#toast div.err{background:var(--red)}
+ol.pasos{margin:6px 0 0 18px;padding:0}ol.pasos li{margin:4px 0}
+.modal{position:fixed;inset:0;background:#0b1a2e88;display:grid;place-items:center;z-index:40;padding:16px}.modal>div{background:#fff;border-radius:12px;max-width:900px;width:100%;max-height:90vh;overflow:auto;padding:18px}
+.t{width:100%;border-collapse:collapse}.grid2{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:10px}.dup{color:var(--red)}.btn.ghost{border-color:transparent;background:transparent;color:var(--muted)}.btn.ghost:hover{background:var(--ice)}
+.chip{display:inline-block;padding:2px 8px;border:1px solid #c8d8ee;border-radius:12px;font-size:12px;background:#fff}
+.lg input{border:1px solid #c9d5e3;border-radius:7px;padding:6px 9px;min-width:220px}
+/* ------ ACCESO CON CONTRASEÑA (igual que el Portal de Herramientas /gestion/index.html) ------ */
+#overlay{position:fixed;inset:0;background:#f4f6f8;display:flex;flex-direction:column;z-index:9999}
+#overlay .portal-header{background:#fff;border-bottom:1px solid #e0e6ed}
+#overlay .header-inner{max-width:1180px;margin:0 auto;padding:14px 20px;display:flex;align-items:center}
+#overlay .branding{display:flex;align-items:center;gap:14px}#overlay .branding img{height:52px}
+#overlay .branding-text h1{margin:0;font-size:1.35rem;color:#003366}#overlay .branding-text p{margin:2px 0 0;color:#5a6b80;font-size:.9rem}
+.login-container{flex:1;display:flex;justify-content:center;align-items:center;padding:20px}
+#login-box{background:#fff;padding:40px;border-radius:12px;box-shadow:0 10px 25px rgba(0,0,0,.08);text-align:center;width:100%;max-width:400px;border:1px solid #e0e0e0}
+.password-wrapper{position:relative;width:100%;margin-bottom:20px}
+#passwordInput{width:100%;padding:12px 45px 12px 15px;border:2px solid #eee;border-radius:6px;font-size:1rem}
+.toggle-password{position:absolute;right:15px;top:50%;transform:translateY(-50%);cursor:pointer;color:#777;font-size:1.2rem}
+#login-btn{width:100%;padding:12px;background:#0056b3;color:#fff;border:none;border-radius:6px;font-size:1rem;font-weight:600;cursor:pointer;margin-top:5px}
+#login-btn:hover{background:#004494}
+#error-msg{color:#D32F2F;margin-top:15px;display:none}
+.blurred{filter:blur(8px);pointer-events:none;user-select:none;height:100vh;overflow:hidden}
+</style>
+</head>
+<body>
+<div id="overlay">
+  <header class="portal-header"><div class="header-inner"><div class="branding">
+    <img src="https://datosabiertos.ayto-arganda.es/base/images/escudo.png" alt="Escudo">
+    <div class="branding-text"><h1>Ayuntamiento de Arganda</h1><p>Toolkit gestión documental</p></div></div></div></header>
+  <div class="login-container"><div id="login-box">
+    <div style="font-size:3rem;margin-bottom:10px">🏛️</div>
+    <h2 style="margin:0 0 6px 0;color:#333">Toolkit</h2>
+    <p style="margin:0 0 20px 0;color:#5a6b80;font-size:.9rem">Extractor de trámites de la Sede · Abuela Elvira</p>
+    <div class="password-wrapper"><input type="password" id="passwordInput" placeholder="Contraseña de acceso..." autocomplete="current-password">
+      <span class="toggle-password" onclick="togglePasswordVisibility()" title="Mostrar u ocultar">👁️</span></div>
+    <button id="login-btn" onclick="checkPassword()">Acceder</button>
+    <div id="error-msg">⚠️ Contraseña incorrecta</div>
+  </div></div>
+</div>
+<script>
+/* === SEGURIDAD · misma contraseña y misma sesión que el Portal de Herramientas (localStorage «arganda_auth») === */
+const PASSWORD_B64=""; // Contraseña retirada en la copia pública. Si se usa en una intranet, poner aquí btoa(contraseña).
+function togglePasswordVisibility(){const i=document.getElementById('passwordInput');i.type=i.type==='password'?'text':'password';}
+function checkPassword(){const v=document.getElementById('passwordInput').value,err=document.getElementById('error-msg');
+  try{if(!PASSWORD_B64||btoa(v)===PASSWORD_B64){try{localStorage.setItem('arganda_auth','true');}catch(e){}unlockApp();}else err.style.display='block';}catch(e){err.style.display='block';}}
+function unlockApp(){const ov=document.getElementById('overlay');ov.style.transition='opacity .5s';ov.style.opacity='0';
+  setTimeout(()=>{ov.style.display='none';document.getElementById('app-content').classList.remove('blurred');},500);}
+(function(){let ok=!PASSWORD_B64;try{ok=ok||localStorage.getItem('arganda_auth')==='true';}catch(e){}
+  if(ok){document.getElementById('overlay').style.display='none';}
+  else document.addEventListener('DOMContentLoaded',()=>{document.getElementById('app-content').classList.add('blurred');const i=document.getElementById('passwordInput');i.focus();i.addEventListener('keypress',e=>{if(e.key==='Enter')checkPassword();});});})();
+</script>
+<div id="app-content">
+<header class="top"><div class="top-in"><div><h1>Extractor de trámites de la Sede electrónica</h1><div class="sub">Convierte las fichas del catálogo de trámites en JSON para el Banco de recursos de la Abuela Elvira · v<span id="ver"></span></div></div></div></header>
+<main>
+  <div class="card">
+    <h2>Por qué hace falta este paso</h2>
+    <p class="small" style="margin:0">Las fichas de la sede son direcciones dinámicas (<code>doEvent?…&amp;DETALLE=…</code>) que ni Google ni esta página pueden leer desde fuera (la sede no lo permite). Por eso la extracción se hace <b>desde dentro de la propia sede</b>, con tu navegador: el favorito recorre el catálogo, lee cada ficha y genera un JSON por trámite con los 10 epígrafes (Descripción, Finalidad, Órgano gestor, Plazo de resolución, Efecto del silencio, Normativa básica, Pago de tasas, Información adicional, Documentación relacionada y Documentos a presentar). Los textos con hipervínculo se guardan como <b>texto + enlace</b>, sin analizarlos. Protección de datos, Otorgamiento de representante y el resto de epígrafes no se guardan.</p>
+  </div>
+
+  <div class="grid">
+    <div class="card">
+      <h2><span class="paso">1</span>Instala el favorito (una sola vez)</h2>
+      <p class="small">Arrastra este botón a la barra de favoritos del navegador (Ctrl+Mayús+B si no la ves):</p>
+      <p><a class="btn bm" id="bm" href="#" title="Arrástralo a la barra de favoritos">📥 Trámites → Elvira</a></p>
+      <details class="small"><summary>Si tu navegador no deja usar favoritos de este tipo</summary>
+        <p>En la sede, pulsa <b>F12</b> → pestaña <b>Consola</b>, pega el código y pulsa Intro (si Chrome pide escribir «allow pasting», escríbelo primero).</p>
+        <button class="btn alt sm" id="cp">Copiar el código para la consola</button></details>
+    </div>
+    <div class="card">
+      <h2><span class="paso">2</span>Extrae los trámites en la sede</h2>
+      <ol class="pasos small">
+        <li><button class="btn sm" id="abrir">Abrir el catálogo de la sede ↗</button> <span class="muted">(ábrelo desde aquí para poder enviarte el resultado)</span></li>
+        <li>En la sede, pulsa el favorito <b>📥 Trámites → Elvira</b>. Aparece un panel arriba a la derecha con los trámites encontrados.</li>
+        <li>Pulsa <b>Extraer todos</b> (tarda 1-2 minutos para 114 trámites).</li>
+        <li>Pulsa <b>↗ Enviar al extractor</b> para revisarlos aquí, o descarga directamente el ZIP (por órgano gestor o por nombre).</li>
+      </ol>
+    </div>
+    <div class="card">
+      <h2><span class="paso">3</span>…o carga archivos</h2>
+      <div class="drop" id="drop"><label class="btn alt" style="cursor:pointer">Elegir archivos<input type="file" id="fi" multiple accept=".json,.zip,.html,.htm,application/json,application/zip,text/html" hidden></label>
+        <div class="small muted" style="margin-top:6px">o arrástralos aquí · <b>.zip</b> o <b>.json</b> del extractor, o fichas guardadas con Ctrl+S (<b>.html</b>)</div></div>
+    </div>
+  </div>
+
+  <div class="card" id="rev" hidden>
+    <div class="row" style="justify-content:space-between"><h2 style="margin:0">Revisión · <span id="tot"></span></h2>
+      <div class="row"><input type="search" id="q" placeholder="Buscar trámite…"><select id="fo"><option value="">Todos los órganos gestores</option></select><select id="ag"><option value="organo">Agrupar por órgano gestor</option><option value="nombre">Ordenar por nombre</option></select></div></div>
+    <div id="avisos"></div>
+    <div class="row" style="margin:8px 0">
+      <b class="small">Descargar:</b>
+      <select id="md"><option value="organo">ZIP por órgano gestor (una carpeta por órgano)</option><option value="nombre">ZIP por nombre del trámite (todos juntos)</option></select>
+      <button class="btn" id="dz">⬇ ZIP</button><button class="btn alt" id="dc">⬇ Un solo JSON</button><button class="btn alt" id="dx" title="Borra la lista de esta página">Vaciar</button>
+      <span class="small muted" id="filtro-info"></span>
+    </div>
+    <div class="banner info" id="pas"><b>Enviar directamente al Banco de recursos (Drive), sin abrir el administrador.</b>
+      <div id="pas-out" class="row lg" style="margin-top:6px"><input type="email" id="pas-e" placeholder="correo del administrador" autocomplete="username"><input type="password" id="pas-p" placeholder="contraseña" autocomplete="current-password"><label class="small"><input type="checkbox" id="pas-r"> Recordarme</label><button class="btn sm" id="pas-go">Entrar</button></div>
+      <div id="pas-in" class="row" hidden style="margin-top:6px"><span class="small">Conectado como <b id="pas-yo"></b></span><button class="btn" id="pas-env">⇪ Enviar al banco</button><button class="btn ghost sm" id="pas-x">Cerrar sesión</button></div>
+      <div class="small muted" style="margin-top:4px">Mismo usuario y contraseña que el administrador. Se ordenan por órgano gestor (que decide el área del banco) y <b>cada trámite se relaciona con su propia intención</b>. Entran como «Por revisar»; no llegan a la web hasta que se validen y se publique. Se envían los trámites filtrados en la lista; las intenciones elegidas viajan también en el ZIP.</div></div>
+    <div class="grid" style="grid-template-columns:minmax(0,1.25fr) minmax(0,1fr)">
+      <div class="scroll"><table><thead><tr><th>Trámite</th><th>Epígrafes</th><th>Enlaces</th></tr></thead><tbody id="tb"></tbody></table></div>
+      <div id="det" class="small"><div class="banner info">Elige un trámite para ver lo que irá al JSON.</div></div>
+    </div>
+  </div>
+</main>
+</div><!-- /app-content -->
+<div id="toast"></div>
+<script>
+/* ===================================================================
+   SEDE() · núcleo compartido del extractor de trámites de la Sede
+   electrónica de Arganda del Rey → JSON del banco de recursos de Elvira.
+   Es una función autocontenida: se usa tal cual en extractor_sede.html
+   y se inyecta en la sede (favorito / consola) con SEDE.toString().
+   =================================================================== */
+function SEDE(){
+  'use strict';
+  const VER='1.2';
+  const ORIGEN='https://sedeelectronica.argandadelrey.es';
+  const CATALOGO=ORIGEN+'/sta/CarpetaPublic/doEvent?APP_CODE=STA&PAGE_CODE=CATALOGO';
+  const urlFicha=id=>CATALOGO+'&DETALLE='+encodeURIComponent(id);
+  const idDe=u=>{const m=String(u||'').match(/[?&;]DETALLE=([0-9A-Za-z_\-]+)/i);return m?m[1]:'';};
+
+  /* ---------- Epígrafes que se llevan al JSON (orden de la ficha) ---------- */
+  const SECC=[
+    ['descripcion','Descripción',['descripcion','descripcion del tramite','descripcion del procedimiento','objeto','objeto del tramite']],
+    ['finalidad','Finalidad',['finalidad','finalidad del tramite','finalidad del procedimiento']],
+    ['organo_gestor','Órgano gestor',['organo gestor','organo competente','organo responsable','organo tramitador','unidad gestora','unidad responsable','servicio gestor','departamento gestor']],
+    ['plazo_resolucion','Plazo de resolución',['plazo de resolucion','plazo maximo de resolucion','plazo de resolucion y notificacion','plazo maximo para resolver y notificar','plazo de tramitacion']],
+    ['silencio_administrativo','Efecto del silencio administrativo',['efecto del silencio administrativo','efectos del silencio administrativo','efecto del silencio','silencio administrativo','sentido del silencio','sentido del silencio administrativo']],
+    ['normativa','Normativa básica',['normativa basica','normativa','normativa aplicable','legislacion aplicable','legislacion','marco normativo']],
+    ['pago_tasas','Pago de tasas',['pago de tasas','tasas','tasas y precios publicos','tasas e impuestos','pago de tasas e impuestos']],
+    ['informacion_adicional','Información adicional',['informacion adicional','observaciones','otra informacion','mas informacion']],
+    ['documentacion_relacionada','Documentación relacionada',['documentacion relacionada','documentos relacionados','impresos relacionados','impresos y formularios','modelos normalizados']],
+    ['documentos_presentar','Documentos a presentar',['documentos a presentar','documentacion a presentar','documentacion a aportar','documentacion necesaria','documentacion requerida','documentos a aportar']]
+  ];
+  /* Epígrafes de la ficha que NO van al JSON: cortan la sección anterior */
+  const STOP=['proteccion de datos','informacion sobre proteccion de datos','informacion basica sobre proteccion de datos','proteccion de datos de caracter personal','clausula de proteccion de datos',
+    'otorgamiento de representante','otorgamiento de representantes','otorgamiento de representacion','representacion','representantes',
+    'requisitos','quien puede solicitarlo','quien puede presentarlo','quien lo puede solicitar','interesados','destinatarios','plazo de presentacion','lugar de presentacion','forma de presentacion',
+    'canales de tramitacion','canales de presentacion','como se tramita','tramitacion','tramitacion electronica','tramitacion presencial','presentacion','iniciar tramite','tramitar','recursos','recursos que proceden',
+    'procedimiento','unidad tramitadora','quien lo puede presentar','nivel de identificacion del solicitante','nivel de identificacion','fecha de inicio','materia','categoria','familia','datos generales','informacion general','compartir','volver','tramites relacionados','preguntas frecuentes'];
+  const GRUPOS=/^(solicitud|solicitudes|documentacion adjunta|documentacion complementaria|documentacion obligatoria|documentacion opcional|documentacion especifica|otros documentos|documentacion a aportar por el interesado)$/;
+
+  const nrm=s=>String(s||'').replace(/ /g,' ').normalize('NFD').replace(/[̀-ͯ]/g,'').toLowerCase()
+    .replace(/^\s*\d{1,2}\s*[.\-–)]+[\s\-–.]*/,'').replace(/[\s:.\-–]+$/,'').replace(/\s+/g,' ').trim();
+  const limpia=s=>String(s||'').replace(/ /g,' ').replace(/[ \t\r\f\v]+/g,' ').replace(/ *\n */g,'\n').trim();
+  const LBL={};SECC.forEach(([k,,ls])=>ls.forEach(l=>{LBL[l]=k;}));
+  const STOPSET=new Set(STOP);
+  const SALTA=/^(SCRIPT|STYLE|NOSCRIPT|TEMPLATE|SELECT|OPTION|SVG|IFRAME|INPUT|TEXTAREA|HEAD|META|LINK)$/;
+  const BLOQUE=/^(DIV|P|LI|UL|OL|DL|DT|DD|TR|TABLE|TBODY|THEAD|TFOOT|SECTION|ARTICLE|ASIDE|HEADER|FOOTER|NAV|MAIN|H1|H2|H3|H4|H5|H6|FIELDSET|LEGEND|FORM|BLOCKQUOTE|PRE|ADDRESS|FIGURE|FIGCAPTION|HR|CAPTION|DETAILS|SUMMARY|CENTER)$/;
+  const firma=el=>el.tagName+'|'+String(el.getAttribute('class')||'').trim().split(/\s+/).sort().join('.');
+  const dentroDeA=el=>{for(let p=el;p;p=p.parentElement)if(p.tagName==='A'||p.tagName==='BUTTON')return true;return false;};
+  /* Texto «solo» en su bloque: el padre no tiene más texto que este elemento */
+  const solo=el=>{const p=el.parentElement;return !p||nrm(p.textContent)===nrm(el.textContent);};
+
+  /* ---------- Enlaces: se recogen texto + URL, sin analizarlos ---------- */
+  function enlace(a,base){
+    const img=a.querySelector&&a.querySelector('img[alt]');
+    const t=limpia(a.textContent)||limpia(a.getAttribute('title'))||(img?limpia(img.getAttribute('alt')):'');
+    if(!t)return null;
+    const href=String(a.getAttribute('href')||'').trim(),oc=String(a.getAttribute('onclick')||'');
+    let u='',accion='';
+    if(href&&!/^(javascript:|#|$)/i.test(href)){try{u=new URL(href,base||ORIGEN).href;}catch(e){u=href;}}
+    else{const m=(href+' '+oc).match(/['"]((?:https?:\/\/|\/)[^'"\s]+)['"]/);
+      if(m){try{u=new URL(m[1],base||ORIGEN).href;}catch(e){u=m[1];}}
+      else if(href||oc)accion=(href+' '+oc).replace(/\s+/g,' ').trim().slice(0,240);}
+    const l={t:t,u:u};if(accion)l.accion=accion;return l;
+  }
+
+  /* ---------- Localiza los epígrafes de la ficha ---------- */
+  function epigrafes(doc){
+    const body=doc.body||doc.documentElement,todos=[...body.querySelectorAll('*')];
+    const conocidos=new Map();
+    for(const el of todos){
+      if(SALTA.test(el.tagName)||el.tagName==='A'||el.tagName==='BUTTON')continue;
+      const tx=el.textContent||'';if(tx.length>90||tx.length<4)continue;
+      const k=LBL[nrm(tx)];if(!k)continue;
+      if([...el.children].some(c=>LBL[nrm(c.textContent)]===k))continue;   // nos quedamos con el más profundo
+      if(dentroDeA(el))continue;
+      if([...conocidos.values()].includes(k)){            // el mismo epígrafe dos veces: vale el primero «solo»
+        const prev=[...conocidos.entries()].find(([,v])=>v===k)[0];if(solo(prev)||!solo(el))continue;conocidos.delete(prev);}
+      conocidos.set(el,k);
+    }
+    if(!conocidos.size)return null;
+    const firmas=new Set([...conocidos.keys()].map(firma));
+    const heads=new Map(conocidos);
+    for(const el of todos){
+      if(heads.has(el)||SALTA.test(el.tagName)||el.tagName==='A'||el.tagName==='BUTTON'||dentroDeA(el))continue;
+      const tx=el.textContent||'';if(tx.length>80||tx.length<3)continue;const n=nrm(tx);if(!n)continue;
+      if([...el.children].some(c=>nrm(c.textContent)===n))continue;
+      if(STOPSET.has(n)&&(solo(el)||/^H[1-6]$|^DT$|^TH$|^LEGEND$/.test(el.tagName)))heads.set(el,null);
+      else if(firmas.has(firma(el))&&solo(el)&&!/[.;,]$/.test(String(tx).trim())&&n.split(' ').length<=7)heads.set(el,null);
+    }
+    /* contenedor: antepasado común de los epígrafes conocidos */
+    const ks=[...conocidos.keys()],ruta=el=>{const r=[];for(let p=el;p;p=p.parentElement)r.unshift(p);return r;};
+    let comun=ruta(ks[0]);ks.slice(1).forEach(el=>{const r=ruta(el);let i=0;while(i<comun.length&&comun[i]===r[i])i++;comun=comun.slice(0,i);});
+    let caja=comun[comun.length-1]||body;
+    if(ks.length===1)caja=(ks[0].parentElement&&ks[0].parentElement.parentElement)||body;
+    return {heads:heads,caja:caja,conocidos:conocidos};
+  }
+
+  /* ---------- Recorrido en orden de documento → fichas de texto ---------- */
+  function fichas(nodo,out,heads,base){
+    for(let n=nodo.firstChild;n;n=n.nextSibling){
+      if(n.nodeType===3){out.push({k:'T',v:n.nodeValue,p:n.parentNode});continue;}
+      if(n.nodeType!==1)continue;const tg=n.tagName;
+      if(SALTA.test(tg))continue;
+      if(heads.has(n)){out.push({k:'H',v:heads.get(n)});continue;}
+      if(tg==='BR'){out.push({k:'B'});continue;}
+      if(tg==='A'||(tg==='BUTTON'&&n.getAttribute('onclick'))){const l=enlace(n,base);if(l){out.push({k:'A',v:l});continue;}}
+      if(tg==='IMG')continue;
+      const b=BLOQUE.test(tg);if(b)out.push({k:'B'});
+      fichas(n,out,heads,base);
+      if(b)out.push({k:'B'});else if(tg==='TD'||tg==='TH')out.push({k:'T',v:' ',p:n});
+    }
+  }
+
+  function trocea(tokens){
+    const sec={};let cur=null,linea='',ultA=false,trasA='',pPrev=null;
+    const cierra=()=>{const t=limpia(linea);if(cur&&t)cur.lineas.push(t);linea='';ultA=false;trasA='';pPrev=null;};
+    for(const tk of tokens){
+      if(tk.k==='H'){cierra();cur=tk.v?(sec[tk.v]=sec[tk.v]||{lineas:[],enlaces:[]}):null;continue;}
+      if(!cur)continue;
+      if(tk.k==='B'){cierra();continue;}
+      if(tk.k==='T'){const v=tk.v;
+        /* «representaciónPlano de situación»: elementos distintos pegados sin espacio → línea nueva */
+        if(pPrev&&tk.p!==pPrev&&/[a-záéíóúüñ)]$/i.test(linea)&&/^[A-ZÁÉÍÓÚÑ¿¡]/.test(v))cierra();
+        linea+=v;if(ultA)trasA+=v;if(v.trim())pPrev=tk.p;continue;}
+      if(tk.k==='A'){if(ultA&&!trasA.trim())cierra();          // enlaces seguidos: uno por línea
+        linea+=(linea&&!/\s$/.test(linea)?' ':'')+tk.v.t;cur.enlaces.push(tk.v);ultA=true;trasA='';pPrev=null;}
+    }
+    cierra();return sec;
+  }
+
+  function estructura(k,s){
+    const vistos=new Set(),enl=s.enlaces.filter(l=>{const x=l.t+'|'+l.u;if(vistos.has(x))return false;vistos.add(x);return true;});
+    const etiquetas=new Set((SECC.find(x=>x[0]===k)||[,,[]])[2]);
+    const lineas=s.lineas.filter(l=>!etiquetas.has(nrm(l)));
+    const o={texto:lineas.join('\n'),lineas:lineas,enlaces:enl};
+    if(k==='documentacion_relacionada'||k==='documentos_presentar'){
+      const item=t=>{const l=enl.find(x=>x.t===t);return l?Object.assign({t:t},l.u?{u:l.u}:{},l.accion?{accion:l.accion}:{}):{t:t};};
+      o.items=lineas.map(item);
+      /* Documentación relacionada: siempre son hipervínculos → un elemento por enlace (texto + URL) */
+      if(k==='documentacion_relacionada'&&enl.length){const tl=new Set(enl.map(l=>nrm(l.t)));
+        o.items=enl.map(l=>Object.assign({t:l.t},l.u?{u:l.u}:{},l.accion?{accion:l.accion}:{})).concat(lineas.filter(x=>!tl.has(nrm(x))&&!enl.some(l=>x.includes(l.t))).map(t=>({t:t,sin_enlace:true})));
+        o.lineas=o.items.map(x=>x.t);o.texto=o.lineas.join('\n');}
+      if(k==='documentos_presentar'&&lineas.some(l=>GRUPOS.test(nrm(l)))){
+        const g=[];let cg=null;lineas.forEach(l=>{if(GRUPOS.test(nrm(l))){cg={t:l,items:[]};g.push(cg);}else{if(!cg){cg={t:'',items:[]};g.push(cg);}cg.items.push(item(l));}});
+        o.grupos=g;o.items=lineas.filter(l=>!GRUPOS.test(nrm(l))).map(item);}
+    }
+    return o;
+  }
+
+  function tituloDe(doc,info,url){
+    const generico=/^(catalogo|catalogo de tramites|sede electronica|ayuntamiento|inicio|menu|buscar|acceso|carpeta ciudadana|tramites|informacion del tramite|detalle del tramite|ficha del tramite)$/;
+    const primero=info&&[...info.conocidos.keys()][0];
+    const cands=[...doc.querySelectorAll('h1,h2,h3,h4,[class*="titul" i],[class*="title" i],[id*="titul" i],[class*="nombre" i]')].filter(el=>{
+      if(dentroDeA(el))return false;const t=limpia(el.textContent),n=nrm(t);
+      if(t.length<3||t.length>180||LBL[n]||STOPSET.has(n)||generico.test(n))return false;
+      if(primero&&!(el.compareDocumentPosition(primero)&4))return false;   // tiene que ir antes del primer epígrafe
+      return true;});
+    if(cands.length)return limpia(cands[cands.length-1].textContent).replace(/\s*\n\s*/g,' ');
+    const dt=limpia(doc.title||'').replace(/\s*[|\-–·]\s*(sede|ayuntamiento).*$/i,'');
+    return generico.test(nrm(dt))?'':dt;
+  }
+
+  /* ---------- Órgano gestor: «Departamento de Urbanismo (Avda. del Cañal…)» → nombre y tema ---------- */
+  function organoDe(texto){
+    let l=String(texto||'').split('\n').map(x=>x.trim()).find(x=>x&&!/^horario/i.test(x))||'';
+    l=l.replace(/\s*[(\[].*$/,'').replace(/\s*[,;:–—-]\s*(avda|avenida|c\/|calle|plaza|pza|paseo|tel|tfno|tel[eé]fono|horario|planta|edificio)\b.*$/i,'').replace(/[.\s]+$/,'').trim();
+    return l.length>90?l.slice(0,90).trim():l;
+  }
+  function temaDe(organo){
+    return String(organo||'').replace(/^(el|la)\s+/i,'').replace(/^(departamento|concejal[ií]a|servicio|servicios|[aá]rea|unidad|secci[oó]n|oficina|negociado|delegaci[oó]n|direcci[oó]n|gerencia|jefatura)(\s+(municipal|general))?\s+(de\s+(la\s+|los\s+|las\s+)?|del\s+)/i,'').replace(/^(el|la)\s+/i,'').trim()||String(organo||'').trim();
+  }
+
+  async function huella(o){const s=JSON.stringify(o);
+    try{if(typeof crypto!=='undefined'&&crypto.subtle){const h=await crypto.subtle.digest('SHA-256',new TextEncoder().encode(s));return [...new Uint8Array(h)].slice(0,12).map(b=>b.toString(16).padStart(2,'0')).join('');}}catch(e){}
+    let h=0x811c9dc5;for(let i=0;i<s.length;i++){h^=s.charCodeAt(i);h=Math.imul(h,0x01000193)>>>0;}return 'fnv'+h.toString(16);}
+
+  /* ---------- Maquetación real de la sede (plataforma STA): div.section-entry > dt.entry-label + dd.entry-value ---------- */
+  function analizarSTA(doc,url){
+    const entradas=[...doc.querySelectorAll('.section-entry')].map(e=>({dt:e.querySelector('dt.entry-label'),dd:e.querySelector('dd.entry-value')})).filter(x=>x.dt&&x.dd);
+    if(!entradas.length)return null;
+    const secciones={};
+    entradas.forEach(({dt,dd})=>{const k=LBL[nrm(dt.textContent)];if(!k||secciones[k])return;   // epígrafe que no va al JSON: se ignora entero
+      if(k==='documentos_presentar'&&dd.querySelector('dl.documents-node')){
+        const grupos=[...dd.querySelectorAll('dl.documents-node')].map(n=>{const g=n.querySelector('dt.level0'),items=[];
+          [...n.querySelectorAll('dl.document-list > dt, dl.document-list > dd.document-description')].forEach(el=>{
+            if(el.tagName==='DT'){const a=el.querySelector('a[href]'),l=a?enlace(a,url):null,it={t:limpia(el.textContent)};if(l&&l.u)it.u=l.u;if(it.t)items.push(it);}
+            else if(items.length){const d=limpia(el.textContent);if(d&&d!==items[items.length-1].t)items[items.length-1].descripcion=d;}});
+          return {t:g?limpia(g.textContent):'',items:items};}).filter(g=>g.t||g.items.length);
+        const lineas=[];grupos.forEach(g=>{if(g.t)lineas.push(g.t);g.items.forEach(i=>lineas.push(i.t+(i.descripcion?' — '+i.descripcion:'')));});
+        const enl=[];grupos.forEach(g=>g.items.forEach(i=>{if(i.u)enl.push({t:i.t,u:i.u});}));
+        if(lineas.length)secciones[k]={texto:lineas.join('\n'),lineas:lineas,enlaces:enl,grupos:grupos,items:grupos.flatMap(g=>g.items)};
+        return;}
+      const tk=[{k:'H',v:k}];fichas(dd,tk,new Map(),url);const c=trocea(tk)[k]||{lineas:[],enlaces:[]};
+      /* la sede mete «Información sobre Protección de datos: Enlace al RAT» dentro de otros epígrafes: fuera */
+      const prot=c.lineas.filter(l=>/^informaci[oó]n (b[aá]sica )?sobre protecci[oó]n de datos/i.test(l));
+      c.lineas=c.lineas.filter(l=>!prot.includes(l));
+      c.enlaces=c.enlaces.filter(e=>!prot.some(l=>l.includes(e.t))&&!/\/RAT\.pdf(\?|$)/i.test(e.u||''));
+      if(c.lineas.length||c.enlaces.length)secciones[k]=estructura(k,c);});
+    return {secciones:secciones,primero:entradas[0].dt};
+  }
+
+  /* ---------- Documento HTML de una ficha → objeto «tramite» ---------- */
+  async function analizar(doc,url,tituloCatalogo){
+    const id=idDe(url);let secciones=null,info=null;
+    const sta=analizarSTA(doc,url);
+    if(sta&&Object.keys(sta.secciones).length){secciones=sta.secciones;info={conocidos:new Map([[sta.primero,'x']])};}
+    else{
+      info=epigrafes(doc);
+      if(!info){
+        const cortos=[...new Set([...(doc.body||doc).querySelectorAll('h1,h2,h3,h4,h5,dt,th,strong,b,legend,label,span,div')].map(e=>limpia(e.textContent)).filter(t=>t.length>2&&t.length<60))].slice(0,60);
+        return {ok:false,id_sede:id,url:url,titulo:tituloCatalogo||'',error:'No se han encontrado los epígrafes (Descripción, Finalidad…) en la página.',diagnostico:cortos};
+      }
+      const tk=[];fichas(info.caja,tk,info.heads,url);const crudo=trocea(tk);secciones={};
+      SECC.forEach(([k])=>{if(crudo[k]&&(crudo[k].lineas.length||crudo[k].enlaces.length))secciones[k]=estructura(k,crudo[k]);});
+    }
+    const ord={},vacias=[];SECC.forEach(([k])=>{if(secciones[k])ord[k]=secciones[k];else vacias.push(k);});secciones=ord;
+    const titulo=tituloDe(doc,info,url)||limpia(tituloCatalogo)||((secciones.descripcion||{}).lineas||[])[0]||'Trámite '+id;
+    const tram=[...doc.querySelectorAll('a')].map(a=>enlace(a,url)).filter(l=>l&&l.u&&/^(tramitar|tramitaci[oó]n electr[oó]nica|iniciar( el)? tr[aá]mite|acceder al tr[aá]mite|solicitar en l[ií]nea|presentar solicitud|tramitar en l[ií]nea|tramitar online)/i.test(l.t))[0];
+    const organo=organoDe((secciones.organo_gestor||{}).texto);
+    const o={id_sede:id,titulo:titulo,url:url||'',organo_gestor:organo||'Sin órgano gestor',tema:organo?temaDe(organo):'',secciones:secciones,secciones_vacias:vacias};
+    if(tituloCatalogo&&limpia(tituloCatalogo)!==titulo)o.titulo_catalogo=limpia(tituloCatalogo);
+    if(tram)o.enlace_tramitar=tram;
+    o.huella=await huella({t:titulo,s:secciones});
+    o.extraido_at=new Date().toISOString();o.extractor='extractor_sede v'+VER;
+    return {ok:true,tramite:o};
+  }
+
+  /* ---------- objeto «tramite» → JSON compatible con el banco de recursos del administrador ---------- */
+  function minus(t){t=String(t||'').trim();return /^[A-ZÁÉÍÓÚÑ][a-záéíóúñü]/.test(t)?t.charAt(0).toLowerCase()+t.slice(1):t;}
+  function aRecurso(tr){
+    const s=tr.secciones||{},tx=k=>(s[k]&&s[k].texto)||'';
+    const conEnl=k=>{const e=(s[k]&&s[k].enlaces)||[];return tx(k)+(e.length?'\nEnlaces: '+e.map(l=>l.t+(l.u?' ('+l.u+')':'')).join(' · '):'');};
+    const lab=Object.fromEntries(SECC.map(([k,l])=>[k,l]));
+    const datos_clave=SECC.filter(([k])=>k!=='descripcion'&&k!=='finalidad'&&s[k]).map(([k])=>({dato:lab[k],valor:conEnl(k),pagina:''}));
+    datos_clave.push({dato:'Ficha del trámite en la sede electrónica',valor:tr.url||'',pagina:''});
+    if(tr.enlace_tramitar)datos_clave.push({dato:'Tramitar en línea',valor:tr.enlace_tramitar.t+' ('+tr.enlace_tramitar.u+')',pagina:''});
+    const og=tx('organo_gestor'),contactos=[];
+    if(og){const tel=(og.match(/(?:\+34\s?)?[689]\d{2}[\s.]?\d{2,3}[\s.]?\d{2,3}[\s.]?\d{0,3}/)||[''])[0].trim(),em=(og.match(/[\w.+-]+@[\w-]+(?:\.[\w-]+)+/)||[''])[0];
+      contactos.push({nombre:og.split('\n')[0].replace(/\s*\(.*$/,'').trim(),telefono:tel,email:em.replace(/@ayto-arganda\.es$/i,'@argandadelrey.es'),web:''});}
+    const t=tr.titulo,tm=minus(t),P=[t,'¿Cómo solicitar '+tm+'?','¿Qué documentos necesito para '+tm+'?','¿Dónde se tramita '+tm+'?'];
+    const d1=((s.descripcion||{}).lineas||[])[0];if(d1&&nrm(d1)!==nrm(t)&&d1.length<120)P.splice(1,0,d1);
+    if(s.plazo_resolucion)P.push('¿Cuánto tarda '+tm+'?');
+    if(s.pago_tasas)P.push('¿Hay que pagar alguna tasa por '+tm+'?');
+    return {
+      formato:'elvira-recurso-1',
+      id:'sede-'+(tr.id_sede||'sin-id'),
+      titulo:t,tipo:'tramite',origen:'sede',
+      grupo:tr.organo_gestor||'Sin órgano gestor',area_sugerida:tr.tema||'',
+      fuente:tr.url||'',url_analizada:tr.url||'',
+      vigencia:{desde:'',hasta:''},
+      intenciones:[],
+      preguntas:[...new Set(P)],
+      indicaciones:'Ficha oficial del trámite en la Sede electrónica. Para tramitarlo, remite siempre al enlace de la sede electrónica de esta ficha.',
+      datos:{resumen:[tx('descripcion'),tx('finalidad')].filter(Boolean).join('\n'),eventos:[],actividades:[],datos_clave:datos_clave,contactos:contactos,tramite:tr}
+    };
+  }
+
+  function slug(t){return String(t||'').normalize('NFD').replace(/[̀-ͯ]/g,'').toLowerCase().replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,'').slice(0,60)||'tramite';}
+  function nombreArchivo(rec){const tr=(rec.datos||{}).tramite||{};return slug(rec.titulo)+'__'+(tr.id_sede||'sin-id')+'.json';}
+  function carpeta(t){return String(t||'Sin órgano gestor').replace(/[\\/:*?"<>|]+/g,'-').replace(/\s+/g,' ').trim().slice(0,80);}
+  function grupos(recs){const G=new Map();recs.forEach(r=>{const g=r.grupo||'Sin órgano gestor';if(!G.has(g))G.set(g,[]);G.get(g).push(r);});
+    return [...G.entries()].sort((a,b)=>a[0].localeCompare(b[0],'es')).map(([g,L])=>({grupo:g,tema:(L[0]||{}).area_sugerida||'',recursos:L.sort((x,y)=>String(x.titulo).localeCompare(String(y.titulo),'es'))}));}
+
+  /* ---------- Descodificar HTML respetando el juego de caracteres ---------- */
+  function descodifica(buf,ct){
+    let cs=((ct||'').match(/charset=([\w-]+)/i)||[])[1];
+    if(!cs){const cab=new TextDecoder('latin1').decode(new Uint8Array(buf).slice(0,4096));cs=(cab.match(/<meta[^>]+charset=["']?([\w-]+)/i)||[])[1];}
+    try{return new TextDecoder(cs||'utf-8').decode(buf);}catch(e){return new TextDecoder('utf-8').decode(buf);}
+  }
+
+  /* ---------- ZIP sin compresión (sin librerías) ---------- */
+  function zip(files){
+    const T=[];for(let n=0;n<256;n++){let c=n;for(let k=0;k<8;k++)c=c&1?0xEDB88320^(c>>>1):c>>>1;T[n]=c>>>0;}
+    const crc=d=>{let c=0xFFFFFFFF;for(let i=0;i<d.length;i++)c=T[(c^d[i])&0xFF]^(c>>>8);return (c^0xFFFFFFFF)>>>0;};
+    const enc=new TextEncoder(),partes=[],central=[];let off=0;
+    const now=new Date(),hora=(now.getHours()<<11)|(now.getMinutes()<<5)|(now.getSeconds()>>1),dia=((now.getFullYear()-1980)<<9)|((now.getMonth()+1)<<5)|now.getDate();
+    for(const f of files){const nm=enc.encode(f.name),d=typeof f.data==='string'?enc.encode(f.data):f.data,c=crc(d);
+      const h=new DataView(new ArrayBuffer(30));h.setUint32(0,0x04034b50,true);h.setUint16(4,20,true);h.setUint16(6,0x0800,true);h.setUint16(10,hora,true);h.setUint16(12,dia,true);h.setUint32(14,c,true);h.setUint32(18,d.length,true);h.setUint32(22,d.length,true);h.setUint16(26,nm.length,true);
+      partes.push(new Uint8Array(h.buffer),nm,d);
+      const ce=new DataView(new ArrayBuffer(46));ce.setUint32(0,0x02014b50,true);ce.setUint16(4,20,true);ce.setUint16(6,20,true);ce.setUint16(8,0x0800,true);ce.setUint16(12,hora,true);ce.setUint16(14,dia,true);ce.setUint32(16,c,true);ce.setUint32(20,d.length,true);ce.setUint32(24,d.length,true);ce.setUint16(28,nm.length,true);ce.setUint32(42,off,true);
+      central.push(new Uint8Array(ce.buffer),nm);off+=30+nm.length+d.length;}
+    const tam=central.reduce((n,x)=>n+x.length,0),e=new DataView(new ArrayBuffer(22));
+    e.setUint32(0,0x06054b50,true);e.setUint16(8,files.length,true);e.setUint16(10,files.length,true);e.setUint32(12,tam,true);e.setUint32(16,off,true);
+    return new Blob([...partes,...central,new Uint8Array(e.buffer)],{type:'application/zip'});
+  }
+  function descarga(nombre,blob){const a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download=nombre;(document.body||document.documentElement).appendChild(a);a.click();setTimeout(()=>{URL.revokeObjectURL(a.href);a.remove();},1500);}
+  /* modo: 'organo' → una carpeta por órgano gestor (con su JSON combinado) · 'nombre' → todos juntos por orden alfabético */
+  function paquete(recs,modo,sufijo){
+    modo=modo==='nombre'?'nombre':'organo';const fecha=new Date().toISOString().slice(0,10),G=grupos(recs),files=[];
+    const comb=(L,g)=>JSON.stringify({formato:'elvira-recursos-1',generado:new Date().toISOString(),grupo:g||undefined,total:L.length,recursos:L},null,1);
+    if(modo==='organo')G.forEach(x=>{const c=carpeta(x.grupo)+'/';x.recursos.forEach(r=>files.push({name:c+nombreArchivo(r),data:JSON.stringify(r,null,1)}));files.push({name:c+'_todos_'+slug(x.grupo)+'.json',data:comb(x.recursos,x.grupo)});});
+    else recs.slice().sort((a,b)=>String(a.titulo).localeCompare(String(b.titulo),'es')).forEach(r=>files.push({name:nombreArchivo(r),data:JSON.stringify(r,null,1)}));
+    files.push({name:'_indice_tramites.json',data:JSON.stringify({formato:'elvira-indice-1',generado:new Date().toISOString(),total:recs.length,organos:G.map(x=>({organo_gestor:x.grupo,tema:x.tema,total:x.recursos.length,tramites:x.recursos.map(r=>({id:r.id,titulo:r.titulo,archivo:(modo==='organo'?carpeta(x.grupo)+'/':'')+nombreArchivo(r),url:r.fuente,huella:r.datos.tramite.huella,secciones:Object.keys(r.datos.tramite.secciones)}))}))},null,1)});
+    const suf=(sufijo?'_'+slug(sufijo):'')+'_'+(modo==='organo'?'por-organo':'por-nombre');
+    return {zip:zip(files),nombreZip:'tramites_sede'+suf+'_'+fecha+'.zip',combinado:new Blob([comb(recs)],{type:'application/json'}),nombreCombinado:'tramites_sede'+(sufijo?'_'+slug(sufijo):'')+'_'+fecha+'.json'};
+  }
+
+  /* ---------- Lista de trámites del catálogo ---------- */
+  function enlacesCatalogo(doc,html){
+    const L=new Map();
+    (doc?[...doc.querySelectorAll('a,[onclick]')]:[]).forEach(a=>{const s=(a.getAttribute('href')||'')+' '+(a.getAttribute('onclick')||'');const id=idDe(s);if(!id)return;
+      const t=limpia(a.textContent)||limpia(a.getAttribute('title'));if(!L.has(id)||(!L.get(id).t&&t))L.set(id,{id:id,t:t,u:urlFicha(id)});});
+    /* catálogo real: tabla con una fila por trámite (tr id="<DETALLE>"); si es la página viva, se leen también las filas que la paginación oculta */
+    let filas=doc?[...doc.querySelectorAll('table tbody tr[id]')]:[];
+    try{if(doc===document&&window.jQuery&&jQuery.fn.dataTable){jQuery('table').each(function(){if(jQuery.fn.dataTable.isDataTable(this))filas=filas.concat(jQuery(this).DataTable().rows().nodes().toArray());});}}catch(e){}
+    filas.forEach(tr=>{const id=tr.id;if(!/^\d{12,}$/.test(id))return;const td=tr.querySelectorAll('td');const t=limpia((td[0]||tr).textContent);
+      const amb=limpia((td[td.length-1]||{}).textContent||'').replace(/^REG\w+\s+/,'').replace(/[,\s]+$/,'');
+      const x={id:id,t:t,u:urlFicha(id)};if(amb&&amb!==t)x.ambito=amb;if(!L.has(id)||!L.get(id).t)L.set(id,x);else if(x.ambito&&!L.get(id).ambito)L.get(id).ambito=x.ambito;});
+    if(html){const re=/DETALLE=([0-9A-Za-z_\-]+)/gi;let m;while((m=re.exec(html)))if(!L.has(m[1]))L.set(m[1],{id:m[1],t:'',u:urlFicha(m[1])});}
+    return [...L.values()];
+  }
+  function listaPegada(txt){const L=new Map();String(txt||'').split(/[\s,;]+/).forEach(x=>{if(!x)return;const id=idDe(x)||(/^\d{8,}$/.test(x)?x:'');if(id&&!L.has(id))L.set(id,{id:id,t:'',u:urlFicha(id)});});return [...L.values()];}
+
+  /* ---------- Descarga + análisis de una ficha (solo desde la propia sede: mismo origen) ---------- */
+  async function traer(item){
+    const r=await fetch(item.u,{credentials:'same-origin',cache:'no-store'});
+    if(!r.ok)throw new Error('HTTP '+r.status);
+    const html=descodifica(await r.arrayBuffer(),r.headers.get('content-type'));
+    const doc=new DOMParser().parseFromString(html,'text/html');
+    let res=await analizar(doc,item.u,item.t);
+    if(!res.ok&&typeof document!=='undefined'&&location.origin===ORIGEN){res=await conIframe(item)||res;}
+    return res;
+  }
+  function conIframe(item){return new Promise(ok=>{const f=document.createElement('iframe');f.style.cssText='position:fixed;left:-9999px;top:0;width:1200px;height:900px;visibility:hidden';
+    let hecho=false;const fin=async()=>{if(hecho)return;hecho=true;let res=null;try{res=await analizar(f.contentDocument,item.u,item.t);}catch(e){}f.remove();ok(res&&res.ok?res:null);};
+    f.onload=()=>setTimeout(fin,1500);setTimeout(fin,20000);f.src=item.u;document.body.appendChild(f);});}
+
+  async function extraerTodos(items,alAvanzar,opc){
+    opc=opc||{};const conc=opc.concurrencia||3,pausa=opc.pausa==null?250:opc.pausa,res=new Array(items.length);let i=0,hechos=0;
+    async function obrero(){while(i<items.length){const k=i++,it=items[k];
+      try{res[k]=await traer(it);if(res[k]&&res[k].ok&&it.ambito)res[k].tramite.ambito_catalogo=it.ambito;}catch(e){res[k]={ok:false,id_sede:it.id,url:it.u,titulo:it.t,error:String(e&&e.message||e)};}
+      hechos++;alAvanzar&&alAvanzar(hechos,items.length,res[k],it);if(pausa)await new Promise(r=>setTimeout(r,pausa));}}
+    await Promise.all(Array.from({length:Math.min(conc,items.length)},obrero));
+    return res;
+  }
+
+  /* ---------- Panel flotante dentro de la sede (favorito / consola) ---------- */
+  function panel(){
+    if(location.origin!==ORIGEN){alert('Este extractor se ejecuta en la sede electrónica:\n'+CATALOGO+'\n\nÁbrela y vuelve a pulsar el favorito.');return;}
+    const viejo=document.getElementById('elvira-sede-panel');if(viejo)viejo.remove();
+    const host=document.createElement('div');host.id='elvira-sede-panel';host.style.cssText='position:fixed;top:12px;right:12px;z-index:2147483647';
+    const sh=host.attachShadow({mode:'open'});document.body.appendChild(host);
+    sh.innerHTML='<style>*{box-sizing:border-box;font:13px/1.4 system-ui,-apple-system,Segoe UI,Arial,sans-serif}.p{width:400px;max-height:88vh;overflow:auto;background:#fff;color:#233348;border:1px solid #c9d5e3;border-top:4px solid #c9a668;border-radius:12px;box-shadow:0 10px 40px #0b1a2e55;padding:14px}h2{font-size:15px;margin:0 0 4px;color:#112d56}.m{color:#5a6b80;font-size:12px}button{cursor:pointer;border:1px solid #153e77;background:#153e77;color:#fff;padding:7px 11px;border-radius:7px;font-weight:650;margin:4px 4px 0 0}button.a{background:#fff;color:#153e77}button:disabled{opacity:.5;cursor:default}textarea{width:100%;min-height:54px;border:1px solid #c9d5e3;border-radius:7px;padding:6px;font:12px ui-monospace,Menlo,monospace}.bar{height:8px;background:#eef3fa;border-radius:4px;overflow:hidden;margin:8px 0}.bar i{display:block;height:100%;width:0;background:#137558;transition:width .2s}.log{max-height:180px;overflow:auto;font-size:11.5px;border:1px solid #dbe4ef;border-radius:7px;padding:6px;margin-top:6px;background:#f8fbff}.ok{color:#137558}.ko{color:#a94643}.x{float:right;background:none;border:0;color:#5a6b80;font-size:18px;padding:0;margin:0}</style>'+
+      '<div class="p"><button class="x" title="Cerrar">×</button><h2>Trámites → JSON para Elvira</h2><div class="m" id="st">Buscando trámites en el catálogo…</div>'+
+      '<details style="margin-top:6px"><summary class="m">¿Faltan trámites? Pega URLs o números DETALLE</summary><textarea id="tx" placeholder="https://sedeelectronica…&amp;DETALLE=6269010508601899905012"></textarea></details>'+
+      '<div><button id="go" disabled>Extraer todos</button><button class="a" id="one" hidden>Solo esta ficha</button></div><div class="bar"><i id="br"></i></div><div class="m" id="pr"></div>'+
+      '<div id="fin" hidden><div class="m" id="gr" style="margin:6px 0"></div><label class="m">Organizar la descarga: <select id="md" style="font-size:12px"><option value="organo">por órgano gestor (carpetas)</option><option value="nombre">por nombre del trámite</option></select></label><br><button id="dz">⬇ ZIP · un JSON por trámite</button><button class="a" id="dc">⬇ Un solo JSON con todos</button><button class="a" id="op" hidden>↗ Enviar al extractor</button></div><div class="log" id="lg" hidden></div></div>';
+    const $=s=>sh.querySelector(s),log=(h,c)=>{$('#lg').hidden=false;$('#lg').insertAdjacentHTML('beforeend','<div class="'+(c||'')+'">'+h+'</div>');$('#lg').scrollTop=1e9;};
+    const esc=s=>String(s||'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+    $('.x').onclick=()=>host.remove();
+    let lista=[],recs=[];
+    const aqui=idDe(location.href);if(aqui)$('#one').hidden=false;
+    (async()=>{lista=enlacesCatalogo(document,document.documentElement.innerHTML);
+      if(!lista.length||!/PAGE_CODE=CATALOGO/i.test(location.href)||aqui){try{const r=await fetch(CATALOGO,{credentials:'same-origin'});const h=descodifica(await r.arrayBuffer(),r.headers.get('content-type'));
+        const extra=enlacesCatalogo(new DOMParser().parseFromString(h,'text/html'),h);const ids=new Set(lista.map(x=>x.id));extra.forEach(x=>{if(!ids.has(x.id))lista.push(x);});}catch(e){}}
+      $('#st').innerHTML='Trámites encontrados en el catálogo: <b>'+lista.length+'</b>'+(lista.length?'':' · si el catálogo se carga por categorías, despliégalas todas y vuelve a pulsar el favorito, o pega las URLs abajo.');
+      $('#go').disabled=false;$('#go').textContent='Extraer todos ('+lista.length+')';})();
+    $('#tx').oninput=()=>{const n=listaPegada($('#tx').value).filter(x=>!lista.some(y=>y.id===x.id)).length;$('#go').textContent='Extraer todos ('+(lista.length+n)+')';};
+    async function ejecutar(items){if(!items.length){alert('No hay trámites que extraer.');return;}
+      $('#go').disabled=true;$('#one').disabled=true;$('#fin').hidden=true;recs=[];const errores=[];$('#lg').innerHTML='';
+      const res=await extraerTodos(items,(n,t,r,it)=>{$('#br').style.width=Math.round(n/t*100)+'%';$('#pr').textContent=n+' de '+t;
+        if(r.ok){const k=Object.keys(r.tramite.secciones).length;log('✓ '+esc(r.tramite.titulo)+' · '+k+'/10 epígrafes',k<4?'ko':'ok');}else{errores.push(r);log('✗ '+esc(it.t||it.id)+' · '+esc(r.error),'ko');}});
+      recs=res.filter(r=>r&&r.ok).map(r=>aRecurso(r.tramite));
+      $('#pr').innerHTML='<b>'+recs.length+'</b> trámites convertidos'+(errores.length?' · <span class="ko">'+errores.length+' con error</span>':'');
+      if(errores.length)window.__elviraErrores=errores;
+      $('#gr').innerHTML='<b>Por órgano gestor:</b><br>'+grupos(recs).map(g=>esc(g.grupo)+' · '+g.recursos.length).join('<br>');
+      $('#fin').hidden=!recs.length;$('#op').hidden=!(window.opener&&!window.opener.closed);$('#go').disabled=false;$('#one').disabled=false;}
+    $('#go').onclick=()=>{const ids=new Set(lista.map(x=>x.id));ejecutar(lista.concat(listaPegada($('#tx').value).filter(x=>!ids.has(x.id))));};
+    $('#one').onclick=()=>ejecutar([{id:aqui,t:'',u:urlFicha(aqui)}]);
+    $('#dz').onclick=()=>{const p=paquete(recs,$('#md').value);descarga(p.nombreZip,p.zip);};
+    $('#dc').onclick=()=>{const p=paquete(recs,$('#md').value);descarga(p.nombreCombinado,p.combinado);};
+    $('#op').onclick=()=>{try{window.opener.postMessage({tipo:'elvira-sede-tramites',recursos:recs,errores:(window.__elviraErrores||[])},'*');$('#op').textContent='✓ Enviado';}catch(e){alert('No se ha podido enviar: '+e.message);}};
+  }
+
+  return {VER,ORIGEN,CATALOGO,SECC,urlFicha,idDe,analizar,aRecurso,nombreArchivo,descodifica,zip,descarga,paquete,grupos,organoDe,temaDe,enlacesCatalogo,listaPegada,extraerTodos,panel,nrm};
+}
+
+
+/* ====================== V10.40 · BANCO DE RECURSOS: INGESTA DE JSON (trámites de la Sede electrónica) ======================
+   Acepta los .json y .zip de extractor_sede.html (y el JSON que descarga «Descargar JSON» de cualquier recurso).
+   Cada trámite entra en el banco como recurso «Por revisar»: sus datos ya vienen estructurados (no pasan por la IA)
+   y se guarda en Drive una ficha PDF generada aquí, para citarla y verla como cualquier otro documento.
+   Se agrupan por ÓRGANO GESTOR; cada grupo va al área del banco que elijáis (se sugiere la que coincide con su tema,
+   p. ej. «Departamento de Urbanismo» → Urbanismo). La relación con intenciones es SIEMPRE manual y POR TRÁMITE (V10.41). */
+const REC_JSON=/\.(json|zip)$/i;
+const SEDE_SECC=[['descripcion','Descripción'],['finalidad','Finalidad'],['organo_gestor','Órgano gestor'],['plazo_resolucion','Plazo de resolución'],['silencio_administrativo','Efecto del silencio administrativo'],['normativa','Normativa básica'],['pago_tasas','Pago de tasas'],['informacion_adicional','Información adicional'],['documentacion_relacionada','Documentación relacionada'],['documentos_presentar','Documentos a presentar']];
+function sedeDetalle(u){const m=String(u||'').match(/[?&;]DETALLE=([0-9A-Za-z_\-]+)/i);return m?m[1]:'';}
+function esJsonRec(f){return REC_JSON.test(f.name)||/json|zip/.test(f.type||'');}
+async function jzLeeZip(buf){const v=new DataView(buf),u8=new Uint8Array(buf),out=[];let e=-1;
+  for(let i=u8.length-22;i>=Math.max(0,u8.length-66000);i--)if(v.getUint32(i,true)===0x06054b50){e=i;break;}
+  if(e<0)throw new Error('El .zip no es válido');let p=v.getUint32(e+16,true);const n=v.getUint16(e+10,true),td=new TextDecoder();
+  for(let k=0;k<n;k++){if(v.getUint32(p,true)!==0x02014b50)break;const met=v.getUint16(p+10,true),cs=v.getUint32(p+20,true),nl=v.getUint16(p+28,true),xl=v.getUint16(p+30,true),cl=v.getUint16(p+32,true),lo=v.getUint32(p+42,true);
+    const nombre=td.decode(u8.subarray(p+46,p+46+nl));p+=46+nl+xl+cl;if(/\/$/.test(nombre)||!/\.json$/i.test(nombre))continue;
+    const ini=lo+30+v.getUint16(lo+26,true)+v.getUint16(lo+28,true),raw=u8.subarray(ini,ini+cs);let d;
+    if(met===0)d=raw;else if(met===8&&typeof DecompressionStream!=='undefined')d=new Uint8Array(await new Response(new Blob([raw]).stream().pipeThrough(new DecompressionStream('deflate-raw'))).arrayBuffer());else continue;
+    out.push({nombre,texto:td.decode(d)});}
+  return out;}
+/* Un trámite «suelto» (objeto tramite con secciones) → recurso */
+function jzDeTramite(tr){const s=tr.secciones||{},tx=k=>(s[k]&&s[k].texto)||'';
+  return {formato:'elvira-recurso-1',id:'sede-'+(tr.id_sede||''),titulo:tr.titulo,tipo:'tramite',origen:'sede',grupo:tr.organo_gestor||'Sin órgano gestor',area_sugerida:tr.tema||'',fuente:tr.url||'',url_analizada:tr.url||'',vigencia:{desde:'',hasta:''},intenciones:[],preguntas:[tr.titulo],
+    datos:{resumen:[tx('descripcion'),tx('finalidad')].filter(Boolean).join('\n'),eventos:[],actividades:[],datos_clave:SEDE_SECC.filter(([k])=>k!=='descripcion'&&k!=='finalidad'&&s[k]).map(([k,l])=>({dato:l,valor:tx(k)+((s[k].enlaces||[]).length?'\nEnlaces: '+s[k].enlaces.map(x=>x.t+(x.u?' ('+x.u+')':'')).join(' · '):''),pagina:''})),contactos:[],tramite:tr}};}
+function jzNormaliza(j,avisos){if(!j)return [];if(Array.isArray(j))return j.flatMap(x=>jzNormaliza(x,avisos));
+  if(j.formato==='elvira-indice-1')return [];
+  if((!j.datos&&Array.isArray(j.intenciones)&&j.intenciones.some(x=>x&&typeof x==='object'))||(j.kb&&j.kb.intenciones)){avisos.push('Uno de los archivos es un JSON de intenciones: se importa en «Importar / Exportar», no en el banco.');return [];}
+  if(Array.isArray(j.recursos))return j.recursos.flatMap(x=>jzNormaliza(x,avisos));
+  if(Array.isArray(j.tramites)&&!j.secciones)return j.tramites.flatMap(x=>jzNormaliza(x,avisos));
+  if(j.secciones&&j.titulo)return [jzDeTramite(j)];
+  if(j.datos&&j.titulo){const tr=j.datos.tramite;return [Object.assign({grupo:(tr&&tr.organo_gestor)||j.grupo||'Otros recursos',area_sugerida:(tr&&tr.tema)||j.area_sugerida||''},j)];}
+  return [];}
+async function jzLeer(files){const recs=[],avisos=[];
+  for(const f of files){try{if(/\.zip$/i.test(f.name)||/zip/.test(f.type)){for(const x of await jzLeeZip(await f.arrayBuffer()))recs.push(...jzNormaliza(JSON.parse(x.texto),avisos));}
+      else recs.push(...jzNormaliza(JSON.parse(await f.text()),avisos));}catch(e){avisos.push(f.name+': '+errMsg(e));}}
+  const vistos=new Map();recs.forEach(r=>{const k=r.id||r.fuente||r.titulo;vistos.set(k,r);});   // si se repite, vale el último
+  return {recs:[...vistos.values()].filter(r=>r.titulo),avisos};}
+
+/* ---------- Ficha PDF del trámite (sin librerías: Helvetica, WinAnsi, A4) ---------- */
+function pdfFicha(rec){
+  const W=[278,278,355,556,556,889,667,191,333,333,389,584,278,333,278,278,556,556,556,556,556,556,556,556,556,556,278,278,584,584,584,556,1015,667,667,722,722,667,611,778,722,278,500,667,556,833,722,778,667,778,722,667,611,722,667,944,667,667,611,278,278,278,469,556,333,556,556,500,556,556,278,556,556,222,222,500,222,833,556,556,556,556,333,500,278,556,500,722,500,500,500,334,260,334,584];
+  const ESP={'€':128,'…':133,'‘':145,'’':146,'“':147,'”':148,'•':149,'–':150,'—':151,'™':153};
+  const byte=c=>{const k=c.charCodeAt(0);if(ESP[c])return ESP[c];if(k>=32&&k<127)return k;if(k>=160&&k<256)return k;return 63;};
+  const ancho=(s,sz,b)=>{let w=0;for(const c of s){const base=c.normalize('NFD')[0];const k=base.charCodeAt(0);w+=(k>=32&&k<127?W[k-32]:556);}return w*sz/1000*(b?1.07:1);};
+  const lit=s=>'('+[...String(s)].map(c=>{const b=byte(c);const ch=String.fromCharCode(b);return ch==='('||ch===')'||ch==='\\'?'\\'+ch:ch;}).join('')+')';
+  const MX=50,MAXW=595-2*MX,pags=[];let ops=[],y=0;
+  const nueva=()=>{if(ops.length)pags.push(ops);ops=[];y=842-56;};nueva();
+  const linea=(txt,sz,b,col,sangria)=>{if(y<60)nueva();ops.push('BT /'+(b?'F2':'F1')+' '+sz+' Tf '+col+' rg '+(MX+(sangria||0))+' '+y.toFixed(1)+' Td '+lit(txt)+' Tj ET');y-=sz*1.32;};
+  const parrafo=(txt,sz,b,col,sangria)=>{String(txt||'').split('\n').forEach(p=>{let cur='';const max=MAXW-(sangria||0);
+    p.split(/\s+/).filter(Boolean).forEach(w=>{while(ancho(w,sz,b)>max){let i=w.length;while(i>1&&ancho(w.slice(0,i),sz,b)>max)i--;if(cur){linea(cur,sz,b,col,sangria);cur='';}linea(w.slice(0,i),sz,b,col,sangria);w=w.slice(i);}
+      const t=cur?cur+' '+w:w;if(ancho(t,sz,b)>max){linea(cur,sz,b,col,sangria);cur=w;}else cur=t;});
+    if(cur)linea(cur,sz,b,col,sangria);});};
+  const tr=(rec.datos||{}).tramite||{},s=tr.secciones||{},NAVY='0.067 0.176 0.337',TXT='0.137 0.2 0.282',GRIS='0.35 0.42 0.5';
+  parrafo(rec.titulo,16,true,NAVY);y-=2;
+  parrafo('Órgano gestor: '+(rec.grupo||tr.organo_gestor||'—'),9,false,GRIS);
+  if(rec.fuente)parrafo('Ficha en la Sede electrónica: '+rec.fuente,8,false,GRIS);y-=8;
+  SEDE_SECC.forEach(([k,l])=>{const x=s[k];if(!x)return;if(y<110)nueva();parrafo(l,11,true,NAVY);y-=1;
+    if(x.grupos)x.grupos.forEach(g=>{if(g.t)parrafo(g.t,10,true,TXT,6);g.items.forEach(i=>parrafo('• '+i.t,10,false,TXT,12));});
+    else parrafo(x.texto,10,false,TXT,6);
+    (x.enlaces||[]).forEach(e=>{if(e.u)parrafo('Enlace · '+e.t+': '+e.u,8,false,GRIS,6);});y-=7;});
+  if(tr.enlace_tramitar)parrafo('Tramitar en línea: '+tr.enlace_tramitar.u,9,false,GRIS);
+  pags.push(ops);
+  const pie='Ficha extraída de la Sede electrónica del Ayuntamiento de Arganda del Rey'+(tr.extraido_at?' el '+String(tr.extraido_at).slice(8,10)+'/'+String(tr.extraido_at).slice(5,7)+'/'+String(tr.extraido_at).slice(0,4):'');
+  const obj=[],nP=pags.length;let pdf='%PDF-1.4\n%\xe2\xe3\xcf\xd3\n';const off=[];
+  const add=t=>{off.push(pdf.length);pdf+=(off.length)+' 0 obj\n'+t+'\nendobj\n';};
+  const kids=pags.map((_,i)=>(5+i*2+1)+' 0 R').join(' ');
+  add('<< /Type /Catalog /Pages 2 0 R >>');add('<< /Type /Pages /Kids ['+kids+'] /Count '+nP+' >>');
+  add('<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica /Encoding /WinAnsiEncoding >>');add('<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold /Encoding /WinAnsiEncoding >>');
+  pags.forEach((o,i)=>{const c=o.concat(['BT /F1 7.5 Tf '+GRIS+' rg '+MX+' 30 Td '+lit(pie+' · página '+(i+1)+' de '+nP)+' Tj ET']).join('\n');
+    add('<< /Length '+c.length+' >>\nstream\n'+c+'\nendstream');add('<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 3 0 R /F2 4 0 R >> >> /Contents '+(5+i*2)+' 0 R >>');});
+  const xr=pdf.length;pdf+='xref\n0 '+(off.length+1)+'\n0000000000 65535 f \n'+off.map(o=>String(o).padStart(10,'0')+' 00000 n \n').join('')+'trailer\n<< /Size '+(off.length+1)+' /Root 1 0 R >>\nstartxref\n'+xr+'\n%%EOF';
+  return btoa(pdf);}
+
+/* ---------- Asignación sugerida: órgano gestor → área del banco / área de intenciones ---------- */
+const JZ_VACIAS=new Set(['de','del','la','las','los','el','y','e','en','municipal','municipales','departamento','concejalia','servicio','servicios','area','unidad','seccion','oficina','negociado','delegacion','direccion','general','gerencia']);
+function jzTok(s){return String(s||'').normalize('NFD').replace(/[̀-ͯ]/g,'').toLowerCase().split(/[^a-z0-9ñ]+/).filter(t=>t.length>2&&!JZ_VACIAS.has(t));}
+function jzParecido(a,b){const A=jzTok(a),B=new Set(jzTok(b));if(!A.length||!B.size)return 0;const n=A.filter(t=>B.has(t)||[...B].some(x=>x.length>4&&t.length>4&&(x.startsWith(t.slice(0,5))||t.startsWith(x.slice(0,5))))).length;return n/Math.max(A.length,B.size);}
+function jzMejor(lista,nombre,tema){let m=null,p=0;(lista||[]).forEach(a=>{const v=Math.max(jzParecido(tema,a.nombre),jzParecido(nombre,a.nombre));if(v>p){p=v;m=a;}});return p>=0.5?m:null;}
+
+/* ---------- Ventana de importación ---------- */
+/* ---------- Intención por TRÁMITE (no por grupo) ----------
+   Cada trámite se relaciona con su propia intención. Los grupos por órgano gestor solo ordenan la lista y fijan el área del banco.
+   La elección se guarda al momento en este navegador (clave elvira_tramite_intent), así no se pierde si se cierra la ventana,
+   y la comparten admin.html y extractor_sede.html si están en la misma carpeta. Las sugerencias 💡 nunca se aplican solas. */
+const JZ_MAPA='elvira_tramite_intent';
+function jzMapa(){try{return JSON.parse(localStorage.getItem(JZ_MAPA)||'{}')||{};}catch(e){return {};}}
+function jzMapaPon(recId,intId){try{const m=jzMapa();if(intId)m[recId]=intId;else delete m[recId];localStorage.setItem(JZ_MAPA,JSON.stringify(m));}catch(e){}}
+function jzIntTexto(it){return it?String(it.titulo||it.id)+' ['+it.id+']':'';}
+function jzIntDe(txt,INT){txt=String(txt||'').trim();if(!txt)return {id:'',ok:true};
+  const m=txt.match(/\[([^\[\]]+)\]\s*$/),cand=m?m[1].trim():txt;
+  let it=INT.find(x=>x.id===cand)||INT.find(x=>String(x.titulo).trim().toLowerCase()===txt.toLowerCase());
+  return it?{id:it.id,ok:true,it:it}:{id:'',ok:false};}
+function jzIndiceInt(INT,areaNom){return INT.map(it=>{const toks=jzTok([it.titulo,it.id.replace(/[_-]+/g,' '),(it.ejemplos||[]).slice(0,40).join(' ')].join(' '));
+  const f=new Map();toks.forEach(t=>f.set(t,(f.get(t)||0)+1));return {it,f,tit:new Set(jzTok(it.titulo+' '+it.id.replace(/[_-]+/g,' '))),area:areaNom(it.area)};});}
+function jzSugerir(rec,IDX,areaIntGrupo){const tr=(rec.datos||{}).tramite||{},s=tr.secciones||{};
+  const q=[...new Set(jzTok(rec.titulo+' '+(((s.descripcion||{}).lineas||[])[0]||'')))];if(!q.length)return null;
+  let mejor=null,pm=0;
+  IDX.forEach(x=>{let p=0;q.forEach(t=>{if(x.tit.has(t))p+=3;else if(x.f.has(t))p+=Math.min(2,x.f.get(t)*0.5);else{for(const k of x.tit)if(t.length>4&&k.length>4&&k.slice(0,5)===t.slice(0,5)){p+=1.5;break;}}});
+    p=p/Math.sqrt(q.length);if(areaIntGrupo&&x.it.area===areaIntGrupo)p*=1.25;if(p>pm){pm=p;mejor=x.it;}});
+  return pm>=1.6?mejor:null;}
+
+/* ---------- Ventana de importación ---------- */
+async function importarJSONs(files,ctx){ctx=ctx||{};
+  const {recs,avisos}=ctx.recs?{recs:ctx.recs,avisos:[]}:await jzLeer(files);
+  if(!recs.length){toast(avisos.length?avisos.join(' · '):'No hay recursos en esos archivos.','err');return;}
+  if(!S.rec){try{const r=await api('recursosListar');S.rec=r.recursos;S.recFolder=r.carpeta;S.recAreas=r.areas||[];}catch(e){fail(e);return;}}
+  const porDet={};(S.rec||[]).forEach(r=>{const d=sedeDetalle(r.url)||sedeDetalle(r.fuente_url);if(d&&r.estado!=='ARCHIVADO')porDet[d]=r;});
+  const existe=r=>{if(ctx.destino)return (S.rec||[]).find(x=>x.id===ctx.destino);const d=((r.datos||{}).tramite||{}).id_sede||sedeDetalle(r.fuente);return d?porDet[d]:(S.rec||[]).find(x=>x.estado!=='ARCHIVADO'&&x.titulo===r.titulo&&x.tipo==='tramite');};
+  const G=new Map();recs.forEach(r=>{const g=r.grupo||'Sin órgano gestor';if(!G.has(g))G.set(g,{grupo:g,tema:r.area_sugerida||'',recs:[]});G.get(g).recs.push(r);});
+  const grupos=[...G.values()].sort((a,b)=>a.grupo.localeCompare(b.grupo,'es'));grupos.forEach(g=>g.recs.sort((a,b)=>String(a.titulo).localeCompare(String(b.titulo),'es')));
+  const AR=S.recAreas||[],KA=(S.kb&&S.kb.areas)||[],INT=((S.kb&&S.kb.intenciones)||[]).slice().sort((a,b)=>String(a.titulo).localeCompare(String(b.titulo),'es'));
+  const areaNom=id=>((KA.find(a=>a.id===id)||{}).nombre||id||'');
+  const IDX=jzIndiceInt(INT,areaNom),MAPA=jzMapa();
+  const defA=ctx.carpeta||($('#rc-area')&&$('#rc-area').value)||'';
+  /* intención inicial de cada trámite: la elegida antes en este navegador > la que trae el JSON > la de la ficha desde la que se importa */
+  const inicial=r=>{const c=MAPA[r.id]||((r.intenciones||[])[0])||((ctx.intents||[])[0])||'';return INT.find(x=>x.id===c)||null;};
+  const selArea=(g,i)=>{const m=jzMejor(AR,g.grupo,g.tema),v=m?m.id:defA,nuevo=g.tema&&!m?g.tema:'';
+    return '<select data-ga="'+i+'" title="Área del banco (subcarpeta de Drive) para los trámites de este órgano"><option value="">— Área del banco —</option>'+AR.map(a=>'<option value="'+esc(a.id)+'"'+(a.id===v?' selected':'')+'>'+esc(a.nombre)+(m&&a.id===m.id?' ✓':'')+'</option>').join('')+(nuevo?'<option value="+'+esc(nuevo)+'"'+(!v?' selected':'')+'>➕ Crear «'+esc(nuevo)+'»</option>':'')+'</select>';};
+  const filas=[];let n=0;
+  const html=grupos.map((g,gi)=>{const ka=jzMejor(KA,g.grupo,g.tema);g.ka=ka;
+    const cab='<tr class="jz-g" data-g="'+gi+'"><td colspan="3"><div class="jz-gh"><div class="jz-gn"><b>'+esc(g.grupo)+'</b> <span class="small muted">· '+g.recs.length+' trámite(s)'+(g.tema?' · tema: '+esc(g.tema):'')+(ka?' · intenciones del área «'+esc(ka.nombre)+'»':'')+'</span></div>'+
+      (ctx.destino?'':selArea(g,gi))+
+      '<span class="jz-gi"><input list="jz-dl" data-gall="'+gi+'" placeholder="Misma intención para todo el grupo…" autocomplete="off"><button class="btn ghost sm" data-gapl="'+gi+'" title="Pone esta intención en los trámites del grupo que aún no tienen ninguna">Rellenar vacíos</button></span></div></td></tr>';
+    return cab+g.recs.map(r=>{const k=n++;const it=inicial(r),sug=jzSugerir(r,IDX,ka&&ka.id),ya=existe(r);filas.push({r,g:gi,k,sug});
+      return '<tr class="jz-r" data-k="'+k+'" data-g="'+gi+'"><td><span title="'+(ya?'Ya está en el banco: se actualiza':'Nuevo')+'">'+(ya?'↻':'＋')+'</span> '+esc(r.titulo)+'<div class="small muted">'+esc((((r.datos||{}).tramite||{}).id_sede)||r.id||'')+'</div></td>'+
+        '<td><input list="jz-dl" data-int="'+k+'" value="'+esc(jzIntTexto(it))+'" placeholder="Escribe para buscar la intención…" autocomplete="off"><div class="small jz-st" data-st="'+k+'"></div></td>'+
+        '<td>'+(sug?'<button class="jz-sug" data-sug="'+k+'" title="Sugerencia por parecido del nombre: púlsala para usarla">💡 '+esc(sug.titulo)+'</button>':'<span class="small muted">sin sugerencia</span>')+'</td></tr>';}).join('');}).join('');
+  const nEx=recs.filter(existe).length;
+  const m=document.createElement('div');m.className='modal';
+  m.innerHTML='<style>.jz-box{max-width:1180px!important}.jz-t{table-layout:fixed;width:100%;border-collapse:collapse}.jz-t td,.jz-t th{padding:6px 8px;border-bottom:1px solid #e3e9f1;vertical-align:top;font-size:13px;text-align:left;overflow-wrap:anywhere}'+
+   '.jz-t th{position:sticky;top:0;background:#f6f9fd;z-index:1;font-size:11.5px;text-transform:uppercase;letter-spacing:.04em;color:#5a6b80}.jz-g td{background:#eef3fa;border-top:2px solid #c9d5e3}'+
+   '.jz-gh{display:flex;gap:8px;align-items:center;flex-wrap:wrap}.jz-gn{flex:1 1 260px;min-width:0}.jz-gh select{max-width:220px}.jz-gi{display:flex;gap:4px;align-items:center;flex:1 1 300px}.jz-gi input{flex:1;min-width:0}'+
+   '.jz-t input{width:100%;box-sizing:border-box;border:1px solid #c9d5e3;border-radius:7px;padding:5px 8px;font:inherit;font-size:12.5px;background:#fff}.jz-t input.ok{border-color:#137558;background:#f2faf6}.jz-t input.ko{border-color:#a94643;background:#fdf2f1}'+
+   '.jz-sug{all:unset;cursor:pointer;display:inline-block;max-width:100%;font-size:12px;padding:3px 8px;border:1px dashed #c9a668;border-radius:12px;background:#fffaf0;color:#5d4500;overflow-wrap:anywhere}.jz-sug:hover{background:#fff1d6}'+
+   '.jz-bar{display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin:6px 0}.jz-bar input[type=search]{border:1px solid #c9d5e3;border-radius:7px;padding:5px 9px;min-width:220px}.jz-st{color:#a94643;min-height:0}</style>'+
+   '<div class="jz-box"><h2>Importar JSON al banco de recursos</h2>'+
+   '<p class="small muted" style="margin-top:0"><b>'+recs.length+'</b> trámite(s) en <b>'+grupos.length+'</b> órgano(s) gestor(es)'+(nEx?' · <b>'+nEx+'</b> ya están en el banco (↻)':'')+'. Cada trámite se relaciona con <b>su propia intención</b>; el órgano gestor solo los ordena y decide el área del banco. Entran como <b>«Por revisar»</b>, con sus datos ya estructurados (no pasan por la IA) y una ficha PDF en Drive. Lo que elijas se guarda al momento en este navegador.</p>'+
+   avisos.map(a=>'<div class="banner warn">'+esc(a)+'</div>').join('')+(INT.length?'':'<div class="banner warn">No se han podido leer las intenciones: podéis importar sin relacionarlas y hacerlo después en el administrador.</div>')+
+   '<div class="jz-bar">'+(ctx.destino?'':'<span class="small"><b>Área para todos:</b></span><select id="jz-all" style="max-width:200px"><option value="">— área —</option>'+AR.map(a=>'<option value="'+esc(a.id)+'">'+esc(a.nombre)+'</option>').join('')+'</select><button class="btn ghost sm" id="jz-area-new">➕ Área</button>')+
+   '<input type="search" id="jz-q" placeholder="Buscar trámite u órgano…"><label class="small"><input type="checkbox" id="jz-sin"> Solo sin intención</label><button class="btn ghost sm" id="jz-sugall" title="Pone la sugerencia 💡 en los trámites que aún no tienen intención (podéis cambiarla después)">💡 Usar sugerencias en los vacíos</button><span class="small" id="jz-cnt"></span></div>'+
+   '<datalist id="jz-dl">'+INT.map(it=>'<option value="'+esc(jzIntTexto(it))+'" label="'+esc(areaNom(it.area))+'"></option>').join('')+'</datalist>'+
+   '<div class="scroll" style="max-height:52vh;overflow:auto"><table class="jz-t"><colgroup><col style="width:38%"><col style="width:40%"><col style="width:22%"></colgroup><thead><tr><th>Trámite</th><th>Intención con la que se relaciona</th><th>Sugerencia</th></tr></thead><tbody>'+html+'</tbody></table></div>'+
+   '<div class="grid2" style="margin-top:8px"><label class="small" style="display:flex;gap:6px;align-items:center"><span>Si ya está en el banco:</span><select id="jz-dup"><option value="ACT">actualizarlo si ha cambiado (vuelve a «Por revisar»)</option><option value="SALTA">no tocar sus datos (solo añadir la intención)</option></select></label>'+
+   '<label class="small" style="display:flex;gap:6px;align-items:center"><input type="checkbox" id="jz-busc"> Usar también los que no tengan intención (buscables)</label></div>'+
+   '<div id="jz-prog" class="small" style="margin-top:8px"></div><div id="jz-log" class="small scroll" style="max-height:20vh;margin-top:4px"></div>'+
+   '<div style="display:flex;justify-content:flex-end;gap:6px;margin-top:10px"><button class="btn ghost" data-x>Cancelar</button><button class="btn" id="jz-go">Importar '+recs.length+'</button></div></div>';
+  document.body.appendChild(m);const q=s=>m.querySelector(s),qa=s=>[...m.querySelectorAll(s)];let corriendo=false;
+  /* estado de cada caja de intención */
+  const marca=k=>{const inp=q('[data-int="'+k+'"]'),f=filas[k],v=jzIntDe(inp.value,INT);inp.classList.toggle('ok',!!v.id);inp.classList.toggle('ko',!v.ok);
+    q('[data-st="'+k+'"]').textContent=v.ok?'':'No existe esa intención: elígela de la lista.';if(v.ok)jzMapaPon(f.r.id,v.id);return v;};
+  const cuenta=()=>{const c=filas.filter(f=>jzIntDe(q('[data-int="'+f.k+'"]').value,INT).id).length;q('#jz-cnt').innerHTML='Con intención: <b>'+c+'</b> de '+filas.length;};
+  const filtra=()=>{const t=String(q('#jz-q').value||'').normalize('NFD').replace(/[̀-ͯ]/g,'').toLowerCase(),sin=q('#jz-sin').checked;const vis=new Set();
+    filas.forEach(f=>{const g=grupos[f.g],txt=(f.r.titulo+' '+g.grupo).normalize('NFD').replace(/[̀-ͯ]/g,'').toLowerCase();
+      const ver=(!t||txt.includes(t))&&(!sin||!jzIntDe(q('[data-int="'+f.k+'"]').value,INT).id);q('tr[data-k="'+f.k+'"]').hidden=!ver;if(ver)vis.add(f.g);});
+    qa('tr.jz-g').forEach(tr=>{tr.hidden=!vis.has(+tr.dataset.g);});};
+  filas.forEach(f=>marca(f.k));cuenta();
+  m.addEventListener('input',e=>{const k=e.target.dataset.int;if(k!=null){marca(+k);cuenta();}});
+  m.addEventListener('change',e=>{const k=e.target.dataset.int;if(k!=null){marca(+k);cuenta();if(q('#jz-sin').checked)filtra();}});
+  m.addEventListener('click',e=>{const b=e.target.closest('[data-sug],[data-gapl]');if(!b)return;
+    if(b.dataset.sug!=null){const f=filas[+b.dataset.sug];q('[data-int="'+f.k+'"]').value=jzIntTexto(f.sug);marca(f.k);cuenta();return;}
+    const gi=+b.dataset.gapl,v=jzIntDe(q('[data-gall="'+gi+'"]').value,INT);if(!v.id){toast('Elige de la lista una intención que exista.','err');return;}
+    let c=0;filas.filter(f=>f.g===gi).forEach(f=>{const inp=q('[data-int="'+f.k+'"]');if(!jzIntDe(inp.value,INT).id){inp.value=jzIntTexto(v.it);marca(f.k);c++;}});cuenta();toast(c?'✓ '+c+' trámite(s) del grupo con «'+v.it.titulo+'»':'Todos los trámites del grupo ya tenían intención.');});
+  q('#jz-q').oninput=filtra;q('#jz-sin').onchange=filtra;
+  q('#jz-sugall').onclick=()=>{let c=0;filas.forEach(f=>{const inp=q('[data-int="'+f.k+'"]');if(f.sug&&!jzIntDe(inp.value,INT).id){inp.value=jzIntTexto(f.sug);marca(f.k);c++;}});cuenta();toast(c?'✓ Sugerencia puesta en '+c+' trámite(s). Revisadlas antes de importar.':'No hay sugerencias para los trámites vacíos.');};
+  q('[data-x]').onclick=()=>{if(corriendo&&!confirm('La importación está en marcha. ¿Cerrar igualmente? (lo ya importado se queda)'))return;m.remove();};
+  if(q('#jz-all'))q('#jz-all').onchange=e=>{if(e.target.value)qa('[data-ga]').forEach(s=>{s.value=e.target.value;});};
+  if(q('#jz-area-new'))q('#jz-area-new').onclick=async()=>{const nm=prompt('Nombre del área nueva (subcarpeta de Drive):','');if(!nm||!nm.trim())return;try{const r=await api('recursoCrearArea',nm);S.recAreas=r.areas;const a=r.creadas[0]||r.areas.find(x=>x.nombre===nm.trim());if(a){qa('[data-ga],#jz-all').forEach(s=>{if(![...s.options].some(o=>o.value===a.id))s.insertAdjacentHTML('beforeend','<option value="'+esc(a.id)+'">'+esc(a.nombre)+'</option>');});q('#jz-all').value=a.id;q('#jz-all').onchange({target:q('#jz-all')});}renderAreas();}catch(err){fail(err);}};
+  q('#jz-go').onclick=async()=>{
+    const malos=filas.filter(f=>!jzIntDe(q('[data-int="'+f.k+'"]').value,INT).ok);
+    if(malos.length){toast(malos.length+' trámite(s) tienen una intención que no existe. Corrígela o déjala vacía.','err');const i=q('[data-int="'+malos[0].k+'"]');q('#jz-q').value='';q('#jz-sin').checked=false;filtra();if(i.scrollIntoView)i.scrollIntoView({block:'center'});i.focus();return;}
+    const area=gi=>ctx.destino?'':((q('[data-ga="'+gi+'"]')||{}).value||'');
+    if(!ctx.destino&&grupos.some((g,gi)=>!area(gi))){toast('Elige el área del banco de cada órgano gestor.','err');return;}
+    const sinInt=filas.filter(f=>!jzIntDe(q('[data-int="'+f.k+'"]').value,INT).id).length;
+    if(sinInt&&INT.length&&!confirm(sinInt+' trámite(s) no tienen intención. Se importan igual y se relacionan después en el administrador.\n\n¿Continuar?'))return;
+    const areas=grupos.map((g,gi)=>area(gi)),crear=[...new Set(areas.filter(a=>a.startsWith('+')).map(a=>a.slice(1)))];
+    corriendo=true;q('#jz-go').disabled=true;qa('input,select').forEach(x=>{if(x.id!=='jz-q')x.disabled=true;});
+    const log=(h,c)=>{q('#jz-log').insertAdjacentHTML('beforeend','<div class="'+(c||'')+'">'+h+'</div>');q('#jz-log').scrollTop=1e9;};
+    if(crear.length){try{const r=await api('recursoCrearArea',crear.join(', '));S.recAreas=r.areas;renderAreas();
+        areas.forEach((a,i)=>{if(a.startsWith('+')){const z=r.areas.find(x=>x.nombre.toLowerCase()===a.slice(1).toLowerCase());areas[i]=z?z.id:'';}});log('✓ Área(s) creada(s): '+crear.map(esc).join(', '));}
+      catch(err){fail(err);corriendo=false;q('#jz-go').disabled=false;qa('input,select').forEach(x=>{x.disabled=false;});return;}}
+    const tareas=filas.map(f=>{const v=jzIntDe(q('[data-int="'+f.k+'"]').value,INT);return {r:f.r,carpeta:areas[f.g],intents:v.id?[v.id]:[]};});
+    const dup=q('#jz-dup').value,busc=q('#jz-busc').checked,cnt={nuevo:0,act:0,igual:0,salta:0,error:0};let hechos=0,idx=0;
+    const guardar=async p=>{try{return await api('recursoGuardar',p);}catch(e){if(p.tipo==='tramite'&&/tipo/i.test(errMsg(e)))return api('recursoGuardar',Object.assign({},p,{tipo:'otro'}));throw e;}};
+    const nombrePdf=r=>('Trámite · '+r.titulo).replace(/[\\/:*?"<>|]+/g,'-').slice(0,150)+'.pdf';
+    const intTxt=ids=>ids.length?' → '+esc((INT.find(x=>x.id===ids[0])||{}).titulo||ids[0]):' · sin intención';
+    const uno=async({r,carpeta,intents})=>{const ya=existe(r),datos=r.datos||{},hu=(datos.tramite||{}).huella;
+      if(ya){const x=await api('recursoObtener',ya.id),tiene=x.intents||ya.intents||[],faltan=intents.filter(i=>!tiene.includes(i));
+        const igual=hu&&((x.datos||{}).tramite||{}).huella===hu;
+        if(dup==='SALTA'||igual){if(faltan.length){await guardar({id:ya.id,v:x.v,intents:[...tiene,...faltan]});cnt.act++;log('↻ '+esc(r.titulo)+(igual?' · sin cambios':'')+' · intención añadida'+intTxt(faltan),'ok');}
+          else{igual?cnt.igual++:cnt.salta++;log((igual?'= ':'· ')+esc(r.titulo)+(igual?' · sin cambios':' · no se toca'),'muted');}return;}
+        if(x.origen==='pdf'&&datos.tramite)await api('recursoSubir',{nombre:nombrePdf(r),mime:'application/pdf',b64:pdfFicha(r),id:ya.id,carpeta:x.carpeta||carpeta});
+        const y=await api('recursoObtener',ya.id),p={id:ya.id,v:y.v,titulo:r.titulo,url:r.fuente||y.url,preguntas:[...new Set([...(y.preguntas_lista||[]),...(r.preguntas||[])])],datos:Object.assign({},y.datos||{},datos),estado:'PROCESADO'};
+        if(faltan.length)p.intents=[...(y.intents||tiene),...faltan];
+        await guardar(p);cnt.act++;log('↻ '+esc(r.titulo)+' · actualizado, por revisar'+(faltan.length?intTxt(faltan):''),'ok');return;}
+      const s=await api('recursoSubir',{nombre:nombrePdf(r),mime:'application/pdf',b64:pdfFicha(r),carpeta:carpeta,url:r.fuente||'',titulo:r.titulo,intents:intents});
+      const v=s.v!=null?s.v:(await api('recursoObtener',s.id)).v;
+      await guardar({id:s.id,v:v,titulo:r.titulo,tipo:r.tipo||'tramite',url:r.fuente||'',preguntas:r.preguntas||[],indicaciones:r.indicaciones||'',buscable:busc,datos:datos,estado:'PROCESADO'});
+      cnt.nuevo++;log('＋ '+esc(r.titulo)+intTxt(intents),'ok');};
+    const obrero=async()=>{while(idx<tareas.length){const t=tareas[idx++];try{await uno(t);}catch(err){cnt.error++;log('✗ '+esc(t.r.titulo)+' · '+esc(errMsg(err)),'dup');}
+      hechos++;q('#jz-prog').textContent='Importando… '+hechos+' de '+tareas.length+' (cada uno tarda unos segundos)';}};
+    await Promise.all([obrero(),obrero()]);
+    corriendo=false;q('#jz-prog').innerHTML='<b>Terminado:</b> '+cnt.nuevo+' nuevos · '+cnt.act+' actualizados · '+cnt.igual+' sin cambios · '+cnt.salta+' no tocados'+(cnt.error?' · <span class="dup">'+cnt.error+' con error</span>':'')+'. Revisadlos y validadlos en el banco para que lleguen a la web.';
+    q('#jz-go').textContent='Cerrar';q('#jz-go').disabled=false;q('#jz-go').onclick=()=>m.remove();
+    if(cnt.nuevo||cnt.act){S.pub.pendientes++;renderPub();}
+    try{await loadRec(true);}catch(e){}if(ctx.alTerminar)ctx.alTerminar();};
+}
+/* Panel de solo lectura en la ficha del recurso: estructura original de la sede */
+function tramiteHTML(tr){if(!tr||!tr.secciones)return '';const s=tr.secciones;
+  return '<h3>Ficha de la Sede electrónica <span class="small muted" style="text-transform:none">· '+esc(tr.organo_gestor||'')+(tr.extraido_at?' · extraída el '+esc(fecha10(tr.extraido_at))+'':'')+' · para cambiarla, vuelve a extraerla e impórtala</span></h3>'+
+   SEDE_SECC.filter(([k])=>s[k]).map(([k,l])=>{const x=s[k];return '<details'+(k==='descripcion'||k==='documentacion_relacionada'?' open':'')+'><summary class="small"><b>'+esc(l)+'</b>'+((x.enlaces||[]).length?' · '+x.enlaces.length+' enlace(s)':'')+'</summary><div class="small" style="white-space:pre-wrap;margin:4px 0 6px 12px">'+
+     (x.grupos?x.grupos.map(g=>(g.t?'<b>'+esc(g.t)+'</b>\n':'')+g.items.map(i=>'· '+esc(i.t)).join('\n')).join('\n'):esc(x.texto))+'</div>'+
+     ((x.enlaces||[]).length?'<div style="margin:0 0 6px 12px">'+x.enlaces.map(e=>e.u?'<a class="chip" style="text-decoration:none" target="_blank" rel="noopener" href="'+esc(e.u)+'">🔗 '+esc(e.t)+'</a>':'<span class="chip" title="'+esc(e.accion||'')+'">🔗 '+esc(e.t)+' · sin URL directa</span>').join(' ')+'</div>':'')+'</details>';}).join('')+
+   (tr.secciones_vacias&&tr.secciones_vacias.length?'<div class="small muted">Sin contenido en la sede: '+tr.secciones_vacias.map(k=>esc((SEDE_SECC.find(x=>x[0]===k)||[,k])[1])).join(', ')+'</div>':'');}
+
+/* ===================== Página del extractor ===================== */
+const API=SEDE();
+const $=s=>document.querySelector(s),$$=s=>[...document.querySelectorAll(s)];
+const esc=s=>String(s==null?'':s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+function toast(m,k){const d=document.createElement('div');d.className=k||'';d.textContent=m;$('#toast').appendChild(d);setTimeout(()=>d.remove(),k==='err'?8000:3800);}
+function ls(k,v){try{if(v===undefined)return localStorage.getItem(k);if(v===null)localStorage.removeItem(k);else localStorage.setItem(k,v);}catch(e){return null;}}
+$('#ver').textContent=API.VER;
+
+/* ---- Favorito y código de consola: el mismo núcleo SEDE() ---- */
+const CODIGO='('+SEDE.toString()+')().panel();';
+$('#bm').href='javascript:'+encodeURIComponent(CODIGO+'void 0');
+$('#bm').onclick=e=>{e.preventDefault();toast('Arrástralo a la barra de favoritos; se usa dentro de la sede.');};
+$('#cp').onclick=async()=>{try{await navigator.clipboard.writeText(CODIGO);toast('✓ Código copiado. Pégalo en la consola de la sede (F12).');}catch(e){const t=document.createElement('textarea');t.value=CODIGO;document.body.appendChild(t);t.select();document.execCommand('copy');t.remove();toast('✓ Código copiado.');}};
+$('#abrir').onclick=()=>{window.open(API.CATALOGO,'sede_elvira');};
+
+/* ---- Estado ---- */
+let RECS=[];let SEL='';
+try{RECS=JSON.parse(ls('elvira_sede_recs')||'[]');}catch(e){RECS=[];}
+function guarda(){if(ls('elvira_sede_recs',JSON.stringify(RECS))===null&&RECS.length)toast('No se ha podido guardar la lista en este navegador (es grande): descárgala antes de cerrar.','err');}
+function añadir(nuevos,origen){let n=0,act=0;const idx=new Map(RECS.map((r,i)=>[r.id,i]));
+  nuevos.forEach(r=>{if(!r||!r.id)return;if(idx.has(r.id)){RECS[idx.get(r.id)]=r;act++;}else{idx.set(r.id,RECS.length);RECS.push(r);n++;}});
+  guarda();pinta();toast('✓ '+origen+': '+n+' nuevos'+(act?' · '+act+' actualizados':''));}
+
+/* ---- Lo que envía el panel de la sede ---- */
+window.addEventListener('message',e=>{if(e.origin!==API.ORIGEN)return;const d=e.data||{};if(d.tipo!=='elvira-sede-tramites')return;
+  const L=(d.recursos||[]).filter(r=>r&&r.formato==='elvira-recurso-1');añadir(L,'Recibidos de la sede');
+  if((d.errores||[]).length)$('#avisos').innerHTML='<div class="banner warn"><b>'+d.errores.length+' fichas no se han podido leer.</b> '+d.errores.slice(0,8).map(x=>esc(x.titulo||x.id_sede)+' ('+esc(x.error)+')').join(' · ')+(d.errores[0]&&d.errores[0].diagnostico?'<details><summary>Diagnóstico de la primera (textos cortos encontrados)</summary><div class="mono">'+esc(d.errores[0].diagnostico.join(' | '))+'</div></details>':'')+'</div>';});
+
+/* ---- Leer ZIP (sin compresión o «deflate») ---- */
+async function leeZip(buf){const v=new DataView(buf),u8=new Uint8Array(buf),out=[];let e=-1;
+  for(let i=u8.length-22;i>=Math.max(0,u8.length-66000);i--)if(v.getUint32(i,true)===0x06054b50){e=i;break;}
+  if(e<0)throw new Error('ZIP no válido');let p=v.getUint32(e+16,true);const n=v.getUint16(e+10,true),td=new TextDecoder();
+  for(let k=0;k<n;k++){if(v.getUint32(p,true)!==0x02014b50)break;const met=v.getUint16(p+10,true),cs=v.getUint32(p+20,true),nl=v.getUint16(p+28,true),xl=v.getUint16(p+30,true),cl=v.getUint16(p+32,true),lo=v.getUint32(p+42,true);
+    const nombre=td.decode(u8.subarray(p+46,p+46+nl));p+=46+nl+xl+cl;if(/\/$/.test(nombre))continue;
+    const ini=lo+30+v.getUint16(lo+26,true)+v.getUint16(lo+28,true),raw=u8.subarray(ini,ini+cs);let datos;
+    if(met===0)datos=raw;else if(met===8&&typeof DecompressionStream!=='undefined')datos=new Uint8Array(await new Response(new Blob([raw]).stream().pipeThrough(new DecompressionStream('deflate-raw'))).arrayBuffer());else continue;
+    out.push({nombre,texto:td.decode(datos)});}
+  return out;}
+
+/* ---- JSON → lista de recursos (acepta un trámite, una lista, el combinado o un «tramite» suelto) ---- */
+function normaliza(j){if(!j)return [];if(Array.isArray(j))return j.flatMap(normaliza);
+  if(j.formato==='elvira-indice-1')return [];
+  if(Array.isArray(j.recursos))return j.recursos.flatMap(normaliza);
+  if(Array.isArray(j.tramites)&&!j.secciones)return j.tramites.flatMap(normaliza);
+  if(j.datos&&j.titulo)return [j];
+  if(j.secciones&&j.titulo)return [API.aRecurso(j)];
+  return [];}
+
+async function cargaArchivos(files){const nuevos=[],fallos=[];
+  for(const f of files){try{
+    if(/\.zip$/i.test(f.name)){for(const x of await leeZip(await f.arrayBuffer()))if(/\.json$/i.test(x.nombre))nuevos.push(...normaliza(JSON.parse(x.texto)));}
+    else if(/\.json$/i.test(f.name))nuevos.push(...normaliza(JSON.parse(await f.text())));
+    else if(/\.html?$/i.test(f.name)){const html=API.descodifica(await f.arrayBuffer(),'');
+      const url=((html.match(/saved from url=\(\d+\)(\S+)/i)||[])[1]||(html.match(/<link[^>]+rel=["']canonical["'][^>]+href=["']([^"']+)/i)||[])[1]||'').replace(/&amp;/g,'&');
+      const id=API.idDe(url)||((f.name.match(/\d{12,}/)||[])[0]||'');const doc=new DOMParser().parseFromString(html,'text/html');
+      const r=await API.analizar(doc,url||(id?API.urlFicha(id):''),'');if(r.ok){if(!r.tramite.id_sede&&id)r.tramite.id_sede=id;if(!r.tramite.url&&id)r.tramite.url=API.urlFicha(id);nuevos.push(API.aRecurso(r.tramite));}else fallos.push(f.name+': '+r.error);}
+    else fallos.push(f.name+': tipo no admitido');
+  }catch(e){fallos.push(f.name+': '+(e.message||e));}}
+  if(fallos.length)$('#avisos').innerHTML='<div class="banner warn">'+fallos.map(esc).join('<br>')+'</div>';
+  if(nuevos.length)añadir(nuevos,'Archivos cargados');else if(!fallos.length)toast('No había trámites en esos archivos.','err');}
+$('#fi').onchange=e=>{const f=[...e.target.files];e.target.value='';cargaArchivos(f);};
+const dz=$('#drop');dz.ondragover=e=>{e.preventDefault();dz.style.background='#eaf3ff';};dz.ondragleave=()=>{dz.style.background='';};dz.ondrop=e=>{e.preventDefault();dz.style.background='';cargaArchivos([...e.dataTransfer.files]);};
+
+/* ---- Revisión ---- */
+const nq=s=>String(s||'').normalize('NFD').replace(/[̀-ͯ]/g,'').toLowerCase();
+function filtrados(){const q=nq($('#q').value),o=$('#fo').value;return RECS.filter(r=>(!o||r.grupo===o)&&(!q||nq(r.titulo+' '+r.grupo+' '+(r.datos.resumen||'')).includes(q)));}
+function pinta(){$('#rev').hidden=!RECS.length;if(!RECS.length)return;try{estadoPas();}catch(e){}
+  const G=API.grupos(RECS),cur=$('#fo').value;
+  $('#fo').innerHTML='<option value="">Todos los órganos gestores ('+G.length+')</option>'+G.map(g=>'<option value="'+esc(g.grupo)+'"'+(g.grupo===cur?' selected':'')+'>'+esc(g.grupo)+' ('+g.recursos.length+')</option>').join('');
+  const L=filtrados(),pocos=RECS.filter(r=>Object.keys(r.datos.tramite.secciones).length<4).length;
+  $('#tot').textContent=RECS.length+' trámites · '+G.length+' órganos gestores'+(pocos?' · '+pocos+' con menos de 4 epígrafes':'');
+  $('#filtro-info').textContent=L.length<RECS.length?'Se descargan solo los '+L.length+' filtrados':'';
+  const fila=r=>{const s=r.datos.tramite.secciones,k=API.SECC.map(x=>x[0]),ne=Object.values(s).reduce((n,x)=>n+x.enlaces.length,0);
+    const iid=jzMapa()[r.id]||(r.intenciones||[])[0]||'',itn=iid&&typeof S!=='undefined'&&S.byId&&S.byId.get(iid);
+    return '<tr class="it'+(r.id===SEL?' sel':'')+'" data-id="'+esc(r.id)+'"><td><b>'+esc(r.titulo)+'</b>'+($('#ag').value==='nombre'?'<div class="small muted">'+esc(r.grupo)+'</div>':'')+(iid?'<div class="small" style="color:#137558">→ '+esc(itn?itn.titulo:iid)+'</div>':'')+'</td><td><div class="dots" title="'+esc(k.map(x=>(s[x]?'✓ ':'✗ ')+x).join('\n'))+'">'+k.map(x=>'<i class="'+(s[x]?'on':'')+'"></i>').join('')+'</div><span class="small muted">'+Object.keys(s).length+'/10</span></td><td>'+ne+'</td></tr>';};
+  $('#tb').innerHTML=$('#ag').value==='nombre'?L.slice().sort((a,b)=>a.titulo.localeCompare(b.titulo,'es')).map(fila).join(''):
+    API.grupos(L).map(g=>'<tr class="g"><td colspan="3">'+esc(g.grupo)+' · '+g.recursos.length+(g.tema?' <span class="pill">tema: '+esc(g.tema)+'</span>':'')+'</td></tr>'+g.recursos.map(fila).join('')).join('');}
+function detalle(id){SEL=id;const r=RECS.find(x=>x.id===id);if(!r)return;$$('#tb tr.it').forEach(t=>t.classList.toggle('sel',t.dataset.id===id));const t=r.datos.tramite;
+  $('#det').innerHTML='<h2 style="margin:0">'+esc(r.titulo)+'</h2><div class="muted">'+esc(r.grupo)+' · <a href="'+esc(t.url)+'" target="_blank" rel="noopener">ficha en la sede ↗</a> · <span class="mono">'+esc(API.nombreArchivo(r))+'</span></div>'+
+   (t.secciones_vacias.length?'<div class="banner warn">Sin contenido: '+t.secciones_vacias.map(k=>esc((API.SECC.find(x=>x[0]===k)||[,k])[1])).join(', ')+'</div>':'')+
+   API.SECC.filter(([k])=>t.secciones[k]).map(([k,l])=>{const s=t.secciones[k];return '<div class="sec"><b>'+esc(l)+'</b>'+(s.grupos?s.grupos.map(g=>'<div><i>'+esc(g.t)+'</i>\n'+g.items.map(i=>'· '+esc(i.t)).join('\n')+'</div>').join(''):'<div>'+esc(s.texto)+'</div>')+
+     (s.enlaces.length?'<div>'+s.enlaces.map(x=>x.u?'<a class="ln" href="'+esc(x.u)+'" target="_blank" rel="noopener">🔗 '+esc(x.t)+'</a>':'<span class="ln" title="'+esc(x.accion||'')+'">🔗 '+esc(x.t)+' (sin URL directa)</span>').join('')+'</div>':'')+'</div>';}).join('')+
+   '<div class="row" style="margin-top:8px"><button class="btn alt sm" id="d1">⬇ Este JSON</button></div><details><summary>JSON completo</summary><pre>'+esc(JSON.stringify(r,null,1))+'</pre></details>';
+  $('#d1').onclick=()=>API.descarga(API.nombreArchivo(r),new Blob([JSON.stringify(r,null,1)],{type:'application/json'}));}
+$('#tb').onclick=e=>{const tr=e.target.closest('tr.it');if(tr)detalle(tr.dataset.id);};
+$('#q').oninput=pinta;$('#fo').onchange=pinta;$('#ag').onchange=()=>{$('#md').value=$('#ag').value;pinta();};
+const conInt=L=>{const M=jzMapa();return L.map(r=>M[r.id]?Object.assign({},r,{intenciones:[M[r.id]]}):r);};
+$('#dz').onclick=()=>{const L=conInt(filtrados());if(!L.length)return;const p=API.paquete(L,$('#md').value,$('#fo').value);API.descarga(p.nombreZip,p.zip);};
+$('#dc').onclick=()=>{const L=conInt(filtrados());if(!L.length)return;const p=API.paquete(L,$('#md').value,$('#fo').value);API.descarga(p.nombreCombinado,p.combinado);};
+$('#dx').onclick=()=>{if(confirm('¿Vaciar la lista de esta página? (Los archivos descargados no se tocan.)')){RECS=[];SEL='';guarda();pinta();$('#det').innerHTML='';}};
+
+/* ===================== Pasarela directa al Apps Script del administrador ===================== */
+const CFG=Object.assign({apiUrl:''},window.SA_CONFIG||{});
+function ss(k,v){try{if(v===undefined)return sessionStorage.getItem(k);if(v===null)sessionStorage.removeItem(k);else sessionStorage.setItem(k,v);}catch(e){return null;}}
+let TOKEN=ss('sa_tok')||ls('sa_tok')||'';
+function errMsg(e){return String(e&&e.message||e).replace(/^(Exception|Error):\s*/,'');}
+function fail(e){const m=errMsg(e);if(/TOKEN_/.test(m)){salir('La sesión ha caducado: vuelve a entrar.');return;}toast(m,'err');}
+function post(body){if(!/^https:\/\/script\.google(usercontent)?\.com\//.test(CFG.apiUrl))return Promise.reject(new Error('Falta la URL /exec del administrador en SA_CONFIG.apiUrl (principio de este archivo).'));
+  return fetch(CFG.apiUrl,{method:'POST',headers:{'Content-Type':'text/plain;charset=utf-8'},body:JSON.stringify(body),redirect:'follow'})
+  .catch(e=>{throw new Error('No hay respuesta del Apps Script del administrador ('+errMsg(e)+').');})
+  .then(r=>{if(!r.ok)throw new Error('El servidor de Google respondió '+r.status);return r.text();})
+  .then(t=>{try{return JSON.parse(t);}catch(e){throw new Error('Respuesta no válida del servidor (¿la URL /exec es la del administrador?)');}});}
+function api(fn,...args){if(!TOKEN)return Promise.reject(new Error('TOKEN_AUSENTE'));return post({fn,args,token:TOKEN}).then(j=>{if(!j.ok)throw new Error(j.error);return j.result;});}
+/* lo que el módulo de ingesta del administrador espera encontrar */
+const S={pub:{pendientes:0},byId:new Map(),rec:null,recAreas:[],kb:null};
+function fecha10(t){t=String(t||'');return t?t.slice(8,10)+'/'+t.slice(5,7)+'/'+t.slice(0,4):'';}
+function renderAreas(){} function renderPub(){}
+async function loadRec(){try{const r=await api('recursosListar');S.rec=r.recursos;S.recAreas=r.areas||[];}catch(e){}}
+function salir(nota){if(TOKEN)post({op:'logout',token:TOKEN}).catch(()=>{});TOKEN='';ss('sa_tok',null);ls('sa_tok',null);estadoPas();if(nota)toast(nota,'err');}
+function estadoPas(){$('#pas-out').hidden=!!TOKEN;$('#pas-in').hidden=!TOKEN;$('#pas-yo').textContent=ls('sa_last')||'administrador';$('#pas-env').textContent='⇪ Enviar al banco ('+filtrados().length+')';}
+$('#pas-go').onclick=async()=>{const em=$('#pas-e').value.trim(),pw=$('#pas-p').value;if(!em||!pw){toast('Escribe tu correo y tu contraseña.','err');return;}
+  $('#pas-go').disabled=true;$('#pas-go').textContent='Comprobando…';
+  try{const j=await post({op:'login',email:em,pwd:pw});if(!j.ok||!j.token)throw new Error(j.error||'El servidor no ha devuelto la sesión.');
+    TOKEN=String(j.token);ss('sa_tok',TOKEN);if($('#pas-r').checked)ls('sa_tok',TOKEN);ls('sa_last',j.email||em);$('#pas-p').value='';estadoPas();toast('✓ Conectado al administrador');cargaKB();}
+  catch(e){toast(errMsg(e),'err');}finally{$('#pas-go').disabled=false;$('#pas-go').textContent='Entrar';}};
+$('#pas-p').onkeydown=e=>{if(e.key==='Enter')$('#pas-go').click();};
+$('#pas-x').onclick=()=>salir();
+$('#pas-env').onclick=async()=>{const L=filtrados();if(!L.length){toast('No hay trámites en la lista.','err');return;}
+  const b=$('#pas-env');b.disabled=true;b.textContent='Leyendo el banco…';
+  try{const r=await api('recursosListar');S.rec=r.recursos;S.recAreas=r.areas||[];
+    if(!S.kb){try{const d=await api('iniciar');S.kb=d.kb;S.byId=new Map((d.kb.intenciones||[]).map(x=>[x.id,x]));}catch(e){S.kb={areas:[],intenciones:[]};}}
+    await importarJSONs([],{recs:L,alTerminar:pinta});const mo=document.querySelector('.modal');if(mo)new MutationObserver((_,o)=>{if(!document.body.contains(mo)){o.disconnect();pinta();}}).observe(document.body,{childList:true});}
+  catch(e){fail(e);}finally{b.disabled=false;estadoPas();}};
+/* nombres de las intenciones para la lista de revisión y la ventana de importación */
+function cargaKB(){if(!TOKEN||S.kb)return;api('iniciar').then(d=>{S.kb=d.kb;S.byId=new Map((d.kb.intenciones||[]).map(x=>[x.id,x]));pinta();}).catch(e=>{if(/TOKEN_/.test(errMsg(e)))salir('La sesión ha caducado: vuelve a entrar.');});}
+pinta();cargaKB();
+</script>
+</body></html>

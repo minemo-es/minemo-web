@@ -1,0 +1,2447 @@
+{
+ "version": "2026-11-15",
+ "vocabulario": "FUNCAL · 59 funciones comunes y funciones específicas",
+ "fuente": "59_Funciones_comunes.xlsx",
+ "funciones": [
+  {
+   "codigo": "01",
+   "nombre": "Pleno",
+   "n_tramites": 93,
+   "especificas": [
+    {
+     "codigo": "01-01",
+     "nombre": "Sesiones y acuerdos del Pleno",
+     "n_tramites": 0,
+     "n_municipios": 0,
+     "procedimientos_tipo": []
+    },
+    {
+     "codigo": "01-02",
+     "nombre": "Constitución de la Corporación",
+     "n_tramites": 0,
+     "n_municipios": 0,
+     "procedimientos_tipo": []
+    },
+    {
+     "codigo": "01-03",
+     "nombre": "Mociones y proposiciones",
+     "n_tramites": 93,
+     "n_municipios": 34,
+     "procedimientos_tipo": [
+      "plenos-mociones"
+     ]
+    },
+    {
+     "codigo": "01-04",
+     "nombre": "Junta de Portavoces",
+     "n_tramites": 0,
+     "n_municipios": 0,
+     "procedimientos_tipo": []
+    }
+   ]
+  },
+  {
+   "codigo": "02",
+   "nombre": "Alcaldía-Presidencia",
+   "n_tramites": 0,
+   "especificas": [
+    {
+     "codigo": "02-01",
+     "nombre": "Decretos del Alcalde",
+     "n_tramites": 0,
+     "n_municipios": 0,
+     "procedimientos_tipo": []
+    },
+    {
+     "codigo": "02-02",
+     "nombre": "Resoluciones de los concejales delegados",
+     "n_tramites": 0,
+     "n_municipios": 0,
+     "procedimientos_tipo": []
+    },
+    {
+     "codigo": "02-03",
+     "nombre": "Bandos, avisos y pregones",
+     "n_tramites": 0,
+     "n_municipios": 0,
+     "procedimientos_tipo": []
+    },
+    {
+     "codigo": "02-04",
+     "nombre": "Anuncios y edictos",
+     "n_tramites": 0,
+     "n_municipios": 0,
+     "procedimientos_tipo": []
+    }
+   ]
+  },
+  {
+   "codigo": "03",
+   "nombre": "Junta Local de Gobierno",
+   "n_tramites": 0,
+   "especificas": [
+    {
+     "codigo": "03-01",
+     "nombre": "Sesiones y acuerdos de Junta Local de Gobierno",
+     "n_tramites": 0,
+     "n_municipios": 0,
+     "procedimientos_tipo": []
+    }
+   ]
+  },
+  {
+   "codigo": "04",
+   "nombre": "Comisiones informativas y especiales",
+   "n_tramites": 0,
+   "especificas": [
+    {
+     "codigo": "04-01",
+     "nombre": "Sesiones y acuerdos de Comisiones Informativas y especiales",
+     "n_tramites": 0,
+     "n_municipios": 0,
+     "procedimientos_tipo": []
+    }
+   ]
+  },
+  {
+   "codigo": "05",
+   "nombre": "Consejos sectoriales",
+   "n_tramites": 0,
+   "especificas": [
+    {
+     "codigo": "05-01",
+     "nombre": "Sesiones y acuerdos de consejo sectoriales",
+     "n_tramites": 0,
+     "n_municipios": 0,
+     "procedimientos_tipo": []
+    }
+   ]
+  },
+  {
+   "codigo": "06",
+   "nombre": "Juntas municipales de distrito",
+   "n_tramites": 0,
+   "especificas": [
+    {
+     "codigo": "06-01",
+     "nombre": "Sesiones y acuerdos de Junta municipales de distrito",
+     "n_tramites": 0,
+     "n_municipios": 0,
+     "procedimientos_tipo": []
+    }
+   ]
+  },
+  {
+   "codigo": "07",
+   "nombre": "Cargos públicos",
+   "n_tramites": 0,
+   "especificas": [
+    {
+     "codigo": "07-01",
+     "nombre": "Nombramiento y cese de cargo público",
+     "n_tramites": 0,
+     "n_municipios": 0,
+     "procedimientos_tipo": []
+    },
+    {
+     "codigo": "07-02",
+     "nombre": "Declaración de incompatibilidad de cargo público",
+     "n_tramites": 0,
+     "n_municipios": 0,
+     "procedimientos_tipo": []
+    },
+    {
+     "codigo": "07-03",
+     "nombre": "Declaración de bienes y actividades de cargos públicos",
+     "n_tramites": 0,
+     "n_municipios": 0,
+     "procedimientos_tipo": []
+    },
+    {
+     "codigo": "07-04",
+     "nombre": "Nombramiento de representantes en otros organismos",
+     "n_tramites": 0,
+     "n_municipios": 0,
+     "procedimientos_tipo": []
+    },
+    {
+     "codigo": "07-05",
+     "nombre": "Retribuciones y régimen de dedicación de cargo público",
+     "n_tramites": 0,
+     "n_municipios": 0,
+     "procedimientos_tipo": []
+    }
+   ]
+  },
+  {
+   "codigo": "08",
+   "nombre": "Normas municipales",
+   "n_tramites": 16,
+   "especificas": [
+    {
+     "codigo": "08-01",
+     "nombre": "Ordenanzas y reglamentos",
+     "n_tramites": 16,
+     "n_municipios": 12,
+     "procedimientos_tipo": [
+      "ordenanzas"
+     ]
+    },
+    {
+     "codigo": "08-02",
+     "nombre": "Plan Anual Normativo",
+     "n_tramites": 0,
+     "n_municipios": 0,
+     "procedimientos_tipo": []
+    }
+   ]
+  },
+  {
+   "codigo": "09",
+   "nombre": "Convenios administrativos",
+   "n_tramites": 41,
+   "especificas": [
+    {
+     "codigo": "09-01",
+     "nombre": "Convenios administrativos",
+     "n_tramites": 41,
+     "n_municipios": 18,
+     "procedimientos_tipo": [
+      "convenios"
+     ]
+    }
+   ]
+  },
+  {
+   "codigo": "10",
+   "nombre": "Territorio",
+   "n_tramites": 28,
+   "especificas": [
+    {
+     "codigo": "10-01",
+     "nombre": "Deslindes del término municipal",
+     "n_tramites": 0,
+     "n_municipios": 0,
+     "procedimientos_tipo": []
+    },
+    {
+     "codigo": "10-02",
+     "nombre": "Alteración del término municipal",
+     "n_tramites": 0,
+     "n_municipios": 0,
+     "procedimientos_tipo": []
+    },
+    {
+     "codigo": "10-03",
+     "nombre": "Nomenclator de vías públicas",
+     "n_tramites": 28,
+     "n_municipios": 22,
+     "procedimientos_tipo": [
+      "callejero"
+     ]
+    }
+   ]
+  },
+  {
+   "codigo": "11",
+   "nombre": "Protocolo",
+   "n_tramites": 137,
+   "especificas": [
+    {
+     "codigo": "11-01",
+     "nombre": "Celebración de ceremonias de boda civil",
+     "n_tramites": 111,
+     "n_municipios": 53,
+     "procedimientos_tipo": [
+      "matrimonio-civil",
+      "parejas-hecho"
+     ]
+    },
+    {
+     "codigo": "11-02",
+     "nombre": "Distinciones honoríficas",
+     "n_tramites": 10,
+     "n_municipios": 8,
+     "procedimientos_tipo": [
+      "distinciones"
+     ]
+    },
+    {
+     "codigo": "11-03",
+     "nombre": "Hermanamientos",
+     "n_tramites": 0,
+     "n_municipios": 0,
+     "procedimientos_tipo": []
+    },
+    {
+     "codigo": "11-04",
+     "nombre": "Organización de actos públicos",
+     "n_tramites": 16,
+     "n_municipios": 13,
+     "procedimientos_tipo": [
+      "actos-publicos-protocolo"
+     ]
+    },
+    {
+     "codigo": "11-05",
+     "nombre": "Agenda de actividades",
+     "n_tramites": 0,
+     "n_municipios": 0,
+     "procedimientos_tipo": []
+    }
+   ]
+  },
+  {
+   "codigo": "12",
+   "nombre": "Patrimonio local",
+   "n_tramites": 409,
+   "especificas": [
+    {
+     "codigo": "12-01",
+     "nombre": "Conservación, protección y defensa del patrimonio",
+     "n_tramites": 0,
+     "n_municipios": 0,
+     "procedimientos_tipo": []
+    },
+    {
+     "codigo": "12-02",
+     "nombre": "Alteración de calificación jurídica de bienes",
+     "n_tramites": 0,
+     "n_municipios": 0,
+     "procedimientos_tipo": []
+    },
+    {
+     "codigo": "12-03",
+     "nombre": "Utilización y aprovechamiento de bienes",
+     "n_tramites": 409,
+     "n_municipios": 53,
+     "procedimientos_tipo": [
+      "uso-espacios-municipales",
+      "patrimonio-bienes"
+     ]
+    },
+    {
+     "codigo": "12-04",
+     "nombre": "Expropiación de bienes",
+     "n_tramites": 0,
+     "n_municipios": 0,
+     "procedimientos_tipo": []
+    },
+    {
+     "codigo": "12-05",
+     "nombre": "Adquisición de bienes",
+     "n_tramites": 0,
+     "n_municipios": 0,
+     "procedimientos_tipo": []
+    },
+    {
+     "codigo": "12-06",
+     "nombre": "Enajenación de bienes",
+     "n_tramites": 0,
+     "n_municipios": 0,
+     "procedimientos_tipo": []
+    },
+    {
+     "codigo": "12-07",
+     "nombre": "Inventarios de bienes",
+     "n_tramites": 0,
+     "n_municipios": 0,
+     "procedimientos_tipo": []
+    },
+    {
+     "codigo": "12-08",
+     "nombre": "Concesiones administrativas de bienes",
+     "n_tramites": 0,
+     "n_municipios": 0,
+     "procedimientos_tipo": []
+    },
+    {
+     "codigo": "12-09",
+     "nombre": "Arrendamientos de bienes",
+     "n_tramites": 0,
+     "n_municipios": 0,
+     "procedimientos_tipo": []
+    }
+   ]
+  },
+  {
+   "codigo": "13",
+   "nombre": "Padrón de habitantes",
+   "n_tramites": 434,
+   "especificas": [
+    {
+     "codigo": "13-01",
+     "nombre": "Padrones municipales de habitantes",
+     "n_tramites": 0,
+     "n_municipios": 0,
+     "procedimientos_tipo": []
+    },
+    {
+     "codigo": "13-02",
+     "nombre": "Rectificaciones, altas y bajas del padrón municipal de habitantes",
+     "n_tramites": 235,
+     "n_municipios": 53,
+     "procedimientos_tipo": [
+      "padron-alta",
+      "padron-baja",
+      "padron-consulta"
+     ]
+    },
+    {
+     "codigo": "13-03",
+     "nombre": "Cambios de domicilio del padrón municipal de habitantes",
+     "n_tramites": 84,
+     "n_municipios": 43,
+     "procedimientos_tipo": [
+      "padron-cambio-domicilio"
+     ]
+    },
+    {
+     "codigo": "13-04",
+     "nombre": "Revisiones anuales del padrón municipal de habitantes",
+     "n_tramites": 0,
+     "n_municipios": 0,
+     "procedimientos_tipo": []
+    },
+    {
+     "codigo": "13-05",
+     "nombre": "Certificados y justificantes de empadronamiento y convivencia",
+     "n_tramites": 103,
+     "n_municipios": 48,
+     "procedimientos_tipo": [
+      "padron-certificado"
+     ]
+    },
+    {
+     "codigo": "13-06",
+     "nombre": "Informes y estadísticas de población",
+     "n_tramites": 12,
+     "n_municipios": 10,
+     "procedimientos_tipo": [
+      "estadistica"
+     ]
+    }
+   ]
+  },
+  {
+   "codigo": "14",
+   "nombre": "Elecciones",
+   "n_tramites": 38,
+   "especificas": [
+    {
+     "codigo": "14-01",
+     "nombre": "Censo electoral",
+     "n_tramites": 38,
+     "n_municipios": 26,
+     "procedimientos_tipo": [
+      "elecciones"
+     ]
+    },
+    {
+     "codigo": "14-02",
+     "nombre": "Elecciones de miembros a tribunal de jurado",
+     "n_tramites": 0,
+     "n_municipios": 0,
+     "procedimientos_tipo": []
+    },
+    {
+     "codigo": "14-03",
+     "nombre": "Listas de altas y bajas de electores",
+     "n_tramites": 0,
+     "n_municipios": 0,
+     "procedimientos_tipo": []
+    },
+    {
+     "codigo": "14-04",
+     "nombre": "Rectificaciones del censo electoral",
+     "n_tramites": 0,
+     "n_municipios": 0,
+     "procedimientos_tipo": []
+    },
+    {
+     "codigo": "14-05",
+     "nombre": "Revisiones y reclamaciones al censo electoral",
+     "n_tramites": 0,
+     "n_municipios": 0,
+     "procedimientos_tipo": []
+    },
+    {
+     "codigo": "14-06",
+     "nombre": "Celebraciones de referéndums y plebiscitos",
+     "n_tramites": 0,
+     "n_municipios": 0,
+     "procedimientos_tipo": []
+    }
+   ]
+  },
+  {
+   "codigo": "15",
+   "nombre": "Contratación",
+   "n_tramites": 153,
+   "especificas": [
+    {
+     "codigo": "15-01",
+     "nombre": "Encomiendas y convenios de gestión",
+     "n_tramites": 0,
+     "n_municipios": 0,
+     "procedimientos_tipo": []
+    },
+    {
+     "codigo": "15-02",
+     "nombre": "Contratos de obras",
+     "n_tramites": 0,
+     "n_municipios": 0,
+     "procedimientos_tipo": []
+    },
+    {
+     "codigo": "15-03",
+     "nombre": "Contratos de concesión de obra pública",
+     "n_tramites": 0,
+     "n_municipios": 0,
+     "procedimientos_tipo": []
+    },
+    {
+     "codigo": "15-04",
+     "nombre": "Contratos de concesión de los servicios públicos",
+     "n_tramites": 0,
+     "n_municipios": 0,
+     "procedimientos_tipo": []
+    },
+    {
+     "codigo": "15-05",
+     "nombre": "Contratos de servicios",
+     "n_tramites": 153,
+     "n_municipios": 34,
+     "procedimientos_tipo": [
+      "contratacion"
+     ]
+    },
+    {
+     "codigo": "15-06",
+     "nombre": "Contratos de suministros",
+     "n_tramites": 0,
+     "n_municipios": 0,
+     "procedimientos_tipo": []
+    },
+    {
+     "codigo": "15-07",
+     "nombre": "Contratos mixtos",
+     "n_tramites": 0,
+     "n_municipios": 0,
+     "procedimientos_tipo": []
+    },
+    {
+     "codigo": "15-08",
+     "nombre": "Contratos especiales",
+     "n_tramites": 0,
+     "n_municipios": 0,
+     "procedimientos_tipo": []
+    },
+    {
+     "codigo": "15-09",
+     "nombre": "Contratos privados",
+     "n_tramites": 0,
+     "n_municipios": 0,
+     "procedimientos_tipo": []
+    }
+   ]
+  },
+  {
+   "codigo": "16",
+   "nombre": "Tecnologías de la información",
+   "n_tramites": 109,
+   "especificas": [
+    {
+     "codigo": "16-01",
+     "nombre": "Registro de incidencias de seguridad",
+     "n_tramites": 0,
+     "n_municipios": 0,
+     "procedimientos_tipo": []
+    },
+    {
+     "codigo": "16-02",
+     "nombre": "Administración, elaboración y mantenimiento de los recursos informáticos",
+     "n_tramites": 0,
+     "n_municipios": 0,
+     "procedimientos_tipo": []
+    },
+    {
+     "codigo": "16-03",
+     "nombre": "Gestión de las incidencias de los usuarios",
+     "n_tramites": 0,
+     "n_municipios": 0,
+     "procedimientos_tipo": []
+    },
+    {
+     "codigo": "16-04",
+     "nombre": "Registro de recursos informáticos",
+     "n_tramites": 0,
+     "n_municipios": 0,
+     "procedimientos_tipo": []
+    },
+    {
+     "codigo": "16-05",
+     "nombre": "Gestión de certificados digitales",
+     "n_tramites": 109,
+     "n_municipios": 61,
+     "procedimientos_tipo": [
+      "notificacion-electronica",
+      "representacion"
+     ]
+    }
+   ]
+  },
+  {
+   "codigo": "17",
+   "nombre": "Registro General",
+   "n_tramites": 1805,
+   "especificas": [
+    {
+     "codigo": "17-01",
+     "nombre": "Gestión del Registro General",
+     "n_tramites": 0,
+     "n_municipios": 0,
+     "procedimientos_tipo": []
+    },
+    {
+     "codigo": "17-02",
+     "nombre": "Registros de entrada y salida de documentos",
+     "n_tramites": 1796,
+     "n_municipios": 67,
+     "procedimientos_tipo": [
+      "instancia-general",
+      "aportar-documentacion",
+      "certificados-informes"
+     ]
+    },
+    {
+     "codigo": "17-03",
+     "nombre": "Gestión de cita previa",
+     "n_tramites": 9,
+     "n_municipios": 7,
+     "procedimientos_tipo": [
+      "cita-previa"
+     ]
+    }
+   ]
+  },
+  {
+   "codigo": "18",
+   "nombre": "Archivo y gestión documental",
+   "n_tramites": 98,
+   "especificas": [
+    {
+     "codigo": "18-01",
+     "nombre": "Gestión del archivo",
+     "n_tramites": 0,
+     "n_municipios": 0,
+     "procedimientos_tipo": []
+    },
+    {
+     "codigo": "18-02",
+     "nombre": "Políticas de gestión de documentos",
+     "n_tramites": 0,
+     "n_municipios": 0,
+     "procedimientos_tipo": []
+    },
+    {
+     "codigo": "18-03",
+     "nombre": "Consulta y prestamo de documentos",
+     "n_tramites": 98,
+     "n_municipios": 42,
+     "procedimientos_tipo": [
+      "archivo-consulta"
+     ]
+    },
+    {
+     "codigo": "18-04",
+     "nombre": "Identificación y valoración documental",
+     "n_tramites": 0,
+     "n_municipios": 0,
+     "procedimientos_tipo": []
+    },
+    {
+     "codigo": "18-05",
+     "nombre": "Transferencia de documentos",
+     "n_tramites": 0,
+     "n_municipios": 0,
+     "procedimientos_tipo": []
+    }
+   ]
+  },
+  {
+   "codigo": "19",
+   "nombre": "Protección de datos",
+   "n_tramites": 81,
+   "especificas": [
+    {
+     "codigo": "19-01",
+     "nombre": "Gestión de de tratamiento de datos personales",
+     "n_tramites": 24,
+     "n_municipios": 24,
+     "procedimientos_tipo": [
+      "reutilizacion-documentos"
+     ]
+    },
+    {
+     "codigo": "19-02",
+     "nombre": "Ejercicio de derechos de los interesados",
+     "n_tramites": 57,
+     "n_municipios": 28,
+     "procedimientos_tipo": [
+      "proteccion-datos"
+     ]
+    }
+   ]
+  },
+  {
+   "codigo": "20",
+   "nombre": "Prensa y comunicación",
+   "n_tramites": 0,
+   "especificas": [
+    {
+     "codigo": "20-01",
+     "nombre": "Campañas de publicidad e imagen corporativa",
+     "n_tramites": 0,
+     "n_municipios": 0,
+     "procedimientos_tipo": []
+    },
+    {
+     "codigo": "20-02",
+     "nombre": "Gestión de sitios web y redes sociales",
+     "n_tramites": 0,
+     "n_municipios": 0,
+     "procedimientos_tipo": []
+    },
+    {
+     "codigo": "20-03",
+     "nombre": "Gestión de publicaciones",
+     "n_tramites": 0,
+     "n_municipios": 0,
+     "procedimientos_tipo": []
+    },
+    {
+     "codigo": "20-04",
+     "nombre": "Notas y dossieres de prensa",
+     "n_tramites": 0,
+     "n_municipios": 0,
+     "procedimientos_tipo": []
+    }
+   ]
+  },
+  {
+   "codigo": "21",
+   "nombre": "Transparencia",
+   "n_tramites": 82,
+   "especificas": [
+    {
+     "codigo": "21-01",
+     "nombre": "Publicidad activa y datos abiertos",
+     "n_tramites": 0,
+     "n_municipios": 0,
+     "procedimientos_tipo": []
+    },
+    {
+     "codigo": "21-02",
+     "nombre": "Inventario de activos de información",
+     "n_tramites": 0,
+     "n_municipios": 0,
+     "procedimientos_tipo": []
+    },
+    {
+     "codigo": "21-03",
+     "nombre": "Solicitudes de acceso a la información pública",
+     "n_tramites": 82,
+     "n_municipios": 47,
+     "procedimientos_tipo": [
+      "acceso-informacion"
+     ]
+    }
+   ]
+  },
+  {
+   "codigo": "22",
+   "nombre": "Participación",
+   "n_tramites": 295,
+   "especificas": [
+    {
+     "codigo": "22-01",
+     "nombre": "Derecho de petición",
+     "n_tramites": 7,
+     "n_municipios": 6,
+     "procedimientos_tipo": [
+      "derecho-peticion"
+     ]
+    },
+    {
+     "codigo": "22-02",
+     "nombre": "Gestión de quejas y sugerencias",
+     "n_tramites": 132,
+     "n_municipios": 52,
+     "procedimientos_tipo": [
+      "quejas-sugerencias"
+     ]
+    },
+    {
+     "codigo": "22-03",
+     "nombre": "Iniciativas populares",
+     "n_tramites": 20,
+     "n_municipios": 13,
+     "procedimientos_tipo": [
+      "iniciativa-popular"
+     ]
+    },
+    {
+     "codigo": "22-04",
+     "nombre": "Procesos participativos",
+     "n_tramites": 0,
+     "n_municipios": 0,
+     "procedimientos_tipo": []
+    },
+    {
+     "codigo": "22-05",
+     "nombre": "Registro de Asociaciones",
+     "n_tramites": 136,
+     "n_municipios": 49,
+     "procedimientos_tipo": [
+      "registro-asociaciones"
+     ]
+    }
+   ]
+  },
+  {
+   "codigo": "23",
+   "nombre": "Calidad",
+   "n_tramites": 0,
+   "especificas": [
+    {
+     "codigo": "23-01",
+     "nombre": "Planes y auditorías de calidad",
+     "n_tramites": 0,
+     "n_municipios": 0,
+     "procedimientos_tipo": []
+    },
+    {
+     "codigo": "23-02",
+     "nombre": "Memorias anuales de gestión",
+     "n_tramites": 0,
+     "n_municipios": 0,
+     "procedimientos_tipo": []
+    },
+    {
+     "codigo": "23-03",
+     "nombre": "Cartas de servicios",
+     "n_tramites": 0,
+     "n_municipios": 0,
+     "procedimientos_tipo": []
+    }
+   ]
+  },
+  {
+   "codigo": "24",
+   "nombre": "Procedimientos judiciales",
+   "n_tramites": 218,
+   "especificas": [
+    {
+     "codigo": "24-01",
+     "nombre": "Procedimientos de jurisdicción civil",
+     "n_tramites": 0,
+     "n_municipios": 0,
+     "procedimientos_tipo": []
+    },
+    {
+     "codigo": "24-02",
+     "nombre": "Procedimientos de jurisdicción contencioso-administrativo",
+     "n_tramites": 0,
+     "n_municipios": 0,
+     "procedimientos_tipo": []
+    },
+    {
+     "codigo": "24-03",
+     "nombre": "Procedimientos de jurisdicción económico-administrativo",
+     "n_tramites": 0,
+     "n_municipios": 0,
+     "procedimientos_tipo": []
+    },
+    {
+     "codigo": "24-04",
+     "nombre": "Procedimientos de jurisdicción social",
+     "n_tramites": 0,
+     "n_municipios": 0,
+     "procedimientos_tipo": []
+    },
+    {
+     "codigo": "24-05",
+     "nombre": "Procedimientos de jurisdicción penal",
+     "n_tramites": 0,
+     "n_municipios": 0,
+     "procedimientos_tipo": []
+    },
+    {
+     "codigo": "24-06",
+     "nombre": "Procedimientos de responsabilidad patrimonial",
+     "n_tramites": 66,
+     "n_municipios": 47,
+     "procedimientos_tipo": [
+      "responsabilidad-patrimonial"
+     ]
+    },
+    {
+     "codigo": "24-07",
+     "nombre": "Reclamaciones patrimoniales",
+     "n_tramites": 0,
+     "n_municipios": 0,
+     "procedimientos_tipo": []
+    },
+    {
+     "codigo": "24-08",
+     "nombre": "Procedimientos relativos a Juzgados de Paz",
+     "n_tramites": 0,
+     "n_municipios": 0,
+     "procedimientos_tipo": [
+      "juzgado-paz"
+     ]
+    },
+    {
+     "codigo": "24-09",
+     "nombre": "Otorgamiento de poderes para pleitos",
+     "n_tramites": 0,
+     "n_municipios": 0,
+     "procedimientos_tipo": []
+    },
+    {
+     "codigo": "24-10",
+     "nombre": "Recursos administrativos a resoluciones y dictámenes de otras administraciones",
+     "n_tramites": 152,
+     "n_municipios": 40,
+     "procedimientos_tipo": [
+      "recursos-administrativos"
+     ]
+    }
+   ]
+  },
+  {
+   "codigo": "25",
+   "nombre": "Personal",
+   "n_tramites": 500,
+   "especificas": [
+    {
+     "codigo": "25-01",
+     "nombre": "Organización de los recursos humanos",
+     "n_tramites": 0,
+     "n_municipios": 0,
+     "procedimientos_tipo": []
+    },
+    {
+     "codigo": "25-02",
+     "nombre": "Selección y provisión de puestos de trabajo",
+     "n_tramites": 136,
+     "n_municipios": 44,
+     "procedimientos_tipo": [
+      "empleo-seleccion"
+     ]
+    },
+    {
+     "codigo": "25-03",
+     "nombre": "Plantilla",
+     "n_tramites": 0,
+     "n_municipios": 0,
+     "procedimientos_tipo": []
+    },
+    {
+     "codigo": "25-04",
+     "nombre": "Relaciones de puestos de trabajo",
+     "n_tramites": 0,
+     "n_municipios": 0,
+     "procedimientos_tipo": []
+    },
+    {
+     "codigo": "25-05",
+     "nombre": "Contrataciones de personal laboral",
+     "n_tramites": 0,
+     "n_municipios": 0,
+     "procedimientos_tipo": []
+    },
+    {
+     "codigo": "25-06",
+     "nombre": "Situaciones administrativas",
+     "n_tramites": 0,
+     "n_municipios": 0,
+     "procedimientos_tipo": []
+    },
+    {
+     "codigo": "25-07",
+     "nombre": "Expedientes personales",
+     "n_tramites": 364,
+     "n_municipios": 42,
+     "procedimientos_tipo": [
+      "personal-municipal"
+     ]
+    },
+    {
+     "codigo": "25-08",
+     "nombre": "Elaboración de nóminas",
+     "n_tramites": 0,
+     "n_municipios": 0,
+     "procedimientos_tipo": []
+    },
+    {
+     "codigo": "25-09",
+     "nombre": "Licencias y permisos",
+     "n_tramites": 0,
+     "n_municipios": 0,
+     "procedimientos_tipo": []
+    },
+    {
+     "codigo": "25-10",
+     "nombre": "Ayudas sociales y familiares",
+     "n_tramites": 0,
+     "n_municipios": 0,
+     "procedimientos_tipo": []
+    },
+    {
+     "codigo": "25-11",
+     "nombre": "Formación",
+     "n_tramites": 0,
+     "n_municipios": 0,
+     "procedimientos_tipo": []
+    },
+    {
+     "codigo": "25-12",
+     "nombre": "Riesgos laborales",
+     "n_tramites": 0,
+     "n_municipios": 0,
+     "procedimientos_tipo": []
+    },
+    {
+     "codigo": "25-13",
+     "nombre": "Revisiones médicas",
+     "n_tramites": 0,
+     "n_municipios": 0,
+     "procedimientos_tipo": []
+    },
+    {
+     "codigo": "25-14",
+     "nombre": "Negociación colectiva",
+     "n_tramites": 0,
+     "n_municipios": 0,
+     "procedimientos_tipo": []
+    },
+    {
+     "codigo": "25-15",
+     "nombre": "Gestión de huelgas",
+     "n_tramites": 0,
+     "n_municipios": 0,
+     "procedimientos_tipo": []
+    },
+    {
+     "codigo": "25-16",
+     "nombre": "Elecciones sindicales",
+     "n_tramites": 0,
+     "n_municipios": 0,
+     "procedimientos_tipo": []
+    },
+    {
+     "codigo": "25-17",
+     "nombre": "Comisión paritaria",
+     "n_tramites": 0,
+     "n_municipios": 0,
+     "procedimientos_tipo": []
+    },
+    {
+     "codigo": "25-18",
+     "nombre": "Junta de Personal",
+     "n_tramites": 0,
+     "n_municipios": 0,
+     "procedimientos_tipo": []
+    },
+    {
+     "codigo": "25-19",
+     "nombre": "Comité de empresa",
+     "n_tramites": 0,
+     "n_municipios": 0,
+     "procedimientos_tipo": []
+    },
+    {
+     "codigo": "25-20",
+     "nombre": "Procedimiento disciplinarios de personal",
+     "n_tramites": 0,
+     "n_municipios": 0,
+     "procedimientos_tipo": []
+    }
+   ]
+  },
+  {
+   "codigo": "26",
+   "nombre": "Subvenciones",
+   "n_tramites": 843,
+   "especificas": [
+    {
+     "codigo": "26-01",
+     "nombre": "Subvenciones recibidas por la Administración Local",
+     "n_tramites": 0,
+     "n_municipios": 0,
+     "procedimientos_tipo": []
+    },
+    {
+     "codigo": "26-02",
+     "nombre": "Subvenciones otorgadas por la Administración Local",
+     "n_tramites": 843,
+     "n_municipios": 61,
+     "procedimientos_tipo": [
+      "subvenciones"
+     ]
+    }
+   ]
+  },
+  {
+   "codigo": "27",
+   "nombre": "Presupuesto",
+   "n_tramites": 91,
+   "especificas": [
+    {
+     "codigo": "27-01",
+     "nombre": "Plan económico financiero",
+     "n_tramites": 0,
+     "n_municipios": 0,
+     "procedimientos_tipo": []
+    },
+    {
+     "codigo": "27-02",
+     "nombre": "Aprobación presupuesto",
+     "n_tramites": 0,
+     "n_municipios": 0,
+     "procedimientos_tipo": []
+    },
+    {
+     "codigo": "27-03",
+     "nombre": "Cuenta general",
+     "n_tramites": 0,
+     "n_municipios": 0,
+     "procedimientos_tipo": []
+    },
+    {
+     "codigo": "27-04",
+     "nombre": "Generación de créditos",
+     "n_tramites": 0,
+     "n_municipios": 0,
+     "procedimientos_tipo": []
+    },
+    {
+     "codigo": "27-05",
+     "nombre": "Transferencia de créditos",
+     "n_tramites": 0,
+     "n_municipios": 0,
+     "procedimientos_tipo": []
+    },
+    {
+     "codigo": "27-06",
+     "nombre": "Incorporación de remanentes",
+     "n_tramites": 0,
+     "n_municipios": 0,
+     "procedimientos_tipo": []
+    },
+    {
+     "codigo": "27-07",
+     "nombre": "Ejecución presupuestaria",
+     "n_tramites": 91,
+     "n_municipios": 43,
+     "procedimientos_tipo": [
+      "factura-electronica",
+      "terceros"
+     ]
+    },
+    {
+     "codigo": "27-08",
+     "nombre": "Prorroga presupuesto",
+     "n_tramites": 0,
+     "n_municipios": 0,
+     "procedimientos_tipo": []
+    },
+    {
+     "codigo": "27-09",
+     "nombre": "Crédito extraordinario",
+     "n_tramites": 0,
+     "n_municipios": 0,
+     "procedimientos_tipo": []
+    },
+    {
+     "codigo": "27-10",
+     "nombre": "Suplemento crédito",
+     "n_tramites": 0,
+     "n_municipios": 0,
+     "procedimientos_tipo": []
+    },
+    {
+     "codigo": "27-11",
+     "nombre": "Ampliación de crédito",
+     "n_tramites": 0,
+     "n_municipios": 0,
+     "procedimientos_tipo": []
+    },
+    {
+     "codigo": "27-12",
+     "nombre": "Liquidación de presupuesto",
+     "n_tramites": 0,
+     "n_municipios": 0,
+     "procedimientos_tipo": []
+    },
+    {
+     "codigo": "27-13",
+     "nombre": "Anticipos de caja fija",
+     "n_tramites": 0,
+     "n_municipios": 0,
+     "procedimientos_tipo": []
+    }
+   ]
+  },
+  {
+   "codigo": "28",
+   "nombre": "Fiscalización",
+   "n_tramites": 0,
+   "especificas": [
+    {
+     "codigo": "28-01",
+     "nombre": "Control de gastos e ingresos",
+     "n_tramites": 0,
+     "n_municipios": 0,
+     "procedimientos_tipo": []
+    },
+    {
+     "codigo": "28-02",
+     "nombre": "Auditorías de economia y hacienda",
+     "n_tramites": 0,
+     "n_municipios": 0,
+     "procedimientos_tipo": []
+    },
+    {
+     "codigo": "28-03",
+     "nombre": "Balances",
+     "n_tramites": 0,
+     "n_municipios": 0,
+     "procedimientos_tipo": []
+    },
+    {
+     "codigo": "28-04",
+     "nombre": "Actas de arqueo",
+     "n_tramites": 0,
+     "n_municipios": 0,
+     "procedimientos_tipo": []
+    }
+   ]
+  },
+  {
+   "codigo": "29",
+   "nombre": "Financiación",
+   "n_tramites": 0,
+   "especificas": [
+    {
+     "codigo": "29-01",
+     "nombre": "Operaciones de crédito",
+     "n_tramites": 0,
+     "n_municipios": 0,
+     "procedimientos_tipo": []
+    }
+   ]
+  },
+  {
+   "codigo": "30",
+   "nombre": "Recaudación",
+   "n_tramites": 1867,
+   "especificas": [
+    {
+     "codigo": "30-01",
+     "nombre": "Liquidación de tributos",
+     "n_tramites": 868,
+     "n_municipios": 59,
+     "procedimientos_tipo": [
+      "plusvalia",
+      "ibi",
+      "ivtm",
+      "iae",
+      "icio",
+      "recurso-tributario"
+     ]
+    },
+    {
+     "codigo": "30-02",
+     "nombre": "Domiciliación de tributos",
+     "n_tramites": 70,
+     "n_municipios": 46,
+     "procedimientos_tipo": [
+      "domiciliacion"
+     ]
+    },
+    {
+     "codigo": "30-03",
+     "nombre": "Fraccionamiento de tributos",
+     "n_tramites": 93,
+     "n_municipios": 48,
+     "procedimientos_tipo": [
+      "fraccionamiento"
+     ]
+    },
+    {
+     "codigo": "30-04",
+     "nombre": "Compensacion de deudas",
+     "n_tramites": 35,
+     "n_municipios": 27,
+     "procedimientos_tipo": [
+      "compensacion-deudas"
+     ]
+    },
+    {
+     "codigo": "30-05",
+     "nombre": "Exenciones y bonificaciones",
+     "n_tramites": 357,
+     "n_municipios": 52,
+     "procedimientos_tipo": [
+      "ivtm-bonificacion",
+      "ibi-bonificacion",
+      "exenciones-otras"
+     ]
+    },
+    {
+     "codigo": "30-06",
+     "nombre": "Apremios",
+     "n_tramites": 49,
+     "n_municipios": 28,
+     "procedimientos_tipo": [
+      "embargo-apremio"
+     ]
+    },
+    {
+     "codigo": "30-07",
+     "nombre": "Embargos",
+     "n_tramites": 0,
+     "n_municipios": 0,
+     "procedimientos_tipo": []
+    },
+    {
+     "codigo": "30-08",
+     "nombre": "Padrones y listas cobratorias",
+     "n_tramites": 0,
+     "n_municipios": 0,
+     "procedimientos_tipo": []
+    },
+    {
+     "codigo": "30-09",
+     "nombre": "Devolución de ingresos indebidos",
+     "n_tramites": 245,
+     "n_municipios": 54,
+     "procedimientos_tipo": [
+      "devolucion-ingresos"
+     ]
+    },
+    {
+     "codigo": "30-10",
+     "nombre": "Tasas y precios públicos",
+     "n_tramites": 135,
+     "n_municipios": 46,
+     "procedimientos_tipo": [
+      "tasa-basura",
+      "autoliquidacion"
+     ]
+    },
+    {
+     "codigo": "30-11",
+     "nombre": "Inspección tributaria",
+     "n_tramites": 15,
+     "n_municipios": 7,
+     "procedimientos_tipo": [
+      "inspeccion-tributaria"
+     ]
+    },
+    {
+     "codigo": "30-12",
+     "nombre": "Sancionador en materia tributaria",
+     "n_tramites": 0,
+     "n_municipios": 0,
+     "procedimientos_tipo": []
+    }
+   ]
+  },
+  {
+   "codigo": "31",
+   "nombre": "Tesorería",
+   "n_tramites": 0,
+   "especificas": [
+    {
+     "codigo": "31-01",
+     "nombre": "Planes y programas de tesorería",
+     "n_tramites": 0,
+     "n_municipios": 0,
+     "procedimientos_tipo": []
+    },
+    {
+     "codigo": "31-02",
+     "nombre": "Custodia de fondos y valores",
+     "n_tramites": 0,
+     "n_municipios": 0,
+     "procedimientos_tipo": []
+    }
+   ]
+  },
+  {
+   "codigo": "32",
+   "nombre": "Seguridad ciudadana",
+   "n_tramites": 260,
+   "especificas": [
+    {
+     "codigo": "32-01",
+     "nombre": "Atestados",
+     "n_tramites": 95,
+     "n_municipios": 38,
+     "procedimientos_tipo": [
+      "atestados-policia"
+     ]
+    },
+    {
+     "codigo": "32-02",
+     "nombre": "Denuncias",
+     "n_tramites": 15,
+     "n_municipios": 13,
+     "procedimientos_tipo": [
+      "objetos-perdidos"
+     ]
+    },
+    {
+     "codigo": "32-03",
+     "nombre": "Seguridad vial",
+     "n_tramites": 0,
+     "n_municipios": 0,
+     "procedimientos_tipo": []
+    },
+    {
+     "codigo": "32-04",
+     "nombre": "Incendios",
+     "n_tramites": 0,
+     "n_municipios": 0,
+     "procedimientos_tipo": []
+    },
+    {
+     "codigo": "32-05",
+     "nombre": "Permisos de armas",
+     "n_tramites": 56,
+     "n_municipios": 47,
+     "procedimientos_tipo": [
+      "armas"
+     ]
+    },
+    {
+     "codigo": "32-06",
+     "nombre": "Protección civil",
+     "n_tramites": 94,
+     "n_municipios": 42,
+     "procedimientos_tipo": [
+      "proteccion-civil"
+     ]
+    }
+   ]
+  },
+  {
+   "codigo": "33",
+   "nombre": "Movilidad",
+   "n_tramites": 677,
+   "especificas": [
+    {
+     "codigo": "33-01",
+     "nombre": "Transporte Público",
+     "n_tramites": 68,
+     "n_municipios": 34,
+     "procedimientos_tipo": [
+      "transporte"
+     ]
+    },
+    {
+     "codigo": "33-02",
+     "nombre": "Aparcamiento y movilidad",
+     "n_tramites": 223,
+     "n_municipios": 58,
+     "procedimientos_tipo": [
+      "tarjeta-estacionamiento-pmr",
+      "tarjeta-residente"
+     ]
+    },
+    {
+     "codigo": "33-03",
+     "nombre": "Ordenación del Tráfico",
+     "n_tramites": 156,
+     "n_municipios": 49,
+     "procedimientos_tipo": [
+      "retirada-vehiculos",
+      "corte-calle-trafico"
+     ]
+    },
+    {
+     "codigo": "33-04",
+     "nombre": "Licencias taxi",
+     "n_tramites": 141,
+     "n_municipios": 31,
+     "procedimientos_tipo": [
+      "taxi"
+     ]
+    },
+    {
+     "codigo": "33-05",
+     "nombre": "Autobuses Urbanos",
+     "n_tramites": 0,
+     "n_municipios": 0,
+     "procedimientos_tipo": []
+    },
+    {
+     "codigo": "33-06",
+     "nombre": "Sancionador en materia de tráfico y transporte",
+     "n_tramites": 89,
+     "n_municipios": 36,
+     "procedimientos_tipo": [
+      "multa-alegaciones",
+      "multa-identificacion"
+     ]
+    }
+   ]
+  },
+  {
+   "codigo": "34",
+   "nombre": "Medio ambiente",
+   "n_tramites": 309,
+   "especificas": [
+    {
+     "codigo": "34-01",
+     "nombre": "Protección y control del medio ambiente",
+     "n_tramites": 138,
+     "n_municipios": 49,
+     "procedimientos_tipo": [
+      "medio-ambiente"
+     ]
+    },
+    {
+     "codigo": "34-02",
+     "nombre": "Protección de los espacios naturales",
+     "n_tramites": 0,
+     "n_municipios": 0,
+     "procedimientos_tipo": []
+    },
+    {
+     "codigo": "34-03",
+     "nombre": "Protección de fauna y animales",
+     "n_tramites": 0,
+     "n_municipios": 0,
+     "procedimientos_tipo": []
+    },
+    {
+     "codigo": "34-04",
+     "nombre": "Tenencia de animales en el entorno urbano",
+     "n_tramites": 60,
+     "n_municipios": 35,
+     "procedimientos_tipo": [
+      "animales-registro"
+     ]
+    },
+    {
+     "codigo": "34-05",
+     "nombre": "Control y recogida de animales",
+     "n_tramites": 95,
+     "n_municipios": 38,
+     "procedimientos_tipo": [
+      "animales-adopcion"
+     ]
+    },
+    {
+     "codigo": "34-06",
+     "nombre": "Eficiencia energética",
+     "n_tramites": 7,
+     "n_municipios": 7,
+     "procedimientos_tipo": [
+      "instalacion-solar"
+     ]
+    },
+    {
+     "codigo": "34-07",
+     "nombre": "Recursos hídricos",
+     "n_tramites": 0,
+     "n_municipios": 0,
+     "procedimientos_tipo": []
+    },
+    {
+     "codigo": "34-08",
+     "nombre": "Contaminación atmoférica",
+     "n_tramites": 0,
+     "n_municipios": 0,
+     "procedimientos_tipo": []
+    },
+    {
+     "codigo": "34-09",
+     "nombre": "Ruidos y vibraciones",
+     "n_tramites": 9,
+     "n_municipios": 9,
+     "procedimientos_tipo": [
+      "ruidos"
+     ]
+    },
+    {
+     "codigo": "34-10",
+     "nombre": "Programas de formación y sensibilización",
+     "n_tramites": 0,
+     "n_municipios": 0,
+     "procedimientos_tipo": []
+    },
+    {
+     "codigo": "34-11",
+     "nombre": "Sancionadores en materia de medio ambiente",
+     "n_tramites": 0,
+     "n_municipios": 0,
+     "procedimientos_tipo": []
+    }
+   ]
+  },
+  {
+   "codigo": "35",
+   "nombre": "Animales peligrosos",
+   "n_tramites": 84,
+   "especificas": [
+    {
+     "codigo": "35-01",
+     "nombre": "Registros y licencias para tenencia de animales peligrosos",
+     "n_tramites": 84,
+     "n_municipios": 52,
+     "procedimientos_tipo": [
+      "animales-peligrosos"
+     ]
+    },
+    {
+     "codigo": "35-02",
+     "nombre": "Sanciones en materia de animales peligrosos",
+     "n_tramites": 0,
+     "n_municipios": 0,
+     "procedimientos_tipo": []
+    }
+   ]
+  },
+  {
+   "codigo": "36",
+   "nombre": "Mantenimiento urbano",
+   "n_tramites": 317,
+   "especificas": [
+    {
+     "codigo": "36-01",
+     "nombre": "Mantenimiento de vías públicas",
+     "n_tramites": 0,
+     "n_municipios": 0,
+     "procedimientos_tipo": []
+    },
+    {
+     "codigo": "36-02",
+     "nombre": "Limpieza viaria",
+     "n_tramites": 0,
+     "n_municipios": 0,
+     "procedimientos_tipo": []
+    },
+    {
+     "codigo": "36-03",
+     "nombre": "Mobiliario urbano",
+     "n_tramites": 0,
+     "n_municipios": 0,
+     "procedimientos_tipo": []
+    },
+    {
+     "codigo": "36-04",
+     "nombre": "Saneamiento urbano",
+     "n_tramites": 0,
+     "n_municipios": 0,
+     "procedimientos_tipo": []
+    },
+    {
+     "codigo": "36-05",
+     "nombre": "Parques, jardinesy arbolado urbano",
+     "n_tramites": 83,
+     "n_municipios": 42,
+     "procedimientos_tipo": [
+      "arbolado-poda"
+     ]
+    },
+    {
+     "codigo": "36-06",
+     "nombre": "Abastecimiento de agua",
+     "n_tramites": 87,
+     "n_municipios": 32,
+     "procedimientos_tipo": [
+      "agua-saneamiento"
+     ]
+    },
+    {
+     "codigo": "36-07",
+     "nombre": "Alcantarillado y depuración",
+     "n_tramites": 0,
+     "n_municipios": 0,
+     "procedimientos_tipo": []
+    },
+    {
+     "codigo": "36-08",
+     "nombre": "Alumbrado público",
+     "n_tramites": 0,
+     "n_municipios": 0,
+     "procedimientos_tipo": []
+    },
+    {
+     "codigo": "36-09",
+     "nombre": "Recogida y tratamiento de residuos",
+     "n_tramites": 33,
+     "n_municipios": 16,
+     "procedimientos_tipo": [
+      "residuos-recogida"
+     ]
+    },
+    {
+     "codigo": "36-10",
+     "nombre": "Gestión de incidencias en vía pública",
+     "n_tramites": 114,
+     "n_municipios": 31,
+     "procedimientos_tipo": [
+      "incidencias-via-publica"
+     ]
+    }
+   ]
+  },
+  {
+   "codigo": "37",
+   "nombre": "Urbanismo",
+   "n_tramites": 2152,
+   "especificas": [
+    {
+     "codigo": "37-01",
+     "nombre": "Planeamiento urbanístico",
+     "n_tramites": 392,
+     "n_municipios": 54,
+     "procedimientos_tipo": [
+      "planeamiento",
+      "informacion-urbanistica"
+     ]
+    },
+    {
+     "codigo": "37-02",
+     "nombre": "Licencias de primera ocupación",
+     "n_tramites": 80,
+     "n_municipios": 40,
+     "procedimientos_tipo": [
+      "primera-ocupacion"
+     ]
+    },
+    {
+     "codigo": "37-03",
+     "nombre": "Licencias de obras particulares",
+     "n_tramites": 978,
+     "n_municipios": 62,
+     "procedimientos_tipo": [
+      "obra-mayor",
+      "declaracion-responsable-obras",
+      "obra-menor",
+      "ascensor-accesibilidad",
+      "cambio-titularidad-licencia-urbanistica"
+     ]
+    },
+    {
+     "codigo": "37-04",
+     "nombre": "Licencias de cambios de uso",
+     "n_tramites": 32,
+     "n_municipios": 20,
+     "procedimientos_tipo": [
+      "cambio-uso"
+     ]
+    },
+    {
+     "codigo": "37-05",
+     "nombre": "Licencias de concesión de vados",
+     "n_tramites": 169,
+     "n_municipios": 55,
+     "procedimientos_tipo": [
+      "vado"
+     ]
+    },
+    {
+     "codigo": "37-06",
+     "nombre": "Licencias de cala",
+     "n_tramites": 32,
+     "n_municipios": 17,
+     "procedimientos_tipo": [
+      "cala-zanja"
+     ]
+    },
+    {
+     "codigo": "37-07",
+     "nombre": "Expropiaciones urbanísticas",
+     "n_tramites": 36,
+     "n_municipios": 18,
+     "procedimientos_tipo": [
+      "expropiacion"
+     ]
+    },
+    {
+     "codigo": "37-08",
+     "nombre": "Alineaciones y rasantes",
+     "n_tramites": 28,
+     "n_municipios": 22,
+     "procedimientos_tipo": [
+      "alineaciones"
+     ]
+    },
+    {
+     "codigo": "37-09",
+     "nombre": "Obras públicas",
+     "n_tramites": 0,
+     "n_municipios": 0,
+     "procedimientos_tipo": []
+    },
+    {
+     "codigo": "37-10",
+     "nombre": "Órdenes de ejecución",
+     "n_tramites": 0,
+     "n_municipios": 0,
+     "procedimientos_tipo": []
+    },
+    {
+     "codigo": "37-11",
+     "nombre": "Declaración de Ruína",
+     "n_tramites": 67,
+     "n_municipios": 34,
+     "procedimientos_tipo": [
+      "ruina-orden-ejecucion"
+     ]
+    },
+    {
+     "codigo": "37-12",
+     "nombre": "Juntas de compensación",
+     "n_tramites": 0,
+     "n_municipios": 0,
+     "procedimientos_tipo": []
+    },
+    {
+     "codigo": "37-13",
+     "nombre": "Segregaciones y agrupaciones de parcelas",
+     "n_tramites": 74,
+     "n_municipios": 43,
+     "procedimientos_tipo": [
+      "segregacion"
+     ]
+    },
+    {
+     "codigo": "37-14",
+     "nombre": "Ocupación de vía pública",
+     "n_tramites": 214,
+     "n_municipios": 51,
+     "procedimientos_tipo": [
+      "ocupacion-via-publica"
+     ]
+    },
+    {
+     "codigo": "37-15",
+     "nombre": "Sancionador en materia urbanística",
+     "n_tramites": 50,
+     "n_municipios": 25,
+     "procedimientos_tipo": [
+      "disciplina-urbanistica"
+     ]
+    }
+   ]
+  },
+  {
+   "codigo": "38",
+   "nombre": "Industria y Comercio",
+   "n_tramites": 1380,
+   "especificas": [
+    {
+     "codigo": "38-01",
+     "nombre": "Consultas previas a la concesión de licencias",
+     "n_tramites": 17,
+     "n_municipios": 16,
+     "procedimientos_tipo": [
+      "actividad-consulta-previa"
+     ]
+    },
+    {
+     "codigo": "38-02",
+     "nombre": "Licencias de actividades calificadas",
+     "n_tramites": 94,
+     "n_municipios": 48,
+     "procedimientos_tipo": [
+      "actividad-licencia-ambiental"
+     ]
+    },
+    {
+     "codigo": "38-03",
+     "nombre": "Licencias de actividades inocuas",
+     "n_tramites": 478,
+     "n_municipios": 60,
+     "procedimientos_tipo": [
+      "actividad-declaracion-responsable"
+     ]
+    },
+    {
+     "codigo": "38-04",
+     "nombre": "Cambios de titularidad de licencias",
+     "n_tramites": 131,
+     "n_municipios": 51,
+     "procedimientos_tipo": [
+      "actividad-cambio-titularidad"
+     ]
+    },
+    {
+     "codigo": "38-05",
+     "nombre": "Licencias de funcionamiento",
+     "n_tramites": 19,
+     "n_municipios": 16,
+     "procedimientos_tipo": [
+      "horarios-comercio"
+     ]
+    },
+    {
+     "codigo": "38-06",
+     "nombre": "Licencias de venta de bebidas alcohólicas",
+     "n_tramites": 0,
+     "n_municipios": 0,
+     "procedimientos_tipo": []
+    },
+    {
+     "codigo": "38-07",
+     "nombre": "Autorizaciones y licencias  de mercados",
+     "n_tramites": 319,
+     "n_municipios": 57,
+     "procedimientos_tipo": [
+      "mercados-venta-ambulante"
+     ]
+    },
+    {
+     "codigo": "38-08",
+     "nombre": "Licencias de atracciones feriales",
+     "n_tramites": 218,
+     "n_municipios": 50,
+     "procedimientos_tipo": [
+      "espectaculos"
+     ]
+    },
+    {
+     "codigo": "38-09",
+     "nombre": "Licencias de terrazas veladores",
+     "n_tramites": 81,
+     "n_municipios": 44,
+     "procedimientos_tipo": [
+      "terrazas"
+     ]
+    },
+    {
+     "codigo": "38-10",
+     "nombre": "Licencias de quioscos de temporada",
+     "n_tramites": 23,
+     "n_municipios": 12,
+     "procedimientos_tipo": [
+      "quioscos"
+     ]
+    },
+    {
+     "codigo": "38-11",
+     "nombre": "Sancionadores en materia de industria",
+     "n_tramites": 0,
+     "n_municipios": 0,
+     "procedimientos_tipo": []
+    }
+   ]
+  },
+  {
+   "codigo": "39",
+   "nombre": "Servicios sociales",
+   "n_tramites": 611,
+   "especificas": [
+    {
+     "codigo": "39-01",
+     "nombre": "Gestión de centros de asistencia social",
+     "n_tramites": 76,
+     "n_municipios": 29,
+     "procedimientos_tipo": [
+      "dependencia-discapacidad"
+     ]
+    },
+    {
+     "codigo": "39-02",
+     "nombre": "Asistencia social primaria",
+     "n_tramites": 171,
+     "n_municipios": 52,
+     "procedimientos_tipo": [
+      "servicios-sociales-informe"
+     ]
+    },
+    {
+     "codigo": "39-03",
+     "nombre": "Emergencia social",
+     "n_tramites": 120,
+     "n_municipios": 48,
+     "procedimientos_tipo": [
+      "emergencia-social"
+     ]
+    },
+    {
+     "codigo": "39-04",
+     "nombre": "Servicio de ayuda a domicilio",
+     "n_tramites": 98,
+     "n_municipios": 43,
+     "procedimientos_tipo": [
+      "ayuda-domicilio",
+      "teleasistencia"
+     ]
+    },
+    {
+     "codigo": "39-05",
+     "nombre": "Apoyo a entidades sociosanitarias",
+     "n_tramites": 0,
+     "n_municipios": 0,
+     "procedimientos_tipo": []
+    },
+    {
+     "codigo": "39-06",
+     "nombre": "Vivienda social",
+     "n_tramites": 146,
+     "n_municipios": 45,
+     "procedimientos_tipo": [
+      "vivienda"
+     ]
+    }
+   ]
+  },
+  {
+   "codigo": "40",
+   "nombre": "Igualdad de género",
+   "n_tramites": 56,
+   "especificas": [
+    {
+     "codigo": "40-01",
+     "nombre": "Programas de igualdad de género",
+     "n_tramites": 56,
+     "n_municipios": 23,
+     "procedimientos_tipo": [
+      "igualdad-violencia"
+     ]
+    },
+    {
+     "codigo": "40-02",
+     "nombre": "Programas de formación y sensibilización",
+     "n_tramites": 0,
+     "n_municipios": 0,
+     "procedimientos_tipo": []
+    }
+   ]
+  },
+  {
+   "codigo": "41",
+   "nombre": "Sanidad",
+   "n_tramites": 82,
+   "especificas": [
+    {
+     "codigo": "41-01",
+     "nombre": "Gestión de centros sanitarios",
+     "n_tramites": 0,
+     "n_municipios": 0,
+     "procedimientos_tipo": []
+    },
+    {
+     "codigo": "41-02",
+     "nombre": "Programas de prevención y atención sanitaria",
+     "n_tramites": 57,
+     "n_municipios": 26,
+     "procedimientos_tipo": [
+      "salud-consumo-drogas"
+     ]
+    },
+    {
+     "codigo": "41-03",
+     "nombre": "Programas de prevención y atención a drogodependencias",
+     "n_tramites": 0,
+     "n_municipios": 0,
+     "procedimientos_tipo": []
+    },
+    {
+     "codigo": "41-04",
+     "nombre": "Inspecciones sanitarias",
+     "n_tramites": 25,
+     "n_municipios": 18,
+     "procedimientos_tipo": [
+      "inspeccion-sanitaria"
+     ]
+    },
+    {
+     "codigo": "41-05",
+     "nombre": "Sanciones en materia de salud pública",
+     "n_tramites": 0,
+     "n_municipios": 0,
+     "procedimientos_tipo": []
+    }
+   ]
+  },
+  {
+   "codigo": "42",
+   "nombre": "Plagas",
+   "n_tramites": 18,
+   "especificas": [
+    {
+     "codigo": "42-01",
+     "nombre": "Control de plagas",
+     "n_tramites": 18,
+     "n_municipios": 16,
+     "procedimientos_tipo": [
+      "plagas"
+     ]
+    }
+   ]
+  },
+  {
+   "codigo": "43",
+   "nombre": "Cementerios",
+   "n_tramites": 185,
+   "especificas": [
+    {
+     "codigo": "43-01",
+     "nombre": "Gestión de cementerios",
+     "n_tramites": 185,
+     "n_municipios": 40,
+     "procedimientos_tipo": [
+      "cementerio"
+     ]
+    },
+    {
+     "codigo": "43-02",
+     "nombre": "Gestión de tanatorios",
+     "n_tramites": 0,
+     "n_municipios": 0,
+     "procedimientos_tipo": []
+    }
+   ]
+  },
+  {
+   "codigo": "44",
+   "nombre": "Educación",
+   "n_tramites": 338,
+   "especificas": [
+    {
+     "codigo": "44-01",
+     "nombre": "Gestión de centros y equipamientos educativos",
+     "n_tramites": 110,
+     "n_municipios": 43,
+     "procedimientos_tipo": [
+      "escuela-infantil"
+     ]
+    },
+    {
+     "codigo": "44-02",
+     "nombre": "Programación de actividades educativas",
+     "n_tramites": 228,
+     "n_municipios": 50,
+     "procedimientos_tipo": [
+      "educacion-actividades",
+      "educacion-ayudas"
+     ]
+    }
+   ]
+  },
+  {
+   "codigo": "45",
+   "nombre": "Cultura",
+   "n_tramites": 285,
+   "especificas": [
+    {
+     "codigo": "45-01",
+     "nombre": "Gestión de centros y equipamientos culturales",
+     "n_tramites": 48,
+     "n_municipios": 17,
+     "procedimientos_tipo": [
+      "biblioteca"
+     ]
+    },
+    {
+     "codigo": "45-02",
+     "nombre": "Programación de actividades culturales",
+     "n_tramites": 237,
+     "n_municipios": 51,
+     "procedimientos_tipo": [
+      "cultura"
+     ]
+    }
+   ]
+  },
+  {
+   "codigo": "46",
+   "nombre": "Fiestas",
+   "n_tramites": 65,
+   "especificas": [
+    {
+     "codigo": "46-01",
+     "nombre": "Programación de actividades de fiestas",
+     "n_tramites": 65,
+     "n_municipios": 26,
+     "procedimientos_tipo": [
+      "fiestas"
+     ]
+    }
+   ]
+  },
+  {
+   "codigo": "47",
+   "nombre": "Patrimonio histórico",
+   "n_tramites": 16,
+   "especificas": [
+    {
+     "codigo": "47-01",
+     "nombre": "Conservación y protección del patrimonio histórico",
+     "n_tramites": 16,
+     "n_municipios": 9,
+     "procedimientos_tipo": [
+      "patrimonio-historico"
+     ]
+    },
+    {
+     "codigo": "47-02",
+     "nombre": "Formación y sensibilización sobre patrimonio histórico",
+     "n_tramites": 0,
+     "n_municipios": 0,
+     "procedimientos_tipo": []
+    }
+   ]
+  },
+  {
+   "codigo": "48",
+   "nombre": "Deportes",
+   "n_tramites": 151,
+   "especificas": [
+    {
+     "codigo": "48-01",
+     "nombre": "Gestión de centros y equipamientos deportivos",
+     "n_tramites": 58,
+     "n_municipios": 26,
+     "procedimientos_tipo": [
+      "deportes-instalaciones"
+     ]
+    },
+    {
+     "codigo": "48-02",
+     "nombre": "Programación de actividades deportivas",
+     "n_tramites": 93,
+     "n_municipios": 35,
+     "procedimientos_tipo": [
+      "deportes-actividades"
+     ]
+    }
+   ]
+  },
+  {
+   "codigo": "49",
+   "nombre": "Personas mayores",
+   "n_tramites": 58,
+   "especificas": [
+    {
+     "codigo": "49-01",
+     "nombre": "Gestión de centros y equipamientos de personas mayores",
+     "n_tramites": 0,
+     "n_municipios": 0,
+     "procedimientos_tipo": []
+    },
+    {
+     "codigo": "49-02",
+     "nombre": "Programación de actividades de personas mayores",
+     "n_tramites": 58,
+     "n_municipios": 31,
+     "procedimientos_tipo": [
+      "mayores"
+     ]
+    }
+   ]
+  },
+  {
+   "codigo": "50",
+   "nombre": "Juventud",
+   "n_tramites": 62,
+   "especificas": [
+    {
+     "codigo": "50-01",
+     "nombre": "Gestión de centros y equipamientos juveniles",
+     "n_tramites": 0,
+     "n_municipios": 0,
+     "procedimientos_tipo": []
+    },
+    {
+     "codigo": "50-02",
+     "nombre": "Programación de actividades juveniles",
+     "n_tramites": 62,
+     "n_municipios": 29,
+     "procedimientos_tipo": [
+      "juventud"
+     ]
+    }
+   ]
+  },
+  {
+   "codigo": "51",
+   "nombre": "Infancia",
+   "n_tramites": 131,
+   "especificas": [
+    {
+     "codigo": "51-01",
+     "nombre": "Gestión de centros y equipamientos de infancia",
+     "n_tramites": 0,
+     "n_municipios": 0,
+     "procedimientos_tipo": []
+    },
+    {
+     "codigo": "51-02",
+     "nombre": "Programación de actividades de infancia",
+     "n_tramites": 131,
+     "n_municipios": 40,
+     "procedimientos_tipo": [
+      "infancia-familia"
+     ]
+    }
+   ]
+  },
+  {
+   "codigo": "52",
+   "nombre": "Agricultura y ganadería",
+   "n_tramites": 43,
+   "especificas": [
+    {
+     "codigo": "52-01",
+     "nombre": "Gestión de actividades agrícolas y ganaderas",
+     "n_tramites": 43,
+     "n_municipios": 19,
+     "procedimientos_tipo": [
+      "agricultura"
+     ]
+    }
+   ]
+  },
+  {
+   "codigo": "53",
+   "nombre": "Pesca",
+   "n_tramites": 0,
+   "especificas": [
+    {
+     "codigo": "53-01",
+     "nombre": "Gestión de actividades pesqueras",
+     "n_tramites": 0,
+     "n_municipios": 0,
+     "procedimientos_tipo": []
+    }
+   ]
+  },
+  {
+   "codigo": "54",
+   "nombre": "Montes",
+   "n_tramites": 8,
+   "especificas": [
+    {
+     "codigo": "54-01",
+     "nombre": "Gestión de actividades forestales",
+     "n_tramites": 8,
+     "n_municipios": 4,
+     "procedimientos_tipo": [
+      "montes"
+     ]
+    }
+   ]
+  },
+  {
+   "codigo": "55",
+   "nombre": "Fomento de la actividad económica",
+   "n_tramites": 84,
+   "especificas": [
+    {
+     "codigo": "55-01",
+     "nombre": "Fomento de la actividad comercial y económica",
+     "n_tramites": 84,
+     "n_municipios": 36,
+     "procedimientos_tipo": [
+      "emprendimiento-comercio"
+     ]
+    },
+    {
+     "codigo": "55-02",
+     "nombre": "Ferias y Congresos",
+     "n_tramites": 0,
+     "n_municipios": 0,
+     "procedimientos_tipo": []
+    }
+   ]
+  },
+  {
+   "codigo": "56",
+   "nombre": "Promoción del empleo",
+   "n_tramites": 79,
+   "especificas": [
+    {
+     "codigo": "56-01",
+     "nombre": "Planes de empleo",
+     "n_tramites": 0,
+     "n_municipios": 0,
+     "procedimientos_tipo": []
+    },
+    {
+     "codigo": "56-02",
+     "nombre": "Programas de formación e inserción laboral",
+     "n_tramites": 79,
+     "n_municipios": 35,
+     "procedimientos_tipo": [
+      "empleo-formacion"
+     ]
+    }
+   ]
+  },
+  {
+   "codigo": "57",
+   "nombre": "Turismo",
+   "n_tramites": 30,
+   "especificas": [
+    {
+     "codigo": "57-01",
+     "nombre": "Gestión y fomento del turismo",
+     "n_tramites": 30,
+     "n_municipios": 19,
+     "procedimientos_tipo": [
+      "turismo"
+     ]
+    }
+   ]
+  },
+  {
+   "codigo": "58",
+   "nombre": "Consumo",
+   "n_tramites": 86,
+   "especificas": [
+    {
+     "codigo": "58-01",
+     "nombre": "Arbitraje y consumo",
+     "n_tramites": 86,
+     "n_municipios": 39,
+     "procedimientos_tipo": [
+      "consumo"
+     ]
+    }
+   ]
+  },
+  {
+   "codigo": "59",
+   "nombre": "Asistencia a entidades locales",
+   "n_tramites": 0,
+   "especificas": [
+    {
+     "codigo": "59-01",
+     "nombre": "Programas y actuaciones de asistencia a entidades locales",
+     "n_tramites": 0,
+     "n_municipios": 0,
+     "procedimientos_tipo": []
+    },
+    {
+     "codigo": "59-02",
+     "nombre": "Asistencia técnica, jurídica y económica a entidades locales",
+     "n_tramites": 0,
+     "n_municipios": 0,
+     "procedimientos_tipo": []
+    }
+   ]
+  }
+ ]
+}
