@@ -266,6 +266,8 @@
     .teselas { grid-template-columns: 1fr; }
     .reloj div { min-width: 4rem; }
   }
+  .cabecera nav a { white-space: nowrap; }
+  @media (max-width: 1020px) { .cabecera nav a:not(.nav-ett):not(:last-child) { display: none; } }
   @media (max-width: 760px) { .cabecera nav a.nav-ett { display: inline; } }
   @media (prefers-reduced-motion: reduce) {
     html { scroll-behavior: auto; }
