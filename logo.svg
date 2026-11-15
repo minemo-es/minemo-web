@@ -5,5 +5,5 @@
     <path d="M16.5 30V8a7 7 0 0 1 14 0v22z" fill="#2348D6"/>
     <path d="M33 30V15a6 6 0 0 1 12 0v15z" fill="#1F8A6D"/>
   </g>
-  <text x="56" y="31" font-family="Archivo, 'Archivo Expanded', system-ui, sans-serif" font-weight="800" font-size="30" letter-spacing="-0.6" fill="#16213B">minemo</text>
+  <text x="56" y="31" textLength="136" lengthAdjust="spacingAndGlyphs" font-family="Archivo, 'Archivo Expanded', system-ui, sans-serif" font-weight="800" font-size="30" letter-spacing="-0.6" fill="#16213B">minemo</text>
 </svg>

@@ -3,10 +3,10 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Minemo: la nube de los datos públicos municipales</title>
-<meta name="description" content="Minemo será un servicio en la nube, gratuito para los municipios pequeños, donde los ayuntamientos podrán alojar sus datos públicos y recibir a cambio visualizaciones y visores listos para compartir. Disponible en 2027.">
-<meta property="og:title" content="Minemo: la nube de los datos públicos municipales">
-<meta property="og:description" content="Suba los datos públicos de su ayuntamiento y reciba visualizaciones, visores y servicios de acceso. Gratis para los municipios pequeños. Llega en 2027.">
+<title>Minemo: datos públicos de ayuntamientos</title>
+<meta name="description" content="Minemo será un servicio en la nube donde cada ayuntamiento podrá alojar sus datos públicos y recibir a cambio visualizaciones, visores y servicios de acceso. Una plataforma colaborativa y compartida. Disponible en 2027.">
+<meta property="og:title" content="Minemo: datos públicos de ayuntamientos">
+<meta property="og:description" content="Sube los datos públicos de tu ayuntamiento y recibe visualizaciones, visores y servicios de acceso. Una plataforma colaborativa. Llega en 2027.">
 <meta property="og:url" content="https://minemo.es/">
 <meta property="og:locale" content="es_ES">
 <meta name="theme-color" content="#16213B">
@@ -49,16 +49,16 @@
   .cabecera { padding: 1.4rem 0; }
   .cabecera .contenedor { display: flex; justify-content: space-between; align-items: center; gap: 1.5rem; }
   .logo { display: inline-flex; text-decoration: none; }
-  .logo svg { height: 34px; width: auto; display: block; }
+  .logo svg { height: 30px; width: auto; display: block; }
   .cabecera nav { display: flex; gap: 1.75rem; }
   .cabecera nav a { color: var(--pizarra); text-decoration: none; font-weight: 500; font-size: .975rem; }
   .cabecera nav a:hover { color: var(--cobalto); }
 
   /* ---------- Portada ---------- */
-  .portada { padding: 3.5rem 0 5rem; }
+  .portada { padding: 2.5rem 0 5rem; }
   .portada .contenedor {
     display: grid;
-    grid-template-columns: minmax(0, 1fr) minmax(0, 1.05fr);
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
     gap: clamp(2rem, 5vw, 4.5rem);
     align-items: center;
   }
@@ -70,25 +70,35 @@
   }
   .aviso .pulso {
     width: .6rem; height: .6rem; border-radius: 50%; background: var(--albero);
-    box-shadow: 0 0 0 0 rgba(242,179,61,.6);
     animation: pulso 2.4s ease-out infinite;
   }
   @keyframes pulso { 0% { box-shadow: 0 0 0 0 rgba(242,179,61,.6); } 70% { box-shadow: 0 0 0 10px rgba(242,179,61,0); } 100% { box-shadow: 0 0 0 0 rgba(242,179,61,0); } }
+
+  /* Firma: el logo grande es el titular de la marca */
+  .firma { margin: 1.75rem 0 0; line-height: 0; }
+  .firma svg { width: min(100%, 560px); height: auto; display: block; overflow: visible; }
+  .firma .b { transform-box: fill-box; transform-origin: 50% 100%; animation: crecer .9s cubic-bezier(.2,.9,.25,1.15) both; }
+  .firma .b2 { animation-delay: .12s; }
+  .firma .b3 { animation-delay: .24s; }
+  .firma .palabra { animation: aparecer .7s ease-out .45s both; }
+  @keyframes crecer { from { transform: scaleY(0); } to { transform: scaleY(1); } }
+  @keyframes aparecer { from { opacity: 0; transform: translateX(-8px); } to { opacity: 1; transform: none; } }
+
   .titular {
-    margin-top: 1.5rem;
-    font-size: clamp(2.5rem, 5vw, 4.1rem);
+    margin-top: 1.75rem;
+    font-size: clamp(2rem, 3.8vw, 3.1rem);
     font-weight: 800;
-    font-variation-settings: "wdth" 118;
-    letter-spacing: -.03em;
-    line-height: .98;
-    max-width: 15ch;
+    font-variation-settings: "wdth" 112;
+    letter-spacing: -.025em;
+    line-height: 1.02;
+    max-width: 18ch;
   }
   .entradilla {
-    margin-top: 1.5rem; max-width: 46ch;
-    font-size: 1.2rem; line-height: 1.55; color: var(--tenue);
+    margin-top: 1.25rem; max-width: 48ch;
+    font-size: 1.15rem; line-height: 1.55; color: var(--tenue);
   }
 
-  .cuenta { margin-top: 2.25rem; }
+  .cuenta { margin-top: 2rem; }
   .cuenta p { font-size: .95rem; color: var(--tenue); margin-bottom: .6rem; }
   .reloj { display: flex; gap: .5rem; flex-wrap: wrap; }
   .reloj div {
@@ -111,7 +121,7 @@
   .boton:hover { background: var(--pizarra); color: var(--blanco); }
   .enlace-sec { font-weight: 600; color: var(--pizarra); }
 
-  /* ---------- Maqueta: página de un municipio ---------- */
+  /* ---------- Maqueta orientativa ---------- */
   .maqueta { margin: 0; }
   .navegador {
     background: var(--blanco); border-radius: 16px;
@@ -127,14 +137,14 @@
   .puntos i { width: .6rem; height: .6rem; border-radius: 50%; background: #CBD3E1; display: block; }
   .direccion {
     flex: 1; background: var(--blanco); border-radius: 8px; padding: .3rem .75rem;
-    font-size: .88rem; color: var(--tenue); white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+    font-size: .92rem; color: var(--tenue); white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
   }
-  .direccion b { color: var(--pizarra); font-weight: 600; }
+  .direccion b { color: var(--pizarra); font-weight: 700; }
   .canal { padding: 1.1rem 1.1rem 1.25rem; }
   .canal-cab { display: flex; align-items: center; gap: .8rem; }
   .escudo { width: 2.4rem; height: 2.8rem; flex: none; }
   .canal-cab h3 { font-size: 1.05rem; font-weight: 700; font-variation-settings: "wdth" 104; }
-  .canal-cab p { font-size: .82rem; color: var(--tenue); }
+  .linea { display: block; height: .5rem; border-radius: 4px; background: #E6EAF2; }
   .secciones { display: flex; gap: .4rem; margin: 1rem 0 .9rem; flex-wrap: wrap; }
   .secciones span {
     font-size: .78rem; font-weight: 600; padding: .25rem .65rem; border-radius: 999px;
@@ -143,14 +153,11 @@
   .secciones span.activa { background: var(--pizarra); color: var(--blanco); }
   .teselas { display: grid; grid-template-columns: 1fr 1fr; gap: .7rem; }
   .tesela { border: 1px solid var(--niebla); border-radius: 10px; padding: .75rem .8rem; background: var(--blanco); }
-  .tesela h4 { margin: 0 0 .5rem; font-size: .8rem; font-weight: 600; color: var(--pizarra); }
+  .tesela h4 { margin: 0 0 .55rem; font-size: .8rem; font-weight: 600; color: var(--pizarra); }
   .tesela svg { display: block; width: 100%; height: auto; }
-  .fotos { display: grid; grid-template-columns: repeat(3, 1fr); gap: 4px; }
-  .fotos i { display: block; aspect-ratio: 4/3; border-radius: 3px; }
-  .docs { list-style: none; margin: 0; padding: 0; font-size: .78rem; }
-  .docs li { display: flex; align-items: center; gap: .45rem; padding: .28rem 0; border-bottom: 1px dashed var(--niebla); }
-  .docs li:last-child { border-bottom: 0; }
-  .docs li::before { content: ""; width: .55rem; height: .7rem; border-radius: 1px; background: var(--verde); flex: none; }
+  .esqueleto { display: grid; gap: .45rem; }
+  .esqueleto .fila { display: flex; align-items: center; gap: .45rem; }
+  .esqueleto .doc { width: .55rem; height: .7rem; border-radius: 1px; background: var(--verde); flex: none; }
   .maqueta figcaption { margin-top: .75rem; font-size: .85rem; color: var(--tenue); text-align: center; }
 
   /* ---------- Secciones generales ---------- */
@@ -181,33 +188,23 @@
   }
   .pasos h3 { font-size: 1.35rem; font-weight: 700; font-variation-settings: "wdth" 106; }
   .pasos p { margin-top: .6rem; color: var(--tenue); max-width: 34ch; }
-  .analogia {
-    margin-top: 3.5rem; padding: 1.5rem 1.75rem; border-radius: 14px;
-    background: var(--cal); border-left: 6px solid var(--cobalto);
-    font-size: 1.15rem; max-width: 70ch;
-  }
 
   /* Qué se podrá alojar */
-  .areas { margin-top: 3rem; display: grid; grid-template-columns: repeat(2, minmax(0,1fr)); gap: 2.75rem 4rem; }
-  .area h3 { display: flex; align-items: center; gap: .7rem; font-size: 1.4rem; font-weight: 700; font-variation-settings: "wdth" 106; }
-  .area h3::before { content: ""; width: .9rem; height: .9rem; border-radius: 3px; background: var(--c); flex: none; }
-  .area p { margin-top: .6rem; color: var(--tenue); max-width: 48ch; }
+  .areas { margin-top: 3rem; display: grid; grid-template-columns: repeat(3, minmax(0,1fr)); gap: 2.5rem 3rem; }
+  .area { border-top: 6px solid var(--c); padding-top: 1.25rem; }
+  .area h3 { font-size: 1.4rem; font-weight: 700; font-variation-settings: "wdth" 106; }
+  .area p { margin-top: .6rem; color: var(--tenue); max-width: 40ch; }
   .area .ej { margin-top: .75rem; font-size: .95rem; color: var(--pizarra); }
 
-  /* Gratis */
-  .gratis { background: var(--noche); color: var(--blanco); }
-  .gratis .contenedor { display: grid; grid-template-columns: minmax(0, .9fr) minmax(0, 1.1fr); gap: clamp(2rem, 5vw, 4.5rem); align-items: center; }
-  .gratis h2 { color: var(--blanco); }
-  .gratis .intro { color: #C3CCDF; }
-  .cifra { margin-top: 2rem; font-size: 1.15rem; color: var(--blanco); max-width: 40ch; }
-  .cifra b { color: var(--albero); font-weight: 700; }
-  .leyenda { margin-top: 1.25rem; display: flex; gap: 1.5rem; flex-wrap: wrap; font-size: .9rem; color: #C3CCDF; }
-  .leyenda span { display: inline-flex; align-items: center; gap: .5rem; }
-  .leyenda i { width: .75rem; height: .75rem; border-radius: 2px; display: inline-block; }
-  .fuente { margin-top: 1rem; font-size: .82rem; color: #8F9BB5; }
-  .mapa-puntos { width: 100%; aspect-ratio: 1.45; display: block; }
+  /* Colaboración */
+  .colabora { background: var(--noche); color: var(--blanco); }
+  .colabora .contenedor { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: clamp(2rem, 5vw, 5rem); align-items: center; }
+  .colabora h2 { color: var(--blanco); }
+  .colabora .intro { color: #C3CCDF; }
+  .colabora .destacado { margin-top: 1.5rem; font-size: 1.2rem; color: var(--blanco); max-width: 44ch; }
+  .red { width: 100%; height: auto; display: block; }
 
-  /* Servicio, no proyecto */
+  /* Servicio */
   .servicio .contenedor { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: clamp(2rem, 5vw, 5rem); align-items: start; }
   .servicio dl { margin: .5rem 0 0; }
   .servicio dl div { padding: 1.25rem 0; border-bottom: 1px solid var(--niebla); }
@@ -228,19 +225,18 @@
 
   footer { padding: 2rem 0 2.5rem; color: var(--tenue); font-size: .92rem; }
   footer .contenedor { display: flex; justify-content: space-between; align-items: center; gap: 1rem; flex-wrap: wrap; }
-  footer svg { height: 24px; width: auto; display: block; }
+  footer svg { height: 26px; width: auto; display: block; }
 
   /* ---------- Responsive ---------- */
   @media (max-width: 920px) {
-    .portada .contenedor, .gratis .contenedor, .servicio .contenedor { grid-template-columns: 1fr; }
-    .titular { max-width: 16ch; }
+    .portada .contenedor, .colabora .contenedor, .servicio .contenedor { grid-template-columns: 1fr; }
+    .areas { grid-template-columns: 1fr; gap: 2rem; }
   }
   @media (max-width: 760px) {
     .cabecera nav a:not(:last-child) { display: none; }
-    .portada { padding-top: 2rem; }
+    .portada { padding-top: 1.5rem; }
     .pasos { grid-template-columns: 1fr; gap: 2rem; }
     .pasos li::after { display: none; }
-    .areas { grid-template-columns: 1fr; gap: 2rem; }
     .contacto .contenedor { grid-template-columns: 1fr; }
     .seccion { padding: 4rem 0; }
   }
@@ -250,7 +246,7 @@
   }
   @media (prefers-reduced-motion: reduce) {
     html { scroll-behavior: auto; }
-    .aviso .pulso { animation: none; }
+    .aviso .pulso, .firma .b, .firma .palabra { animation: none; }
   }
 </style>
 </head>
@@ -259,19 +255,16 @@
 <header class="cabecera">
   <div class="contenedor">
     <a class="logo" href="/" aria-label="Minemo, inicio">
-      <svg viewBox="0 0 196 40" aria-hidden="true">
-        <g transform="translate(0 4)">
-          <path d="M2 30V21a6 6 0 0 1 12 0v9z" fill="#F2B33D"/>
-          <path d="M16.5 30V8a7 7 0 0 1 14 0v22z" fill="#2348D6"/>
-          <path d="M33 30V15a6 6 0 0 1 12 0v15z" fill="#1F8A6D"/>
-        </g>
-        <text x="56" y="31" font-family="Archivo, system-ui, sans-serif" font-weight="800" font-size="30" letter-spacing="-0.6" fill="#16213B" style="font-variation-settings:'wdth' 118">minemo</text>
+      <svg viewBox="0 0 48 48" aria-hidden="true">
+        <path d="M3 41V29a6.5 6.5 0 0 1 13 0v12z" fill="#F2B33D"/>
+        <path d="M17.5 41V13a6.5 6.5 0 0 1 13 0v28z" fill="#2348D6"/>
+        <path d="M32 41V22a6.5 6.5 0 0 1 13 0v19z" fill="#1F8A6D"/>
       </svg>
     </a>
     <nav aria-label="Principal">
       <a href="#como">Cómo funciona</a>
       <a href="#que">Qué se podrá alojar</a>
-      <a href="#gratis">Gratis</a>
+      <a href="#colaboracion">Colaboración</a>
       <a href="#contacto">Contacto</a>
     </nav>
   </div>
@@ -282,10 +275,20 @@
     <div class="contenedor">
       <div>
         <span class="aviso"><span class="pulso" aria-hidden="true"></span>Estamos trabajando en ello: llega en 2027</span>
-        <h1 class="titular">Los datos públicos de su ayuntamiento, en la nube y a la vista de todos.</h1>
-        <p class="entradilla">Minemo será un servicio en la nube donde cada ayuntamiento podrá alojar sus datos públicos y recibir a cambio visualizaciones, visores y servicios de acceso listos para compartir. Gratis para los municipios pequeños.</p>
 
-        <div class="cuenta" aria-live="off">
+        <p class="firma">
+          <svg viewBox="0 0 300 64" role="img" aria-label="minemo">
+            <path class="b b1" d="M2 58V40a10 10 0 0 1 20 0v18z" fill="#F2B33D"/>
+            <path class="b b2" d="M26 58V14a11 11 0 0 1 22 0v44z" fill="#2348D6"/>
+            <path class="b b3" d="M52 58V28a10 10 0 0 1 20 0v30z" fill="#1F8A6D"/>
+            <text class="palabra" x="86" y="58" textLength="210" lengthAdjust="spacingAndGlyphs" font-family="Archivo, system-ui, sans-serif" font-weight="800" font-size="62" letter-spacing="-1.6" fill="#16213B" style="font-variation-settings:'wdth' 120">minemo</text>
+          </svg>
+        </p>
+
+        <h1 class="titular">Los datos públicos de tu ayuntamiento.</h1>
+        <p class="entradilla">Minemo será un servicio en la nube donde cada ayuntamiento podrá alojar sus datos públicos y recibir a cambio visualizaciones, visores y servicios de acceso. Los datos siguen siendo del ayuntamiento: siempre disponibles, descargables y reutilizables.</p>
+
+        <div class="cuenta">
           <p id="cuenta-texto">Faltan para 2027</p>
           <div class="reloj" id="reloj" aria-describedby="cuenta-texto">
             <div><strong id="r-d">--</strong><span>días</span></div>
@@ -302,10 +305,10 @@
       </div>
 
       <figure class="maqueta">
-        <div class="navegador" role="img" aria-label="Ejemplo de la página de un municipio en Minemo, con gráficos de presupuesto y periodo medio de pago, fotografías históricas y documentos de archivo">
+        <div class="navegador" role="img" aria-label="Imagen orientativa del espacio de un ayuntamiento en minemo.es">
           <div class="barra">
             <div class="puntos" aria-hidden="true"><i></i><i></i><i></i></div>
-            <div class="direccion">minemo.es/<b>su-municipio</b></div>
+            <div class="direccion">minemo.es/<b>tu-ayuntamiento</b></div>
           </div>
           <div class="canal">
             <div class="canal-cab">
@@ -317,127 +320,132 @@
                 <circle cx="28" cy="10.5" r="3.5" fill="#2348D6"/>
                 <path d="M9 24l4 6 4-6M23 26h10" stroke="#1F8A6D" stroke-width="2" fill="none"/>
               </svg>
-              <div>
-                <h3>Ayuntamiento de Su Municipio</h3>
-                <p>12 conjuntos de datos, actualizado hoy</p>
+              <div style="flex:1">
+                <h3>Tu ayuntamiento</h3>
+                <span class="linea" style="width:55%;margin-top:.4rem"></span>
               </div>
             </div>
             <div class="secciones" aria-hidden="true">
-              <span class="activa">Todo</span><span>Transparencia</span><span>Trámites</span><span>Archivo</span><span>Imágenes</span>
+              <span class="activa">Transparencia</span><span>Procedimientos</span><span>Patrimonio documental</span>
             </div>
             <div class="teselas">
               <div class="tesela">
-                <h4>Presupuesto 2026 por áreas</h4>
-                <svg viewBox="0 0 160 84" aria-hidden="true">
-                  <g font-family="Archivo, sans-serif" font-size="8" fill="#56617A">
-                    <text x="0" y="10">Servicios</text><rect x="52" y="3" width="100" height="9" rx="2" fill="#2348D6"/>
-                    <text x="0" y="28">Personal</text><rect x="52" y="21" width="78" height="9" rx="2" fill="#2348D6" opacity=".8"/>
-                    <text x="0" y="46">Inversión</text><rect x="52" y="39" width="54" height="9" rx="2" fill="#F2B33D"/>
-                    <text x="0" y="64">Cultura</text><rect x="52" y="57" width="34" height="9" rx="2" fill="#1F8A6D"/>
-                    <text x="0" y="82">Otros</text><rect x="52" y="75" width="22" height="9" rx="2" fill="#CBD3E1"/>
-                  </g>
+                <h4>Visualizaciones</h4>
+                <svg viewBox="0 0 160 80" aria-hidden="true">
+                  <path d="M8 76V50a8 8 0 0 1 16 0v26z" fill="#F2B33D"/>
+                  <path d="M32 76V22a8 8 0 0 1 16 0v54z" fill="#2348D6"/>
+                  <path d="M56 76V38a8 8 0 0 1 16 0v38z" fill="#1F8A6D"/>
+                  <path d="M80 76V30a8 8 0 0 1 16 0v46z" fill="#2348D6" opacity=".55"/>
+                  <path d="M104 76V54a8 8 0 0 1 16 0v22z" fill="#F2B33D" opacity=".6"/>
+                  <path d="M128 76V44a8 8 0 0 1 16 0v32z" fill="#1F8A6D" opacity=".55"/>
                 </svg>
               </div>
               <div class="tesela">
-                <h4>Periodo medio de pago (días)</h4>
-                <svg viewBox="0 0 160 84" aria-hidden="true">
-                  <g stroke="#E3E8F1" stroke-width="1"><path d="M0 20h160M0 44h160M0 68h160"/></g>
-                  <path d="M0 22 L20 30 L40 26 L60 40 L80 36 L100 50 L120 48 L140 58 L160 54" fill="none" stroke="#1F8A6D" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round"/>
-                  <path d="M0 22 L20 30 L40 26 L60 40 L80 36 L100 50 L120 48 L140 58 L160 54 V84 H0z" fill="#1F8A6D" opacity=".1"/>
-                  <circle cx="160" cy="54" r="3.5" fill="#1F8A6D"/>
+                <h4>Evolución</h4>
+                <svg viewBox="0 0 160 80" aria-hidden="true">
+                  <g stroke="#E3E8F1" stroke-width="1"><path d="M0 18h160M0 42h160M0 66h160"/></g>
+                  <path d="M0 58 L22 50 L44 54 L66 38 L88 42 L110 28 L132 30 L160 16" fill="none" stroke="#2348D6" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round"/>
+                  <path d="M0 58 L22 50 L44 54 L66 38 L88 42 L110 28 L132 30 L160 16 V80 H0z" fill="#2348D6" opacity=".08"/>
                 </svg>
               </div>
               <div class="tesela">
-                <h4>Fotografía histórica</h4>
-                <div class="fotos" aria-hidden="true">
-                  <i style="background:linear-gradient(160deg,#C9B48E,#8C7552)"></i>
-                  <i style="background:linear-gradient(200deg,#B9A27A,#6E5B40)"></i>
-                  <i style="background:linear-gradient(140deg,#D8C7A6,#9A8460)"></i>
-                  <i style="background:linear-gradient(180deg,#A99271,#5F4E37)"></i>
-                  <i style="background:linear-gradient(120deg,#CDBB98,#857053)"></i>
-                  <i style="background:linear-gradient(210deg,#BEA884,#77644A)"></i>
+                <h4>Documentos</h4>
+                <div class="esqueleto" aria-hidden="true">
+                  <div class="fila"><span class="doc"></span><span class="linea" style="width:80%"></span></div>
+                  <div class="fila"><span class="doc"></span><span class="linea" style="width:65%"></span></div>
+                  <div class="fila"><span class="doc"></span><span class="linea" style="width:72%"></span></div>
+                  <div class="fila"><span class="doc"></span><span class="linea" style="width:50%"></span></div>
                 </div>
               </div>
               <div class="tesela">
-                <h4>Fondo documental</h4>
-                <ul class="docs">
-                  <li>Actas de pleno, 1931–1980</li>
-                  <li>Padrones municipales</li>
-                  <li>Ordenanzas fiscales</li>
-                </ul>
+                <h4>Datos abiertos</h4>
+                <svg viewBox="0 0 160 80" aria-hidden="true">
+                  <rect x="0" y="0" width="160" height="14" rx="3" fill="#EEF1F7"/>
+                  <g fill="#E6EAF2">
+                    <rect x="0" y="22" width="60" height="8" rx="4"/><rect x="72" y="22" width="40" height="8" rx="4"/><rect x="124" y="22" width="30" height="8" rx="4"/>
+                    <rect x="0" y="40" width="48" height="8" rx="4"/><rect x="72" y="40" width="34" height="8" rx="4"/><rect x="124" y="40" width="24" height="8" rx="4"/>
+                    <rect x="0" y="58" width="56" height="8" rx="4"/><rect x="72" y="58" width="44" height="8" rx="4"/><rect x="124" y="58" width="28" height="8" rx="4"/>
+                  </g>
+                </svg>
               </div>
             </div>
           </div>
         </div>
-        <figcaption>Así podría verse la página de un municipio. Datos de ejemplo.</figcaption>
+        <figcaption>Cada ayuntamiento tendrá su propio espacio en minemo.es. Imagen orientativa.</figcaption>
       </figure>
     </div>
   </section>
 
   <section class="seccion como" id="como" aria-labelledby="t-como">
     <div class="contenedor">
-      <h2 id="t-como">Usted sube los datos. Minemo hace el resto.</h2>
-      <p class="intro">No hay que instalar nada ni contratar un desarrollo. El ayuntamiento entrega sus datos y recibe a cambio servicios para publicarlos, consultarlos y entenderlos.</p>
+      <h2 id="t-como">Sube tus datos. Minemo hace el resto.</h2>
+      <p class="intro">No hay que instalar nada. El ayuntamiento sube sus datos, que quedan siempre disponibles, y puede publicarlos y consultarlos cuando quiera.</p>
       <ol class="pasos">
         <li>
-          <h3>Suba sus datos</h3>
-          <p>Hojas de cálculo, ficheros CSV, documentos digitalizados o imágenes, desde el navegador y con plantillas para los casos más habituales.</p>
+          <h3>Sube tus datos</h3>
+          <p>Documentos y datos públicos desde el navegador, sin programas ni servidores propios.</p>
         </li>
         <li>
           <h3>Minemo los aloja y los ordena</h3>
           <p>Cada conjunto de datos queda catalogado, descrito y accesible en formatos abiertos, con su propia dirección web.</p>
         </li>
         <li>
-          <h3>Reciba visualizaciones y visores</h3>
-          <p>Gráficos, buscadores y visores de imágenes y documentos, listos para enlazar o insertar en la web municipal.</p>
+          <h3>Recibe visualizaciones y visores</h3>
+          <p>Gráficos, buscadores y visores listos para enlazar o insertar en la web municipal.</p>
         </li>
       </ol>
-      <p class="analogia">Funciona como una plataforma de vídeo: igual que alguien sube un vídeo y la plataforma se encarga de alojarlo y mostrarlo, el ayuntamiento sube sus datos y Minemo se encarga de publicarlos y hacerlos visibles.</p>
     </div>
   </section>
 
   <section class="seccion" id="que" aria-labelledby="t-que">
     <div class="contenedor">
       <h2 id="t-que">Qué se podrá alojar en Minemo</h2>
-      <p class="intro">Datos de transparencia, procedimientos electrónicos y patrimonio documental, todo en un mismo sitio y con la misma forma de trabajar.</p>
+      <p class="intro">Documentos y datos públicos y patrimonio documental. Ahí cabe todo lo que un ayuntamiento publica o conserva.</p>
       <div class="areas">
         <div class="area" style="--c: var(--cobalto)">
           <h3>Transparencia</h3>
-          <p>Las cifras que la ley obliga a publicar, convertidas en gráficos que cualquier vecino entiende y que se actualizan cada vez que se suben datos nuevos.</p>
+          <p>Las cifras que la ley obliga a publicar, convertidas en gráficos claros que se actualizan cada vez que se suben datos nuevos.</p>
           <p class="ej">Presupuestos, contratos, subvenciones, periodo medio de pago.</p>
         </div>
         <div class="area" style="--c: var(--verde)">
-          <h3>Procedimientos electrónicos y derechos</h3>
-          <p>Información sobre la tramitación electrónica y el ejercicio de derechos, como el acceso a la información pública, presentada de forma clara.</p>
+          <h3>Procedimientos administrativos</h3>
+          <p>Información sobre la tramitación y el ejercicio de derechos, como el acceso a la información pública, presentada de forma comprensible.</p>
           <p class="ej">Indicadores de tramitación, solicitudes de acceso, registros de actividad.</p>
         </div>
         <div class="area" style="--c: var(--albero)">
           <h3>Patrimonio documental</h3>
-          <p>Los fondos del archivo municipal descritos y consultables en línea, para que la memoria del municipio no dependa de una visita en horario de oficina.</p>
+          <p>Los fondos del archivo municipal descritos y consultables en línea.</p>
           <p class="ej">Actas de pleno, padrones, documentos digitalizados, inventarios.</p>
-        </div>
-        <div class="area" style="--c: #B08A5A">
-          <h3>Imágenes</h3>
-          <p>Colecciones de fotografía y patrimonio con visores pensados para buscar por lugar, fecha o tema y compartir cada imagen con su ficha.</p>
-          <p class="ej">Fotografía histórica, bienes patrimoniales, carteles y prensa local.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <section class="seccion gratis" id="gratis" aria-labelledby="t-gratis">
+  <section class="seccion colabora" id="colaboracion" aria-labelledby="t-colabora">
     <div class="contenedor">
       <div>
-        <h2 id="t-gratis">Gratis para los municipios pequeños</h2>
-        <p class="intro">Minemo será gratuito hasta un límite de registros y de volumen de datos. Ese límite se fijará para que un ayuntamiento pequeño pueda publicar todo lo que necesita sin pagar nada. Las cifras concretas se anunciarán antes del lanzamiento.</p>
-        <p class="cifra"><b>4.975</b> de los <b>8.132</b> municipios de España tienen menos de 1.000 habitantes. Para ellos está pensado Minemo.</p>
-        <div class="leyenda" aria-hidden="true">
-          <span><i style="background:#F2B33D"></i>Menos de 1.000 habitantes</span>
-          <span><i style="background:#33415F"></i>Resto de municipios</span>
-        </div>
-        <p class="fuente">Fuente: INE, Censo Anual de Población 2025.</p>
+        <h2 id="t-colabora">Una plataforma colaborativa de datos públicos</h2>
+        <p class="intro">Minemo es una solución abierta y compartida. Detrás hay profesionales de la gestión documental que quieren poner su conocimiento al servicio de los ayuntamientos que lo necesiten.</p>
+        <p class="destacado">No negociamos con los datos ni los queremos para nada más: son del ayuntamiento y se podrán descargar y reutilizar siempre.</p>
       </div>
-      <canvas class="mapa-puntos" id="puntos" role="img" aria-label="Rejilla de 8.132 puntos, uno por municipio de España; los 4.975 primeros, en amarillo, corresponden a los municipios de menos de 1.000 habitantes"></canvas>
+      <svg class="red" viewBox="0 0 420 300" role="img" aria-label="Esquema de una red: varios ayuntamientos conectados a un espacio común">
+        <g stroke="#33415F" stroke-width="2">
+          <path d="M210 150L70 60M210 150L90 230M210 150L350 60M210 150L340 240M210 150L210 30M210 150L40 150M210 150L380 150M210 150L210 275"/>
+          <path d="M70 60L210 30L350 60M380 150L340 240L210 275L90 230L40 150L70 60" stroke-dasharray="4 6" fill="none"/>
+        </g>
+        <g>
+          <circle cx="70" cy="60" r="12" fill="#F2B33D"/><circle cx="350" cy="60" r="10" fill="#1F8A6D"/>
+          <circle cx="90" cy="230" r="10" fill="#1F8A6D"/><circle cx="340" cy="240" r="13" fill="#F2B33D"/>
+          <circle cx="210" cy="30" r="9" fill="#2348D6"/><circle cx="40" cy="150" r="9" fill="#2348D6"/>
+          <circle cx="380" cy="150" r="11" fill="#F2B33D"/><circle cx="210" cy="275" r="9" fill="#1F8A6D"/>
+        </g>
+        <circle cx="210" cy="150" r="46" fill="#16213B" stroke="#33415F" stroke-width="2"/>
+        <g transform="translate(186 124)">
+          <path d="M3 41V29a6.5 6.5 0 0 1 13 0v12z" fill="#F2B33D"/>
+          <path d="M17.5 41V13a6.5 6.5 0 0 1 13 0v28z" fill="#2348D6"/>
+          <path d="M32 41V22a6.5 6.5 0 0 1 13 0v19z" fill="#1F8A6D"/>
+        </g>
+      </svg>
     </div>
   </section>
 
@@ -445,7 +453,7 @@
     <div class="contenedor">
       <div>
         <h2 id="t-servicio">Un servicio, no un proyecto a medida</h2>
-        <p class="intro">Minemo no es una empresa tecnológica al uso. No vende licencias ni desarrollos: ofrece un espacio compartido donde cada ayuntamiento aloja sus datos y recibe el servicio a cambio.</p>
+        <p class="intro">Todos los ayuntamientos usan la misma plataforma y reciben los mismos servicios. Lo que mejora para uno, mejora para todos.</p>
       </div>
       <dl>
         <div>
@@ -453,15 +461,15 @@
           <dd>Todo funciona en la nube de Minemo. El ayuntamiento solo necesita un navegador.</dd>
         </div>
         <div>
-          <dt>Los mismos servicios para todos</dt>
-          <dd>Un pueblo de 300 habitantes tendrá las mismas visualizaciones que una ciudad.</dd>
+          <dt>Datos siempre disponibles</dt>
+          <dd>Formatos y estándares abiertos, para que los datos se puedan descargar y reutilizar en cualquier momento.</dd>
         </div>
         <div>
-          <dt>Sus datos siguen siendo suyos</dt>
-          <dd>Formatos y estándares abiertos, para que los datos se puedan descargar y reutilizar siempre.</dd>
+          <dt>Con un límite de registros</dt>
+          <dd>Minemo estará disponible con un límite de registros por ayuntamiento.</dd>
         </div>
         <div>
-          <dt>Hecho desde la administración local</dt>
+          <dt>Conocimiento profesional</dt>
           <dd>Nace de la experiencia diaria en archivo, gestión documental y datos abiertos municipales.</dd>
         </div>
       </dl>
@@ -472,7 +480,7 @@
     <div class="contenedor">
       <div>
         <h2 id="t-contacto">Estamos trabajando en ello.</h2>
-        <p class="intro">Minemo abrirá en 2027. Si quiere más información o le interesa para su ayuntamiento, escríbanos.</p>
+        <p class="intro">Minemo abrirá en 2027. Si quieres más información o te interesa para tu ayuntamiento, escríbenos.</p>
       </div>
       <a class="correo" href="mailto:contacto@minemo.es?subject=Informaci%C3%B3n%20sobre%20Minemo">contacto@minemo.es</a>
     </div>
@@ -481,12 +489,15 @@
 
 <footer>
   <div class="contenedor">
-    <svg viewBox="0 0 48 48" aria-hidden="true" style="height:22px">
-      <path d="M3 41V29a6.5 6.5 0 0 1 13 0v12z" fill="#F2B33D"/>
-      <path d="M17.5 41V13a6.5 6.5 0 0 1 13 0v28z" fill="#2348D6"/>
-      <path d="M32 41V22a6.5 6.5 0 0 1 13 0v19z" fill="#1F8A6D"/>
+    <svg viewBox="0 0 196 40" aria-hidden="true">
+      <g transform="translate(0 4)">
+        <path d="M2 30V21a6 6 0 0 1 12 0v9z" fill="#F2B33D"/>
+        <path d="M16.5 30V8a7 7 0 0 1 14 0v22z" fill="#2348D6"/>
+        <path d="M33 30V15a6 6 0 0 1 12 0v15z" fill="#1F8A6D"/>
+      </g>
+      <text x="56" y="31" textLength="136" lengthAdjust="spacingAndGlyphs" font-family="Archivo, system-ui, sans-serif" font-weight="800" font-size="30" letter-spacing="-0.6" fill="#16213B" style="font-variation-settings:'wdth' 118">minemo</text>
     </svg>
-    <span>© 2026 Minemo · <a href="mailto:contacto@minemo.es">contacto@minemo.es</a></span>
+    <span>© 2026 Minemo. <a href="mailto:contacto@minemo.es">contacto@minemo.es</a></span>
   </div>
 </footer>
 
@@ -501,7 +512,7 @@
       var resto = objetivo - Date.now();
       if (resto <= 0) {
         document.getElementById('cuenta-texto').textContent = 'Ya estamos en 2027.';
-        document.getElementById('reloj').innerHTML = '<p class="reloj-fin">Minemo abre muy pronto. Escríbanos para saber cuándo.</p>';
+        document.getElementById('reloj').innerHTML = '<p class="reloj-fin">Minemo abre muy pronto. Escríbenos para saber cuándo.</p>';
         return;
       }
       var seg = Math.floor(resto / 1000);
@@ -512,52 +523,6 @@
       setTimeout(tic, 1000 - (Date.now() % 1000));
     }
     tic();
-  })();
-
-  // Rejilla de municipios: 8.132 puntos, 4.975 resaltados
-  (function () {
-    var lienzo = document.getElementById('puntos');
-    if (!lienzo || !lienzo.getContext) return;
-    var TOTAL = 8132, PEQ = 4975;
-    var reducir = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-    // Gráfico de gofre: primero los municipios pequeños, luego el resto
-    var esPeq = new Uint8Array(TOTAL);
-    for (var p = 0; p < PEQ; p++) esPeq[p] = 1;
-
-    var progreso = reducir ? 1 : 0, inicio = null, visto = false;
-    function dibujar() {
-      var rect = lienzo.getBoundingClientRect();
-      var dpr = window.devicePixelRatio || 1;
-      lienzo.width = Math.round(rect.width * dpr); lienzo.height = Math.round(rect.height * dpr);
-      var ctx = lienzo.getContext('2d');
-      ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
-      ctx.clearRect(0, 0, rect.width, rect.height);
-      var cols = Math.round(Math.sqrt(TOTAL * rect.width / rect.height));
-      var filas = Math.ceil(TOTAL / cols);
-      var paso = Math.min(rect.width / cols, rect.height / filas);
-      var lado = Math.max(1, paso * 0.72);
-      var ox = (rect.width - cols * paso) / 2, oy = (rect.height - filas * paso) / 2;
-      var encendidos = Math.floor(PEQ * progreso);
-      for (var n = 0; n < TOTAL; n++) {
-        var x = ox + (n % cols) * paso, y = oy + Math.floor(n / cols) * paso;
-        var activo = esPeq[n] === 1 && (n < encendidos || progreso >= 1);
-        ctx.fillStyle = activo ? '#F2B33D' : '#33415F';
-        ctx.fillRect(x, y, lado, lado);
-      }
-    }
-    function animar(ts) {
-      if (!inicio) inicio = ts;
-      progreso = Math.min(1, (ts - inicio) / 1800);
-      dibujar();
-      if (progreso < 1) requestAnimationFrame(animar);
-    }
-    dibujar();
-    window.addEventListener('resize', dibujar);
-    if (!reducir && 'IntersectionObserver' in window) {
-      new IntersectionObserver(function (e, obs) {
-        if (e[0].isIntersecting && !visto) { visto = true; obs.disconnect(); requestAnimationFrame(animar); }
-      }, { threshold: .35 }).observe(lienzo);
-    } else { progreso = 1; dibujar(); }
   })();
 </script>
 </body>
